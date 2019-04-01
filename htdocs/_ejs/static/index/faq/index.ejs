@@ -1,0 +1,1230 @@
+<%_  var pageID = 'faq'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+  <link rel="stylesheet" href="/css/static-index.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellWeb">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-03">
+        <p class="m-heading_subtitle">ご利用ガイド</p>
+        <h2 class="m-heading_title">よくある質問</h2>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-membership', {page: pageID})%>
+
+      <div class="anchorNav -guideline">
+        <nav>
+          <ul>
+            <li><a href="#store">店頭買取に関するご質問</a></li>
+            <li><a href="#web">Web買取(宅配)に関するご質問</a></li>
+            <li><a href="#other">その他のご質問</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <a id="store"></a>
+      <section class="faq">
+        <h3 class="m-title">店頭買取に関するご質問</h3>
+        <section class="faq_chapter">
+          <h3 class="faq_desc">店頭買取について</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>どんな物を買取してもらえるのですか？</p></dt>
+            <dd><div><p>セカンドストリートでは家電製品、衣料、生活雑貨まで幅広く取扱しております。ジャンブルストアでは衣料品、バッグや靴、アクセサリー等の服飾用品のみ取扱しております。店舗により異なる場合もございますので、詳しくは「<a href="/shop">お近くのセカンドストリート</a>」までお気軽にお問合せください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>買取できないものを教えてください。</p></dt>
+            <dd><div><p>各取扱商品ごとのページ内に、取扱できない商品の詳細も記載しております。そちらをよくご確認ください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ウェブサイトに買取価格の一覧表を掲載してもらえませんか？</p></dt>
+            <dd><div><p>お品物の状態や店舗の在庫状況により買取金額が異なるため、ウェブサイトへの価格掲載は行なっておりません。<br>お見積りのみも受付けておりますので、詳しくは「<a href="/shop">お近くのセカンドストリート</a>」までお問合せください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>値段がつかなかった商品は引き取りしていただけますか？</p></dt>
+            <dd><div><p>お値段がつかなかった商品に関しましてお客様でお持ち帰りいただいております。ご了承ください。<br>衣料品に関しては、店頭に並べることの難しいアイテムを1着1円で買い取る「ECO（エコ）かいとり」を行っております。これらの衣料品は、さまざまな形で有効活用いたします。詳しくは<a href="https://www.2ndstreet.jp/RECOLIFE/f1">こちら</a>をご覧ください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>「スーツ」・「キッズ衣料/用品」・「ノーブランド品」の取扱について</p></dt>
+            <dd><div><p>「スーツ」・「キッズ衣料/用品」・「ノーブランド品」の商品に関して店舗により取扱を行っていない場合がございます。<br>詳しくは「<a href="/shop">お近くのセカンドストリート</a>」までお気軽にお電話ください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>春夏物（秋冬物）衣料・服飾品はいつまで買取してくれますか？</p></dt>
+            <dd><div><p>衣料品には、買取ベストシーズンがありますので、「<a href="/sell/tips?anchor=timing">高く売るコツ</a>」ページにてご確認ください。<br>なお、買取スケジュールは店舗により異なる場合もございますので、詳しくは「<a href="/shop">お近くのセカンドストリート</a>」までお気軽にお問合せください。</p></div></dd>
+          </dl>
+          <a id="necessaryPurchase"></a>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>買取の際に必要なものはありますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>買取の際には「ご本人確認」ができるものが必要となります。年齢により必要なものが異なります。詳しくは下記表をご覧ください。</p>
+                <p class="faq_list_answer_note">※Web買取(宅配)をご利用の場合は、有効なご本人確認書類が異なりますので「<a href="/sell/web/details#documents">こちらのページ</a>」にてご確認ください。</p>
+                <ul class="faq_list_answer_list">
+                  <li><strong>・お申込み者ご自身の「ご本人確認書類」</strong></li>
+                  <li><strong>・お売りいただける商品</strong></li>
+                </ul>
+                <p><strong>有効なご本人確認書類一覧</strong>運転免許証・健康保険証（船員保険証）・国民健康保険証・後期高齢者医療保険証・学生証（住所記入欄のあるもの）・住民基本台帳カード（写真付）・マイナンバーカード・年金手帳・身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳・日本国パスポート・小型船舶操縦士免許証・生活保護受給証・外国人登録証明書・在留カード・特別永住者証明</p>
+                <p class="faq_list_answer_note">※申込者ご自身のお名前、現住所、生年月日が記載された有効期限内の原本に限り有効となります。</p>
+                <p class="faq_list_answer_note">※住民票・写真なしの住民基本台帳カード・個人番号の通知カード・住所記入のない保険証・学生証・年金手帳は、ご利用いただけません。</p>
+                <p class="faq_list_answer_note">※18歳未満（高校生含む）のお客様には親権者様のご同伴と、親権者様ご自身の名義・ご本人確認書類でのお申込みとさせていただいております。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>見積もりだけでもしてもらうことはできますか？</p></dt>
+            <dd><div><p>お見積りのみのご依頼も大歓迎です。詳しくは「<a href="/shop">お近くのセカンドストリート</a>」までご連絡ください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>電話で買取価格の案内はしてもらえますか？</p></dt>
+            <dd><div><p>商品の状態により金額が変わる為、 お電話での買取金額のご案内はお断りさせていただいております。 お手数ですが店頭までお持ちいただくか、もしくは「<a href="/sell/web/">Web買取サービス</a>」へのお申込みをお願いいたします。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>見積もり後のキャンセルは出来ますか？</p></dt>
+            <dd><div><p>お見積り金額に満足いただけない場合はキャンセルが可能です。安心してご利用ください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>自宅まで買取に来てもらうことは出来ますか？</p></dt>
+            <dd><div><p>セカンドストリートでは店頭にお持込できない大型の家具・家電を、ご自宅までお伺いして買取させていただく「<a href="/sell/visit/">出張買取</a>」を行っております。<br>また、ご自宅へお売りいただける商品を引取に伺う「<a href="/sell/web/">Web買取サービス</a>」もございます。お客様に合った買取方法をお選びください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>セカンドストリートA店とセカンドストリートB店で買取価格が違ったのですが、これはなぜですか？</p></dt>
+            <dd><div><p>店舗の在庫状況等により金額が異なる場合があります。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>衣料品が大量にあります。出張買取してくれますか？</p></dt>
+            <dd><div><p>店舗では衣料品の出張買取を行っておりません。ご自宅でからお売りしていただく場合、Web買取（宅配買取）を行っている「<a href="/sell/web/">Web買取サービス</a>」のご利用をおすすめいたします。 なお、セカンドストリートWeb買取サービスでは取扱ブランドに限りがあります。</p></div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">店頭買取時に必要な書類について</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>どんなものが本人確認になるのですか？</p></dt>
+            <dd><div><p>ご本人確認書類につきましては「<a href="/sell/store?anchor=validation">買取に必要なもの</a>」をご参照ください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>買取を利用するのが2回目ですが、本人確認できるものの提示は必要ですか？</p></dt>
+            <dd><div><p>ご本人確認できるもののご提示は毎回必要になります。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>本人確認できるものの有効期限が切れているのですが、氏名、住所、生年月日が確認できれば良いですか？</p></dt>
+            <dd><div><p>有効期限が切れたものはご利用いただけません。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>私は18歳未満ですが、物を売りたい場合どうしたら良いですか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>18歳未満のお客様は親権者様とご同伴ください。親権者様から買取受付をさせていただきます。親権者様は「ご本人確認」ができるものをお持ちください。</p>
+                <p class="faq_list_answer_note">※ご本人確認書類につきましては、本Q&A「<a href="#necessaryPurchase">買取の際に必要なものはありますか？</a>」をご参照ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>買取の際に、住所や氏名を書かなくてはいけないのはなぜですか？</p></dt>
+            <dd><div><p>セカンドストリート各店は古物営業法という法律に準じて買取を行っており、全ての買取成立時には、お客様のご住所、お名前、生年月日、職業の記入をお願いしております。ご了承いただけますようお願いいたします。<br>なお、お預かりした個人情報につきましては個人情報保護法及び弊社「<a href="https://www.2ndstreet.jp/static/index/privacy">プライバシーポリシー</a>」に則り厳重に保管させていただきます。何卒、ご理解頂きますようお願い申しあげます。その他、ご不明な点などございましたら、お気軽にお問合せいただきますようお願いいたします。</p></div></dd>
+          </dl>
+        </section>
+      </section>
+
+
+      <a id="web"></a>
+      <section class="faq">
+        <h3 class="m-title">Web買取(宅配)に関するご質問</h3>
+        <section class="faq_chapter">
+          <h3 class="faq_desc">Web買取のお申込みについて</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>Web買取を利用してみたいんだけど、まずどうしたら良いの？</p></dt>
+            <dd><div><p>「<a href="/sell/web/details/">2nd STREETのWeb買取方法</a>」に詳細を掲載させていただいております。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>20歳未満でもWeb買取を利用することは出来るの？</p></dt>
+            <dd><div><p>大変申し訳ございません。Web買取につきましては、20歳以上で国内にお住まいのお客様に限りサービスをご提供をさせていただいております。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>見積もり希望品は何点まで送って良いの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>弊社システムの都合上、1回のお申込みにつき99点までとなります。100点以上のお客様につきましては申込番号を分けてお申込みくださいませ。</p>
+                <p class="faq_list_answer_note">※法人のお客様へ…法人のお客様につきましては別途、お見積りをさせていただいております。セカンドストリートWeb買取サポートセンターまでお問合せ下さい。<br>TEL：<a class="grey" href="tel:0587653157">0587-65-3157</a>&emsp;<br class="u-hidden-md u-hidden-lg">MAIL：<a class="grey" href="mailto:ssol-buy@geo-reply.com">ssol-buy@geo-reply.com</a></p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>申し込み毎にご本人確認書類は必要？</p></dt>
+            <dd><div><p>弊社規約により「買取申込書」および「ご本人確認書類」はお申し込み毎に必要となります。お手数ではございますが、商品と同梱してご発送ください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>銀行口座の名義が旧姓のままなんだけど、大丈夫？</p></dt>
+            <dd><div><p>大変申し訳ございません。古物営業法の規制により、現在の氏名と一致する口座にしか代金のお振込みができません。ご利用前に予め口座名義の変更をお願いいたします。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>キャンペーンの対象は期間内に荷物が届いた申込みが対象ですか？</p></dt>
+            <dd><div><p>キャンペーン期間内のお申込みされた物が対象となります。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>電話で申込みできますか？</p></dt>
+            <dd><div><p>大変申し訳ございません。インターネットからのお申込みのみとさせていただいております。</p></div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">Web買取の取扱商品について</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>どんなものを買取しているの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>3辺が160cmの段ボールに収まる、お洋服や服飾品、雑貨、家電用品、スポーツ用品、アウトドア用品、趣味用品（フィギュア等）を買取させていただきます。Web買取には、お売りいただけないブランド・商品がございます。詳しい内容は「<a href="/sell/web/items/">Web買取の取扱商品</a>」をご覧ください。</p>
+                <p>お売りいただけないブランド・商品をお送りいただいた場合、規約に基づき、お客様送料負担にて商品を返送させていただきます。取扱アイテムをご確認の上、お送りください。3辺が160cmのダンボールを超過してしまう商品やWeb買取サービスではお取り扱いしていないお品物に関しましては、お近くのセカンドストリート・ジャンブルストア店頭までお問合せください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ノーブランド品も買取できるの？</p></dt>
+            <dd><div><p>衣料品・服飾品に限りノーブランドの商品はお買取が出来ません。<br>また、Web買取には、お売りいただけないブランドがございます。詳しい内容は「<a href="/sell/web/items/?anchor=notbuybrand">お売りいただけないブランド</a>」をご覧ください。</p></div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">Web買取のご本人確認書類について</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>今住んでいる住所とご本人確認書類（免許証や保険証）の記載住所が異なるのですが、大丈夫ですか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>現住所が身分証記載の住所と異なる場合は、3ヶ月以内に発行された公共料金の領収書のコピーをご同封ください。</p>
+                <p class="faq_list_answer_note">※領収書がご本人様宛てであること、領収書に住所が記載されていることが条件となります。ご本人確認書類について<a href="/sell/web/details#documents">詳しくはこちら</a></p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ご本人確認書類・買取申込書を送り忘れてしまいました・・・</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>弊社より返信用封筒を同封した封書をお送りさせていただきます。お気付きの場合はセカンドストリートWeb買取サポートセンターまでご連絡ください。</p>
+                <p>TEL：<a class="grey" href="tel:0587653157">0587-65-3157</a>&emsp;<br class="u-hidden-md u-hidden-lg">MAIL：<a class="grey" href="mailto:ssol-buy@geo-reply.com">ssol-buy@geo-reply.com</a></p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>顔写真部分や本籍を塗りつぶしたご本人確認書類を送っても良い？</p></dt>
+            <dd><div><p>申し訳ございませんが、塗りつぶしや切り取りなど、加工されたご本人確認書類または、顔写真部分が識別できない場合は無効となります。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ご本人確認書類をコピーする時に印刷が上手くできなかったんだけど・・・</p></dt>
+            <dd><div><p>コピー時に必要な情報が見切れてしまい確認できない、また印字が薄くなっている等の理由でご本人確認書類として必要情報が確認できない場合は無効となります。ご本人確認書類の内容が全て確認できるコピーを商品と同封してください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>送った書類の管理は大丈夫？</p></dt>
+            <dd><div><p>お送りいただいた書類はWeb買取のみに使用し、弊社にて厳重な管理体制の下で保管しております。また、行政からの指導に基づき、商品や買取金額の大小に関わらず、「ご本人様確認」と買取の「記録・保管」を実施させていただいております。そのため、書類はお返しすることができませんので、予めご了承ください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ご本人確認書類を同梱で申込んだけど、アップロードに変更できますか？</p></dt>
+            <dd><div><p>お申込み完了後、お客様任意でのご変更は出来かねます。必要書類を必ずご同梱ください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ご本人確認書類を入れ忘れたから事前にアップロードしたいんだけどできますか？</p></dt>
+            <dd><div><p>事前にアップロードいただく事は出来かねます。弊社へお荷物到着後、書類がない事を確認いたしましたら、別途メールにてお手続き方法をご案内させていただきます。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ご本人確認書類のアップロードに不備があると連絡がきたんだけど、どうしたらいいの？</p></dt>
+            <dd><div><p>Web買取ページよりマイページへログインをお願い致します。「Web買取情報」の「Web買取のお取引管理」をクリックしてください。該当のお申込番号をクリックしてください。修正ボタンから修正ページへ入り再アップロードをしてください。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>登録情報に不備があるとメールがきたんだけど、マイページのどこを変更したらいいの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>マイページ内「Web買取情報」の「Web買取基本情報の確認・変更」からお手続きをお願いいたします。</p>
+                <p class="faq_list_answer_note">※同ページ内の「会員情報確認」の「基本情報の確認・変更」は、「Web買取情報」とは異なりますのでご注意ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">Web買取の集荷・発送について</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>依頼した日時に集荷が来なかったらどうすればいいの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>弊社より運送会社へ問合せを行い、状況を確認させていただきます。大変お手数ではございますが、お申し込み番号をご確認の上「セカンドストリートWeb買取サポートセンター」までお問合せください。</p>
+                <p>TEL：<a class="grey" href="tel:0587653157">0587-65-3157</a>&emsp;<br class="u-hidden-md u-hidden-lg">MAIL：<a class="grey" href="mailto:ssol-buy@geo-reply.com">ssol-buy@geo-reply.com</a></p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>コンビニから直接送ったり、運送会社へ荷物の持込みをしてもいいの？</p></dt>
+            <dd><div><p>大変申し訳ございません。商品の発送方法は、集荷ドライバーが直接お荷物をご自宅に集荷に伺う方法のみとさせていただいております。お客様自らの発送はお受けしておりません。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>送りたいダンボールの箱数が増える場合はどうすればいいの？</p></dt>
+            <dd><div><p>集荷日時登録後の箱数の追加はお受けできません。お手数ではございますが、改めて新規買取のお申込みをお願いいたします。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>荷物の着払い伝票は用意しなくていいの？</p></dt>
+            <dd><div><p>集荷ドライバーが集荷に伺う際、発送先とご依頼主の記載された着払い伝票をお持ちいたします。お客様でご準備いただく必要はございません。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>自宅以外（実家・職場など）には集荷に来てもらえないの？</p></dt>
+            <dd><div><p>大変申し訳ございません。古物営業法に基づく在所確認のため、ご自宅以外への集荷は承っておりません。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>集荷の予約日時を変更したいんだけど・・・</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>集荷日を前倒ししたいお客様…セカンドストリートWeb買取サポートセンターまでご連絡下さい。集荷日を後ろ倒ししたいお客様…お申込みいただいた日時に運送会社の不在伝票が投函されます。伝票に記載されている電話番号から集荷ドライバーに再集荷のご連絡をお願いいたします。</p>
+                <p>TEL：<a class="grey" href="tel:0587653157">0587-65-3157</a>&emsp;<br class="u-hidden-md u-hidden-lg">MAIL：<a class="grey" href="mailto:ssol-buy@geo-reply.com">ssol-buy@geo-reply.com</a></p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>荷物が無事届いたか確認したいんだけど・・・</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>セカンドストリートWeb買取サポートセンターまでご連絡ください。担当スタッフが状況をお知らせいたします。</p>
+                <p>TEL：<a class="grey" href="tel:0587653157">0587-65-3157</a>&emsp;<br class="u-hidden-md u-hidden-lg">MAIL：<a class="grey" href="mailto:ssol-buy@geo-reply.com">ssol-buy@geo-reply.com</a></p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">Web買取のお見積り、査定結果について</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>写真やメールで大体の見積り金額を教えてほしいのですが・・・</p></dt>
+            <dd><div><p>申し訳ございません。状態やデザイン、サイズなどを確認しながらお値段をつけさせていただきますので、お品物をお送りいただいた場合のみ、お見積りを出させていただきます。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>査定には何日くらいかかるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>弊社に商品が到着したのち、2～7営業日以内に査定完了の通知をお送りいたします。</p>
+                <p class="faq_list_answer_note">※混雑時には上記目安を超える場合がございます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>見積もりは1点ずつしてもらえるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>1点￥500以上でのお見積もり品につきましては1品ずつのご提示、￥500未満の商品につきましてはまとめてのご提示をさせていただいております。</p>
+                <p class="faq_list_answer_note">※まとめてご提示させていただいた商品の詳細、個別での承認・返品対応は、規約に基づきお受けいたしかねます。予めご了承ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>査定結果の連絡がこない！</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>通常、商品が弊社に到着してから2～7営業日以内にメールにて査定完了のお知らせをお届けしています。弊社より連絡が無い場合はセカンドストリートWeb買取サポートセンターまでご連絡ください。</p>
+                <p>MAIL：<a class="grey" href="mailto:ssol-buy@geo-reply.com">ssol-buy@geo-reply.com</a></p>
+                <p class="faq_list_answer_note">※迷惑メール防止設定により、弊社からの連絡が届かない場合がございます。<br>【@2ndstreet.jp】【@2ndstreet.co.jp】【@geo-reply.com】のドメイン指定を解除してください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>査定完了のメールが来たけど、見積りはどうやって確認すればいいの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>弊社Webサイトにログインし、マイページより査定結果をご覧いただけます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>どんな状態でも買取ってもらえますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>喜んでお見積もりさせていただきますが、ダメージのない商品と比較してお見積額が安価となることをご了承ください。また、汚れ、破れ、臭いなどにより通常の使用が困難な商品につきましては、発送をご遠慮いただきますようお願いいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>付属品（箱や説明書）がなくても見積りしてもらえるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>使用に問題がない商品であれば、本体のみでお見積りさせていただきます。</p>
+                <p class="faq_list_answer_note">※一部ブランドにおきまして、ギャランティーカード等の付属品がお見積りに必須のブランドがございます。<br>以下、ご確認ください。<a href="/sell/web/items?anchor=notbuybrand">Web買取できないブランド</a></p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>古い物も見積りしてもらえるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ヴィンテージと呼ばれるアイテム以外は、発売5年以内のアイテムを高価買取いたしております。5年以上経過しているアイテムにつきましては、安価でのお見積りになりますことを予めご容赦ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>新品・未開封のアイテムだけど、開封せずに見積りしてくれるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>新品・未開封の商品でも保管時の日焼け・劣化の可能性を考慮し、開封した上でお見積りを行っております。予めご了承ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>見積り金額はどうやって算出しているの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>年間380万件の弊社買取データより算出される参考価格と、リアルタイムの中古相場情報を基にお見積り金額を算出しております。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>季節外のアイテムも買取してくれるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>季節問わず全てのアイテムをお買取いたします。ただし、衣料品は季節によって買取価格が変動いたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>値段がつかなかったアイテムは処分してくれるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>少量の場合は弊社にて処分いたします。処分品が10点を超える場合は、お断りさせていただくことがございます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>店舗とWeb買取では買取価格は違うの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>店舗ではその地域の需要から算出した買取価格となりますが、WEB買取では全国中古相場を基準としております。そのため、買取価格に多少の差異がある場合がございます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>査定結果の承認をしてからどれくらいで入金されるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お客様ご承認後、3営業日以内に金融機関口座にお振込させていただきます。</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">Web買取の返品について</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>見積り金額に納得のいかなかったアイテムの返送は有料？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>基本、返送無料にてご対応させていただいております。価格以外の事情により返品を希望される場合は返送料をいただくことがございます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>査定結果の確認をしてから何日くらいで返送してくれるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お客様ご承認後、1～3営業日以内に発送させていただきます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>まとめて見積りされていたアイテムは個別に返品できないの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>￥500未満の商品につきましてはまとめてのご提示をさせていただいております。まとめてご提示させていただいた商品の個別での承認・返品対応は規約に基づきお受けいたしかねます。予めご了承ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">Web買取のキャンセル・退会など</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>買取の前にクリーニングは必要なの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>クリーニングの必要はございませんが、汚れや使用感が多く見受けられる商品につきましては安価なお見積り価格となります。高価買取を希望されますお客様につきましては、少しでも良い状態で商品を発送いただけますと幸いです。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>Pontaカードのポイントは付かないの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>GEO IDにPontaカードの情報をご登録いただくと、WEB買取ご利用の際もポイントがつきます。買取金額の1% がPontaポイントとして付与されますので、ぜひ、ご利用ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>Web買取のキャンセルをお願いしたいんだけど・・・</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お手数をお掛けいたしますがセカンドストリートWeb買取サポートセンターまでご連絡ください。</p>
+                <p>TEL：<a class="grey" href="tel:0587653157">0587-65-3157</a>&emsp;<br class="u-hidden-md u-hidden-lg">MAIL：<a class="grey" href="mailto:ssol-buy@geo-reply.com">ssol-buy@geo-reply.com</a></p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>会員を退会したい、または個人情報の削除をしたい</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お手数をお掛けいたしますがセカンドストリートWeb買取サポートセンターまでご連絡ください。</p>
+                <p>MAIL：<a class="grey" href="mailto:support@2ndstreet.jp">support@2ndstreet.jp</a></p>
+                <p>なお、Web買取サービスをご利用されたお客様におきましては古物営業法の規定により、個人情報を保管する義務がございます。Web買取の基本情報・履歴の削除はできかねます。予めご了承くださいますようお願いいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+      </section>
+
+
+      <a id="other"></a>
+      <section class="faq">
+        <h3 class="m-title">その他のご質問</h3>
+        <section class="faq_chapter">
+          <h3 class="faq_desc">商品購入について</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>各店頭にある商品をオンラインで購入できますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>現在、各店で取扱商品に限りましてはオンライン販売を行っております。詳しくは「<a href="/store">オンラインストア</a>」をご覧ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ウェブサイトから各店頭商品の在庫検索はできませんか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>セカンドストリート・ジャンブルストアの商品は、ほとんどが1点ものとなります。また、店頭商品は常時変動する為、ウェブサイトにて在庫情報をご提供することが難しい状況です。お手数ですが、店頭にてご確認ください。</p>
+                <p class="faq_list_answer_note">※一部商品につきましては「<a href="/store">オンラインストア</a>」にて在庫をご確認いただけます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>探している商品があるので、入荷したら連絡をいただくことは可能ですか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>商品は全て1点ものとなり、現在特定商品の入荷連絡をお受けいたしておりません。また、お取置きなどもお断りさせていただいております。ご了承ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>各店のセールの時期が知りたいのですが</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>セール実施時期・内容につきましては「<a href="/information">インフォメーション</a>」ページをご覧ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>店頭商品の配達はしてもらえますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>セカンドストリートの店舗では大型の家具や家電のみ有料にて配達を行っております。(一部店舗を除く)<br>配達対象商品、配送料金、配送エリアは店舗により異なります。詳しくは「<a href="/shop">お近くのセカンドストリート</a>」までお問合せください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ギフトカードを会計の際に使用できますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ギフトカードのご利用は承っておりません。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>買物の際、クレジットカードは何が使えますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>VISA・MASTER・JCB・AMEX・DINERSカードがご利用いただけます。</p>
+                <p class="faq_list_answer_note">※店舗により利用できないクレジットカードがございます。詳しくは「<a href="/shop">お近くのセカンドストリート</a>」までお問合せください。</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">オンラインストアについて</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>注文のキャンセルはできますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>注文後のお客様都合によるキャンセルはお受けしておりません。ご注文後のお支払方法の変更・キャンセル、クーポン・ポイント等の適用、またご注文完了後の配送先住所の変更はいたしかねます。ご注文の際は、お支払方法、配送先、クーポン・ポイントの適用などをよくご確認の上ご注文をお願いいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>注文した商品がキャンセルされた（在庫切れメールが届いた）のですがどういうことでしょうか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>出荷前に商品に重大な不備が見つかった場合、在庫がなかった場合などについては、ご注文をキャンセルさせていただき、決済のお取消しをさせていただいております。また、お客様へのご連絡についてはメールにて行っております。</p>
+                <ul class="faq_list_answer_list">
+                  <li>・当サイトは楽天、ヤフオク！などの他モール店舗と在庫を共有しております。ご注文後に在庫を自動確認するため、ご注文完了後に在庫がない場合がございます。その際はキャンセルのメールを配信させていただいております。</li>
+                  <li>・複数の商品をご購入いただき、そのうち一部商品がご用意できない場合、手配可能な商品のみお届けいたします。</li>
+                  <li>・クレジット決済をご利用のお客様の場合、ご注文時のカード情報にてカード会社の承認を得られなかったご注文につきましては、ご注文をキャンセルさせていただきます。また、当サイトからご注文の確認のためご連絡（電話・メール）をさせていただくことがございます。</li>
+                  <li>・在庫なしのご連絡をした後、該当商品が入荷したためにご注文ができる状態になることがございます。予めご了承いただきますようお願い申し上げます。</li>
+                </ul>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>複数の注文をまとめて（同梱）配送してほしい。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>商品は各取扱店舗より発送されます。尚、同梱の発送はお受け付けしておりません。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>注文した商品はいつ頃届きますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ご注文をいただいてから通常3～4営業日(一部商品、離島など一部地域を除く)で発送いたします。年末年始、ゴールデンウィーク、その他休業期間については翌営業日手配となります。また配送地域、交通事情、在庫等の理由により遅延する場合がございます。また、お届け先は日本国内に限らせていただきます。</p>
+                <p>ご注文後２週間を経過しても商品が配送されない場合は、お手数ではございますが「<a href="mailto:ssol-retail@geo-reply.com?subject=%e5%95%86%e5%93%81%e3%81%ae%e3%81%8a%e5%b1%8a%e3%81%91%e3%81%ab%e9%96%a2%e3%81%99%e3%82%8b%e3%81%8a%e5%95%8f%e3%81%84%e5%90%88%e3%82%8f%e3%81%9b">オンラインストアサポートセンター</a>」までご連絡ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>配達業者、配達日時指定はできますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>配送業者のご指定は承っておりません。お届け日は、ご注文日の6日後～10日後の間でご指定いただけます。</p>
+                <p>例）注文日5/1→配達日指定日5/7～5/11<br>お届け時間帯は「午前中（8時～12時）」「12時～14時」「14時～16時」「16時～18時」「18時～20時」「20時～21時」よりご指定いただけます。</p>
+                <p class="faq_list_answer_note">※配送日時指定の無い場合は最短での発送となります（通常：注文から3～4営業日を目安に発送）。</p>
+                <p class="faq_list_answer_note">※配送日時の指定はあくまで希望となります。弊社でご注文内容の確認が必要な場合（10万円以上の高額注文等）や、配送状況（交通状況・天候・運送会社様の都合等）によりご希望通りにお届けする事は保証できかねます。また、地域により日時指定が不可能な場合や、お時間が通常よりもかかる場合がございますので予めご了承ください。</p>
+                <p class="faq_list_answer_note">※弊社ではご注文後のご注文内容の変更はお受けできませんので、日時指定等確認の上ご注文確定をお願いいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>購入した商品が届かない。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>弊社より出荷させていただいた後にお送りさせていただいております商品発送のお知らせメールに運送会社、お問合せ番号を付しておりますので、そちらを基にご確認いただけます。</p>
+                <p class="faq_list_answer_note">※商品発送のお知らせメールも届いていないお客様につきましては「<a href="mailto:ssol-retail@geo-reply.com">オンラインストアサポートセンター</a>」までご連絡ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>購入した物を返品したい。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>中古商品となりますので、基本、返品はお受けいたしておりません。</p>
+                <p class="faq_list_answer_note">※初期不良（破損・ダメージ等）につきましては上記の限りではございません。お品物に同封している返品についての書面に沿ってお手続きをお願いいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>オンラインストアで購入した商品を最寄りの店舗にて返品を行いたいのですが。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>オンラインストアでご購入頂いた商品は店頭での返品はお受けできません。商品に同封している返品についての書面に沿ってお手続きをお願いいたします。</p>
+                <p class="faq_list_answer_note">※お取寄せサービスご購入の商品返品はご購入店舗の店頭での受付となります。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>カートに入れた商品は在庫確保してもらえるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>カートに入れた状態だけでは在庫の引当は行えません。決済完了までお受けした後に在庫の引当を行わせていただきます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>購入履歴は見れるのですか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ウェブサイトもしくはアプリよりログイン後、「マイページ」→「購入履歴」からご確認いただけます。なお、欠品によるキャンセル分および返品された商品の情報に関しては反映されませんのでご容赦ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ギフトラッピングは行ってもらえますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>現在ラッピングサービスはお受けしておりません。</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">ログイン / 新規会員登録について</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ログインができません。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ご入力のGEO ID、パスワードを再度ご確認ください。パスワードをお忘れの場合再発行が可能ですので「<a href="https://www.2ndstreet.jp/user/resetpwauth" target="_blank">こちら</a>」より手続きを行って下さい。<br>また、何度正しいアカウントを入力してもエラーになる、再設定ができない、再設定項目の確認項目を忘れてしまった場合は、<a href="#inquiryAboutWeb">お問合せフォーム</a>よりお問合せ下さい。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>新規会員登録で「入力キャプチャ番号が正しくありません」というエラーが表示されます。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>「文字認証」の項目で表示されている数字と異なる数字を入力した際に表示されるエラーとなります。再度ご入力内容を確認の上、操作をお試しくださいますようお願いいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>050～から始まる電話番号で会員登録はできますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>登録の際には、認証番号の受信が必要となります。電話番号でご登録の場合はSMS機能がご利用いただける端末、携帯電話番号にてご登録をお願いいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>新規会員登録でメールアドレスを登録しようすると「形式が違います」というエラーが表示されます。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>メールアドレスに全角文字やスペースが混入されていないかご確認ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>新規会員登録時の認証番号が届きません。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>下記内容をご確認ください。</p>
+                <p><strong>メールアドレスで登録の場合</strong></p>
+                <ul class="faq_list_answer_list -cut">
+                  <li>・「@geonet.jp」をドメイン指定受信にしてください。</li>
+                  <li>・迷惑メールフォルダをご確認ください。</li>
+                </ul>
+                <p><strong>携帯電話番号で登録の場合</strong></p>
+                <ul class="faq_list_answer_list -cut">
+                  <li>・SMS受信設定をご確認ください。</li>
+                </ul>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>新規会員登録時の認証番号を入力するとエラーが表示されます。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>再度認証番号送信画面に戻り、送信ボタンを押してください。複数認証番号が届いてしまっている場合は、必ず最新の認証番号を入力ください。何度試してもエラーになってしまう場合は、<a href="#inquiryAboutWeb">お問合せフォーム</a>よりお問合せください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>会員登録したいのですが、年会費等はかかるのでしょうか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>年会費等の費用はかかりません。</p>
+                <p class="faq_list_answer_note">※端末使用時の通信料はお客様負担となります。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>登録情報を変更したいです。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ウェブサイトもしくはアプリよりログイン後、「マイページ」から各種情報の変更ができます。</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">Pontaカード認証について</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>Pontaカードの発行方法を教えてください。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>全国のセカンドストリート店舗及びゲオ各店、<a href="http://geo-online.co.jp/" target="_blank" rel="noopener noreferrer">ゲオオンライン<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>、<a href="http://www.ponta.jp/" target="_blank" rel="noopener noreferrer">Ponta Web<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>などから発行が可能です。Pontaポイントの利用やクーポンの利用にはPontaカードへの個人情報登録が必須となりますので、ゲオ各店舗、<a href="http://geo-online.co.jp/" target="_blank" rel="noopener noreferrer">ゲオオンライン<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>、<a href="http://www.ponta.jp/" target="_blank" rel="noopener noreferrer">Ponta Web<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>などからの新規発行をおすすめいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>Ponta会員IDの認証時にエラーが発生し登録できない。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>表示されているエラーメッセージに従い、入力内容再度ご確認ください。</p>
+                <p><strong>「入力内容に誤りがある」と表示される場合</strong></p>
+                <ul class="faq_list_answer_list -cut">
+                  <li>・入力しているPonta会員ID、電話番号、生年月日を再度ご確認ください。半角全角、スペースをご確認ください。</li>
+                  <li>・Pontaカードにご登録されている情報と、お客様がご認識されている内容が異なっている事例も多々ございます。</li>
+                </ul>
+                <p>お手数ですが、<a href="http://www.ponta.jp/" target="_blank" rel="noopener noreferrer">Ponta Web<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>より登録内容をご確認いただくか、カード裏面に記載されているPontaカスタマーセンターへご登録内容に誤りがないかお問合せください。</p>
+                <p><strong>「既に登録されています」と表示される場合</strong></p>
+                <ul class="faq_list_answer_list -cut">
+                  <li>・他のゲオグループサービスで既にGEO IDとの登録が完了しているPonta会員IDを認証しようとしている可能性がございます。<br><a href="//www.2ndstreet.jp/static/index/geoid-exp" target="_blank" rel="noopener noreferrer">詳しくはこちら（GEO IDについて）</a></li>
+                </ul>
+                <p><strong>その他通信エラーなど内容が不明な場合</strong></p>
+                <ul class="faq_list_answer_list -cut">
+                  <li>・ゲオ店舗以外で新規にPontaカードを発行し個人情報登録を行なった場合に、情報の反映まで2～3日お時間がかかる場合がございます。ご不便かけますがお日にちを改めて認証をお願いいたします。</li>
+                </ul>
+                <p>上記確認後も解決しない場合は、表示されているエラーメッセージ、Ponta会員ID、GEO IDを記載の上、<a href="#inquiryAboutWeb">お問合せフォーム</a>よりお問合せください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>Ponta会員IDの認証を行おうとすると「既に登録されています」とのメッセージが表示される。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>GEO IDはゲオグループのウェブサービスで共通でご利用いただけるIDとなります。ゲオアプリなど、既に他サービスでGEO IDの登録がされており、認証しようとしているPontaカードが既に登録されている可能性がございます。その他<a href="//www.2ndstreet.jp/static/index/geoid-exp" target="_blank" rel="noopener noreferrer">グループサービス</a>についてはこちらをご確認ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>Pontaカスタマーセンターで情報修正してもらい、再度Ponta会員IDの認証しようとするとエラー表示されます。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>Pontaカード側で情報修正が行われ、反映されるまでに時間がかかります。ご不便お掛けいたしますが、しばらくお待ちいただいてから再度の認証をお願いいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>Pontaカードに登録している情報（電話番号や生年月日等）を忘れてしまいました。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>Ponta登録情報につきましては、下記Pontaカスタマーセンターまでお問合せください。</p>
+                <p><strong>【Pontaカスタマーセンター 電話番号 (9時～21時 / 年中無休)】</strong></p>
+                <p>フリーダイヤル：<a class="grey" href="tel:0120076682">0120-0-76682</a> / ナビダイヤル：<a class="grey" href="tel:0570076682">0570-0-76682</a> (携帯電話の場合 ※通話料有料)</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">クーポンについて</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>新規会員登録を行なったが、初回限定会員登録クーポンがもらえない。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>初回限定クーポンの発行には、Ponta会員IDの認証が必要となっております。<br>ログインしているGEO IDにPonta会員IDが正しく認証されているかご確認ください。まだ認証がお済みで無い方は「<a href="https://www.2ndstreet.jp/mypage/confirm#my_data" target="_blank" rel="noopener noreferrer">マイページ</a>」より認証が行えます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>Pontaカード未所持の人は新規登録後どうすればよいでしょうか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>全国のセカンドストリート店舗及びゲオ各店、<a href="http://geo-online.co.jp/" target="_blank" rel="noopener noreferrer">ゲオオンライン<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>、<a href="http://www.ponta.jp/" target="_blank" rel="noopener noreferrer">Ponta Web<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>などからPontaカードの発行が可能です。クーポンの利用にはPontaカードへの個人情報登録が必須となりますので、ゲオ各店舗、<a href="http://geo-online.co.jp/" target="_blank" rel="noopener noreferrer">ゲオオンライン<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>からの新規発行をおすすめいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ゲオアプリ利用しており、既にGEO IDを持っています。どうやったらクーポンがもらえますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>既に他のゲオグループサービスでGEO IDをお持ちの方で、かつPonta会員IDの認証がお済みのアカウントの場合、そのままログインしていただきますと、ログインしたタイミングより初回限定会員登録クーポンが付与されます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>新規会員登録したのですがメールでクーポンが届きません。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>クーポンはメール配信ではございません。またクーポン発行時にメールでのお知らせも行なっておりませんのでご容赦ください。<a href="https://www.2ndstreet.jp/mypage/coupon" target="_blank" rel="noopener noreferrer">「マイページ」の「クーポンページ」</a>よりご確認いただけます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>PCウェブサイトにて会員登録を行いました。店舗でクーポンを使う場合はどうしたらいいですか？プリントアウトしたものでクーポンは使えますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>スマートフォンをお持ちの場合は、スマートフォンサイトよりログインいただき、<a href="https://www.2ndstreet.jp/mypage/coupon" target="_blank" rel="noopener noreferrer">「マイページ」の「クーポンページ」</a>の提示でも利用可能ですが、PCサイトのクーポン画面を印刷したものは対応しておりません。ご了承ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>オンラインストアでも誕生日クーポンは使えますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>オンラインストアでも店舗と同期間利用可能です。所持している場合カート決済時に選択できますのでご確認ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>ガラケー（フィーチャーフォン）なのでGEO IDの登録ができません。クーポンの利用はできないのでしょうか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ガラケー（フィーチャーフォン）は非対応となっております。スマートフォン及びPCでのご利用をお願いいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>誕生日クーポンの有効期間はどれくらいでしょうか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お誕生日当日の朝10時から7日間ご利用いただけます。</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">メールマガジンについて</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>メールマガジンの配信を停止したいです。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ウェブサイトもしくはアプリよりログイン後<a href="https://www.2ndstreet.jp/mypage/confirm#e-zine_data" target="_blank" rel="noopener noreferrer">「マイページ」→「メール設定」</a>の項目から配信停止していただくか、配信されたメールマガジン下部「メルマガ配信停止」URLよりアクセスいただき「会員退会フォーム」へアクセスいただき、「配信停止」の項目にメールアドレスをご入力いただき送信ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>メールマガジンに登録しているメールアドレスの変更方法について。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ウェブサイトもしくはアプリよりログイン後、<a href="https://www.2ndstreet.jp/mypage/confirm#e-zine_data" target="_blank" rel="noopener noreferrer">「マイページ」→「メール設定」</a>よりご変更ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>メールマガジンの受信店舗（地域）の変更方法について。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ウェブサイトもしくはアプリよりログイン後、<a href="https://www.2ndstreet.jp/mypage/confirm#e-zine_data" target="_blank" rel="noopener noreferrer">「マイページ」→「メール設定」</a>よりご変更ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>メールマガジンが届きません。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p class="number">①<a href="https://www.2ndstreet.jp/mypage/confirm#e-zine_data" target="_blank" rel="noopener noreferrer">「マイページ」→「メール設定」</a>より受信可能な正しいアドレスが設定されているかご確認ください。</p>
+                <p class="number">②「メール設定」にて受信がOFFになっていないかご確認ください。</p>
+                <p class="number">③正常に登録されているのに、メールマガジンが届いていない場合、「ドメイン指定受信」の設定をご確認ください。<br>またご利用のメーラーによっては”迷惑メール”ボックスに振り分けられてしまう場合もございますので合わせてご確認ください。</p>
+                <p>メールマガジンの受信設定をされている方は、「@2ndstreet.co.jp」のドメインを受信許可するように加えてください。<br>「ドメイン指定受信」の設定方法は各携帯会社のページをご覧ください。</p>
+                <p>→「<a href="https://www.nttdocomo.co.jp/info/spam_mail/measure/domain/" target="_blank" rel="noopener noreferrer">docomo<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>」</p>
+                <p>→「<a href="http://www.au.kddi.com/support/mobile/trouble/forestalling/mail/anti-spam/fillter/function-11/" target="_blank" rel="noopener noreferrer">au<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>」</p>
+                <p>→「<a href="http://www.softbank.jp/mobile/support/antispam/settings/indivisual/whiteblack/" target="_blank" rel="noopener noreferrer">Softbank<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>」</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>過去にメルマガ会員サービスでメルマガクーポン受け取ったのですが、GEO IDの新規会員登録するとクーポンは貰えるのでしょうか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>2015年3月まで行なっておりましたメルマガ会員サービスにてメルマガクーポンを既に受け取られている場合でも、新たに新規会員登録（GEO ID登録）とPonta会員IDの認証を行うことでクーポンをもらうことができます。</p>
+                <p class="faq_list_answer_note">※なお既に他のゲオグループサービスでGEO IDとPonta会員IDの認証を行っている場合は、お持ちのアカウントにて当サイト/アプリでログインをいただいた時点でクーポンが発行されます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>メルマガクーポンは現在配信していないのでしょうか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>メルマガクーポンは2015年3月を持ちまして終了いたしました。ご了承ください。GEO IDを新規登録いただき、Ponta会員ID認証を行っていただくことで従来と同等のサービスを受ける事が可能です。</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">アプリについて</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>アプリを開くと画面が真っ暗になる。アプリを起動しようとすると落ちる。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>不具合に関しては順次アップデートにて対応は行っておりますが、ご利用端末の負荷が高くなっている可能性もございますので、バックグラウンドアプリを全て停止させるか、端末の再起動などを行ってください。</p>
+                <p>上記操作後、起動ができない、頻繁に落ちる場合は、ご使用の端末情報（スマートフォンのOSバージョン／端末名 等）を記載の上、<a href="#inquiryAboutWeb">お問合せフォーム</a>よりお問合せください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>アプリをダウンロードしようとしたら、ストア画面で「お使いの端末ではダウンロードできません」と表示されてダウンロードできない。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ご利用の端末は非対応機種となります。ご不便おかけいたしますが、ウェブサイトをご利用ください。</p>
+                <p class="mat"><strong>セカンドストリートアプリの対応OSバージョンにつきましては</strong></p>
+                <ul class="faq_list_answer_list -cuttb">
+                  <li><strong>・Android OSバージョン 5.0以上</strong></li>
+                  <li><strong>・iOSバージョン 9.0以上</strong></li>
+                </ul>
+                <p>となっております。</p>
+                <p>またAndroidアプリについてはOSバージョンの他に、端末により非対応となってしまう場合がございます。新しい端末/OSにつきましては順次対応予定となっておりますのでご容赦ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>iOSアプリをインストールしようとしたら、無料のアプリなのにお支払いの確認画面が出る。</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>iOS端末をご利用の場合、Apple IDの手続き上無料/有料にかかわらず初期設定画面にてクレジットカード情報の入力を促すウィンドウが表示される場合がございます。→<a href="https://support.apple.com/ja-jp/HT204034" target="_blank" rel="noopener noreferrer">詳しくはこちら</a>（外部リンク）<br>当アプリに関してはダウンロード時点で請求が発生することはございませんのでご安心ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">店舗へのお取寄せについて</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>会員登録の方法は？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お取寄せサービスは登録会員向けサービスです。お取寄せサービスをご利用いただくためには、GEO IDに店頭会員登録されたPontaカードの認証が必要です。全国のセカンドストリート店頭でご入会いただき、GEO IDの登録時にPontaカード認証を行ってください。→<a href="/static/index/guide-members">会員登録方法の詳細はこちら</a></p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>お取り寄せサービスの送料・手数料はかかるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>送料・手数料ともに無料のサービスでございます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>受け取り希望店舗での保管期限は？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>商品到着メールをお送りしてから最大1週間です。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>保管期限の延長はできるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>保管期限の延長はお受けできません。保管期限をすぎたご注文はご購入の意思がないものと判断し、店頭およびWebにて販売開始いたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>受け取り希望店舗への到着目安は？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>通常ご注文いただいた日から4日～6日が受け取り希望店舗への到着目安でございます。商品到着後メールにてお知らせいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>商品を受取りに行く時間は何時でもいいの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お受取り希望店舗の営業時間内にご来店ください。各店の営業時間は<a href="/shop">こちら</a>からご確認ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>商品を受取りに行く際の確認方法は？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お取寄せサービス到着後のご来店の際は下記お取寄せ注文番号の確認できるものをお持ちください。</p>
+                <p class="mat">【スマートフォンをお持ちの方】下記いずれかをご提示ください。</p>
+                <ul class="faq_list_answer_list -cuttb">
+                  <li>・店頭でマイページ ＞ 取寄せ購入履歴に表示される、お取寄せ注文番号</li>
+                  <li>・お取寄せ注文到着メールに記載のお取寄せ注文番号の画面</li>
+                </ul>
+                <p class="mat">【スマートフォンをお持ちでない方】</p>
+                <ul class="faq_list_answer_list -cuttb">
+                  <li>・Pontaカードをご提示ください。</li>
+                </ul>
+                <p class="faq_list_answer_note">※上記方法以外でのご注文確認の場合お取寄せ商品をお渡しできかねます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>受取り希望店舗を変更できますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ご注文後の受け取り希望店舗の変更はお受けできかねます。<br>ご来店いただけない遠方を間違えて選択した場合は、<a href="https://www.2ndstreet.jp/contact/input">セカンドストリートオンラインストアカスタマーサポートセンター</a>までご相談ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>受取り希望店舗への配送日は指定できるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>受取り希望店舗への配送日・到着日の指定はお受け出来かねます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>お取寄せサービスのクーポンご利用について</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>店頭でのお支払い時にクーポンを適用させていただきます。お支払いの際にスタッフまでクーポン利用をお伝えください。<br>またご注文時に他イベント価格にてご注文いただいた場合にはクーポンとの併用はいたしかねます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>受取り希望店舗で購入するときの価格は？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お取寄せサービスはご注文時の価格でご購入していただきます。オンラインストアがイベント中の場合はその価格がご購入価格となりますが、受取り希望店舗がイベント中の場合、ご購入価格はオンラインストアご注文時の価格となります。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>お取寄せサービスの注文をキャンセルするメールが届きました。どういうことでしょうか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>出荷前の商品検品で重大な不備が見つかった場合や在庫がなかった場合は、ご注文をキャンセルさせていただきメールにてお知らせいたします。</p>
+                <p class="faq_list_answer_note">※当サイトは弊社運営の他オンラインストア・実店舗と在庫の共有しており、ご注文後に在庫を確認しております。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>お取寄せサービスの注文をキャンセルできますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>ご注文後のお客様都合によるキャンセルはお受け出来かねます。<br>またご注文後の商品の変更・受け取り希望店舗の変更はシステム上お引き受けいたしかねます。<br>ご注文の際は注文内容をご確認の上、注文確定をお願いいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>オンラインで「通常注文」した商品を「お取寄せサービス」に変更できるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お客様のご自宅へ配送する「通常注文」を「お取寄せサービス」に変更する事はお受け出来かねます。<br>また「お取寄せサービス」のご注文をお客様のご自宅へ配送する「通常注文」へ変更する事もお受け出来かねます。<br>ご注文の際は注文内容をご確認の上、注文確定をお願いいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>お取寄せカートに入れた商品は在庫の確保をしてもらえるの？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>商品をカートに入れた段階では在庫の確保はしておりません。お取寄せ注文確定後、在庫引き当てを行い在庫確認を開始させていただきます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>注文時に最寄店舗を、受取り希望店舗に選択できないのですが</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お取寄せ注文の受取りが混雑している店舗は一時的に選択できない場合がございます。<br>別の最寄店舗をご指定いただくか、お時間を置いてご注文もしくは通常注文をご利用いただきますよう、お願いいたします。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>お取寄せ注文ボタンが表示されない商品があります</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お取寄せサービスは各商品ページに「お近くの店舗へ取寄せる」のボタンが表示されている商品が対象です。一部対象外の商品もございます。<br>また対象商品については予告なく変更する場合もございます。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>お取寄せサービス注文ボタンが表示されません</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>お取寄せサービスは登録会員向けサービスです。会員登録済みのGEO IDでログインいただくとご利用が可能です。<br>またお取寄せサービスは1回 3点までのご注文が可能で、1度のご注文完了まで次のご注文はお受け出来かねます。</p>
+                <p class="faq_list_answer_note">※お取寄せサービスのご注文完了は、受け取り希望店舗でご購入もしくはキャンセルをしたタイミングで完了と致します。</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+
+        <section class="faq_chapter">
+          <h3 class="faq_desc">その他</h3>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>セカンドストリートでアルバイトをしたいのですが</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>店舗ごとにアルバイトの募集時期や募集要項が違いますので、お近くのセカンドストリートまでお問合せください。<br>また、求人募集ページより常に最新の情報を掲載しておりますので、ご確認ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>車で行こうと思うのですが、駐車場はありますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>店舗により駐車場の有無が異なります。詳しくは「<a href="/shop">店舗情報</a>」よりご確認ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>定休日はありますか？</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>全店、年中無休で営業しております。 店内改装や棚卸業務などで一時閉店や営業時間を変更する場合がございます。<br>詳しくは「<a href="/shop">店舗情報</a>」をご確認ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>弊社の社名やロゴなどを不正に使用したサイト、または弊社のページを模倣した詐欺・模倣サイトについて</p></dt>
+            <dd><div>
+              <div class="faq_list_answer">
+                <p>弊社の社名、ロゴマーク、商標、サービスマークなどを不正に使用し、弊社の関連会社または代理店を装ったサイトの存在が確認されています。<br>また、あたかも弊社のページであるかのように装った模倣・詐欺サイトの存在も確認されています。これらのサイトは、弊社とは一切関係ございません。<br>このようなサイトにおいては、ご利用によりトラブルが発生するおそれがありますのでご注意ください。</p>
+                <p class="mat"><strong>【模倣・詐欺サイトの特徴（一例）】</strong></p>
+                <ul class="faq_list_answer_list -cuttb">
+                  <li><strong>・連絡先の電話番号が掲載されていない</strong></li>
+                  <li><strong>・日本語としておかしな表現が見受けられる</strong></li>
+                  <li><strong>・銀行口座が運営会社と一致しない</strong></li>
+                  <li><strong>・連絡先アドレスがフリーメールアドレスになっている</strong></li>
+                </ul>
+                <p class="mat">このようなサイトを発見した場合、お手数ですが<a href="mailto:support@2ndstreet.jp">こちら</a>よりご連絡ください。</p>
+              </div>
+            </div></dd>
+          </dl>
+        </section>
+      </section>
+
+      <a id="inquiryAboutWeb"></a>
+      <section class="inquiryAboutWeb -faq">
+        <h3 class="m-title -cut">ご意見・お問い合せ</h3>
+        <p class="m-desc -cut">いつもセカンドストリート ／ ジャンブルストアを<br class="u-hidden-md u-hidden-lg">ご利用いただき誠にありがとうございます。<br>お客様のご意見・ご要望をお待ちしております。</p>
+        <div><a class="m-btn -cut m-btnEffect" href="https://www.2ndstreet.jp/contact/input">ご意見・お問い合わせはこちら</a></div>
+      </section>
+
+      <ul class="c-otherMeans">
+        <li class="c-otherMeans_item c-otherMeans_item-store"><a href="/sell/store/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_03_sm.png', alt: '画像：店頭買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">STORE</span>店頭買取</p>
+        </div></a></li>
+        <li class="c-otherMeans_item c-otherMeans_item-01"><a href="/sell/web/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_01_sm.png', alt: '画像：Web買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">WEB</span>Web買取</p>
+        </div></a></li>
+        <li class="c-otherMeans_item c-otherMeans_item-02"><a href="/sell/visit/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_02_sm.png', alt: '画像：出張買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">VISIT</span>出張買取</p>
+        </div></a></li>
+      </ul>
+
+      <div><a class="m-btn -mat m-btnEffect" href="/sell/">売り方が決まっていない方はこちら</a></div>
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/main.js"></script>
+  <script src="/js/static-index.js"></script>
+</body>
+
+</html>

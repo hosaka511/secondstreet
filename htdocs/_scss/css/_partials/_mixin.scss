@@ -1,0 +1,244 @@
+// -----------------------------
+//  @mixin
+//------------------------------
+
+//アニメーション
+@mixin effctBottomFade($delay: 0s) {
+// @mixin animFormBottomFade($scale: true) {
+  opacity: 0;
+  // @if $scale == true {
+  //   transform: scale(0.4) translate(0, 50px);
+  // } @else {
+  transform: translate(0, 50px);
+  // }
+  transform-origin: 50% 100%;
+  transition: transform 0s, opacity 0s;
+  &.is-active,
+  .is-active & {
+    transition: transform 1s $easeOutCubic, opacity 0.8s;
+    opacity: 1;
+    transform: scale(1) translate(0, 0);
+    transition-delay: $delay;
+  }
+}
+
+// 画像置換
+@mixin replace($w: 0, $h: 0, $display: block, $position: left) {
+  display: #{$display};
+  overflow: hidden;
+  @if $w != 0 {
+    width: #{$w};
+    height: #{$h};
+  }
+  white-space: nowrap;
+  font-size: 0;
+  text-indent: 100%;
+
+  @if $position == center {
+    margin: auto;
+  }
+}
+
+// 擬似要素
+@mixin pseudo($w: 0, $h: 0, $direction: left, $directionPosition1: 0, $directionPosition2: 0, $directionPosition3: 0, $directionPosition4: 0) {
+  content: '';
+  display: block;
+  position: absolute;
+  margin: auto;
+
+  @if $direction == left {
+    left: #{$directionPosition1};
+    top: #{$directionPosition2};
+    bottom: #{$directionPosition3};
+
+  } @else if $direction == right {
+    right: #{$directionPosition1};
+    top: #{$directionPosition2};
+    bottom: #{$directionPosition3};
+
+  } @else if $direction == center {
+    top: #{$directionPosition1};
+    right: #{$directionPosition2};
+    bottom: #{$directionPosition3};
+    left: #{$directionPosition4};
+  }
+
+  @if $w != 0 {
+    width: #{$w};
+    height: #{$h};
+  }
+}
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+// media query
+@mixin max-screen($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin min-screen($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin screen($breakpoint-min, $breakpoint-max) {
+  @media screen and (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
+    @content;
+  }
+}
+
+//PC向きのmixin（$breakpoint-largeの値以上のスクリーン）
+@mixin large-screen {
+  @if $breakpoint-large != false {
+    @media screen and (min-width: $breakpoint-large + 1) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $breakpoint-small + 1) {
+      @content;
+    }
+  }
+}
+
+//タブレットなど端末向きのmixin
+@mixin medium-screen {
+  @if $breakpoint-large != false {
+    @media screen and (min-width: $breakpoint-small + 1) and (max-width: $breakpoint-large) {
+      @content;
+    }
+  }
+}
+
+//スマートフォンなど端末向きのmixin
+@mixin small-screen {
+  @media screen and (max-width: $breakpoint-large) {
+    @content;
+  }
+}
+
+//PC向きのmixin（$breakpoint-exLargeの値以上のスクリーン）
+@mixin exLarge-screen {
+  @media screen and (min-width: $breakpoint-exLarge) {
+    @content;
+  }
+}
+
+
+@mixin breakpoint-up($name) {
+  $min: breakpoint-min($name);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($name) {
+  $max: breakpoint-max($name);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin breakpoint-between($lower, $upper) {
+  $min: breakpoint-min($lower);
+  $max: breakpoint-max($upper);
+
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == null {
+    @include breakpoint-up($lower) {
+      @content;
+    }
+  } @else if $min == null {
+    @include breakpoint-down($upper) {
+      @content;
+    }
+  }
+}
+
+@mixin breakpoint-only($name) {
+  $min: breakpoint-min($name);
+  $max: breakpoint-max($name);
+
+  @if $min != null and $max !=null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == null {
+    @include breakpoint-up($name) {
+      @content;
+    }
+  } @else if $min == null {
+    @include breakpoint-down($name) {
+      @content;
+    }
+  }
+}
+
+// sprite sheet retina
+@mixin r-sprite-width($sprite) {
+  width: nth($sprite, 5) / 2;
+}
+
+@mixin r-sprite-height($sprite) {
+  height: nth($sprite, 6) / 2;
+}
+
+@mixin r-sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3)/2;
+  $sprite-offset-y: nth($sprite, 4)/2;
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin r-sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin r-sprite-size($sprite) {
+  background-size: nth($sprite, 7)/2 nth($sprite, 8)/2;
+}
+
+@mixin r-sprite($sprite) {
+  @include r-sprite-image($sprite);
+  @include r-sprite-position($sprite);
+  @include r-sprite-width($sprite);
+  @include r-sprite-height($sprite);
+  @include r-sprite-size($sprite);
+}
+//inputのplaceholder変更
+@mixin placeholderColor($color) {
+  &:placeholder-shown {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color:$color;
+  }
+  &:-moz-placeholder {
+    color:$color;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color:$color;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color:$color;
+  }
+}

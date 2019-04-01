@@ -1,0 +1,636 @@
+<%_  var pageID = 'shopDetails'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/js/vendor/slick/slick.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/shop.css">
+  <link rel="stylesheet" media="print" href="/css/print.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellStore">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="mv">
+        <div class="mv_inner">
+          <div class="mv_bg js-detailSlider">
+            <div>
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/shop/details/mv_img_default_sm.jpg', alt: 'セカンドストリート吉祥寺サンロード店'});%>
+            </div>
+            <div>
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/shop/details/mv_img_01_sm.jpg', alt: 'セカンドストリート吉祥寺サンロード店'});%>
+            </div>
+            <div>
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/shop/details/mv_img_02_sm.jpg', alt: 'セカンドストリート吉祥寺サンロード店'});%>
+            </div>
+          </div>
+          <p class="mv_brand">トータルリユース</p>
+          <p class="mv_store">
+            <span class="mv_store_brand">セカンドアウトドア</span>
+            <span class="mv_store_name">吉祥寺サンロード店</span>
+          </p>
+          <p class="mv_desc">レディース、メンズ、キッズの商品に力を入れている<br>吉祥寺サンロード店は家族でもお楽しみいただけます。</p>
+          <p class="mv_link"><a href="tel:0422238855">出張買取対応店<svg class="svgIcon u-hidden-md u-hidden-lg" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#tel" /></svg></a></p>
+        </div>
+      </div>
+
+      <div class="custom">
+        <div class="custom_inner">
+          <p class="custom_item"><a href="#">マイショップ追加</a></p>
+          <p class="custom_item"><a href="#">メルマガ登録</a></p>
+          <p class="custom_item u-hidden-sm"><a href="javascript:void(0)" class="js-printBtn">このページを印刷</a></p>
+          <p class="custom_item u-hidden-sm"><a href="javascript:void(0)" class="js-modalTrigger">このページをスマホで開く</a></p>
+        </div>
+      </div>
+
+      <section class="l-section">
+        <h3 class="m-title">店頭取扱アイテム</h3>
+        <div class="tab">
+          <input id="tab1" type="radio" name="tab_btn" checked>
+          <input id="tab2" type="radio" name="tab_btn">
+
+          <div class="tab_area">
+            <label class="tab1_label" for="tab1">販売アイテム</label>
+            <label class="tab2_label" for="tab2">買取アイテム</label>
+          </div>
+          <div class="panel_area">
+            <div id="panel1" class="tab_panel">
+              <div class="panel_heading">
+                <p class="panel_txt">全アイテム</p>
+              </div>
+              <ul class="panel_list">
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M110.11,6.06V32H89.9V6.06h20.21m2-6.06H87.87a4.05,4.05,0,0,0-4,4V34a4.06,4.06,0,0,0,4,4h24.26a4.06,4.06,0,0,0,4-4V4a4.05,4.05,0,0,0-4-4Z"/>
+                    <path d="M43.73,200a3.07,3.07,0,0,1-.79-.11,3,3,0,0,1-2.14-3.71L77.56,59.37c.9-3.33,3-3.84,3.92-3.9s3.08.13,4.45,3.29c0,.11,4.89,10.92,14.07,10.92s14-10.81,14.08-10.92c1.36-3.16,3.56-3.36,4.44-3.29s3,.57,3.92,3.91l36.76,136.8a3,3,0,0,1-5.86,1.57L117.62,64.82c-2.8,4.32-8.56,10.92-17.62,10.92s-14.82-6.6-17.62-10.92L46.66,197.75A3,3,0,0,1,43.73,200Z"/>
+                  </svg>
+                  <p>レディース衣類</p>
+                </span></li>
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M110.11,6.06V32H89.89V6.06h20.22m2-6.06H87.87a4.05,4.05,0,0,0-4,4V34a4.06,4.06,0,0,0,4,4h24.26a4.06,4.06,0,0,0,4-4V4a4.05,4.05,0,0,0-4-4Z"/>
+                    <path d="M118.46,200a3.13,3.13,0,0,1-.79-.11,3,3,0,0,1-2.14-3.71L152.3,59.37l-30-.08a3.67,3.67,0,0,0-2.84,1.87l-3.67,8.62a9.64,9.64,0,0,1-8.41,5.57H92.61a9.64,9.64,0,0,1-8.41-5.57l-3.67-8.62a3.67,3.67,0,0,0-2.84-1.87H47.77l36.7,136.89a3,3,0,0,1-5.86,1.57L41.85,61a6,6,0,0,1,5.92-7.73H77.69a9.65,9.65,0,0,1,8.42,5.57l3.67,8.62a3.64,3.64,0,0,0,2.83,1.87h14.78a3.66,3.66,0,0,0,2.83-1.87l3.67-8.62a9.65,9.65,0,0,1,8.42-5.57h29.92A6,6,0,0,1,158.15,61l-36.76,136.8A3,3,0,0,1,118.46,200Z"/>
+                  </svg>
+                  <p>メンズ衣類</p>
+                </span></li>
+                <li><span>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M47.945,71.269H71.889a4.009,4.009,0,0,0,3.991-4V51.658H85.7a3,3,0,0,0,0-6.005H75.88V37.569a4.009,4.009,0,0,0-3.991-4H47.945a4.009,4.009,0,0,0-3.991,4v29.7A4.009,4.009,0,0,0,47.945,71.269Zm21.949-6.006H49.94V51.658H69.894V65.263Zm0-25.693v6.082H49.94V39.57H69.894ZM86.787,82.014H33.046a6.192,6.192,0,0,0-6.187,7.5l14.232,75.355a2.993,2.993,0,1,0,5.881-1.119L32.74,88.39a0.457,0.457,0,0,1,.012-0.3,0.451,0.451,0,0,1,.294-0.067H86.787a0.25,0.25,0,0,1,.308.372L72.863,163.746a3,3,0,0,0,2.383,3.509,2.913,2.913,0,0,0,.561.054,3,3,0,0,0,2.937-2.444L92.976,89.511A6.192,6.192,0,0,0,86.787,82.014Zm40.327-10.745h23.944a4.009,4.009,0,0,0,3.99-4V60.2a11.946,11.946,0,0,0,1.759,1.237A12.135,12.135,0,0,0,162.894,63a19.191,19.191,0,0,0,7.367-1.654,3,3,0,0,0-2.307-5.542c-3.39,1.42-6.142,1.561-8.178.414-3.523-1.98-4.4-7.263-4.421-7.391a3.016,3.016,0,0,0-.307-0.92V37.569a4.009,4.009,0,0,0-3.99-4H127.114a4.009,4.009,0,0,0-3.991,4v29.7A4.009,4.009,0,0,0,127.114,71.269Zm2-31.7h19.953V65.263H129.109V39.57Zm43.035,120.243L157.911,84.457a2.993,2.993,0,1,0-5.88,1.118l14.232,75.357a0.448,0.448,0,0,1-.012.3,0.441,0.441,0,0,1-.294.068H112.216a0.25,0.25,0,0,1-.308-0.372L126.14,85.575a2.993,2.993,0,1,0-5.881-1.118l-14.232,75.355a6.192,6.192,0,0,0,6.189,7.5h53.741A6.193,6.193,0,0,0,172.144,159.813Z" transform="translate(0.5 -0.437)"/>
+                  </svg>
+                  <p>キッズ衣類</p>
+                </span></li>
+                <li><span>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <path d="M4.2,13.8c7.4,1.5,8.2,2.3,9.6,9.7a1.5,1.5,0,0,0,3,0c1.5-7.4,2.3-8.2,9.6-9.7a1.5,1.5,0,0,0,1.2-1.5,1.4,1.4,0,0,0-1.2-1.4c-7.3-1.5-8.1-2.3-9.6-9.7a1.5,1.5,0,0,0-3,0c-1.4,7.4-2.2,8.2-9.6,9.7A1.4,1.4,0,0,0,3,12.3,1.5,1.5,0,0,0,4.2,13.8ZM15.3,7.2a8.3,8.3,0,0,0,5.1,5.1,8.6,8.6,0,0,0-5.1,5.1,8.3,8.3,0,0,0-5.1-5.1A8.1,8.1,0,0,0,15.3,7.2Z"/><path d="M66.8,67.6c-7.3-1.5-8.1-2.3-9.6-9.7a1.5,1.5,0,0,0-3,0c-1.4,7.4-2.2,8.2-9.6,9.7a1.4,1.4,0,0,0-1.2,1.5,1.4,1.4,0,0,0,1.2,1.4c7.4,1.5,8.2,2.3,9.6,9.7a1.5,1.5,0,0,0,3,0c1.5-7.4,2.3-8.2,9.6-9.7A1.4,1.4,0,0,0,68,69.1,1.4,1.4,0,0,0,66.8,67.6ZM55.7,74.2a8.1,8.1,0,0,0-5.1-5.1,8.5,8.5,0,0,0,5.1-5.2,8.7,8.7,0,0,0,5.1,5.2A8.3,8.3,0,0,0,55.7,74.2Z"/><path d="M75.4,19c4.1.8,4.3,1.1,5.2,5.2A1.4,1.4,0,0,0,82,25.4a1.4,1.4,0,0,0,1.5-1.2c.8-4.1,1.1-4.4,5.2-5.2a1.4,1.4,0,0,0,1.2-1.5,1.4,1.4,0,0,0-1.2-1.4c-4.1-.9-4.4-1.1-5.2-5.2A1.4,1.4,0,0,0,82,9.7a1.4,1.4,0,0,0-1.4,1.2c-.9,4.1-1.1,4.3-5.2,5.2a1.4,1.4,0,0,0-1.2,1.4A1.4,1.4,0,0,0,75.4,19ZM82,15.9a5.2,5.2,0,0,0,1.7,1.6A6.9,6.9,0,0,0,82,19.2a5.2,5.2,0,0,0-1.6-1.7A4.1,4.1,0,0,0,82,15.9Z"/><path d="M96.9,30.1h-29L62.9,8A4.2,4.2,0,0,0,59,4.9H41A4.2,4.2,0,0,0,37.1,8l-5,22.1H3.1A2.1,2.1,0,0,0,1,33L16.3,87.4a4.1,4.1,0,0,0,3.8,2.9H79.9a4.1,4.1,0,0,0,3.8-2.9L99,33A2.1,2.1,0,0,0,96.9,30.1ZM40,8.7a1.2,1.2,0,0,1,1-.8H59a1.2,1.2,0,0,1,1,.8l4.8,21.4H35.1ZM80.8,86.6a1.3,1.3,0,0,1-.9.7H20.1a1.3,1.3,0,0,1-.9-.7L4.1,33.1H31.4L20.6,81a1.5,1.5,0,0,0,1.1,1.8H22a1.5,1.5,0,0,0,1.5-1.2l11-48.6H48.6V41a1.5,1.5,0,0,0,1.5,1.5A1.5,1.5,0,0,0,51.6,41V33.1H65.5L76.4,81.6a1.5,1.5,0,0,0,1.8,1.1,1.6,1.6,0,0,0,1.2-1.8L68.6,33.1H95.9Z"/></svg>
+                  <p>ラグジュアリー<br class="u-hidden-md u-hidden-lg">ブランド</p>
+                </span></li>
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M194,30v104.8H6V30H194m2-6H4a4,4,0,0,0-4,4v108.8a4,4,0,0,0,4,4H196a4,4,0,0,0,4-4V28a4,4,0,0,0-4-4Z"/>
+                    <path d="M144,162v8H56v-8h88m1-6H55a5,5,0,0,0-5,5v10a5,5,0,0,0,5,5h90a5,5,0,0,0,5-5V161a5,5,0,0,0-5-5Z"/>
+                    <path d="M180,44.41v76H20v-76H180m2-6H18a4,4,0,0,0-4,4v80a4,4,0,0,0,4,4H182a4,4,0,0,0,4-4v-80a4,4,0,0,0-4-4Z"/>
+                    <rect x="86.42" y="138.12" width="6" height="18.78"/>
+                    <rect x="107.64" y="138.12" width="6" height="18.78"/>
+                  </svg>
+                  <p>AV・生活家電</p>
+                </span></li>
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M144,6a10,10,0,0,1,10,10V184a10,10,0,0,1-10,10H56a10,10,0,0,1-10-10V16A10,10,0,0,1,56,6h88m0-6H56A16,16,0,0,0,40,16V184a16,16,0,0,0,16,16h88a16,16,0,0,0,16-16V16A16,16,0,0,0,144,0Z"/>
+                    <path d="M144,6a10,10,0,0,1,10,10V184a10,10,0,0,1-10,10H56a10,10,0,0,1-10-10V16A10,10,0,0,1,56,6h88m0-6H56A16,16,0,0,0,40,16V184a16,16,0,0,0,16,16h88a16,16,0,0,0,16-16V16A16,16,0,0,0,144,0Z"/>
+                    <path d="M119.73,20.59H80.27a2.32,2.32,0,0,1-2.14-1.41L71.37,3.32h57.26l-6.76,15.86A2.32,2.32,0,0,1,119.73,20.59Z"/>
+                    <path d="M68.83,165.12v4.12a4.12,4.12,0,1,1-4.12-4.12h4.12m3.88,4.12a8,8,0,0,0-8-8h0a8,8,0,1,0,0,16h0A8,8,0,0,0,72.71,169.24Z"/>
+                    <path d="M94.36,165.12v4.12a4.12,4.12,0,1,1-4.12-4.12h4.12m3.88,4.12a8,8,0,1,0-8,8A8,8,0,0,0,98.24,169.24Z"/>
+                    <path d="M116.89,165.12v4.12a4.13,4.13,0,1,1-4.13-4.12h4.13m3.87,4.12a8,8,0,1,0-8,8A8,8,0,0,0,120.76,169.24Z"/>
+                    <path d="M139.41,165.12v4.12a4.12,4.12,0,1,1-4.12-4.12h4.12m3.88,4.12a8,8,0,1,0-8,8A8,8,0,0,0,143.29,169.24Z"/>
+                  </svg>
+                  <p>携帯電話</p>
+                </span></li>
+                <li><span class="unavailable">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M31.91,177.86a3,3,0,0,1-2.69-4.33l17.47-35.46a3,3,0,0,1,5.38,2.65L34.61,176.18A3,3,0,0,1,31.91,177.86Z"/>
+                    <path d="M168.28,177.86a3,3,0,0,1-2.7-1.68l-17.46-35.46a3,3,0,0,1,5.38-2.65L171,173.53a3,3,0,0,1-2.69,4.33Z"/>
+                    <path d="M194,83.3v52.64H6V83.3H31.38V104a10,10,0,0,0,10,10H158.62a10,10,0,0,0,10-10V83.3H194m2-6H166.62a4,4,0,0,0-4,4V104a4,4,0,0,1-4,4H41.38a4,4,0,0,1-4-4V81.3a4,4,0,0,0-4-4H4a4,4,0,0,0-4,4v56.64a4,4,0,0,0,4,4H196a4,4,0,0,0,4-4V81.3a4,4,0,0,0-4-4Z"/>
+                    <path d="M184.16,80.27h-6V29.14a1,1,0,0,0-1-1H22.84a1,1,0,0,0-1,1V80.27h-6V29.14a7,7,0,0,1,7-7H177.16a7,7,0,0,1,7,7Z"/>
+                    <path d="M100,112a3,3,0,0,1-3-3V25.69a3,3,0,1,1,6,0V109A3,3,0,0,1,100,112Z"/>
+                  </svg>
+                  <p>家具</p>
+                </span></li>
+                <li><span class="unavailable">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <path d="M56.7,11.9c1.9,1.5,3.1,2.5,3.1,4.5a3.8,3.8,0,0,1-1.1,2.8,1.5,1.5,0,0,0,.2,2.1,1.5,1.5,0,0,0,1,.4,1.6,1.6,0,0,0,1.1-.5,7.2,7.2,0,0,0,1.8-4.8c0-3.6-2.4-5.4-4.3-6.9s-3.2-2.6-3.2-4.6a4,4,0,0,1,.9-2.5A1.5,1.5,0,0,0,55.9.3a1.5,1.5,0,0,0-2.1.3,6.8,6.8,0,0,0-1.5,4.3C52.3,8.5,54.7,10.4,56.7,11.9Z"/><path d="M45.9,15.7c2,1.5,3.2,2.6,3.2,4.6A4.3,4.3,0,0,1,48,23.1a1.5,1.5,0,0,0,.1,2.1,1.8,1.8,0,0,0,1,.4,1.6,1.6,0,0,0,1.1-.5,6.8,6.8,0,0,0,1.9-4.8c0-3.6-2.4-5.5-4.4-6.9s-3.2-2.6-3.2-4.6a3.8,3.8,0,0,1,.9-2.5,1.6,1.6,0,0,0-.2-2.1,1.6,1.6,0,0,0-2.2.3,6.8,6.8,0,0,0-1.5,4.3C41.5,12.4,44,14.3,45.9,15.7Z"/><path d="M88.3,79.8l-6.2,5.9A6.9,6.9,0,0,1,78,87.4H22a6.9,6.9,0,0,1-4.1-1.7l-6.2-5.9a1.5,1.5,0,1,0-2.1,2.1l6.2,6A10.1,10.1,0,0,0,22,90.4H78a10.1,10.1,0,0,0,6.2-2.5l6.2-6a1.5,1.5,0,0,0-2.1-2.1Z"/><path d="M89.9,30.2H14.8V46.6C14.8,65.6,30.6,81,50,81S85.2,65.6,85.2,46.6V33.2h4.7a7.1,7.1,0,0,1,0,14.1,1.5,1.5,0,0,0,0,3,10.1,10.1,0,0,0,0-20.1ZM82.2,46.6C82.2,63.9,67.8,78,50,78S17.8,63.9,17.8,46.6V33.2H82.2Z"/></svg>
+                  <p>生活雑貨</p>
+                </span></li>
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M54.76,152.39A20.75,20.75,0,1,1,34,173.14a20.78,20.78,0,0,1,20.75-20.75m0-6.11a26.86,26.86,0,1,0,26.86,26.86,26.85,26.85,0,0,0-26.86-26.86Z"/>
+                    <path d="M54.76,167.94a5.2,5.2,0,1,1-5.19,5.2,5.2,5.2,0,0,1,5.19-5.2m0-6.11a11.31,11.31,0,1,0,11.31,11.31,11.31,11.31,0,0,0-11.31-11.31Z"/>
+                    <path d="M184.28,178.58a7.66,7.66,0,1,1-7.66,7.65,7.66,7.66,0,0,1,7.66-7.65m0-6.11a13.77,13.77,0,1,0,13.77,13.76,13.77,13.77,0,0,0-13.77-13.76Z"/>
+                    <path d="M127.23,125a3.05,3.05,0,0,1-2.26-1L24.8,13.86H5A3.06,3.06,0,1,1,5,7.75H26.15a3,3,0,0,1,2.26,1L129.49,119.93a3.06,3.06,0,0,1-2.26,5.11Z"/>
+                    <path d="M167.71,170a3,3,0,0,1-2.18-.91L137.93,141H72.05c-16.85,0-30-13.4-30-30.51V32a3.07,3.07,0,0,1,.46-1.61A64,64,0,0,1,82.59,1.82a63.88,63.88,0,0,1,48.67,7.59A71.32,71.32,0,0,1,148.48,25a3.06,3.06,0,0,1-.48,4.32L99.15,67.88a3.05,3.05,0,1,1-3.79-4.79l46.37-36.66A64.55,64.55,0,0,0,128,14.61,59.16,59.16,0,0,0,48.12,32.9v77.58c0,13.68,10.51,24.4,23.93,24.4h67.16a3,3,0,0,1,2.18.91l28.5,29a3,3,0,0,1-2.18,5.19Z"/>
+                  </svg>
+                  <p>キッズ用品</p>
+                </span></li>
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M61.05,200c-17.53,0-28.78-7.66-41-19.93h0C7.27,167.34-.5,155.7.1,137c.58-18.1,17.57-30.48,28.84-34.38a59.79,59.79,0,0,1,11.82-2.49c4.83-.65,9-1.22,12-3.74,4-3.3,5.06-6.25,7.18-12.12A30.25,30.25,0,0,1,85.84,64.45c13-1,21.73,5.08,33.21,16.57s17.53,20.17,16.57,33.21A30.14,30.14,0,0,1,116.05,140c-6.13,2.22-9.08,3.29-12.38,7.28-2.52,3-3.09,7.21-3.74,12a59.49,59.49,0,0,1-2.49,11.82C93.54,182.4,81.16,199.38,63.05,200ZM24.38,175.69c11.86,11.86,22,18.63,38.48,18.08,15-.48,25.38-15,28.73-24.67a54.24,54.24,0,0,0,2.2-10.63c.75-5.53,1.46-10.75,5.11-15.16,4.38-5.28,8.74-6.87,14.78-9.05a24.29,24.29,0,0,0,15.76-20.48c.71-9.6-2.88-16.5-14.77-28.38S95.87,69.93,86.29,70.63A24.19,24.19,0,0,0,65.91,86.12c-2.29,6.31-3.87,10.67-9.16,15-4.4,3.65-9.62,4.36-15.15,5.11A54.24,54.24,0,0,0,31,108.48c-9.65,3.35-24.19,13.75-24.68,28.73-.53,16.53,6.23,26.62,18.09,38.48Z"/>
+                    <rect x="45.68" y="134.21" width="6.2" height="34.06" transform="translate(-92.66 78.79) rotate(-45)"/>
+                    <path d="M86.2,130a16.22,16.22,0,1,1,11.47-4.74A16.2,16.2,0,0,1,86.2,130Zm0-26.24a10,10,0,1,0,7.09,2.94A10,10,0,0,0,86.2,103.79Z"/>
+                    <path d="M117.14,70.52A2.07,2.07,0,0,1,115.68,67l30.83-30.83a2.06,2.06,0,1,1,2.92,2.92L118.6,69.91A2,2,0,0,1,117.14,70.52Z"/>
+                    <path d="M131.55,84.92a2,2,0,0,1-1.46-.61,2.06,2.06,0,0,1,0-2.92l30.83-30.83a2.06,2.06,0,1,1,2.92,2.92L133,84.31A2,2,0,0,1,131.55,84.92Z"/>
+                    <path d="M124.34,77.72a2.07,2.07,0,0,1-1.46-3.53l30.83-30.83a2.06,2.06,0,1,1,2.92,2.92L125.8,77.11A2,2,0,0,1,124.34,77.72Z"/>
+                    <path d="M174,50.8a3.18,3.18,0,0,1-1-.17,3.1,3.1,0,0,1-1.93-3.93c4.51-13.2,15.41-19.94,20.79-22.56a36.71,36.71,0,0,0-6.61-9.47,36.45,36.45,0,0,0-9.46-6.6c-2.62,5.37-9.36,16.28-22.55,20.79a3.1,3.1,0,0,1-2-5.87c14.55-5,20-19.89,20-20L172.3,0l2.94,1.06a44,44,0,0,1,14.39,9.23,44.07,44.07,0,0,1,9.23,14.39l1.07,3-3,1c-.15,0-15.08,5.48-20,20A3.12,3.12,0,0,1,174,50.8Z"/>
+                  </svg>
+                  <p>楽器</p>
+                </span></li>
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M164.71,195.93a32.29,32.29,0,0,1-9.21-1.35c-22.6-6.79-24.8-21.6-27.83-42.1a215.82,215.82,0,0,0-6-29.75c-7.07-24.49-16-38.84-25.48-54-6-9.61-12.18-19.55-18.32-32.6C68.35,15.81,58,6.27,45.37,6.05,33,5.94,28.47,12.79,25.84,16.94l-.75,1.16C21.9,22.88,13,25.15,12,25.4c-.24.05-5,1.23-5.55,5.27a7.48,7.48,0,0,0,1.62,5.77,5.75,5.75,0,0,0,4.53,1.9H24.68a3,3,0,0,1,1.76.57c6.25,4.46,13.82,3.67,13.9,3.66,5.45-.56,9.12-5,9.15-8.84a3,3,0,0,1,3-3h0a3,3,0,0,1,3,3c-.06,7.36-6.58,14-14.53,14.8a28.14,28.14,0,0,1-17.25-4.18H12.6a11.65,11.65,0,0,1-9.08-4,13.43,13.43,0,0,1-3-10.56c1.12-8.23,9.79-10.26,10.16-10.34,3.07-.75,8.08-2.74,9.43-4.76l.67-1C23.6,9.17,29.48-.32,45.47,0c20,.34,31.2,19.28,37.89,33.5,6,12.74,12.09,22.52,18,32,9.7,15.56,18.86,30.26,26.16,55.55a221.43,221.43,0,0,1,6.15,30.54c3,20.32,4.66,31.52,23.59,37.19a26.75,26.75,0,0,0,23.65-4.33,31.5,31.5,0,0,0,12.71-24.86c.49-32.56-18-54.25-37.67-77.22-4.32-5.06-8.79-10.3-13-15.58-6.57-8.31-9.37-16-9.37-25.53A39.52,39.52,0,0,1,173.07,1.79a3,3,0,0,1,0,6.05,33.46,33.46,0,0,0-33.42,33.42c0,8.22,2.34,14.53,8.06,21.78,4.1,5.2,8.54,10.38,12.82,15.4,19.49,22.81,39.64,46.4,39.12,81.23a37.57,37.57,0,0,1-15.19,29.66A33.36,33.36,0,0,1,164.71,195.93Z"/>
+                    <path d="M7.45,200A3,3,0,0,1,6,194.35l35.19-19.83a39.41,39.41,0,0,1-12.34-28.9A38.63,38.63,0,0,1,67.39,107a3,3,0,1,1,0,6,32.58,32.58,0,0,0-32.54,32.54,33,33,0,0,0,13.4,26.91,3,3,0,0,1-.28,5.09l-39,22A3.06,3.06,0,0,1,7.45,200Z"/>
+                    <path d="M26.16,98.53a3,3,0,0,1-1-5.88L37.9,88.24c1.66-3.35,6.87-13.73,12.84-24.55C57.76,51,67.69,51.36,72,53.33a3,3,0,0,1-2.51,5.5C68.68,58.5,61.9,56,56,66.62c-7.15,13-13.2,25.27-13.26,25.4a3,3,0,0,1-1.72,1.52l-13.9,4.82A2.91,2.91,0,0,1,26.16,98.53Z"/>
+                  </svg>
+                  <p>ホビー</p>
+                </span></li>
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M180.52,180.8a3,3,0,0,1-2.61-1.49L86.23,23.77a3,3,0,0,1,5.22-3.08l91.68,155.54a3,3,0,0,1-2.61,4.57Z"/>
+                    <path d="M19.48,180.8a3,3,0,0,1-2.6-4.59L109.8,20.68a3,3,0,1,1,5.2,3.11L22.08,179.32A3,3,0,0,1,19.48,180.8Z"/>
+                    <path d="M197,180.8H3a3,3,0,0,1,0-6.07H197a3,3,0,0,1,0,6.07Z"/>
+                    <path d="M127.6,179.82A3,3,0,0,1,125,178.3l-22-38.18a3.37,3.37,0,0,0-5.84,0L75,178.3a3,3,0,0,1-5.25-3l22-38.19a9.44,9.44,0,0,1,16.34,0l22,38.19a3,3,0,0,1-1.11,4.14A3,3,0,0,1,127.6,179.82Z"/>
+                  </svg>
+                  <p>アウトドア用品</p>
+                </span></li>
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M120.76,6.06V32H100.55V6.06h20.21m2-6.06H98.53a4.05,4.05,0,0,0-4,4V34a4.05,4.05,0,0,0,4,4h24.26a4.05,4.05,0,0,0,4-4V4a4.05,4.05,0,0,0-4-4Z"/>
+                    <path d="M135.1,167.14a3.13,3.13,0,0,1-.79-.11,3,3,0,0,1-2.14-3.71l11.69-43.5-27.26-.09a6,6,0,0,1-5.91-7.72L126,55.47a3,3,0,1,1,5.85,1.58l-15.3,56.54,27.26.08a6,6,0,0,1,5.92,7.72L138,164.89A3,3,0,0,1,135.1,167.14Z"/>
+                    <path d="M52.18,200a2.71,2.71,0,0,1-.8-.11,3,3,0,0,1-2.13-3.72L87.47,55.46a3,3,0,1,1,5.85,1.59L55.1,197.76A3,3,0,0,1,52.18,200Z"/>
+                    <path d="M35,91a3,3,0,0,1-.78-.1,3,3,0,0,1-2.15-3.71L39.5,59.38a8.61,8.61,0,0,1,8-6.15h81.4a3,3,0,1,1,0,6.06H47.51a2.57,2.57,0,0,0-2.15,1.65L38,88.71A3,3,0,0,1,35,91Z"/>
+                    <path d="M154.33,90.57A3,3,0,0,1,152,89.44L126.56,58.17a3,3,0,0,1,4.7-3.82L152.93,81,162,46.72a3,3,0,0,1,5.86,1.56l-10.63,40A3,3,0,0,1,155,90.5,3.48,3.48,0,0,1,154.33,90.57Z"/>
+                  </svg>
+                  <p>スポーツ用品</p>
+                </span></li>
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M67.49,199.86a2.94,2.94,0,0,1-1.35-.32,3,3,0,0,1-1.37-4.07l86.7-174.54a3,3,0,1,1,5.44,2.71L70.21,198.17A3,3,0,0,1,67.49,199.86Z"/>
+                    <path d="M136.9,63.16a6.07,6.07,0,0,1-5.44-8.78l25.34-51a6.08,6.08,0,1,1,10.88,5.41l-25.34,51A6.06,6.06,0,0,1,136.9,63.16Z"/>
+                    <path d="M67.2,200H43.34a6.77,6.77,0,0,1-6.43-5.07l-5.07-21A5.16,5.16,0,0,1,37,167.4H80.32a3,3,0,1,1,0,6.08H38l4.82,20a.82.82,0,0,0,.53.41H67.2a3,3,0,0,1,0,6.08Z"/>
+                    <path d="M134.51,184.79A13.5,13.5,0,1,1,148,171.3,13.5,13.5,0,0,1,134.51,184.79Zm0-20.91a7.42,7.42,0,1,0,7.42,7.42A7.43,7.43,0,0,0,134.51,163.88Z"/>
+                  </svg>
+                  <p>ゴルフ用品</p>
+                </span></li>
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M99.55,130.42H33.86a3,3,0,0,1-2.61-4.54L64.09,69a3,3,0,0,1,2.62-1.5h0A3,3,0,0,1,69.33,69l32.84,56.89a3,3,0,0,1-2.62,4.54Zm-60.45-6H94.32L66.71,76.55Z"/>
+                    <path d="M99.6,130.42A3,3,0,0,1,97,128.91L64.14,72a3,3,0,0,1,2.61-4.53h65.69A3,3,0,0,1,135.06,72l-32.85,56.89A3,3,0,0,1,99.6,130.42ZM72,73.53,99.6,121.35l27.61-47.82Z"/>
+                    <path d="M165.94,130.42a3,3,0,0,1-2.62-1.51L121.61,56.66a3,3,0,1,1,5.23-3l41.71,72.24a3,3,0,0,1-1.11,4.13A2.92,2.92,0,0,1,165.94,130.42Z"/>
+                    <path d="M66.89,73.75a3,3,0,0,1-2.62-1.51L48,44.05a3,3,0,1,1,5.23-3L69.5,69.22a3,3,0,0,1-2.61,4.53Z"/>
+                    <path d="M34,161.51c-1.05,0-2.1,0-3.16-.14a34,34,0,0,1,6.26-67.64,3,3,0,0,1-.56,6,27.92,27.92,0,1,0,23.75,37.13,3,3,0,0,1,5.7,2A33.92,33.92,0,0,1,34,161.51Z"/>
+                    <path d="M166.09,161.45c-.68,0-1.36,0-2.05-.06A34,34,0,0,1,140.62,105a3,3,0,0,1,4.52,4,27.92,27.92,0,1,0,22.54-9.35,28.14,28.14,0,0,0-7.61.59,3,3,0,1,1-1.28-5.9,32.88,32.88,0,0,1,9.24-.72,34,34,0,0,1-1.94,67.86Z"/>
+                    <path d="M64.14,44.53H37.43a3,3,0,1,1,0-6H64.14a3,3,0,1,1,0,6Z"/>
+                    <path d="M145.39,58H124.11a3,3,0,0,1,0-6.05h15.24V48.25a3,3,0,1,1,6,0Z"/>
+                  </svg>
+                  <p>自転車</p>
+                </span></li>
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <path d="M194,56v88H6V56H194m6-6H0V150H200V50Z"/>
+                    <path d="M17.67,100.06V100a10.78,10.78,0,0,1,11-10.86A11.53,11.53,0,0,1,36.93,92L34,95.53a7.73,7.73,0,0,0-5.49-2.13,6.31,6.31,0,0,0-6,6.54V100c0,3.84,2.64,6.66,6.36,6.66a7.37,7.37,0,0,0,4.35-1.26v-3H28.56v-4h9.12v9.12a13.63,13.63,0,0,1-9,3.33C22.17,110.86,17.67,106.27,17.67,100.06Z"/>
+                    <path d="M41.73,89.5h4.62v21H41.73Z"/>
+                    <path d="M51,89.5H67v4.2H55.62v4.47h10v4.2h-10v8.13H51Z"/>
+                    <path d="M76.17,93.76H69.78V89.5h17.4v4.26H80.79V110.5H76.17Z"/>
+                    <path d="M95.79,100.06V100a10.67,10.67,0,0,1,10.95-10.86A10.83,10.83,0,0,1,115,92.38l-2.94,3.39a7.75,7.75,0,0,0-5.37-2.37c-3.54,0-6.09,2.94-6.09,6.54V100c0,3.6,2.49,6.6,6.09,6.6,2.4,0,3.87-1,5.52-2.46l2.94,3a10.73,10.73,0,0,1-8.61,3.75A10.6,10.6,0,0,1,95.79,100.06Z"/>
+                    <path d="M125.46,89.35h4.26l9,21.15h-4.83L132,105.79h-8.88l-1.92,4.71h-4.71Zm4.86,12.36-2.79-6.81-2.79,6.81Z"/>
+                    <path d="M141.36,89.5H151a8.37,8.37,0,0,1,6.12,2.13,6.59,6.59,0,0,1,1.8,4.8v.06a6.52,6.52,0,0,1-4.5,6.51l5.13,7.5h-5.4l-4.5-6.72H146v6.72h-4.62Zm9.3,10.2c2.25,0,3.54-1.2,3.54-3v-.06c0-2-1.38-3-3.63-3H146v6Z"/>
+                    <path d="M163.65,89.5h8.19C178.44,89.5,183,94,183,99.94V100c0,5.91-4.56,10.5-11.16,10.5h-8.19Zm8.19,16.83a6,6,0,0,0,6.33-6.27V100a6,6,0,0,0-6.33-6.33h-3.57v12.66Z"/>
+                  </svg>
+                  <p>金券・商品券</p>
+                </span></li>
+                <li><span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+                    <circle cx="8.06" cy="10.5" r="8.06"/>
+                    <circle cx="24.17" cy="38.28" r="8.06"/>
+                    <circle cx="40.28" cy="66.05" r="8.06"/>
+                    <circle cx="56.39" cy="93.83" r="8.06"/>
+                    <circle cx="72.5" cy="121.61" r="8.06"/>
+                    <circle cx="191.94" cy="10.5" r="8.06"/>
+                    <circle cx="175.83" cy="38.28" r="8.06"/>
+                    <circle cx="159.72" cy="66.05" r="8.06"/>
+                    <circle cx="143.61" cy="93.83" r="8.06"/>
+                    <circle cx="127.5" cy="121.61" r="8.06"/>
+                    <path d="M100,197.56a9.05,9.05,0,0,1-7.63-4.16L80,174.19a9.11,9.11,0,0,1,0-9.81l12.35-19.2a9.08,9.08,0,0,1,15.26,0L120,164.38a9.11,9.11,0,0,1,0,9.81h0L107.63,193.4A9.05,9.05,0,0,1,100,197.56Zm0-49.38a1.86,1.86,0,0,0-1.6.88L86,168.26a1.92,1.92,0,0,0,0,2.06l12.35,19.2a1.91,1.91,0,0,0,3.22,0L114,170.32a1.92,1.92,0,0,0,0-2.06l-12.35-19.2A1.88,1.88,0,0,0,100,148.18Zm17,24.08h0Z"/>
+                  </svg>
+                  <p>貴金属</p>
+                </span></li>
+              </ul>
+              <ul class="contents_area">
+                <li>ゲーム</li>
+                <li>CD</li>
+                <li>DVD・BD</li>
+                <li>BOOK</li>
+                <li>トレーディングカード</li>
+              </ul>
+            </div>
+
+            <div id="panel2" class="tab_panel">
+              <div class="panel_heading">
+                <p class="panel_txt">全アイテム</p>
+                <div>
+                  <p class="panel_time">店頭買取ただいま 約<span>000</span>分待ち</p>
+                  <p class="panel_note">※待ち時間は目安になります。 <span>2019年02月25日 15:30:07 時点</span></p>
+                </div>
+              </div>
+              <ul class="panel_list">
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg>
+                  <p>レディース衣類</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg>
+                  <p>メンズ衣類</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg>
+                  <p>キッズ衣類</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg>
+                  <p>ラグジュアリー<br class="u-hidden-md u-hidden-lg">ブランド</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg>
+                  <p>AV・生活家電</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg>
+                  <p>携帯電話</p>
+                </span></li>
+                <li><span class="unavailable">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg>
+                  <p>家具</p>
+                </span></li>
+                <li><span class="unavailable">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg>
+                  <p>生活雑貨</p>
+                </span></li>
+                <li><span class="unavailable">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg>
+                  <p>キッズ用品</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg>
+                  <p>楽器</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg>
+                  <p>ホビー</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg>
+                  <p>アウトドア用品</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg>
+                  <p>スポーツ用品</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-golf" /></svg>
+                  <p>ゴルフ用品</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg>
+                  <p>自転車</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg>
+                  <p>金券・商品券</p>
+                </span></li>
+                <li><span>
+                  <svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg>
+                  <p>貴金属</p>
+                </span></li>
+              </ul>
+              <ul class="contents_area">
+                <li>ゲーム</li>
+                <li>CD</li>
+                <li>DVD・BD</li>
+                <li>BOOK</li>
+                <li>トレーディングカード</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="c-products_menu -shop">
+        <h4>レンタル</h4>
+        <ul class="contents_area">
+          <li>ゲーム</li>
+          <li>CD</li>
+          <li>DVD・BD</li>
+          <li>BOOK</li>
+          <li>トレーディングカード</li>
+        </ul>
+      </div>
+
+      <div class="c-products_menu -shop">
+        <h4>新品販売</h4>
+        <ul class="contents_area">
+          <li>ゲーム</li>
+          <li>アンティクローズ</li>
+        </ul>
+      </div>
+
+
+      <section class="l-section access">
+        <h3 class="m-title">アクセス</h3>
+        <div class="access_map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.8455153217683!2d139.57857131601105!3d35.70541903625108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee464d51576b%3A0x10ae78ae0a315328!2zMm5kIFNUUkVFVCDlkInnpaXlr7rjgrXjg7Pjg63jg7zjg4nlupc!5e0!3m2!1sja!2sjp!4v1553136439874" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="access_data clearfix">
+          <dl class="search_item_info clearfix">
+            <dt>住所</dt>
+            <dd>〒180-0004 <br class="u-hidden-md u-hidden-lg">東京都武蔵野市吉祥寺本町1丁目12番1号</dd>
+            <dt>TEL</dt>
+            <dd>0422-23-8855</dd>
+            <dt>営業時間</dt>
+            <dd>10:00〜22:00【定休日】年中無休</dd>
+            <dt>駐車場台数</dt>
+            <dd>0台</dd>
+            <dt>アクセス情報</dt>
+            <dd>バス○○駅から１０分</dd>
+          </dl>
+          <ul class="search_item_features">
+            <li class="is-current">駐車場あり</li>
+            <li>出張買取対応</li>
+            <li>A.Q. 取扱店</li>
+            <li class="is-current">ファミリーおすすめ</li>
+            <li>メンズ商品充実</li>
+            <li>レディース商品充実</li>
+            <li>キャンペーン実施中</li>
+            <li class="is-current">大型店</li>
+          </ul>
+        </div>
+
+        <div class="access_store">
+          <h4 class="js-onlySpAccordionTrigger">近くの店舗</h4>
+          <ul class="shop_list">
+            <li class="shop_list_item">
+              <a href="/shop/details/">
+                <div class="shop_list_item_img"><img src="/img/shop/top/shop_img_01.jpg" alt="セカンドストリート立川店の外観"></div>
+                <div class="shop_list_item_inner">
+                  <p class="shop_list_item_tag">キッズ商品取扱可</p>
+                  <p class="shop_list_item_name">セカンドストリート立川店</p>
+                  <p class="shop_list_item_distance">0.8km</p>
+                </div>
+              </a>
+            </li>
+            <li class="shop_list_item">
+              <a href="/shop/details/">
+                <div class="shop_list_item_img"><img src="/img/shop/top/shop_img_01.jpg" alt="セカンドストリート立川店の外観"></div>
+                <div class="shop_list_item_inner">
+                  <p class="shop_list_item_tag">キッズ商品取扱可</p>
+                  <p class="shop_list_item_name">セカンドストリート吉祥寺<br class="u-hidden-sm">サンロード店</p>
+                  <p class="shop_list_item_distance">0.8km</p>
+                </div>
+              </a>
+            </li>
+            <li class="shop_list_item">
+              <a href="/shop/details/">
+                <div class="shop_list_item_img"><img src="/img/shop/top/shop_img_01.jpg" alt="セカンドストリート立川店の外観"></div>
+                <div class="shop_list_item_inner">
+                  <p class="shop_list_item_tag">キッズ商品取扱可</p>
+                  <p class="shop_list_item_name">セカンドストリート立川店</p>
+                  <p class="shop_list_item_distance">0.8km</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="assessed">
+        <div class="l-inner-02">
+          <p class="assessed_title">持っていくだけカンタン査定！</p>
+          <div class="assessed_flex">
+            <div class="assessed_wait">
+              <p class="assessed_wait_ttl">店頭買取待ち時間</p>
+              <p class="assessed_wait_time">約<span>000</span>分</p>
+            </div>
+            <div class="assessed_content">
+              <p class="assessed_desc">売りたいお品物を直接、<br class="u-hidden-md u-hidden-lg">お店の買取受付まで<br class="u-hidden-md u-hidden-lg">お持ちください。</p>
+              <p class="assessed_note">※待ち時間は目安になります。</p>
+              <p class="assessed_note">2019年02月25日 15:30:07 時点 </p>
+            </div>
+          </div>
+          <div class="assessed_btn">
+            <div><a class="m-btn m-btnEffect" href="/sell/store/">店頭買取について</a></div>
+            <div><a class="m-btn m-btnEffect" href="/sell/tips/">高く売るコツ</a></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="c-information -shop">
+        <h3 class="m-title">キャンペーン・お知らせ</h3>
+        <ul class="c-information_news">
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -magazine">MAGAZINE</span>
+            <time class="c-information_news_item_time" datetime="2018-12-12">2018.12.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">セカンドストリートのWebマガジン、knowbland magazineの記事を更新しました。セカンドストリートのWebマガジン、knowbland magazineの記事を更新しました。</a>
+          </li>
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -other">OTHER</span>
+            <time class="c-information_news_item_time" datetime="2018-02-12">2018.02.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">12月28日(金) 1:00~7:00 サービスメンテナンスのお知らせ</a>
+          </li>
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -shop">SHOP</span>
+            <time class="c-information_news_item_time" datetime="2018-12-12">2018.12.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">〇〇〇〇〇〇店がオープンしました。</a>
+          </li>
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -event">EVENT</span>
+            <time class="c-information_news_item_time" datetime="2018-12-12">2018.12.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">オンラインストアで冬のセールを開催中！</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <section class="onlinestore">
+        <div class="l-inner-03">
+          <h3 class="m-title">オンラインストア</h3>
+          <ul class="onlinestore_list js-slider">
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_01.jpg" alt="画像：オンラインストアの商品画像01">
+              <p class="onlinestore_list_item_name">THE NORTH FACE</p>
+              <p class="onlinestore_list_item_price">¥9,800</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_02.jpg" alt="画像：オンラインストアの商品画像02">
+              <p class="onlinestore_list_item_name">Y-3</p>
+              <p class="onlinestore_list_item_price">¥38,200</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_03.jpg" alt="画像：オンラインストアの商品画像03">
+              <p class="onlinestore_list_item_name">POLO RALPH LAUREN</p>
+              <p class="onlinestore_list_item_price">¥12,800</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_04.jpg" alt="画像：オンラインストアの商品画像04">
+              <p class="onlinestore_list_item_name">FACTOTUM</p>
+              <p class="onlinestore_list_item_price">¥21,400</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_01.jpg" alt="画像：オンラインストアの商品画像01">
+              <p class="onlinestore_list_item_name">THE NORTH FACE</p>
+              <p class="onlinestore_list_item_price">¥9,800</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_02.jpg" alt="画像：オンラインストアの商品画像02">
+              <p class="onlinestore_list_item_name">Y-3</p>
+              <p class="onlinestore_list_item_price">¥38,200</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_03.jpg" alt="画像：オンラインストアの商品画像03">
+              <p class="onlinestore_list_item_name">POLO RALPH LAUREN</p>
+              <p class="onlinestore_list_item_price">¥12,800</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_04.jpg" alt="画像：オンラインストアの商品画像04">
+              <p class="onlinestore_list_item_name">FACTOTUM</p>
+              <p class="onlinestore_list_item_price">¥21,400</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_01.jpg" alt="画像：オンラインストアの商品画像01">
+              <p class="onlinestore_list_item_name">THE NORTH FACE</p>
+              <p class="onlinestore_list_item_price">¥9,800</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_02.jpg" alt="画像：オンラインストアの商品画像02">
+              <p class="onlinestore_list_item_name">Y-3</p>
+              <p class="onlinestore_list_item_price">¥38,200</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_03.jpg" alt="画像：オンラインストアの商品画像03">
+              <p class="onlinestore_list_item_name">POLO RALPH LAUREN</p>
+              <p class="onlinestore_list_item_price">¥12,800</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_04.jpg" alt="画像：オンラインストアの商品画像04">
+              <p class="onlinestore_list_item_name">FACTOTUM</p>
+              <p class="onlinestore_list_item_price">¥21,400</p>
+            </li>
+          </ul>
+          <ul class="onlinestore_sp u-hidden-md u-hidden-lg">
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_01.jpg" alt="画像：オンラインストアの商品画像01">
+              <p class="onlinestore_list_item_name">THE NORTH FACE</p>
+              <p class="onlinestore_list_item_price">¥9,800</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_02.jpg" alt="画像：オンラインストアの商品画像02">
+              <p class="onlinestore_list_item_name">Y-3</p>
+              <p class="onlinestore_list_item_price">¥38,200</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_03.jpg" alt="画像：オンラインストアの商品画像03">
+              <p class="onlinestore_list_item_name">POLO RALPH LAUREN</p>
+              <p class="onlinestore_list_item_price">¥12,800</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_04.jpg" alt="画像：オンラインストアの商品画像04">
+              <p class="onlinestore_list_item_name">FACTOTUM</p>
+              <p class="onlinestore_list_item_price">¥21,400</p>
+            </li>
+            <li class="onlinestore_list_item">
+              <img src="/img/shop/details/onlinestore_img_04.jpg" alt="画像：オンラインストアの商品画像04">
+              <p class="onlinestore_list_item_name">FACTOTUM</p>
+              <p class="onlinestore_list_item_price">¥21,400</p>
+            </li>
+          </ul>
+          <div class="onlinestore_btn"><a class="m-btn m-btnEffect" href="/store">オンラインストアでもっと見る</a></div>
+        </div>
+      </section>
+
+      <section class="l-section gallery">
+        <h3 class="m-title">インスタグラム</h3>
+        <p class="m-desc">吉祥寺サンロード店の公式アカウント</p>
+        <ul class="gallery_list">
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="/img/shop/details/insta_img_01.jpg" alt="Instagramの投稿画像"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="/img/shop/details/insta_img_02.jpg" alt="Instagramの投稿画像"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="/img/shop/details/insta_img_03.jpg" alt="Instagramの投稿画像"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="/img/shop/details/insta_img_04.jpg" alt="Instagramの投稿画像"></a></li>
+          <li class="u-hidden-sm"><a href="#" target="_blank" rel="noopener noreferrer"><img src="/img/shop/details/insta_img_05.jpg" alt="Instagramの投稿画像"></a></li>
+        </ul>
+      </section>
+
+      <section class="l-section -shop">
+        <h3 class="m-title">買取や販売に関するよくある質問</h3>
+        <div><a class="m-btn m-btnEffect -wide" href="/static/index/faq/">よくある質問を見る</a></div>
+      </section>
+
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- 条件検索 modal -->
+  <%- include(relativePath + '_partials/_filterSearch')%>
+
+  <!-- modal -->
+  <div class="modal_mask"></div>
+  <div class="modal modal_strength">
+    <div class="modal_outer">
+      <div class="modal_closeBtn"><span></span></div>
+      <article class="modal_content">
+        <div class="modal_qr"><img src="/img/shop/details/_dummy.jpg" alt="画像：QRコード"></div>
+        <div class="modal_copy">
+          <p class="modal_copy_txt js-copytext">https://www.2ndstreet.jp/shop/detail</p>
+          <button class="modal_copy_btn js-copybtn">Copy</button>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/vendor/slick/slick.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/shop.js"></script>
+</body>
+
+</html>

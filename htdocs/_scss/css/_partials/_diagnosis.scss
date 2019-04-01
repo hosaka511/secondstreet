@@ -1,0 +1,492 @@
+/* --------------------------------
+  g-diagnosis
+-------------------------------- */
+.g-diagnosis,
+.g-filterSearchModal {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 60px 25px;
+  width: 1050px;
+  z-index: 1001;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.25s $linear, visibility 0.25s;
+  .is-Edge & {
+    width: 100%;
+    @media screen and (max-width: 1051px) {
+      width: 1050px;
+    }
+  }
+  @include small-screen {
+    padding: 0 vw(60) vw(100);
+    width: 100%;
+  }
+}
+.g-filterSearchModal.is-openFilterSearchModal,
+.g-diagnosis.is-openDiagnosisModal {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.25s $linear, visibility 0s;
+}
+.g-diagnosis_mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  .is-Edge & {
+    position: absolute;
+  }
+  .is-IE & {
+    background: rgba(0,0,0,0.9);
+  }
+}
+.g-diagnosis_trigger {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  width: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: ls(40);
+  writing-mode: vertical-rl;
+  cursor: pointer;
+  transition: opacity .33s ease-out;
+  z-index: 999;
+  @include small-screen {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: vw(100);
+    font-size: vw(24);
+    writing-mode: lr-tb;
+    opacity: 1;
+    transition: transform .33s ease-out, opacity 0s;
+  }
+  &.is-openDiagnosisModal {
+    transform: translateX(100%);
+    transition: transform .11s ease-in, opacity 0s .11s;
+    @include small-screen {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+  &.is-hideDiagnosisTrigger {
+    @include small-screen {
+      transition: transform .11s ease-in, opacity 0s .11s;
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+  a {
+    position: relative;
+    display: block;
+    padding: 26px 0 48px;
+    width: 100%;
+    height: 100%;
+    background-color: #db0004;
+    text-decoration: none;
+    color: #fff;
+    line-height: 40px;
+    transition: background-color .3s ease;
+    @include small-screen {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      line-height: normal;
+    }
+    .no-touchevents &:hover {
+      background-color: #000;
+    }
+    i {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 30px;
+      margin: auto;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      .is-Edge & ,
+      .is-IE & {
+        writing-mode: lr-tb;
+      }
+      @include large-screen {
+        top: auto;
+        right: 0;
+        left: 0;
+        bottom: 17px;
+      }
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+      }
+      &:before {
+        width: 8px;
+        height: 2px;
+      }
+      &:after {
+        width: 2px;
+        height: 8px;
+      }
+    }
+  }
+}
+.g-diagnosis_outer {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  @include small-screen {
+    width: 100%;
+  }
+}
+.g-diagnosis_closeBtn {
+  span {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    width: 31px;
+    height: 56px;
+    cursor: pointer;
+    @include small-screen {
+      width: vw(52);
+      height: vw(118);
+    }
+    &:before,
+    &:after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      content: "";
+      width: 35px;
+      height: 2px;
+      background-color: #fff;
+      @include small-screen {
+        top: vw(20);
+        width: vw(60);
+      }
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(135deg);
+    }
+    transition: opacity .25s;
+    .no-touchevents &:hover {
+      opacity: .6;
+    }
+  }
+}
+.g-diagnosis_inner,
+.g-filterSearchModal_inner {
+  padding: 50px 40px 60px;
+  background-color: #fff;
+  text-align: center;
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 1000px;
+  display: none;
+  @include small-screen {
+    padding: vw(86) vw(30) vw(120);
+    width: 100%;
+  }
+}
+.is-openDiagnosisModal .g-diagnosis_inner,
+.is-openFilterSearchModal .g-filterSearchModal_inner {
+  display: block;
+}
+.g-filterSearchModal-title,
+.g-diagnosis_title {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: ls(120);
+  font-feature-settings: "palt";
+  @include small-screen {
+    font-size: vw(46);
+  }
+}
+.g-diagnosis_desc {
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: ls(60);
+  font-feature-settings: "palt";
+  @include small-screen {
+    margin-top: vw(34);
+    font-size: vw(26);
+  }
+}
+.g-diagnosis_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  @include small-screen {
+    margin-top: vw(48);
+  }
+  li {
+    a, button, span {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      cursor: pointer;
+      color: #000;
+      width: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      .no-touchevents &:hover {
+        color: $red;
+        svg {
+          fill: $red;
+        }
+      }
+      > * {
+        pointer-events: none;
+      }
+      &.g-diagnosis_button.is-selected {
+        color: $red;
+        svg {
+          fill: $red;
+        }
+      }
+    }
+    svg {
+      width: 47px;
+      height: 72px;
+      @include small-screen {
+        width: vw(74);
+        height: vw(100);
+      }
+    }
+    @include large-screen {
+      $items:(
+        '1' : (width: 115, height: 92),
+        '2' : (width: 86, height: 92),
+        '3' : (width: 107, height: 92),
+        '4' : (width: 123, height: 92),
+        '5' : (width: 101, height: 92),
+        '6' : (width: 107, height: 92),
+        '7' : (width: 86, height: 92),
+        '8' : (width: 105, height: 92),
+        '9' : (width: 80, height: 92),
+        '10' : (width: 116, height: 92),
+        '11' : (width: 89, height: 92),
+        '12' : (width: 107, height: 92),
+        '13' : (width: 111, height: 92),
+        '14' : (width: 117, height: 92),
+        '15' : (width: 89, height: 92),
+        '16' : (width: 108, height: 92),
+        '17' : (width: 87, height: 92)
+        );
+      @each $name, $value in $items {
+        &:nth-child(#{$name}) a,
+        &:nth-child(#{$name}) button,
+        &:nth-child(#{$name}) span {
+          width: #{map-get($value, width)}px;
+          height: #{map-get($value, height)}px;
+        }
+      }
+      &:nth-child(n+10) {
+        margin-top: 10px;
+      }
+    }
+    @include small-screen {
+      width: 33%;
+      &:nth-child(n+4) {
+        margin-top: vw(56);
+      }
+      &:nth-child(n+7) {
+        margin-top: vw(40);
+      }
+      &:nth-child(n+10) {
+        margin-top: vw(58);
+      }
+      &:nth-child(n+13) {
+        margin-top: vw(68);
+      }
+      &:nth-child(n+16) {
+        margin-top: vw(58);
+      }
+      &:nth-child(4) {
+        p {
+          transform: translateY(vw(-8));
+        }
+      }
+    }
+    p {
+      font-size: 12px;
+      font-weight: bold;
+      white-space: nowrap;
+      font-feature-settings: "palt";
+      @include small-screen {
+        font-size: vw(22);
+        line-height: lh(22,24);
+      }
+    }
+  }
+}
+.g-diagnosis_cagory {
+  position: relative;
+  margin-top: 50px;
+  padding: 25px 30px 30px;
+  background-color: #f5f7fa;
+  @include small-screen {
+    margin-top: vw(100);
+    padding: vw(50) vw(40) vw(60);
+    transition: .3s $linear;
+    &.is-currentWeb {
+      padding-bottom: vw(160);
+    }
+  }
+}
+.g-diagnosis_cagory_title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: ls(60);
+  font-feature-settings: "palt";
+  color: #000;
+  @include small-screen {
+    font-size: vw(26);
+  }
+}
+.g-diagnosis_cagory_list {
+  display: flex;
+  margin-top: 17px;
+  @include small-screen {
+    display: block;
+    margin-top: vw(34);
+  }
+}
+.g-diagnosis_cagory_list_item {
+  flex: 1 1 0%;
+  margin: 0 4px 0 4px;
+  @include small-screen {
+    margin: 0;
+    + .g-diagnosis_cagory_list_item {
+      margin-top: vw(20);
+    }
+  }
+  a {
+    padding: 20px 10px;
+    display: block;
+    background-color: #d0d2d5;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    @include small-screen {
+      padding: vw(26) 0 vw(36);
+    }
+  }
+  &.is-current a {
+    background-color: #000;
+  }
+  @include small-screen {
+    transition: transform .3s $linear;
+    &.is-currentWeb {
+      &.g-diagnosis_cagory_list_item-web,
+      &.g-diagnosis_cagory_list_item-visit {
+        transform: translateY(vw(100));
+      }
+    }
+  }
+}
+.g-diagnosis_cagory_list_item_lead {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: ls(160);
+  @include small-screen {
+    font-size: vw(38);
+  }
+}
+.g-diagnosis_cagory_list_item_desc {
+  margin-top: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: lh(12,18);
+  @include small-screen {
+    margin-top: vw(2);
+    font-size: vw(24);
+    line-height: lh(24,36);
+  }
+}
+.g-diagnosis_cagory_list_item_txt {
+  display: inline-block;
+  margin-top: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: lh(12,18);
+  border-bottom: 1px solid;
+  @include small-screen {
+    margin-top: vw(2);
+    font-size: vw(24);
+    line-height: lh(24,36);
+  }
+}
+.g-diagnosis_cagory_balloon {
+  display: inline-block;
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 14px 0;
+  width: 514px;
+  background: $red;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: lh(12,18);
+  font-feature-settings: "palt";
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity .3s $linear, transform 0s $easeOutCubic .3s;
+  &.is-currentWeb {
+    transition: opacity .3s $linear, transform .5s $easeOutCubic;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @include small-screen {
+    top: vw(400);
+    padding: 0;
+    width: max-content;
+    font-size: vw(20);
+    line-height: lh(20,28);
+    p {
+      padding: vw(14);
+      white-space: nowrap;
+      text-align: center;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid $red;
+    @include small-screen {
+      margin-left: vw(-20);
+      border-width: vw(20);
+    }
+  }
+}

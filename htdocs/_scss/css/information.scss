@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+/*
+* information.css
+*
+*/
+
+// Common Settings
+@import "_partials/setting";
+@import "_partials/sprite-common";
+@import "_partials/function";
+@import "_partials/mixin";
+$red: #d90000;
+
+
+/* --------------------------------
+  /information/
+-------------------------------- */
+
+/* search */
+.search {
+  background-color: #f0f2f5;
+  border: 1px solid #dadde2;
+  margin: auto;
+  padding: 15px 0 26px;
+  width: 1000px;
+  @include small-screen {
+    margin-top: vw(64);
+    padding: vw(54) 0 vw(70);
+    width: 100%;
+    border: none;
+  }
+}
+.search_txt {
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  @include small-screen {
+    font-size: vw(26);
+  }
+}
+.search_inner {
+  display: flex;
+  margin: 10px auto 0;
+  width: 760px;
+  height: 50px;
+  background-color: #fff;
+  + .search_inner {
+    margin-top: 6px;
+    @include small-screen {
+      margin-top: vw(40);
+    }
+  }
+  @include small-screen {
+    margin-top: vw(26);
+    width: 76%;
+    height: auto;
+    &.-year {
+      padding: vw(8) vw(34);
+    }
+    &.-tag {
+      background-color: transparent;
+    }
+  }
+}
+.search_year {
+  margin: auto;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @include small-screen {
+    width: 100%;
+  }
+  li {
+    flex: auto;
+    text-align: center;
+    + li {
+      position: relative;
+      margin-left: 10px;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -5px;
+        margin: auto;
+        width: 1px;
+        height: 17px;
+        background-color: #909193;
+        @include small-screen {
+          height: vw(23);
+        }
+      }
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: ls(100);
+      transition: color .15s;
+      @include small-screen {
+        font-size: vw(30);
+      }
+    }
+    &.is-current a {
+      color: $red;
+    }
+  }
+}
+.search_tag {
+  margin: auto;
+  width: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include small-screen {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  li {
+    &.is-current {
+      .c-information_news_item_tag {
+        background-color: #cbcccf;
+      }
+    }
+    @include small-screen {
+      &:nth-child(n+3) {
+        margin-top: vw(20);
+      }
+    }
+  }
+  a:hover {
+    color: #fff;
+  }
+}
+
+
+/* --------------------------------
+  /information/details
+-------------------------------- */
+.details {
+  margin: 120px auto 0;
+  padding-bottom: 60px;
+  width: 840px;
+  border-bottom: 1px solid #d7dbe0;
+  color: #000;
+  @include small-screen {
+    margin-top: vw(140);
+    padding-bottom: vw(72);
+    width: 84%;
+  }
+  .c-information_news_item {
+    align-items: center;
+  }
+  .c-information_news_item_time {
+    font-size: 18px;
+    line-height: 25px;
+    @include small-screen {
+      font-size: 12px;
+      line-height: 22px;
+    }
+  }
+}
+.details_title {
+  margin-top: 15px;
+  padding-bottom: 14px;
+  font-size: 25px;
+  letter-spacing: ls(70);
+  font-feature-settings: "palt";
+  border-bottom: 1px solid #d7dbe0;
+  @include small-screen {
+    margin-top: vw(22);
+    padding-bottom: vw(44);
+    font-size: vw(36);
+    line-height: lh(36,48);
+    letter-spacing: ls(40);
+  }
+}
+.details_txt {
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  font-feature-settings: "palt";
+  text-align: justify;
+  line-height: lh(14,20);
+  letter-spacing: ls(60);
+  @include small-screen {
+    margin-top: vw(60);
+    font-size: vw(24);
+    line-height: lh(24,40);
+    letter-spacing: ls(20);
+  }
+  &.-red {
+    color: $red;
+  }
+  + .details_txt {
+    margin-top: 20px;
+    @include small-screen {
+      margin-top: vw(40);
+    }
+  }
+}
+.details_sns {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 50px;
+  @include small-screen {
+    margin-top: vw(60);
+  }
+  .twitter-share-button {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,163 @@
+<%_  var pageID = 'selltips'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellTips">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-01">
+        <h2 class="m-heading_title">高く売るコツ</h2>
+        <p class="m-heading_subtitle RalewayExtraBold">POINT</p>
+        <p class="m-heading_desc">ちょっとでも高く売りたい！そんなあなたに！<br class="u-hidden-md u-hidden-lg">査定時のバイヤーが特に確認するポイントをご紹介します。</p>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-method', {page: pageID})%>
+
+
+      <section class="point point-01">
+        <p class="point_subtitle"><span class="RalewayExtraBold">POINT</span>01</p>
+        <h3 class="point_title">トレンドのアイテム</h3>
+        <p class="point_desc">ブランド・ノーブランド問わず、<br class="u-hidden-md u-hidden-lg"><span>流行に応じたデザイン</span>であればあるほど<br class="u-hidden-md u-hidden-lg">お値段がつきやすくなります！</p>
+        <div class="point_img">
+          <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/tips/point_img_01_sm.jpg', alt: 'イメージ画像：トレンドのアイテム'});%>
+        </div>
+        <!-- <div class="point_btn"><a class="m-btn m-btnEffect m-btn-arrow" href="#buyingReinforcing">買取強化ブランド</a></div> -->
+      </section>
+
+      <section class="c-accordion c-buyingReinforcing">
+        <h3 class="c-accordion_title js-bothPcSpAccordionTrigger">買取強化ブランド</h3>
+        <div class="js-bothPcSpAccordionContent">
+          <div class="c-buyingReinforcing_group">
+            <h4>衣類</h4>
+            <p><span>A BATHING APE、</span><span>Barboour、</span><span>C.E、</span><span>DANTON、</span><span>EN ROUTE、</span><span>F.C.R.B、</span><span>G-STAR RAW、</span><span>HARE、</span><span>JACK ROSE、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>バッグ</h4>
+            <p><span>ANIARY、</span><span>ARC’TERYX、</span><span>BREEFING、</span><span>GREGORY、</span><span>MYSTERY RANCH、</span><span>PAUL SMITH、</span><span>PORTER、</span><span>RIMOWA、</span><span>Supreme、</span><span>THE NORTH FACE、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>シューズ/ブーツ</h4>
+            <p><span>ADIDAS、</span><span>ALDEN、</span><span>BIRKENSTOCK、</span><span>CONVERSE、</span><span>Dr.Martens、</span><span>KEEN、</span><span>New Balance、</span><span>NIKE、</span><span>Paraboot、</span><span>REDWING、</span><span>REGAL、</span><span>VANS、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>腕時計</h4>
+            <p><span>CASIO、</span><span>DIESEL、</span><span>HAMILTON、</span><span>LUMINOX、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>財布/小物</h4>
+            <p><span>CHROME、</span><span>HEARTS、</span><span>DIESEL、</span><span>Paul Smith、</span><span>PORTER、</span><span>Whitehouse Cox、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>アクセサリー</h4>
+            <p><span>ARIZONA FREEDAM、</span><span>CHROME HEARTS、</span><span>FANTASTIC MAN、</span><span>RAY ADAKAI(NAVAJO)、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>アイウェア</h4>
+            <p><span>iconic、</span><span>MOSCO、</span><span>OAKLEY、</span><span>Ray Ban、</span><span>TOMFORD、</span><span>999.9、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>ヘッドウェア/その他</h4>
+            <p><span>HTC、</span><span>KANGOL、</span><span>KIJIMA TAKAYUKI、</span><span>Supreme、</span><span>etc…</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="point point-02">
+        <p class="point_subtitle"><span class="RalewayExtraBold">POINT</span>02</p>
+        <h3 class="point_title">キレイな状態</h3>
+        <p class="point_desc">汚れやキズ、匂いのないキレイな状態ほど、<br class="u-hidden-md u-hidden-lg">お値段がつきやすくなります！<br>下記の部分をよく確認して、<br class="u-hidden-md u-hidden-lg">キレイな状態にして買取に出してみましょう。</p>
+        <div class="point_img">
+          <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/tips/point_img_02_sm.jpg', alt: 'イメージ画像：キレイな状態'});%>
+        </div>
+      </section>
+
+
+<!--       <section class="c-accordion c-buyingReinforcing">
+        <h3 class="c-accordion_title js-bothPcSpAccordionTrigger">汚れの落とし方のコツ</h3>
+        <div class="js-bothPcSpAccordionContent">
+        </div>
+      </section> -->
+
+      <a id="timing"></a>
+      <section class="point point-03">
+        <p class="point_subtitle"><span class="RalewayExtraBold">POINT</span>03</p>
+        <h3 class="point_title">お売りいただく<br class="u-hidden-md u-hidden-lg">ベストなタイミング</h3>
+        <p class="point_desc">衣料品買取の最適なタイミングは、<br class="u-hidden-md u-hidden-lg">その商品が必要になる時期とは、少しずれています。<br>たとえば春物なら、実際に春物が欲しくなる時期より少し前が、<br class="u-hidden-md u-hidden-lg">お値段がつきやすくなります！</p>
+        <div class="point_img">
+          <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/tips/point_img_03_sm.jpg', alt: 'イメージ画像：お売りいただくベストなタイミング'});%>
+        </div>
+      </section>
+
+      <!-- <a id="buyingReinforcing"></a> -->
+
+      <ul class="c-otherMeans">
+        <li class="c-otherMeans_item c-otherMeans_item-store"><a href="/sell/store/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_03_sm.png', alt: '画像：店頭買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">STORE</span>店頭買取</p>
+        </div></a></li>
+        <li class="c-otherMeans_item c-otherMeans_item-01"><a href="/sell/web/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_01_sm.png', alt: '画像：Web買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">WEB</span>Web買取</p>
+        </div></a></li>
+        <li class="c-otherMeans_item c-otherMeans_item-02"><a href="/sell/visit/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_02_sm.png', alt: '画像：出張買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">VISIT</span>出張買取</p>
+        </div></a></li>
+      </ul>
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+    <div class="g-diagnosis_trigger js-diagnosisModalTrigger"><a>あなたに適切な売り方はこちら<i></i></a></div>
+
+  </div>
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

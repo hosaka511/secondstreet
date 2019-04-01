@@ -1,0 +1,794 @@
+<%_  var pageID = 'guide'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/static-index.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellWeb">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-03">
+        <p class="m-heading_subtitle">ご利用ガイド</p>
+        <h2 class="m-heading_title">オンラインストアのご利用</h2>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-membership', {page: pageID})%>
+
+
+      <a id="js-toggle-1" class="c-accordion_link -first"></a>
+      <section class="c-accordion l-section-03">
+        <p class="c-accordion_title js-bothPcSpAccordionTrigger">在庫・サイズ表記・採寸</p>
+        <div class="js-bothPcSpAccordionContent">
+          <section class="guide">
+            <h3 class="guide_title">在庫・サイズ表記について</h3>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">在庫について</h4>
+              <p class="guide_txt">掲載商品に関しましては、当社が運営しておりますほか、オンラインストア・実店舗でも同時に販売しており、ご注文後に在庫を確認させていただくため、ご注文完了後に在庫がない場合がございます。その際は、キャンセルのメールを配信させていただいておりますこと、予めご了承ください。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">サイズ表記について</h4>
+              <p class="guide_txt">当オンラインストアでは、商品の表記サイズの他に、実際のサイズを採寸し記載しております。</p>
+              <p class="guide_note">※表記サイズに関しては各メーカーによって若干の違いがございます。あくまで目安としてご確認ください。</p>
+              <div class="guide_tableWrap">
+                <table class="guide_table guide_table-07">
+                  <caption class="guide_table_caption">洋服の表記サイズ[メンズ]</caption>
+                  <tbody class="guide_table_body guide_table_body-07">
+                    <tr>
+                      <th class="gray">日本</th>
+                      <td>36 (SS）</td>
+                      <td>37</td>
+                      <td>38（SS）</td>
+                      <td>39</td>
+                      <td>40（M）</td>
+                      <td>41</td>
+                      <td>42（L）</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">イタリア</th>
+                      <td>40</td>
+                      <td>42</td>
+                      <td>44</td>
+                      <td>46</td>
+                      <td>48</td>
+                      <td>50</td>
+                      <td>52</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">フランス</th>
+                      <td>36</td>
+                      <td>37</td>
+                      <td>38</td>
+                      <td>39</td>
+                      <td>40</td>
+                      <td>41</td>
+                      <td>42</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">イギリス</th>
+                      <td>14</td>
+                      <td>14 1/2</td>
+                      <td>15</td>
+                      <td>15 1/2</td>
+                      <td>16</td>
+                      <td>16 1/2</td>
+                      <td>17</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">アメリカ</th>
+                      <td>14 1/2</td>
+                      <td>-</td>
+                      <td>15</td>
+                      <td>15 1/2</td>
+                      <td>-</td>
+                      <td>16</td>
+                      <td>16 1/2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="guide_tableWrap">
+                <table class="guide_table guide_table-05">
+                  <caption class="guide_table_caption">洋服の表記サイズ[レディース]</caption>
+                  <tbody class="guide_table_body guide_table_body-05">
+                    <tr>
+                      <th class="gray">日本</th>
+                      <td>7</td>
+                      <td>9</td>
+                      <td>11</td>
+                      <td>13</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">イタリア</th>
+                      <td>38</td>
+                      <td>40</td>
+                      <td>42</td>
+                      <td>44</td>
+                      <td>46</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">フランス</th>
+                      <td>36</td>
+                      <td>38</td>
+                      <td>40</td>
+                      <td>42</td>
+                      <td>44</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">イギリス</th>
+                      <td>0</td>
+                      <td>10/32</td>
+                      <td>12/32</td>
+                      <td>14/36</td>
+                      <td>16/38</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">アメリカ</th>
+                      <td>2</td>
+                      <td>4</td>
+                      <td>6</td>
+                      <td>8</td>
+                      <td>10</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="guide_tableWrap">
+                <table class="guide_table guide_table-09">
+                  <caption class="guide_table_caption">靴の表記サイズ[メンズ]</caption>
+                  <tbody class="guide_table_body guide_table_body-09">
+                    <tr>
+                      <th class="gray">日本</th>
+                      <td>24cm</td>
+                      <td>24.5cm</td>
+                      <td>25cm</td>
+                      <td>25.5cm</td>
+                      <td>26cm</td>
+                      <td>26.5cm</td>
+                      <td>27cm</td>
+                      <td>27.5cm</td>
+                      <td>28cm</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">EU</th>
+                      <td>38</td>
+                      <td>39</td>
+                      <td>40</td>
+                      <td>41</td>
+                      <td>42</td>
+                      <td>43</td>
+                      <td>44</td>
+                      <td>45</td>
+                      <td>46</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">USA</th>
+                      <td>6</td>
+                      <td>6 1/2</td>
+                      <td>7</td>
+                      <td>7 1/2</td>
+                      <td>8</td>
+                      <td>8 1/2</td>
+                      <td>9</td>
+                      <td>9 1/2</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">SML</th>
+                      <td colspan="4">S</td>
+                      <td colspan="2">M</td>
+                      <td colspan="2">L</td>
+                      <td>XL</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="guide_tableWrap">
+                <table class="guide_table guide_table-09">
+                  <caption class="guide_table_caption">靴のサイズ[レディース]</caption>
+                  <tbody class="guide_table_body guide_table_body-09">
+                    <tr>
+                      <th class="gray">日本</th>
+                      <td>22cm</td>
+                      <td>22.5cm</td>
+                      <td>23cm</td>
+                      <td>23.5cm</td>
+                      <td>24cm</td>
+                      <td>24.5cm</td>
+                      <td>25cm</td>
+                      <td>25.5cm</td>
+                      <td>26cm</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">EU</th>
+                      <td>34</td>
+                      <td>35</td>
+                      <td>36</td>
+                      <td>37</td>
+                      <td>38</td>
+                      <td>39</td>
+                      <td>40</td>
+                      <td>41</td>
+                      <td>42</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">USA</th>
+                      <td>5</td>
+                      <td>5 1/2</td>
+                      <td>6</td>
+                      <td>6 1/2</td>
+                      <td>7</td>
+                      <td>7 1/2</td>
+                      <td>8</td>
+                      <td>8 1/2</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">SML</th>
+                      <td colspan="4">S</td>
+                      <td colspan="2">M</td>
+                      <td colspan="2">L</td>
+                      <td>XL</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="guide_tableWrap">
+                <table class="guide_table guide_table-08">
+                  <caption class="guide_table_caption">靴のサイズ[レディース]</caption>
+                  <tbody class="guide_table_body guide_table_body-08">
+                    <tr>
+                      <th class="gray">日本</th>
+                      <td>7</td>
+                      <td>8</td>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>12</td>
+                      <td>13</td>
+                      <td>14</td>
+                    </tr>
+                    <tr>
+                      <th class="gray">EU</th>
+                      <td>47</td>
+                      <td>48</td>
+                      <td>49</td>
+                      <td>50</td>
+                      <td>51</td>
+                      <td>52</td>
+                      <td>53</td>
+                      <td>54</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="guide_unit">
+              <h4 class="guide_subheading">採寸について</h4>
+              <p class="guide_txt">当オンラインストアでは、商品の表記サイズの他に、実際のサイズを採寸し記載しております。</p>
+              <p class="guide_note">※表記サイズに関しては各メーカーによって若干の違いがございます。あくまで目安としてご確認ください。</p>
+              <ul class="guide_column">
+                <li class="guide_column_item -measurement">
+                  <div class="guide_column_item_img">
+                    <img src="/img/static/index/guide/stock_img_01.png" alt="イラスト：トップス">
+                  </div>
+                  <div>
+                    <p class="guide_column_item_title">トップス</p>
+                    <ul class="guide_column_item_txt">
+                      <li>①身幅：左右の袖の縫い目から縫い目までを測った長さ</li>
+                      <li>②着丈：後ろ襟の縫い目から裾までを測った長さ</li>
+                      <li>③袖丈：肩の縫い目から袖口までを測った長さ</li>
+                      <li>④肩幅：左右の肩の縫い目から縫い目までを測った長さ</li>
+                      <li>⑤裄丈：襟の中心部から肩の縫い目までと、袖丈の長さを足した長さ</li>
+                      <li>⑥袖ぐり（アームホール）：肩の縫い目から脇の縫い目までの長さを2倍にした長さ</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="guide_column_item -measurement">
+                  <div class="guide_column_item_img">
+                    <img src="/img/static/index/guide/stock_img_02.png" alt="イラスト：トップス">
+                  </div>
+                  <div>
+                    <p class="guide_column_item_title">パンツ</p>
+                    <ul class="guide_column_item_txt">
+                      <li>①ウエスト：ウエスト幅を2倍にした長さ</li>
+                      <li>②ヒップ：ファスナー、ボタンフライ部分の下部の端から端をを2倍した長さ</li>
+                      <li>③股下：股の縫い目の付け根から裾までの長さ</li>
+                      <li>④股上：股の縫い目の付け根からウエスト上部までの長さ</li>
+                      <li>⑤わたり：股下約3cm下の部分の端から端を2倍した長さ</li>
+                      <li>⑥裾周り：裾幅を2倍にした長さ</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="guide_column_item -measurement">
+                  <div class="guide_column_item_img">
+                    <img src="/img/static/index/guide/stock_img_03.png" alt="イラスト：トップス">
+                  </div>
+                  <div>
+                    <p class="guide_column_item_title">スカート</p>
+                    <ul class="guide_column_item_txt">
+                      <li>①ウエスト：ウエスト幅を2倍にした長さ</li>
+                      <li>②ヒップ：ファスナー、ボタンフライ部分の下部の端から端をを2倍した長さ</li>
+                      <li>③スカート丈：ウエスト上部から裾までの長さ</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <div class="m-textUnderlineLink"><a href="#" class="js-bothPcSpAccordionCloseBtn">閉じる</a></div>
+          </section>
+        </div>
+      </section>
+
+      <a id="js-toggle-2" class="c-accordion_link"></a>
+      <section class="c-accordion l-section-03">
+        <p class="c-accordion_title js-bothPcSpAccordionTrigger">オンライン試着</p>
+        <div class="js-bothPcSpAccordionContent">
+          <section class="guide">
+            <h3 class="guide_title">オンライン試着について</h3>
+            <div>
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/static/index/guide/fitting_img_01_sm.jpg', alt: '販売中の商品とお手持ちのアイテムや購入履歴からサイズ比較ができます！'});%>
+            </div>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">【VIRTUSIZE ご利用ガイド】</h4>
+              <p class="guide_txt">バーチャサイズの使い方はとても簡単。過去に購入した洋服を選択するだけでサイズの比較ができます。お手持ちの洋服のサイズを登録してご利用いただくこともできます。</p>
+              <ul class="guide_column">
+                <li class="guide_column_item guide_column_item-01 guide_column_flex">
+                  <div class="guide_column_item_body">
+                    <p class="guide_column_item_lead">1.オンライン試着室を立ち上げる</p>
+                    <p class="guide_column_item_txt">対象商品の詳細ページに設置されている「サイズをチェック」ボタンをクリックすると、オンライン試着室が立ち上がり、見ているアイテムの画像とイラストが表示されます。</p>
+                  </div>
+                  <div>
+                    <%- include(relativePath + '_utilities/_picture', {src: '/img/static/index/guide/fitting_img_02_sm.jpg', alt: ''});%>
+                  </div>
+                </li>
+                <li class="guide_column_item guide_column_item-02">
+                  <p class="guide_column_item_lead">2.比較するアイテムを選択、追加</p>
+                  <p class="guide_column_item_txt">比較を行うには、お客様の購入履歴から選ぶ方法とお手持ちのアイテムをメジャーで測る方法があります。</p>
+                  <div class="guide_column_item_body">
+                    <div class="guide_column_img">
+                      <%- include(relativePath + '_utilities/_picture', {src: '/img/static/index/guide/fitting_img_03_sm.jpg', alt: ''});%>
+                    </div>
+                    <p class="guide_column_item_title">a.購入履歴と比較</p>
+                    <p class="guide_column_item_txt">購入履歴をお持ちの場合は、画面右上にお客様が以前に購入したアイテムが表示されます。<br>「早速始める」ボタンを押して、比較するアイテムを選んでください。</p>
+                  </div>
+                  <p class="guide_column_item_title">b.ご自身で測ったアイテムと比較</p>
+                  <div class="guide_column_flex">
+                    <div>
+                      <div class="guide_column_img">
+                        <%- include(relativePath + '_utilities/_picture', {src: '/img/static/index/guide/fitting_img_04_sm.jpg', alt: ''});%>
+                      </div>
+                      <p class="guide_column_item_txt">まだ購入履歴のないお客様にはバーチャサイズの使い方をご案内します。 「早速始める」ボタンを押した後、「サイズを測る」ボタンを押して採寸を始めましょう。</p>
+                    </div>
+                    <div>
+                      <div class="guide_column_img">
+                        <%- include(relativePath + '_utilities/_picture', {src: '/img/static/index/guide/fitting_img_05_sm.jpg', alt: ''});%>
+                      </div>
+                      <p class="guide_column_item_txt">サイズを比較したいご自身の服とメジャーを用意します。</p>
+                      <ul class="guide_column_item_txt">
+                        <li>1.まず、名前の入力欄にお客様のアイテムの名前を入力します。</li>
+                        <li>2.入力ガイドに沿って寸法を測り、入力欄にサイズ情報を入力します。</li>
+                        <li>3.入力が終わったら「完了」ボタンを押します。</li>
+                      </ul>
+                      <p class="guide_note">※「オプション寸法を追加」を押して、より細かいサイズを入力すると、比較精度が高まります。</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="guide_column_item guide_column_item-02">
+                  <p class="guide_column_item_lead">3.ストアのアイテムと、ご自身のアイテムのサイズを比較</p>
+                  <p class="guide_column_item_txt">画面中央に、ストアのアイテムとご自身の服が重なって表示されます。<br>長さや幅の差を見ながら、ぴったりサイズを確認してください。<br>画面下のメニューでストアのアイテムのサイズを切り替えて、自分の好みのサイズを選ぶことができます。</p>
+                  <div class="guide_column_item_body -mb">
+                    <div class="guide_column_img">
+                      <%- include(relativePath + '_utilities/_picture', {src: '/img/static/index/guide/fitting_img_06_sm.jpg', alt: ''});%>
+                    </div>
+                  </div>
+                </li>
+                <li class="guide_column_item guide_column_item-02">
+                  <p class="guide_column_item_lead">4. マイクローゼット機能</p>
+                  <div class="guide_column_flex">
+                    <div>
+                      <div class="guide_column_img">
+                        <%- include(relativePath + '_utilities/_picture', {src: '/img/static/index/guide/fitting_img_07_sm.jpg', alt: ''});%>
+                      </div>
+                      <p class="guide_column_item_title">a.マイクローゼットの参照と編集</p>
+                      <p class="guide_column_item_txt">画面左上のメニューバーを開き「マイクローゼット」をクリックすると、お客様の購入履歴や採寸したアイテムが表示されます。「編集」メニューから、アイテムの情報を編集することができます。</p>
+                    </div>
+                    <div>
+                      <div class="guide_column_img">
+                        <%- include(relativePath + '_utilities/_picture', {src: '/img/static/index/guide/fitting_img_08_sm.jpg', alt: ''});%>
+                      </div>
+                      <p class="guide_column_item_title">b.ストアのアイテムをマイクローゼットに追加</p>
+                      <p class="guide_column_item_txt">ストアのアイテムをマイクローゼットに追加すれば、ストアで見ているアイテム同士を比較することもできます。左上のストアのアイテムをクリックし、「クローゼットに追加」を選択すると、マイクローゼットに登録されます。</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="guide_column_item guide_column_item-02">
+                  <p class="guide_column_item_lead">5. Virtusizeアカウントの登録とログイン</p>
+                  <p class="guide_column_item_txt">Virtusizeアカウントを登録すると、クローゼットの中に登録されている内容を 他のパソコンやスマートフォンからも呼び出せます。新規登録は画面左上のメニューバーからアカウントの登録が可能です。<br>登録には、Facebookアカウントかメールアドレスをご利用ください。</p>
+                  <div class="guide_column_item_body">
+                    <div class="guide_column_img">
+                      <%- include(relativePath + '_utilities/_picture', {src: '/img/static/index/guide/fitting_img_09_sm.jpg', alt: ''});%>
+                    </div>
+                  </div>
+                  <p class="guide_note">※次回ご利用の際は、画面左上のメニューバーを開き、メールアドレス・パスワードを入力するかFacebookボタンを押してログインしてください。</p>
+                </li>
+                <li class="guide_column_item guide_column_item-02">
+                  <p class="guide_column_item_lead">6. Virtusizeのヘルプ</p>
+                  <p class="guide_column_item_txt">バーチャサイズの利用方法やよくある質問をご確認頂くには、Virtusize画面左上のメニューバーから「ヘルプ」をクリックしてください。</p>
+                  <ul class="guide_list">
+                    <li>[動作環境について]</li>
+                    <li>・Internet Explorer 8 以上 （ただし IE8互換性モードは除く）</li>
+                    <li>・Google Chrome、Mozilla Firefox、Mac Safariなどのモダンブラウザ：最新バージョン推奨</li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+            <div class="m-textUnderlineLink"><a href="#" class="js-bothPcSpAccordionCloseBtn">閉じる</a></div>
+          </section>
+        </div>
+      </section>
+
+      <a id="js-toggle-3" class="c-accordion_link"></a>
+      <section class="c-accordion l-section-03">
+        <p class="c-accordion_title js-bothPcSpAccordionTrigger">商品の状態について</p>
+        <div class="js-bothPcSpAccordionContent">
+          <section class="guide">
+            <h3 class="guide_title">商品の状態について</h3>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">コンディションについて</h4>
+              <p class="guide_txt">当オンラインショップでは商品がユーズドである性質を考慮して、商品の状態を下記の基準でランク付けしております。</p>
+              <table class="guide_table guide_table-02">
+                <tbody class="guide_table_body guide_table_body-02">
+                  <tr>
+                    <th class="gray">コンディション</th>
+                    <th class="gray">当社の定める基準</th>
+                  </tr>
+                  <tr>
+                    <td>S</td>
+                    <td>未使用品</td>
+                  </tr>
+                  <tr>
+                    <td>A</td>
+                    <td>ダメージや使用感がほぼない商品</td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                    <td>多少使用感のある商品</td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td>使用感があり、多少ダメージがある商品</td>
+                  </tr>
+                  <tr>
+                    <td>D</td>
+                    <td>使用感があり、大きなダメージがある商品</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="guide_txt">上記以外の詳細につきましては商品詳細画面に記載しております。また、コンディションランクＥ以下のお品物は当オンラインストアでは販売しておりません。商品以外に付属している袋や靴の箱などにつきましてはコンディションランク対象外となっておりますので、あらかじめご了承ください。 </p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">色・素材について</h4>
+              <p class="guide_txt">商品の品質表示タグに記載された素材を掲示しております。品質表示タグが付いていない場合は「品質表示なし」、その他読み取れない場合などはその旨を記載しております。商品詳細画面にて表示しております【色】は、メーカー指定の表示色ではなく、当社の判断により、近い色を表示しております。また、商品の色・素材感については、モニターの特性や設定により、実物との違いが生じる場合がございます。あらかじめご了承ください。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">その他</h4>
+              <p class="guide_txt">掲載している商品に関しては、一部商品を除き実店舗（JUMBLE STORE/2nd STREET)で商品をご覧になることはできません。また、商品の受け渡しやお支払い、お直し、スタンプカード等についてもお受けできません。予めご了承の上、ご注文ください。</p>
+            </section>
+            <div class="m-textUnderlineLink"><a href="#" class="js-bothPcSpAccordionCloseBtn">閉じる</a></div>
+          </section>
+        </div>
+      </section>
+
+      <a id="js-toggle-4" class="c-accordion_link"></a>
+      <section class="c-accordion l-section-03">
+        <p class="c-accordion_title js-bothPcSpAccordionTrigger">ご注文</p>
+        <div class="js-bothPcSpAccordionContent">
+          <section class="guide">
+            <h3 class="guide_title">ご注文について</h3>
+            <p class="guide_txt">ご注文完了後、ご注文確認のメールをお送りしています。<br>ご注文されてから24時間経過してもメールが到着しない場合は、ご登録頂いたメールアドレスの不備や、ご注文が正常に完了していない場合がございます。お手数ですが、コチラまでご連絡ください。<br>ご注文の際は、お支払方法、配送先、クーポン・ポイントの適用などご確認の上ご注文をお願い致します。<br>ご注文後のお支払方法の変更・キャンセル、クーポン・ポイント等の適用、またご注文完了後の配送先住所の変更は致しかねます。<br>過度のキャンセルをされる方に関しましては、ご注文をお断りさせていただく場合もございますのでご了承ください。<br>また商品の取り置きは承っておりません。</p>
+            <div class="m-textUnderlineLink"><a href="#" class="js-bothPcSpAccordionCloseBtn">閉じる</a></div>
+          </section>
+        </div>
+      </section>
+
+      <a id="js-toggle-5" class="c-accordion_link"></a>
+      <section class="c-accordion l-section-03">
+        <p class="c-accordion_title js-bothPcSpAccordionTrigger">お支払い方法について</p>
+        <div class="js-bothPcSpAccordionContent">
+          <section class="guide">
+            <h3 class="guide_title">お支払い方法について</h3>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">消費税について</h4>
+              <p class="guide_txt">消費税率：8％<br>消費税計算順序：1商品毎に消費税計算<br>1円未満消費税端数：切り捨て</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">クレジットカード</h4>
+              <p class="guide_txt">取り扱いカードは以下のとおりです。</p>
+              <dl class="guide_credit clearfix">
+                <dt>VISA：</dt>
+                <dd>1回&nbsp;2回&nbsp;3回&nbsp;5回&nbsp;6回&nbsp;10回&nbsp;12回&nbsp;15回&nbsp;18回&nbsp;20回&nbsp;24回</dd>
+                <dt>MASTER：</dt>
+                <dd>1回&nbsp;2回&nbsp;3回&nbsp;5回&nbsp;6回&nbsp;10回&nbsp;12回&nbsp;15回&nbsp;18回&nbsp;20回&nbsp;24回</dd>
+                <dt>JCB：</dt>
+                <dd>1回&nbsp;2回&nbsp;3回&nbsp;5回&nbsp;6回&nbsp;10回&nbsp;12回&nbsp;15回&nbsp;18回&nbsp;20回&nbsp;24回</dd>
+                <dt>AMEX：</dt>
+                <dd>1回&nbsp;2回&nbsp;3回&nbsp;5回&nbsp;6回&nbsp;10回&nbsp;12回&nbsp;15回&nbsp;18回&nbsp;20回&nbsp;24回</dd>
+                <dt>Diners：</dt>
+                <dd>1回</dd>
+              </dl>
+              <p class="guide_note">※分割払いをご利用頂く場合総額1万円以上のお買い物からご利用いただけます。</p>
+              <p class="guide_txt">カード会社、ご契約内容により、分割をご利用いただけない場合がございます。欠品によりお買い物総額が1万円以下になる場合、一括でのお支払いに変更させて頂きます。ご注文後や欠品による金額変更が生じた場合でも、支払い回数の変更はお受けできませんので予めご了承ください。リボ払い、ボーナス一括払いはご利用いただけません。</p>
+              <p class="guide_txt">当サイトでは、安心してクレジットカード決済をご利用頂けるよう<strong>「3Dセキュア（本人認証）」</strong>サービスを導入しています。通常のカード番号と有効期限、カード裏面にあります3桁のセキュリティコードのご入力の他、お客様ご指定のパスワードを入力いただくことでクレジットカードの不正利用を防止するサービスです。ご登録済みのカードを利用の場合、「注文確定」ボタンを押した後3Dセキュア認証が始まります。</p>
+              <p class="guide_txt">ご利用には、事前にお持ちのクレジットカード会社ウェブサイトより3Dセキュア用のパスワードのご登録が必要となります。詳しくは下記ウェブサイトをご確認ください。</p>
+              <ul class="guide_secure">
+                <li>
+                  <a href="http://www.visa.co.jp/personal/security/onlineshopping.shtml" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/static/index/guide/card_img_01.jpg" alt="VISA認証サービス">
+                    <p>VISA<br>(Verified by VISA)</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.mastercard.co.jp/personal/securecode/index.html" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/static/index/guide/card_img_02.jpg" alt="MasterCard SecureCode">
+                    <p>Master<br>(MasterCard SecureCode)</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.jcb.co.jp/Jsecure/whats.html" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/static/index/guide/card_img_03.jpg" alt="JCB J/Secure">
+                    <p>JCB<br>(J/Secure)</p>
+                  </a>
+                </li>
+              </ul>
+              <p class="guide_note">※AMEX、Dinersカードは3Dセキュアサービスをご利用頂けません。</p>
+              <p class="guide_txt"><strong>3Dセキュアに関してご不明な場合は、カード裏面に記載されている各カード発行会社、もしくは上記ウェブサイトよりお問い合せください。</strong></p>
+              <div class="guide_border">
+                <p class="guide_caption -red">【デビットカードご利用時のご注意】</p>
+                <p class="guide_txt">デビットカードをご利用の場合で、欠品・キャンセル・返品等で請求金額の変更が発生した場合は、一時的に二重または三重の引き落としがされ口座へのご返金までに45日～60日程時間がかかる場合がございます。当店では各カード発行会社の規定に沿って処理を行わせて頂くため、振込等での早期のご返金はご要望頂きましてもご対応できかねます。カード発行元からのご返金をお待ち頂きますようお願い致します。上記デビットカードの特性をご理解頂き、ご利用お願い致します。</p>
+                <p class="guide_note">※返金までの所要時間に関しましては、発行元によって異なりますので、お手元のカード発行元にご確認をお願いします。</p>
+              </div>
+              <p class="guide_caption">【備考】</p>
+              <p class="guide_txt">一部商品ではクレジットカード決済をご利用いただくことができません。クレジットカードにて10万円以上お支払いの場合、ご本人様確認をさせていただく場合があります。ご注文者様とカード名義人様が異なる場合、クレジットカードでの決済をお断りさせていただいております。ご注文時のカード情報にて、カード会社の承認を得られなかったご注文につきましては、ご注文をキャンセルさせていただきますので、大変お手数ですが再度決済方法をご変更いただき、ご注文をお願いいたします。<br>お支払総額は以下の通りです。</p>
+              <p class="guide_box">商品代金合計＋送料</p>
+              <p class="guide_txt">当店ではセキュリティ上の配慮からクレジットカード利用控は原則としてお送りしておりません。<br>カード会社から送付されますご利用明細をご確認ください。なお、弊社ではSSLというシステムを利用しております。カード番号は暗号化されて送信されますが、安全を保証するものではございません。ご了承ください。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">商品代金引換</h4>
+              <p class="guide_txt">お支払総額は以下の通りです。</p>
+              <p class="guide_box">商品代金合計＋送料＋代引手数料</p>
+              <p class="guide_txt">代引手数料は324円（税込）となります。</p>
+              <p class="guide_note">※お支払いは現金のみとなります。お届け時に担当ドライバーにお支払いください。</p>
+              <p class="guide_note">※お支払い金額が30万円を超えるご注文はクレジットカード決済のみとさせて頂きます。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">Lueca(ルエカ)決済</h4>
+              <p class="guide_txt">お支払総額は以下の通りです。</p>
+              <p class="guide_box">商品代金合計+送料</p>
+              <p class="guide_txt">ルエカでお支払い頂く場合、代金引換・クレジットカードとの併用はできません、予めご了承くださいませ。</p>
+              <p class="guide_note">※ご利用にはGEO IDでのログインが必要になります。</p>
+              <div class="guide_box -wide">
+                <img src="/img/static/index/guide/logo_lueca.jpg" alt="Lueca">
+                <p>Lueca（ルエカ）とは、ゲオグループの店舗・一部WEBサービスでご利用いただけるオリジナルプリペイドカードです。ご登録いただくことでオンラインストアにてLueca（ルエカ）での決済が可能になります。<a href="http://lueca.jp/" target="_blank" rel="noopener noreferrer">詳しくはこちら<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a></p>
+              </div>
+            </section>
+            <div class="m-textUnderlineLink"><a href="#" class="js-bothPcSpAccordionCloseBtn">閉じる</a></div>
+          </section>
+        </div>
+      </section>
+
+      <a id="js-toggle-6" class="c-accordion_link"></a>
+      <section class="c-accordion l-section-03">
+        <p class="c-accordion_title js-bothPcSpAccordionTrigger">お届け</p>
+        <div class="js-bothPcSpAccordionContent">
+          <section class="guide">
+            <h3 class="guide_title">お届けについて</h3>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">商品のお届けについて</h4>
+              <p class="guide_txt">「ゆうパック」にてお届けいたします。なお、配送業者のご指定はお受けする事ができませんので予めご了承ください。ご注文をいただいてから通常3～４営業日を目安に発送いたします。 年末年始、５月連休、その他休業期間については発送目安を超える場合もございます。<br>また配送地域、交通事情、在庫等の理由により到着が遅延する場合がございます。また、お届け先は日本国内に限らせていただきます。<br>弊社指定配送業者にてお送りさせていただき、配送業者のご指定は出来かねますので予めご了承ください。<br>なお､当社より配送業者に商品を引き渡した時点で､その商品の紛失及び破損のリスクはお客様に移転します。</p>
+              <p class="guide_txt">ご注文後2週間を経過しても商品が配送されない場合は、お手数ではございますが<a href="https://www.2ndstreet.jp/contact/input">オンラインストアサポートセンター</a>までご連絡ください。</p>
+              <p class="guide_caption">【郵便局留めをご希望の場合の入力方法】</p>
+              <p class="guide_txt">郵便局留めをご希望の場合は下記のとおり配送先情報をご登録ください。<br>
+                配送先氏名：ご注文者様または配送先氏名<br>
+                配送先電話番号：ご注文者様又は配送先電話番号<br>
+                郵便番号：○○○-○○○○（希望郵便局の郵便番号）<br>
+              住所：○○郵便局留め　〒○○○-○○○○　○○県○○市○○町***-***（希望郵便局留めを記載後　続けてお客様の住所を記載）</p>
+              <p class="guide_note">※氏名・住所・お電話番号にお客様の情報を入力いただけない場合、ご本人様確認ができないためお品物をお渡しする事が出来かねます。</p>
+              <p class="guide_note">※当店では郵便局留めの配送に簡易郵便局のご指定はお受けできません。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">料金について</h4>
+              <p class="guide_txt">全国一律540円（税込)となります。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">ご不在の場合</h4>
+              <p class="guide_txt">ご不在時のお届けの際には「ご不在連絡票」を投函させていただいております。<br>ご不在連絡票に書かれている連絡先電話番号までお問い合わせください。<br>なお、お荷物管理期間（1週間）を過ぎても商品をお受取いただけない場合は、返品となります。<br>予めご了承いただきますようお願い申し上げます。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">商品の発送について</h4>
+              <p class="guide_txt">商品は取扱している店舗より発送となります。<br>同時に複数の商品をご注文される場合でも、商品お受け取りが複数回となります。<br>お受け取りが複数回になる場合も、送料・代引き手数料は1回分のお支払いとなります。同梱発送はできかねます予めご了承いただけますようお願い申し上げます。</p>
+              <p class="guide_note">※別々に複数の商品をご注文される場合は、ご注文毎に送料・代引き手数料が発生致します。ご注文の修正はできかねますのでご確認の上ご注文をお願い致します。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">お届け日時の指定について</h4>
+              <p class="guide_txt">お届け日は、ご注文日の6日後～10日後の間でご指定いただけます。<br>例）注文日5/1→配達日指定日5/7～5/11<br>お届け時間帯は「午前中（8時～12時）」「12時～14時」「14時～16時」「16時～18時」「18時～20時」「20時～21時」よりご指定いただけます。</p>
+              <p class="guide_note">※配送日時指定の無い場合は最短での発送となります（通常：注文から3～4営業日を目安に発送）。</p>
+              <p class="guide_note">※配送日時の指定はあくまで希望となります。弊社でご注文内容の確認が必要な場合（10万円以上の高額注文等）や、配送状況（交通状況・天候・運送会社様の都合等）によりご希望通りにお届けする事は保証できかねます。<br>また、地域により日時指定が不可能な場合や、お時間が通常よりもかかる場合がございますので 予めご了承ください。</p>
+              <p class="guide_note">※弊社ではご注文後のご注文内容の変更はお受けできませんので、日時指定等確認の上ご注文確定をお願いいたします。</p>
+            </section>
+
+            <div class="m-textUnderlineLink"><a href="#" class="js-bothPcSpAccordionCloseBtn">閉じる</a></div>
+          </section>
+        </div>
+      </section>
+
+      <a id="js-toggle-7" class="c-accordion_link"></a>
+      <section class="c-accordion l-section-03">
+        <p class="c-accordion_title js-bothPcSpAccordionTrigger">注文取消し・返品</p>
+        <div class="js-bothPcSpAccordionContent">
+          <section class="guide">
+            <h3 class="guide_title">注文取消し・返品について</h3>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">返品について</h4>
+              <p class="guide_txt">お客様都合による商品のご返品は一切承っておりません。<br>商品に不良がございました場合のみ送料弊社負担にて返品とさせていただきます。<br>返品の際は、商品代金+送料+代引き手数料とし、お客様が行った修理等の保証はいたしかねます。<br>またリユース品の為、修理・商品の交換・代替え商品の用意等の対応はできかねます。</p>
+              <p class="guide_note">※商品到着後7日を超えた場合は、不良による返品も応じかねます。予めご了承ください。</p>
+              <p class="guide_txt">商品はリユース品ですので些少な汚れ・シミ等による返品、返金、交換はお断りさせていただいております。<br>また、お客様都合による返金・交換・キャンセルはお受けできません。</p>
+              <p class="guide_txt">なお、当オンラインストア掲載の商品は厳重な商品チェックの上、コンディションランク付けをしております。シミ・汚れ等がございましたら商品詳細ページに記載しておりますので、詳細をよくお読みいただき、ご了承の上ご注文ください。<br>また、シミ・汚れ等による値引き交渉等には応じかねますのでご了承ください。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">返金方法について</h4>
+              <p class="guide_txt">代金引換をご利用の場合は銀行振込にてお返しさせていただきます。<br>ルエカをご利用の場合はご注文時にご利用頂いたルエカにお返しさせていただきます。<br>クレジットカード決済をご利用の場合は、弊社からカード会社に注文の取り消しを依頼いたします。<br>カード締め日の関係で、一旦ご請求がされた翌月にご返金になる場合もございます、予めご了承くださいませ。<br>念のためカード会社から明細が届きましたらご確認ください。<br>複数の商品を購入されたうちの数点を返品される場合、送料（540円）・代引手数料（324円）はご返金できませんのでご了承ください。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">領収証の発行について</h4>
+              <p class="guide_txt">お届け商品には「納品書」という書類が同梱されております。領収書の発行を希望される方は別途封書にてお送りさせていただきますので、ご注文後サポートセンターまでご連絡ください。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">新品商品（アンティクローズ等）のご対応について</h4>
+              <p class="guide_txt">新品商品の場合もお客様都合による、商品の返品・交換は一切承っておりません。<br>万が一、商品に不良がございました場合のみ送料弊社負担にて返品とさせていただきます。<br>返品の際は、商品代金+送料+代引手数料を返金いたします。</p>
+            </section>
+            <div class="m-textUnderlineLink"><a href="#" class="js-bothPcSpAccordionCloseBtn">閉じる</a></div>
+          </section>
+        </div>
+      </section>
+
+      <a id="js-toggle-8" class="c-accordion_link"></a>
+      <section class="c-accordion l-section-03">
+        <p class="c-accordion_title js-bothPcSpAccordionTrigger">返金保証</p>
+        <div class="js-bothPcSpAccordionContent">
+          <section class="guide">
+            <h3 class="guide_title">返金保証について</h3>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">返金保証について</h4>
+              <p class="guide_txt">お買い上げいただいた商品につきまして、次に示す条件に従い返金保証いたします。</p>
+              <table class="guide_table guide_table-02">
+                <tbody class="guide_table_body guide_table_body-02-2">
+                  <tr>
+                    <th class="gray">保証対象商品</th>
+                    <td>腕時計、ポータブルメモリープレイヤー、楽器(※１)等の電動品</td>
+                  </tr>
+                  <tr>
+                    <th class="gray">保証対象期間</th>
+                    <td>お品物到着後、6カ月間保証いたします</td>
+                  </tr>
+                  <tr>
+                    <th class="gray">保証内容</th>
+                    <td>商品代金+送料+代引き手数料(代引きをご利用の場合)のご返金対応をいたします。</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="guide_note">注意事項(※1)<br>楽器に関しましては、一部対象外のお品物が含まれる場合が御座います。ご了承ください。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">返金保証書の発行について</h4>
+              <p class="guide_txt">商品をお買い上げいただきました際に、保証対象品の場合は、「返金保証書」を発行させていただき商品と同梱させていただいております。<br>ご返金対応につきましては、保証書の内容に沿ってのご対応とさせていただきます。</p>
+            </section>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">返金保証規定</h4>
+              <ul class="guide_list guide_list-02">
+                <li>1.お買い上げ後、当社発行の返金保証書に記載されている保証期間内において、正常な使用状態で自然故障を生じた場合には返品をお受けし、ご購入代金の返金をいたします。<br>なお、修理や調整/交換はいたしておりませんのでご了承ください。ポイントでご購入された場合、同梱しております「ご返金について」(3)をご確認ください。</li>
+                <li>2.保証期間内であっても、次の場合は保証対象外となり、ご返金いたしかねます。
+                  <ul>
+                    <li>・誤ったご使用や、不注意/過失による故障/破損</li>
+                    <li>・返金保証書のご提示が無い場合や紛失されている場合</li>
+                    <li>・火災/水害/地震等の天災地変による故障/破損</li>
+                    <li>・ご使用に生じる外観上の変化（汚れ/キズ・サビ等の変化）</li>
+                    <li>・お買い上げ時の状態より修理や改造がなされている場合</li>
+                    <li>・品質および機能上問題ないと当社が判断した場合</li>
+                    <li>・返金保証書が改ざんされている場合</li>
+                    <li>・お買い上げ時より付属品等の欠品がある場合</li>
+                    <li>・防水機能に起因する故障/破損</li>
+                    <li>・電池/消耗品の交換を必要とする場合</li>
+                  </ul>
+                </li>
+                <li>3.お買い上げ後に別途発生した料金(修理代や取付け/取外しに関わる工事費/消耗品・配送料)等は、一切責任を負いかねます。</li>
+                <li>4.お買い上げいただいた商品が故障したこと等により発生した損害/損失については、一切責任を負いかねます。</li>
+                <li>5.当保証規定では、お客様の法律上の権利を制限することは一切ございません。</li>
+                <li>6.電動品とは下記の商品が該当になります
+                  <ul>
+                    <li>・電池及びバッテリー（ソーラーパネル含む）/コンセントを使用するもの</li>
+                    <li>・またはそれらの機器に繋ぎ、可動するもの</li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+            <div class="m-textUnderlineLink"><a href="#" class="js-bothPcSpAccordionCloseBtn">閉じる</a></div>
+          </section>
+        </div>
+      </section>
+
+      <a id="js-toggle-9" class="c-accordion_link"></a>
+      <section class="c-accordion l-section-03">
+        <p class="c-accordion_title js-bothPcSpAccordionTrigger">時計・アクセサリー・貴金属の販売</p>
+        <div class="js-bothPcSpAccordionContent">
+          <section class="guide">
+            <h3 class="guide_title">時計・アクセサリー・貴金属の販売について</h3>
+            <p class="guide_txt">古物営業法の規定により、以下商品のご注文時はお客様お届け先情報に加え、生年月日・ご職業をご入力いただく場合がございます。予めご了承ください。</p>
+            <section class="guide_unit">
+              <h4 class="guide_subheading">対象商品について</h4>
+
+              <table class="guide_table guide_table-02">
+                <tbody class="guide_table_body guide_table_body-02-2">
+                  <tr>
+                    <th class="gray">保証対象商品</th>
+                    <td>商品販売価格１万円以上の、時計（腕時計）、アクセサリー（指輪・ネックレス・ブレスレット等）アイウェア（メガネ・サングラス）、貴金属 等</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <div class="m-textUnderlineLink"><a href="#" class="js-bothPcSpAccordionCloseBtn">閉じる</a></div>
+          </section>
+        </div>
+      </section>
+
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<% var currentClass = 'is-current'; -%>
+<% var beforeClass = 'is-beforecurrent'; -%>
+
+<div class="g-local-navigation">
+  <ul class="g-local-navigation_list">
+    <li class="<%- page === 'sell' ? currentClass : '' %> <%- page === 'sellstore' ? beforeClass : '' %>">
+      <a href="/sell/"><span class="en RalewayBold">SERVICE GUIDE</span>買取サービスのご案内</a>
+    </li>
+    <li class="<%- page === 'sellstore' ? currentClass : '' %> <%- page === 'sellweb' ? beforeClass : '' %>">
+      <a href="/sell/store/"><span class="en RalewayBold">STORE</span>店頭買取</a>
+    </li>
+    <li class="<%- page === 'sellweb' ? currentClass : '' %> <%- page === 'sellvisit' ? beforeClass : '' %>">
+      <a href="/sell/web/"><span class="en RalewayBold">WEB</span>Web買取</a>
+    </li>
+    <li class="<%- page === 'sellvisit' ? currentClass : '' %>">
+      <a href="/sell/visit/"><span class="en RalewayBold">VISIT</span>出張買取</a>
+    </li>
+  </ul>
+</div>

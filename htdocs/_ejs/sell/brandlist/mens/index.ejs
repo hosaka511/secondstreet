@@ -1,0 +1,264 @@
+<%_  var pageID = 'sellBrandlistMens'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/js/vendor/slick/slick.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="storeCategory">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-03">
+        <p class="m-heading_subtitle">取扱商品について</p>
+        <h2 class="m-heading_title">メンズ衣類<br>買取強化ブランド一覧</h2>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-method', {page: pageID})%>
+
+      <ul class="index u-hidden-sm">
+        <li><a href="#a">A</a></li>
+        <li><a href="#b">B</a></li>
+        <li><a href="#c">C</a></li>
+        <li><a href="#d">D</a></li>
+        <li><a href="#e">E</a></li>
+        <li><a href="#f">F</a></li>
+        <li><a href="#g">G</a></li>
+        <li><a href="#h">H</a></li>
+        <li><span>I</span></li>
+        <li><a href="#j">J</a></li>
+        <li><a href="#k">K</a></li>
+        <li><a href="#l">L</a></li>
+        <li><a href="#m">M</a></li>
+        <li><a href="#n">N</a></li>
+        <li><a href="#o">O</a></li>
+        <li><a href="#p">P</a></li>
+        <li><span>Q</span></li>
+        <li><a href="#r">R</a></li>
+        <li><a href="#s">S</a></li>
+        <li><a href="#t">T</a></li>
+        <li><a href="#u">U</a></li>
+        <li><a href="#v">V</a></li>
+        <li><a href="#w">W</a></li>
+        <li><a href="#x">X</a></li>
+        <li><a href="#y">Y</a></li>
+        <li><a href="#z">Z</a></li>
+        <li><span>その他</span></li>
+      </ul>
+
+      <div class="index-sp u-hidden-md u-hidden-lg">
+        <table>
+          <tbody>
+            <tr>
+              <td><a href="#a">A</a></td>
+              <td><a href="#b">B</a></td>
+              <td><a href="#c">C</a></td>
+              <td><a href="#d">D</a></td>
+              <td><a href="#e">E</a></td>
+              <td><a href="#f">F</a></td>
+              <td><a href="#g">G</a></td>
+            </tr>
+            <tr>
+              <td><a href="#h">H</a></td>
+              <td><span>I</span></td>
+              <td><a href="#j">J</a></td>
+              <td><a href="#k">K</a></td>
+              <td><a href="#l">L</a></td>
+              <td><a href="#m">M</a></td>
+              <td><a href="#n">N</a></td>
+            </tr>
+            <tr>
+              <td><a href="#o">O</a></td>
+              <td><a href="#p">P</a></td>
+              <td><span>Q</span></td>
+              <td><a href="#r">R</a></td>
+              <td><a href="#s">S</a></td>
+              <td><a href="#t">T</a></td>
+              <td><a href="#u">U</a></td>
+            </tr>
+            <tr>
+              <td><a href="#v">V</a></td>
+              <td><a href="#w">W</a></td>
+              <td><a href="#x">X</a></td>
+              <td><a href="#y">Y</a></td>
+              <td><a href="#z">Z</a></td>
+              <td colspan="2" class="last"><span>その他</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <a id="a" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>A</dt>
+        <dd><span>ABAHOUSE、</span><span>A BATHING APE、</span><span>A.P.C、</span><span>Abercrombie&Fitch、</span><span>ALPHA INDUSTORIES、</span><span>etc…</span></dd>
+      </dl>
+      <a id="b" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>B</dt>
+        <dd><span>Barboour、</span><span>BAYFLOW、</span><span>BEAMS PLUS、</span><span>BEAUTY&YOUTH UNITED ARROWS、</span><span>BEDWIN&HEARTBREAKERS、</span><span>BEN DAVIS、</span><span>BLACK LABEL CRESTBRIDGE、</span><span>BLUE BLUE、</span><span>BROOKS BROTHERS、</span><span>BURBERRY BLACK LABEL、</span><span>BUZZ RICKSONS、</span><span>etc…</span></dd>
+      </dl>
+      <a id="c" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>C</dt>
+        <dd><span>C.E、</span><span>CALEE、</span><span>carhartt、</span><span>CHROME HEARTS、</span><span>CIAOPANIC、</span><span>Columbia、</span><span>COMME des GARCONS HOMME、</span><span>etc…</span></dd>
+      </dl>
+      <a id="d" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>D</dt>
+        <dd><span>DANTON、</span><span>DIESEL、</span><span>DSQUARED2、</span><span>etc…</span></dd>
+      </dl>
+      <a id="e" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>E</dt>
+        <dd><span>EN ROUTE、</span><span>EN ROUTE、</span><span>Engineered Garments、</span><span>Engineered Garments、</span><span>EVISU、</span><span>etc…</span></dd>
+      </dl>
+      <a id="f" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>F</dt>
+        <dd><span>F.C.R.B、</span><span>FRED PERRY、</span><span>etc…</span></dd>
+      </dl>
+      <a id="g" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>G</dt>
+        <dd><span>G-STAR RAW、</span><span>GLOBALWORK、</span><span>GOD SELECTION XXX、</span><span>GRAMICCI、</span><span>etc…</span></dd>
+      </dl>
+      <a id="h" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>H</dt>
+        <dd><span>HARE、</span><span>HELLY HANSEN、</span><span>HYSTERIC GLAMOUR、</span><span>etc…</span></dd>
+      </dl>
+      <a id="j" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>J</dt>
+        <dd><span>JACK ROSE、</span><span>JOHNBULL、</span><span>JOURNAL STANDARD、</span><span>etc…</span></dd>
+      </dl>
+      <a id="k" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>K</dt>
+        <dd><span>Kapital、</span><span>etc…</span></dd>
+      </dl>
+      <a id="l" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>L</dt>
+        <dd><span>LACOSTE、</span><span>LAVENHAM、</span><span>Lee、</span><span>Levi's Vintage Clothing、</span><span>etc…</span></dd>
+      </dl>
+      <a id="m" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>M</dt>
+        <dd><span>Maison Margiela、</span><span>MONCLER、</span><span>monkey time、</span><span>mont-bell、</span><span>etc…</span></dd>
+      </dl>
+      <a id="n" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>N</dt>
+        <dd><span>nano universe、</span><span>NUDIE JEANS、</span><span>Needles、</span><span>NEIGHBORHOOD、</span><span>Nigel Cabourn、</span><span>NONNATIVE、</span><span>etc…</span></dd>
+      </dl>
+      <a id="o" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>O</dt>
+        <dd><span>or slow、</span><span>ORCIVAL、</span><span>ORIHICA、</span><span>etc…</span></dd>
+      </dl>
+      <a id="p" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>P</dt>
+        <dd><span>Patagonia、</span><span>Paul Smith、</span><span>PHERROW'S、</span><span>PLAY COMME des GARCONS、</span><span>POLO RALPH LAUREN、</span><span>etc…</span></dd>
+      </dl>
+      <a id="r" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>R</dt>
+        <dd><span>RAGEBLUE、</span><span>RED CARD、</span><span>REMI RELIEF、</span><span>RESOLUTE、</span><span>RRL、</span><span>etc…</span></dd>
+      </dl>
+      <a id="s" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>S</dt>
+        <dd><span>SAINT JAMES、</span><span>SASSAFRAS、</span><span>SCHOTT、</span><span>STUSSY、</span><span>SUGAR CANE、</span><span>Supreme、</span><span>etc…</span></dd>
+      </dl>
+      <a id="t" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>T</dt>
+        <dd><span>TENDERLOIN、</span><span>THE NORTH FACE、</span><span>TOMMY HILFIGER、</span><span>etc…</span></dd>
+      </dl>
+      <a id="u" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>U</dt>
+        <dd><span>UNDEFEATED、</span><span>UNDER COVER、</span><span>Uniform Experiment、</span><span>UNITED TOKYO、</span><span>URBAN RESEARCH、</span><span>etc…</span></dd>
+      </dl>
+      <a id="v" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>V</dt>
+        <dd><span>VANSON、</span><span>VISVIM、</span><span>etc…</span></dd>
+      </dl>
+      <a id="w" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>W</dt>
+        <dd><span>WACKO MARIA、</span><span>WTAPS、</span><span>etc…</span></dd>
+      </dl>
+      <a id="x" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>X</dt>
+        <dd><span>X-LARGE、</span><span>etc…</span></dd>
+      </dl>
+      <a id="y" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>Y</dt>
+        <dd><span>YOHJI YAMAMOTO、</span><span>etc…</span></dd>
+      </dl>
+      <a id="z" class="brandlist_link"></a>
+      <dl class="brandlist">
+        <dt>Z</dt>
+        <dd><span>ZARA MAN、</span><span>etc…</span></dd>
+      </dl>
+
+      <div class="brandlist_btn"><a class="m-btn m-btnEffect" href="/sell/category/mens/">メンズ衣類に戻る</a></div>
+
+
+
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+
+  </div>
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/vendor/slick/slick.min.js"></script>
+  <script src="/js/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/sell.js"></script>
+</body>
+
+</html>

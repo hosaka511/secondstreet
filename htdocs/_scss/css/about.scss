@@ -1,0 +1,352 @@
+@charset "UTF-8";
+
+/*
+* about.css
+*
+*/
+
+// Common Settings
+@import "_partials/setting";
+@import "_partials/sprite-common";
+@import "_partials/function";
+@import "_partials/mixin";
+$red: #d90000;
+$grey: #d7dbe0;
+$moveLayerColor: #f5f7fa;
+
+
+/* --------------------------------
+  common
+-------------------------------- */
+.section_title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: ls(100);
+  @include small-screen {
+    font-size: vw(42);
+    line-height: lh(42,54);
+  }
+  &.-anim {
+    @include effctBottomFade(0s);
+  }
+}
+.section_subtitle {
+  font-size: 14px;
+  letter-spacing: ls(140);
+  font-weight: bold;
+  color: $red;
+  text-align: center;
+  @include small-screen {
+    font-size: vw(20);
+  }
+  &.-anim {
+    @include effctBottomFade(0s);
+  }
+}
+.m-desc {
+  text-align: center;
+  .business_section & {
+    @include small-screen {
+      margin-top: vw(30);
+    }
+  }
+}
+
+
+/* --------------------------------
+  mv
+-------------------------------- */
+.mv {
+  position: relative;
+  padding-top: 146px;
+  height: 730px;
+  color: #fff;
+  font-weight: bold;
+  font-feature-settings: "palt";
+  text-align: center;
+  @include small-screen {
+    padding-top: vw(150);
+    height: 133vw;
+  }
+}
+.mv_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+    opacity: 0.2;
+    transform: scale(1.1);
+    transition: opacity 1.5s $linear, transform $easeOutCubic 2s;
+    .is-active &{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+.mv_title {
+  position: relative;
+  font-size: 36px;
+  letter-spacing: ls(120);
+  @include small-screen {
+    font-size: vw(42);
+    letter-spacing: ls(80);
+  }
+  opacity: 0;
+  transition: opacity 0.8s 0.4s $linear;
+  .is-active &{
+    opacity: 1;
+  }
+}
+.mv_subtitle {
+  position: relative;
+  margin-top: 5px;
+  font-size: 14px;
+  letter-spacing: ls(140);
+  @include small-screen {
+    margin-top: 0;
+    font-size: vw(20);
+  }
+  opacity: 0;
+  transition: opacity 0.8s 0.4s $linear;
+  .is-active &{
+    opacity: 1;
+  }
+}
+.mv_txt {
+  position: relative;
+  margin-top: 43px;
+  font-size: 16px;
+  line-height: lh(16,34);
+  letter-spacing: ls(60);
+  @include effctBottomFade(1s);
+  @include small-screen {
+    margin-top: vw(48);
+    font-size: vw(24);
+    line-height: lh(24, 44);
+  }
+  + .mv_txt {
+    margin-top: 35px;
+    @include effctBottomFade(1.2s);
+    @include small-screen {
+      margin-top: vw(44);
+    }
+  }
+}
+
+
+/* --------------------------------
+  business
+-------------------------------- */
+.business {
+  margin-top: 200px;
+  font-feature-settings: "palt";
+  color: #000;
+  @include small-screen {
+    margin-top: vw(200);
+  }
+}
+.business_list {
+  margin: 26px auto 0;
+  width: 640px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateX(-20px);
+  @include small-screen {
+    margin-top: vw(48);
+    width: 84%;
+    transform: none;
+    li {
+      &:nth-child(1) {
+        width: vw(218);
+      }
+      &:nth-child(2) {
+        width: vw(174);
+      }
+      &:nth-child(3) {
+        width: vw(168);
+      }
+    }
+  }
+}
+.business_section {
+  margin-top: 70px;
+  padding: 80px 0 100px;
+  background-color: #f0f2f5;
+  text-align: center;
+  @include small-screen {
+    margin-top: vw(100);
+    padding: vw(80) vw(60) vw(160);
+  }
+}
+.business_section_title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: ls(100);
+  @include small-screen {
+    font-size: vw(32);
+  }
+}
+.business_part {
+  margin: 40px auto 0;
+  padding: 60px 0;
+  width: 1120px;
+  background-color: #fff;
+  border: 1px solid $grey;
+  @include small-screen {
+    margin-top: vw(80);
+    padding: vw(90) vw(50);
+    width: 100%;
+  }
+}
+.business_part_title {
+  @include small-screen {
+    margin: auto;
+    width: vw(302);
+  }
+}
+.business_part_note {
+  margin-top: 30px;
+  color: #808080;
+  font-size: 12px;
+  font-weight: bold;
+  @include small-screen {
+    font-size: vw(20);
+  }
+  .business_part_type & {
+    margin-top: 20px;
+    @include small-screen {
+      margin-top: vw(20);
+    }
+  }
+}
+.business_part_service {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding: 0 4px;
+  @include small-screen {
+    margin-top: 0;
+    padding: 0;
+  }
+  &.-center {
+    justify-content: center;
+    @include small-screen {
+      justify-content: flex-start;
+      padding: 0 vw(48);
+    }
+  }
+  li {
+    width: 62px;
+    height: 51px;
+    &.not {
+      opacity: 0.2;
+    }
+    @include small-screen {
+      width: 25%;
+      height: vw(100);
+    }
+    svg {
+      width: 40px;
+      height: 40px;
+      @include small-screen {
+        width: vw(74);
+        height: vw(100);
+      }
+    }
+  }
+}
+.business_part_type {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto 0;
+  width: 1000px;
+  @include small-screen {
+    flex-direction: column;
+    margin-top: vw(48);
+    width: 100%;
+  }
+  > li {
+    width: 320px;
+    border: 1px solid $grey;
+    @include small-screen {
+      width: 100%;
+      + li {
+        margin-top: vw(40);
+      }
+    }
+    > div {
+      padding: 5px 30px 30px;
+      @include small-screen {
+        padding: 0 vw(48) vw(36);
+      }
+    }
+  }
+}
+.business_part_type_title {
+  padding: 14px 0;
+  background-color: #f0f2f5;
+  border-bottom: 1px solid $grey;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: ls(60);
+  @include small-screen {
+    padding: vw(20) 0;
+    font-size: vw(28);
+  }
+}
+.business_part_btn01 {
+  .m-btn {
+    margin-top: 20px;
+    width: 100%;
+    @include small-screen {
+      margin-top: vw(40);
+    }
+  }
+}.business_part_btn02 {
+  .m-btn {
+    margin-top: 40px;
+    @include small-screen {
+      margin-top: vw(40);
+      width: 100%;
+    }
+  }
+}
+
+
+/* --------------------------------
+  アニメーション
+-------------------------------- */
+.c-advantage_list_item_img {
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0s $ease 0s;
+  .is-active &{
+    opacity: 1;
+    transition: opacity 0.4s 0s $ease;
+    &:after {
+      transform: translate3d(100%, 0, 0);
+      transition: all 1s $move-layer .6s;
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $moveLayerColor;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    // transition: all 0s $move-layer 0s;
+  }
+}

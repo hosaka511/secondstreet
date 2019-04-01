@@ -1,0 +1,372 @@
+<%_  var pageID = 'sellCategoryElectronics'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/js/vendor/slick/slick.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="storeCategory">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-03">
+        <p class="m-heading_subtitle">取扱商品について</p>
+        <h2 class="m-heading_title">AV・生活家電</h2>
+        <p class="m-heading_desc">TV・冷蔵庫・洗濯機・調理家電等の家電製品。</p>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-method', {page: pageID})%>
+
+
+      <section class="buildup">
+        <h3 class="m-title">買取ジャンル例</h3>
+        <ul class="buildup_list">
+          <li class="buildup_list_item">
+            <img src="/img/sell/category/electronics/buildup_img_01.jpg" alt="画像：買取ジャンル例01">
+            <p class="buildup_list_item_txt">オーディオ<br class="u-hidden-md u-hidden-lg">スピーカー</p>
+          </li>
+          <li class="buildup_list_item">
+            <img src="/img/sell/category/electronics/buildup_img_02.jpg" alt="画像：買取ジャンル例02">
+            <p class="buildup_list_item_txt">コーヒーメーカー</p>
+          </li>
+          <li class="buildup_list_item">
+            <img src="/img/sell/category/electronics/buildup_img_03.jpg" alt="画像：買取ジャンル例03">
+            <p class="buildup_list_item_txt">スティック型<br class="u-hidden-md u-hidden-lg">掃除機</p>
+          </li>
+          <li class="buildup_list_item">
+            <img src="/img/sell/category/electronics/buildup_img_04.jpg" alt="画像：買取ジャンル例04">
+            <p class="buildup_list_item_txt">スマートスピーカー</p>
+          </li>
+          <li class="buildup_list_item">
+            <img src="/img/sell/category/electronics/buildup_img_05.jpg" alt="画像：買取ジャンル例05">
+            <p class="buildup_list_item_txt">ロボット型掃除機</p>
+          </li>
+          <li class="buildup_list_item">
+            <img src="/img/sell/category/electronics/buildup_img_06.jpg" alt="画像：買取ジャンル例06">
+            <p class="buildup_list_item_txt">洗濯機</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="impossible">
+        <h3 class="m-title">取扱できない商品</h3>
+
+        <table class="impossible_table">
+          <caption>取扱できない家電品の製造年について</caption>
+          <tbody class="impossible_table_body">
+            <tr>
+              <th>家電</th>
+              <td>11年以上前に製造された家電品</td>
+            </tr>
+            <tr>
+              <th>暖房機<br>(熱を発するもの)</th>
+              <td>6年以上前に製造された家電品</td>
+            </tr>
+            <tr>
+              <th>パソコン</th>
+              <td>【ノートパソコン】<br>Windows 98、2000 以前の製造品、Mac OS 10.5 以前の製造品<br>【デスクトップパソコン】<br>Windows Vista以前の製造品、Mac OS 10.5 以前の製造品</td>
+            </tr>
+            <tr>
+              <th>プリンター</th>
+              <td>4年以上前の製造品</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="impossible_note">※上記、年数・モデルの品物は買取させて頂きます。安心してお売り下さい。</p>
+
+        <table class="impossible_table">
+          <caption>法令により取扱できない品物</caption>
+          <tbody class="impossible_table_body">
+            <tr>
+              <th>不正競争防止法<br>商標法</th>
+              <td>ブランド品の模造品、DVDなどの海賊版・偽物、模倣した自作品等</td>
+            </tr>
+            <tr>
+              <th>個人情報保護法</th>
+              <td>住所・名前の入った個人が特定できる品物等</td>
+            </tr>
+            <tr>
+              <th>電波法</th>
+              <td>アマチュア無線、業務用トランシーバー等</td>
+            </tr>
+            <tr>
+              <th>消費生活安全法</th>
+              <td>【PSCマークのなし】家庭用圧力なべ、家庭用圧力がま、幼児用ベッド、携帯用レーザー応用装置等、石油暖房機等</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="impossible_note">※お客様に安心してお買い物を楽しんでいただけるように、セカンドストリートでは、法令遵守・社会通念に照らし合わせ自主的に取扱を行っていない商品もございます。予めご了承くださいますよう、お願いいたします。</p>
+        <p class="impossible_note">※ご不明な点がございましたら、お気軽にお近くの店舗まで、お問合せください。</p>
+
+        <table class="impossible_table">
+          <caption>規定により取扱できない品物</caption>
+          <tbody class="impossible_table_body">
+            <tr>
+              <th>生活家電</th>
+              <td>ガス製品、エアコン(室外機付)、火災報知機、編み機等<br>【使用済】シェーバー、電動歯ブラシ、ウォシュレット、アルカリイオン整水器、吸入器等</td>
+            </tr>
+            <tr>
+              <th>ビジュアル家電</th>
+              <td>ブラウン管テレビ</td>
+            </tr>
+            <tr>
+              <th>電動工具</th>
+              <td>固定式工具(丸ノコ盤、糸ノコ盤)、回転式工具(チェーンソー、丸ノコ、ディスクグラインダー、刈払機、トリマー)等</td>
+            </tr>
+            <tr>
+              <th>パソコン</th>
+              <td>パソコン用ブラウン管ディスプレイ、パソコン用パーツ類(USB接続を除く)等</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+
+      <section class="c-accordion c-buyingReinforcing">
+        <h3 class="c-accordion_title js-bothPcSpAccordionTrigger">買取についての注意事項</h3>
+        <div class="js-bothPcSpAccordionContent">
+          <ul class="c-cautions_list">
+            <li>・各店舗により取扱商品が異なります。詳しくはお近くの店舗までお問合せください。</li>
+            <li>・状態により、買取金額は異なります。傷の多いものや故障品は買取をお断りする場合がございます。</li>
+            <li>・1品ずつ査定いたしますので、買取にお時間がかかる場合がございます。</li>
+            <li>・在庫状況により買取金額は変動いたします。</li>
+            <li>・コピー商品は取扱できません。</li>
+            <li>・お電話、メールフォームによる買取のお問合せはご遠慮ください。</li>
+            <li>・消耗品等は未使用品に限らせていただきます。</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="purchase">
+        <h3 class="m-title">対象の買取方法</h3>
+        <ul class="c-otherMeans">
+          <li class="c-otherMeans_item c-otherMeans_item-store"><a href="/sell/store/"><div>
+            <p class="c-otherMeans_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_03_sm.png', alt: '画像：店頭買取'});%>
+            </p>
+            <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">STORE</span>店頭買取</p>
+          </div></a></li>
+          <li class="c-otherMeans_item c-otherMeans_item-web"><a href="/sell/web/"><div>
+            <p class="c-otherMeans_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_01_sm.png', alt: '画像：Web買取'});%>
+            </p>
+            <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">WEB</span>Web買取</p>
+          </div></a></li>
+          <li class="c-otherMeans_item c-otherMeans_item-02"><a href="/sell/visit/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_02_sm.png', alt: '画像：出張買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">VISIT</span>出張買取</p>
+        </div></a></li>
+        </ul>
+        <p class="purchase_note">※Web買取につきましては、取扱できないブランド・サイズがございます。<a href="/sell/web/items/#notbuybrand">詳しくはこちら</a>をご確認ください。</p>
+      </section>
+
+
+      <section class="c-QandA">
+        <h3 class="m-title">買取に関するポイント</h3>
+        <p class="c-QandA_desc">AV・生活家電の買取でよくある質問</p>
+        <dl>
+          <dt><p>見積りだけでもしてもらうことはできますか？</p></dt>
+          <dd><p>お見積りのみのご依頼も大歓迎です。詳しくは<a href="/shop">「お近くのセカンドストリート」</a>までご連絡ください。</p></dd>
+          <dt><p>電話で買取価格の案内はしてもらえますか？</p></dt>
+          <dd><p>商品の状態により金額が変わる為、お電話での買取金額のご案内はお断りさせていただいております｡<br>お手数ですが<a href="/shop">店頭までお持ちいただく</a>か、もしくはセカンドストリート<a href="/sell/web/">Web買取サービス</a>へのお申込みをお願いいたします。</p></dd>
+        </dl>
+        <ul>
+          <li>
+            <a href="/sell/tips/">
+              <p>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-qanda/img_01_sm.jpg', alt: '画像：高く売るコツを知る'});%>
+              </p>
+              <div>
+                <div>
+                  <h4>高く売るコツを知る</h4>
+                  <p>査定時のバイヤーが特に確認する<br>ポイントをご紹介します。</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/static/index/faq">
+              <p>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-qanda/img_02_sm.jpg', alt: '画像：よくある質問をもっと見る'});%>
+              </p>
+              <div>
+                <div>
+                  <h4>よくある質問をもっと見る</h4>
+                  <p>お客さまから寄せられたご質問を<br>掲載しております。</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="c-accordion c-buyingReinforcing">
+        <h3 class="c-accordion_title js-bothPcSpAccordionTrigger">買取強化ブランド</h3>
+        <div class="js-bothPcSpAccordionContent">
+          <div class="c-buyingReinforcing_group">
+            <h4>ビジュアル</h4>
+            <p><span>GoPro、</span><span>JVC・Victor、</span><span>Panasonic、</span><span>SHARP、</span><span>SONY、</span><span>TOSHIBA、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>オーディオ</h4>
+            <p><span>Apple、</span><span>beats by dr.dre、</span><span>BOSE、</span><span>JBL、</span><span>SONY、</span><span>YAMAHA、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>生活家電</h4>
+            <p><span>CORONA、</span><span>DAIKIN、</span><span>Dyson、</span><span>HITACHI、</span><span>MITUBISHI、</span><span>Panasonic、</span><span>SHARP、</span><span>TESCOM、</span><span>TOSHIBA、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>調理家電</h4>
+            <p><span>SHARP、</span><span>BALMUDA、</span><span>HITACHI、</span><span>IRIS OHYAMA、</span><span>Panasonic、</span><span>Rinnnai、</span><span>TIGER、</span><span>ZOJIRUSHI、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>照明</h4>
+            <p><span>Panasonic、</span><span>NEC、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>電動工具</h4>
+            <p><span>BOSCH、</span><span>HITACHI（HiKOKI）、</span><span>makita、</span><span>RYOBI、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>パソコン</h4>
+            <p><span>Apple、</span><span>ASUS、</span><span>CASIO、</span><span>FUJITSU、</span><span>IODATA、</span><span>NEC、</span><span>etc…</span></p>
+          </div>
+          <div class="c-buyingReinforcing_group">
+            <h4>デジタルカメラ</h4>
+            <p><span>Canon、</span><span>Nikon、</span><span>OLYMPUS、</span><span>SONY、</span><span>etc…</span></p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="c-products">
+        <div class="c-products_menu">
+          <h4 class="js-onlySpAccordionTrigger">他の商品の詳細情報はこちら</h4>
+          <div class="js-onlySpAccordionContent">
+            <ul>
+              <li><a href="/sell/category/womens/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg>
+                <p>レディース衣類</p>
+              </a></li>
+              <li><a href="/sell/category/mens/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg>
+                <p>メンズ衣類</p>
+              </a></li>
+              <li><a href="/sell/category/kids-wear/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg>
+                <p>キッズ衣類</p>
+              </a></li>
+              <li><a href="/sell/category/luxuary-brand/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg>
+                <p>ラグジュアリー<br class="u-hidden-md u-hidden-lg">ブランド</p>
+              </a></li>
+              <li><a href="/sell/category/electronics/" class="is-current">
+                <svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg>
+                <p>AV・生活家電</p>
+              </a></li>
+              <li><a href="/sell/category/mobile/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg>
+                <p>携帯電話</p>
+              </a></li>
+              <li><a href="/sell/category/furniture/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg>
+                <p>家具</p>
+              </a></li>
+              <li><a href="/sell/category/goods/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg>
+                <p>生活雑貨</p>
+              </a></li>
+              <li><a href="/sell/category/kids-goods/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg>
+                <p>キッズ用品</p>
+              </a></li>
+              <li><a href="/sell/category/instruments/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg>
+                <p>楽器</p>
+              </a></li>
+              <li><a href="/sell/category/hobby/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg>
+                <p>ホビー</p>
+              </a></li>
+              <li><a href="/sell/category/outdoor/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg>
+                <p>アウトドア用品</p>
+              </a></li>
+              <li><a href="/sell/category/sports/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg>
+                <p>スポーツ用品</p>
+              </a></li>
+              <li><a href="/sell/category/golf/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-golf" /></svg>
+                <p>ゴルフ用品</p>
+              </a></li>
+              <li><a href="/sell/category/bicycle/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg>
+                <p>自転車</p>
+              </a></li>
+              <li><a href="/sell/category/ticket/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg>
+                <p>金券・商品券</p>
+              </a></li>
+              <li><a href="/sell/category/accessary/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg>
+                <p>貴金属</p>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+
+  </div>
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/vendor/slick/slick.min.js"></script>
+  <script src="/js/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/sell.js"></script>
+</body>
+
+</html>

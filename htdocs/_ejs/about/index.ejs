@@ -1,0 +1,250 @@
+<%_  var pageID = 'about'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/about.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body>
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <section class="mv js-waypointTarget">
+        <div class="mv_bg">
+          <%- include(relativePath + '_utilities/_picture', {src: '/img/about/mv_img_sm.jpg', alt: 'イメージ画像：セカンドストリート'});%>
+        </div>
+        <h3 class="mv_title">セカンドストリートとは</h3>
+        <p class="mv_subtitle">About 2nd STREET</p>
+        <p class="mv_txt">セカンドストリートは<br class="u-hidden-md u-hidden-lg">全国600店舗以上の実店舗と、<br class="u-hidden-sm">オンラインストアにおいて<br class="u-hidden-md u-hidden-lg">中古品買取と販売を行う<br class="u-hidden-sm">総合リユースショップです。</p>
+        <p class="mv_txt">洋服（古着）・バッグを中心に<br>ハイブランド品、家具家電まで幅広くお取り扱いしています。</p>
+      </section>
+
+
+      <section class="c-advantage">
+        <h3 class="section_title -anim js-waypointTarget">セカンドストリートが<br class="u-hidden-md u-hidden-lg">選ばれる理由</h3>
+        <p class="section_subtitle -anim js-waypointTarget">Reason</p>
+        <ul class="c-advantage_list">
+          <li class="c-advantage_list_item c-advantage_list_item-01 js-waypointTarget">
+            <div class="c-advantage_list_item_img"><%- include(relativePath + '_utilities/_picture', {src: '/img/sell/top/advantage_img_01_sm.jpg', alt: '画像：セカンドストリートの買取の強み01'});%></div>
+            <div class="c-advantage_list_item_body">
+              <p class="c-advantage_list_item_tag -anim">#01</p>
+              <h4 class="c-advantage_list_item_title -anim">ハイブランドからノーブランドまで取扱しています!</h4>
+              <p class="c-advantage_list_item_desc -anim">誰もが知っているあのブランドから、ノーブランドまで。<br>幅広いアイテムをお売りいただけます。</p>
+              <p class="c-advantage_list_item_note">※Web買取では一部、取扱していない商品もございます。</p>
+            </div>
+          </li>
+          <li class="c-advantage_list_item c-advantage_list_item-02 js-waypointTarget">
+            <div class="c-advantage_list_item_img"><%- include(relativePath + '_utilities/_picture', {src: '/img/sell/top/advantage_img_02_sm.jpg', alt: '画像：セカンドストリートの買取の強み02'});%></div>
+            <div class="c-advantage_list_item_body">
+              <p class="c-advantage_list_item_tag -anim">#02</p>
+              <h4 class="c-advantage_list_item_title -anim">洋服だけじゃない、家具や家電も<br>お売りいただけます！</h4>
+              <p class="c-advantage_list_item_desc -anim">洋服はもちろん、ソファーからテレビまで、<br>いらなくなった家具や家電も査定して、買取りします！</p>
+              <p class="c-advantage_list_item_note">※Web買取では一部、取扱していない商品もございます。</p>
+            </div>
+          </li>
+          <li class="c-advantage_list_item c-advantage_list_item-03 js-waypointTarget">
+            <div class="c-advantage_list_item_img"><%- include(relativePath + '_utilities/_picture', {src: '/img/sell/top/advantage_img_03_sm.jpg', alt: '画像：セカンドストリートの買取の強み03'});%></div>
+            <div class="c-advantage_list_item_body">
+              <p class="c-advantage_list_item_tag -anim">#03</p>
+              <h4 class="c-advantage_list_item_title -anim">全国600以上の店舗数と<br>選べる3つの買取方法</h4>
+              <p class="c-advantage_list_item_desc -anim">お客様のご都合に合わせて店頭 / Web / 出張の<br class="u-hidden-sm">3つの買取方法をご用意しております。<br class="u-hidden-sm">また、店舗数は全国600以上。その場で査定＆お支払いいたします。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="business">
+        <h3 class="section_title">セカンドストリートの<br class="u-hidden-md u-hidden-lg">店舗タイプ</h3>
+        <p class="section_subtitle">Business type</p>
+        <p class="m-desc">セカンドストリートは複数のジャンルのお店があります。<br class="u-hidden-md u-hidden-lg">どんなジャンルがあるのか紹介します。</p>
+        <ul class="business_list">
+          <li><%- include(relativePath + '_utilities/_picture', {src: '/img/about/business_img_01_sm.png', alt: '2nd STREET Reuse Shop'});%></li>
+          <li><%- include(relativePath + '_utilities/_picture', {src: '/img/about/business_img_02_sm.png', alt: 'Super 2nd STREET Reuse Shop'});%></li>
+          <li><%- include(relativePath + '_utilities/_picture', {src: '/img/about/business_img_03_sm.png', alt: '2nd OUTDOOR by 2nd STREET'});%></li>
+        </ul>
+
+        <section class="business_section">
+          <h4 class="business_section_title">店舗のジャンル</h4>
+          <section class="business_part">
+            <h5 class="business_part_title"><%- include(relativePath + '_utilities/_picture', {src: '/img/about/business_logo_01_sm.jpg', alt: '2nd STREET Reuse Shop'});%></h5>
+            <p class="m-desc -justify">様々なリユース商品を取り扱う総合リユースショップです。<br class="u-hidden-sm">店舗よって特徴が異なりますので、ぜひ下記を参考に自分にあった店舗をお探しください。</p>
+            <ul class="business_part_type">
+              <li>
+                <p class="business_part_type_title">トータルリユース</p>
+                <div>
+                  <p class="m-desc">衣類から家電まで<br>あらゆるアイテムを取り扱っています</p>
+                  <p class="business_part_note">商品カテゴリ例</p>
+                  <ul class="business_part_service">
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg></li>
+                  </ul>
+                  <div class="business_part_btn01"><a class="m-btn m-btnEffect" href="#">トータルリユースの店舗を探す</a></div>
+                </div>
+              </li>
+              <li>
+                <p class="business_part_type_title">アパレルリユース</p>
+                <div>
+                  <p class="m-desc">衣服・アクセサリを専門に<br>取り扱っています</p>
+                  <p class="business_part_note">商品カテゴリ例</p>
+                  <ul class="business_part_service">
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg></li>
+                  </ul>
+                  <div class="business_part_btn01"><a class="m-btn m-btnEffect" href="#">アパレルリユースの店舗を探す</a></div>
+                </div>
+              </li>
+              <li>
+                <p class="business_part_type_title">ユーズドセレクト</p>
+                <div>
+                  <p class="m-desc">最先端のリユーススタイルを<br>発信しています</p>
+                  <p class="business_part_note">商品カテゴリ例</p>
+                  <ul class="business_part_service">
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg></li>
+                    <li><svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg></li>
+                    <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg></li>
+                  </ul>
+                  <div class="business_part_btn01"><a class="m-btn m-btnEffect" href="#">ユーズドセレクトの店舗を探す</a></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="business_part">
+            <h5 class="business_part_title"><%- include(relativePath + '_utilities/_picture', {src: '/img/about/business_logo_02_sm.jpg', alt: 'Super 2nd STREET Reuse Shop'});%></h5>
+            <p class="m-desc -justify">生活必需品から、家電製品、スポーツグッズ、ファッションアイテムまで、10万点以上の品揃えを誇る<br class="u-hidden-sm">国内最大級の大型リユースショップです。</p>
+            <p class="business_part_note">商品カテゴリ例</p>
+            <ul class="business_part_service -center">
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg></li>
+            </ul>
+            <div class="business_part_btn02"><a class="m-btn m-btnEffect" href="#">Super 2nd STREETの店舗を探す</a></div>
+          </section>
+
+          <section class="business_part">
+            <h5 class="business_part_title"><%- include(relativePath + '_utilities/_picture', {src: '/img/about/business_logo_03_sm.jpg', alt: '2nd OUTDOOR by 2nd STREET'});%></h5>
+            <p class="m-desc -justify">アウトドアギア専門のリユースショップ。<br class="u-hidden-sm">“買取&販売”から、メンテナンスアドバイス、使い方のレクチャー、また地元のオススメポイントの情報提供まで幅広くサポートします。<br class="u-hidden-sm">リユース品だけでなく新品も充実しています。</p>
+            <p class="business_part_note">商品カテゴリ例</p>
+            <ul class="business_part_service -center">
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg></li>
+              <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg></li>
+              <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg></li>
+              <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg></li>
+              <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg></li>
+              <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg></li>
+              <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg></li>
+              <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg></li>
+              <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg></li>
+              <li><svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg></li>
+              <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg></li>
+              <li class="not"><svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg></li>
+            </ul>
+            <div class="business_part_btn02"><a class="m-btn m-btnEffect" href="#">2nd OUTDOORの店舗を探す</a></div>
+          </section>
+
+        </section>
+      </section>
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/about.js"></script>
+</body>
+
+</html>

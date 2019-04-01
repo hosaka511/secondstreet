@@ -1,0 +1,19 @@
+<% var currentClass = 'is-current'; -%>
+<% var beforeClass = 'is-beforecurrent'; -%>
+
+<div class="g-local-navigation g-local-navigation-method">
+  <ul class="g-local-navigation_list">
+    <li class="<%- page === 'sell' ? currentClass : '' %> <%- conf[page].sellitems === 'sellitems' ? beforeClass : '' %>">
+      <a href="/sell/">買取サービスのご案内</a>
+    </li>
+    <li class="<%- conf[page].sellitems === 'sellitems' ? currentClass : '' %> <%- page === 'selltips' ? beforeClass : '' %>">
+      <a href="/sell/items/">取扱商品について</a>
+    </li>
+    <li class="<%- page === 'selltips' ? currentClass : '' %> <%- page === '' ? beforeClass : '' %>">
+      <a href="/sell/tips/">高く売るコツ</a>
+    </li>
+    <li class="<%- page === '' ? currentClass : '' %>">
+      <a href="/static/index/faq">よくある質問</a>
+    </li>
+  </ul>
+</div>

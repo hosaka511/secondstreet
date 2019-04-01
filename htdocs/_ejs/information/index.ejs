@@ -1,0 +1,115 @@
+<%_  var pageID = 'information'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/information.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body>
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-01">
+        <h2 class="m-heading_title">インフォメーション</h2>
+        <p class="m-heading_subtitle RalewayExtraBold">INFORMATION</p>
+      </div>
+
+      <div class="search">
+        <p class="search_txt">絞り込み</p>
+        <div class="search_inner -year">
+          <ul class="search_year">
+            <li class="js-searchBtn"><a href="#">2019</a></li>
+            <li class="js-searchBtn is-current"><a href="#">2018</a></li>
+            <li class="js-searchBtn"><a href="#">2017</a></li>
+          </ul>
+        </div>
+        <div class="search_inner -tag">
+          <ul class="search_tag">
+            <li class="js-searchBtn"><a class="c-information_news_item_tag -sp -shop" href="#">SHOP</a></li>
+            <li class="js-searchBtn is-current"><a class="c-information_news_item_tag -sp -event" href="#">EVENT</a></li>
+            <li class="js-searchBtn"><a class="c-information_news_item_tag -sp -magazine" href="#">MAGAZINE</a></li>
+            <li class="js-searchBtn"><a class="c-information_news_item_tag -sp -other" href="#">OTHER</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="c-information">
+        <ul class="c-information_news">
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -magazine">MAGAZINE</span>
+            <time class="c-information_news_item_time" datetime="2018-12-12">2018.12.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">セカンドストリートのWebマガジン、knowbland magazineの記事を更新しました。セカンドストリートのWebマガジン、knowbland magazineの記事を更新しました。</a>
+          </li>
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -other">OTHER</span>
+            <time class="c-information_news_item_time" datetime="2018-02-12">2018.02.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">12月28日(金) 1:00~7:00 サービスメンテナンスのお知らせ</a>
+          </li>
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -shop">SHOP</span>
+            <time class="c-information_news_item_time" datetime="2018-12-12">2018.12.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">〇〇〇〇〇〇店がオープンしました。</a>
+          </li>
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -event">EVENT</span>
+            <time class="c-information_news_item_time" datetime="2018-12-12">2018.12.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">オンラインストアで冬のセールを開催中！</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="m-pager" id="pager">
+        <li class="m-pager_arrow -prev"><a href="#"></a></li>
+        <li class="is-current"><a class="m-txtEffect" href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li class="ellipsis">...</li>
+        <li><a href="#">13</a></li>
+        <li class="m-pager_arrow -next"><a href="#"></a></li>
+      </ul>
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

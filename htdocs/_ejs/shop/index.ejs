@@ -1,0 +1,580 @@
+<%_  var pageID = 'shop'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/shop.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body>
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-01 -narrow">
+        <h2 class="m-heading_title">店舗検索</h2>
+        <p class="m-heading_subtitle RalewayExtraBold">STORE SEARCH</p>
+      </div>
+
+      <!-- <h3 class="m-title-03">セカンドストリートはその数、<br class="u-hidden-md u-hidden-lg">全国<span>600店舗以上。</span>続々出店中です！</h3> -->
+
+      <section class="c-accordion shop">
+        <h4 class="c-accordion_title js-bothPcSpAccordionTrigger">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><path d="M396.24,140.238C396.24,62.938,333.303,0,255.998,0c-77.301,0-140.238,62.938-140.238,140.238 c0,89.023,140.238,281.812,140.238,281.812S396.24,229.262,396.24,140.238z M255.998,87.004c29.398,0,53.168,23.84,53.168,53.234 c0,29.398-23.77,53.168-53.168,53.168c-29.39,0-53.234-23.77-53.234-53.168C202.763,110.844,226.607,87.004,255.998,87.004z"></path></svg>近くの店舗を表示</h4>
+        <div class="js-bothPcSpAccordionContent">
+          <ul class="shop_list">
+            <li class="shop_list_item">
+              <a href="/shop/details/">
+                <div class="shop_list_item_img"><img src="/img/shop/top/shop_img_01.jpg" alt="セカンドストリート立川店の外観"></div>
+                <div class="shop_list_item_inner">
+                  <p class="shop_list_item_tag">キッズ商品取扱可</p>
+                  <p class="shop_list_item_name">セカンドストリート立川店</p>
+                  <p class="shop_list_item_distance">0.8km</p>
+                </div>
+              </a>
+            </li>
+            <li class="shop_list_item">
+              <a href="/shop/details/">
+                <div class="shop_list_item_img"><img src="/img/shop/top/shop_img_01.jpg" alt="セカンドストリート立川店の外観"></div>
+                <div class="shop_list_item_inner">
+                  <p class="shop_list_item_tag">キッズ商品取扱可</p>
+                  <p class="shop_list_item_name">セカンドストリート吉祥寺<br class="u-hidden-sm">サンロード店</p>
+                  <p class="shop_list_item_distance">0.8km</p>
+                </div>
+              </a>
+            </li>
+            <li class="shop_list_item">
+              <a href="/shop/details/">
+                <div class="shop_list_item_img"><img src="/img/shop/top/shop_img_01.jpg" alt="セカンドストリート立川店の外観"></div>
+                <div class="shop_list_item_inner">
+                  <p class="shop_list_item_tag">キッズ商品取扱可</p>
+                  <p class="shop_list_item_name">セカンドストリート立川店</p>
+                  <p class="shop_list_item_distance">0.8km</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="m-textUnderlineLink"><a href="#">もっと見る</a></div>
+        </div>
+      </section>
+
+      <!-- マイショップ -->
+      <!-- <section class="c-accordion shop">
+        <h4 class="c-accordion_title js-bothPcSpAccordionTrigger">マイショップを表示</h4>
+        <div class="js-bothPcSpAccordionContent">
+          <ul class="shop_list">
+            <li class="shop_list_item">
+              <a href="/shop/details/">
+                <div class="shop_list_item_img"><img src="/img/shop/top/shop_img_01.jpg" alt="セカンドストリート立川店の外観"></div>
+                <div class="shop_list_item_inner">
+                  <p class="shop_list_item_tag">キッズ商品取扱可</p>
+                  <p class="shop_list_item_name">セカンドストリート立川店</p>
+                  <p class="shop_list_item_distance">0.8km</p>
+                </div>
+              </a>
+            </li>
+            <li class="shop_list_item">
+              <a href="/shop/details/">
+                <div class="shop_list_item_img"><img src="/img/shop/top/shop_img_01.jpg" alt="セカンドストリート立川店の外観"></div>
+                <div class="shop_list_item_inner">
+                  <p class="shop_list_item_tag">キッズ商品取扱可</p>
+                  <p class="shop_list_item_name">セカンドストリート吉祥寺<br class="u-hidden-sm">サンロード店</p>
+                  <p class="shop_list_item_distance">0.8km</p>
+                </div>
+              </a>
+            </li>
+            <li class="shop_list_item">
+              <a href="/shop/details/">
+                <div class="shop_list_item_img"><img src="/img/shop/top/shop_img_01.jpg" alt="セカンドストリート立川店の外観"></div>
+                <div class="shop_list_item_inner">
+                  <p class="shop_list_item_tag">キッズ商品取扱可</p>
+                  <p class="shop_list_item_name">セカンドストリート立川店</p>
+                  <p class="shop_list_item_distance">0.8km</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="shop_btn">
+            <div class="m-webPurchaseApplicationBtn -wide"><a class="m-btn m-btnEffect" href="/mypage/webbuy">ログイン<br class="u-hidden-sm">(会員登録)</a></div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="l-section -shop">
+        <h3 class="m-title">フリーワードで探す</h3>
+        <div class="l-inner">
+          <!-- <p class="c-searchBox_lead">地名、駅名、お探しのアイテム名などで検索できます。</p> -->
+          <form class="c-searchBox_form" action="#" method="post" name="">
+            <input class="c-searchBox_sbox" type="search" name="" placeholder="新宿 メンズ">
+            <input class="c-searchBox_sbtn" type="submit" name="" value="Search">
+          </form>
+        </div>
+      </section>
+
+
+      <section class="l-section -shop">
+        <h3 class="m-title">エリア、取扱アイテムから探す</h3>
+        <div class="l-inner">
+          <div class="c-filterSearch">
+            <form action="/shop/search" method="post" name="search">
+
+              <div class="c-filterSearch_inner">
+                <p class="c-filterSearch_title">エリア</p>
+                <div class="c-filterSearch_area_wrap">
+                  <ul class="c-filterSearch_area">
+                    <li class="c-filterSearch_area_inner">
+                      <select name="prefectural">
+                        <option value="" selected>都道府県</option>
+                        <option value="01">北海道</option>
+                        <option value="02">青森県</option>
+                        <option value="03">岩手県</option>
+                        <option value="04">宮城県</option>
+                        <option value="05">秋田県</option>
+                        <option value="06">山形県</option>
+                        <option value="07">福島県</option>
+                        <option value="08">茨城県</option>
+                        <option value="09">栃木県</option>
+                        <option value="10">群馬県</option>
+                        <option value="11">埼玉県</option>
+                        <option value="12">千葉県</option>
+                        <option value="13">東京都</option>
+                        <option value="14">神奈川県</option>
+                        <option value="15">新潟県</option>
+                        <option value="16">富山県</option>
+                        <option value="17">石川県</option>
+                        <option value="18">福井県</option>
+                        <option value="19">山梨県</option>
+                        <option value="20">長野県</option>
+                        <option value="21">岐阜県</option>
+                        <option value="22">静岡県</option>
+                        <option value="23">愛知県</option>
+                        <option value="24">三重県</option>
+                        <option value="25">滋賀県</option>
+                        <option value="26">京都府</option>
+                        <option value="27">大阪府</option>
+                        <option value="28">兵庫県</option>
+                        <option value="29">奈良県</option>
+                        <option value="30">和歌山県</option>
+                        <option value="31">鳥取県</option>
+                        <option value="32">島根県</option>
+                        <option value="33">岡山県</option>
+                        <option value="34">広島県</option>
+                        <option value="35">山口県</option>
+                        <option value="36">徳島県</option>
+                        <option value="37">香川県</option>
+                        <option value="38">愛媛県</option>
+                        <option value="39">高知県</option>
+                        <option value="40">福岡県</option>
+                        <option value="41">佐賀県</option>
+                        <option value="42">長崎県</option>
+                        <option value="43">熊本県</option>
+                        <option value="44">大分県</option>
+                        <option value="45">宮崎県</option>
+                        <option value="46">鹿児島県</option>
+                        <option value="47">沖縄県</option>
+                      </select>
+                    </li>
+                    <li class="c-filterSearch_area_inner">
+                      <select name="city" class="c-filterSearch_area">
+                        <option value="" selected>市区町村</option>
+                        <option value="01">名古屋市</option>
+                        <option value="02">青森県</option>
+                        <option value="03">岩手県</option>
+                        <option value="04">宮城県</option>
+                        <option value="05">秋田県</option>
+                        <option value="06">山形県</option>
+                        <option value="07">福島県</option>
+                        <option value="08">茨城県</option>
+                        <option value="09">栃木県</option>
+                        <option value="10">群馬県</option>
+                        <option value="11">埼玉県</option>
+                        <option value="12">千葉県</option>
+                        <option value="13">東京都</option>
+                        <option value="14">神奈川県</option>
+                        <option value="15">新潟県</option>
+                        <option value="16">富山県</option>
+                        <option value="17">石川県</option>
+                        <option value="18">福井県</option>
+                        <option value="19">山梨県</option>
+                        <option value="20">長野県</option>
+                        <option value="21">岐阜県</option>
+                        <option value="22">静岡県</option>
+                        <option value="23">愛知県</option>
+                        <option value="24">三重県</option>
+                        <option value="25">滋賀県</option>
+                        <option value="26">京都府</option>
+                        <option value="27">大阪府</option>
+                        <option value="28">兵庫県</option>
+                        <option value="29">奈良県</option>
+                        <option value="30">和歌山県</option>
+                        <option value="31">鳥取県</option>
+                        <option value="32">島根県</option>
+                        <option value="33">岡山県</option>
+                        <option value="34">広島県</option>
+                        <option value="35">山口県</option>
+                        <option value="36">徳島県</option>
+                        <option value="37">香川県</option>
+                        <option value="38">愛媛県</option>
+                        <option value="39">高知県</option>
+                        <option value="40">福岡県</option>
+                        <option value="41">佐賀県</option>
+                        <option value="42">長崎県</option>
+                        <option value="43">熊本県</option>
+                        <option value="44">大分県</option>
+                        <option value="45">宮崎県</option>
+                        <option value="46">鹿児島県</option>
+                        <option value="47">沖縄県</option>
+                      </select>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="c-filterSearch_inner">
+                <p class="c-filterSearch_title">取扱アイテム</p>
+                <ul class="c-filterSearch_want">
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_want_input" type="checkbox" name="want" value="sell">
+                      <span class="c-filterSearch_want_txt"><span>SELL</span>売りたい</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_want_input" type="checkbox" name="want" value="buy">
+                      <span class="c-filterSearch_want_txt"><span>BUY</span>買いたい</span>
+                    </label>
+                  </li>
+                </ul>
+
+                <ul class="c-filterSearch_product">
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="womens">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-lady" /></svg>
+                      <span class="c-filterSearch_product_txt">レディース衣類</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="mens">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-man" /></svg>
+                      <span class="c-filterSearch_product_txt">メンズ衣類</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="kidswear">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-kids" /></svg>
+                      <span class="c-filterSearch_product_txt">キッズ衣類</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="luxuarybrand">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg>
+                      <span class="c-filterSearch_product_txt">ラグジュアリー<br class="u-hidden-md u-hidden-lg">ブランド</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="electronics">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-pc" /></svg>
+                      <span class="c-filterSearch_product_txt">AV・生活家電</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="mobile">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-phone" /></svg>
+                      <span class="c-filterSearch_product_txt">携帯電話</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="furniture">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg>
+                      <span class="c-filterSearch_product_txt">家具</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="goods">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-cup" /></svg>
+                      <span class="c-filterSearch_product_txt">生活雑貨</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="kidsgoods">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-baby" /></svg>
+                      <span class="c-filterSearch_product_txt">キッズ用品</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="instruments">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg>
+                      <span class="c-filterSearch_product_txt">楽器</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="hobby">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg>
+                      <span class="c-filterSearch_product_txt">ホビー</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="outdoor">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg>
+                      <span class="c-filterSearch_product_txt">アウトドア用品</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="sports">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-sports" /></svg>
+                      <span class="c-filterSearch_product_txt">スポーツ用品</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="golf">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-golf" /></svg>
+                      <span class="c-filterSearch_product_txt">ゴルフ用品</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="bicycle">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg>
+                      <span class="c-filterSearch_product_txt">自転車</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="ticket">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-gift" /></svg>
+                      <span class="c-filterSearch_product_txt">金券・商品券</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_product_input" type="checkbox" name="product" value="accessary">
+                      <svg class="c-filterSearch_product_icon"><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg>
+                      <span class="c-filterSearch_product_txt">貴金属</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="c-filterSearch_inner">
+                <p class="c-filterSearch_title">店舗の特徴</p>
+                <ul class="c-filterSearch_feature">
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_feature_input" type="checkbox" name="feature" value="family">
+                      <span class="c-filterSearch_feature_txt">ファミリーにおすすめ</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_feature_input" type="checkbox" name="feature" value="mens">
+                      <span class="c-filterSearch_feature_txt">メンズ商品充実</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_feature_input" type="checkbox" name="feature" value="womens">
+                      <span class="c-filterSearch_feature_txt">レディース商品充実</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_feature_input" type="checkbox" name="feature" value="parking">
+                      <span class="c-filterSearch_feature_txt">駐車場あり</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_feature_input" type="checkbox" name="feature" value="visit">
+                      <span class="c-filterSearch_feature_txt">出張買取対応</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_feature_input" type="checkbox" name="feature" value="campaign">
+                      <span class="c-filterSearch_feature_txt">キャンペーン実施中</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="c-filterSearch_feature_input" type="checkbox" name="feature" value="largestore">
+                      <span class="c-filterSearch_feature_txt">大型店</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <input class="c-filterSearch_btn m-btn m-btnEffect" type="submit" value="検索">
+            </form>
+          </div>
+        </div>
+      </section>
+
+<!--               <h4 class="text_menu">店舗を選ぶ</h4>
+              <label for="check_shop_ss" class="check_shop_ss"><input type="checkbox" name="houseNames[]"  value="1" id="check_shop_ss">セカンドストリート</label>
+              <ul class="check_shop_ss">
+                <li>セカンドストリート</li>
+                <li>スーパーセカンドストリート</li>
+                <li>ドキドキ</li>
+                <li>オキドキ</li>
+              </ul>
+              <label for="check_shop_js" class="check_shop_js"><input type="checkbox" name="houseNames[]"  value="2" id="check_shop_js">ジャンブルストア</label>
+              <label for="check_shop_so" class="check_shop_so"><input type="checkbox" name="houseNames[]"  value="7" id="check_shop_so">セカンドアウトドア<br>&nbsp;&nbsp;（アウトドア専門店）</label>
+              <button type="submit"></button> -->
+
+      <section class="recommend">
+        <h3 class="m-title">おすすめの店舗</h3>
+        <ul class="recommend_list">
+          <li class="recommend_list_item">
+            <a href="/shop/details/">
+              <div class="recommend_list_item_flex">
+                <div class="recommend_list_item_img"><img src="/img/shop/top/shop_img_01.jpg" alt="セカンドストリート立川店の外観"></div>
+                <div class="recommend_list_item_inner">
+                  <p class="recommend_list_item_tag">キッズ商品取扱可</p>
+                  <p class="recommend_list_item_name">セカンドストリート立川店</p>
+                  <p class="recommend_list_item_distance">0.8km</p>
+                </div>
+              </div>
+              <ul class="recommend_list_item_example">
+                <li><img src="/img/shop/top/shop_img_02.jpg" alt=""></li>
+                <li><img src="/img/shop/top/shop_img_03.jpg" alt=""></li>
+                <li><img src="/img/shop/top/shop_img_04.jpg" alt=""></li>
+                <li class="u-hidden-sm"><img src="/img/shop/top/shop_img_05.jpg" alt=""></li>
+              </ul>
+            </a>
+          </li>
+          <li class="recommend_list_item">
+            <a href="/shop/details/">
+              <div class="recommend_list_item_flex">
+                <div class="recommend_list_item_img"><img src="/img/shop/top/shop_img_01.jpg" alt="セカンドストリート立川店の外観"></div>
+                <div class="recommend_list_item_inner">
+                  <p class="recommend_list_item_tag">キッズ商品取扱可</p>
+                  <p class="recommend_list_item_name">セカンドストリート吉祥寺<br>サンロード店</p>
+                  <p class="recommend_list_item_distance">0.8km</p>
+                </div>
+              </div>
+              <ul class="recommend_list_item_example">
+                <li><img src="/img/shop/top/shop_img_02.jpg" alt=""></li>
+                <li><img src="/img/shop/top/shop_img_03.jpg" alt=""></li>
+                <li><img src="/img/shop/top/shop_img_04.jpg" alt=""></li>
+                <li class="u-hidden-sm"><img src="/img/shop/top/shop_img_05.jpg" alt=""></li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="l-section-03">
+        <h3 class="m-title">店舗イベント情報</h3>
+        <ul class="c-information_news -shop">
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -magazine">MAGAZINE</span>
+            <time class="c-information_news_item_time" datetime="2018-12-12">2018.12.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">セカンドストリートのWebマガジン、knowbland magazineの記事を更新しました。セカンドストリートのWebマガジン、knowbland magazineの記事を更新しました。</a>
+          </li>
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -other">OTHER</span>
+            <time class="c-information_news_item_time" datetime="2018-02-12">2018.02.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">12月28日(金) 1:00~7:00 サービスメンテナンスのお知らせ</a>
+          </li>
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -shop">SHOP</span>
+            <time class="c-information_news_item_time" datetime="2018-12-12">2018.12.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">〇〇〇〇〇〇店がオープンしました。</a>
+          </li>
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -event">EVENT</span>
+            <time class="c-information_news_item_time" datetime="2018-12-12">2018.12.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">オンラインストアで冬のセールを開催中！</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="l-section-03">
+        <h3 class="m-title">店舗からのお知らせ</h3>
+        <ul class="c-information_news -shop">
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -magazine">MAGAZINE</span>
+            <time class="c-information_news_item_time" datetime="2018-12-12">2018.12.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">セカンドストリートのWebマガジン、knowbland magazineの記事を更新しました。セカンドストリートのWebマガジン、knowbland magazineの記事を更新しました。</a>
+          </li>
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -other">OTHER</span>
+            <time class="c-information_news_item_time" datetime="2018-02-12">2018.02.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">12月28日(金) 1:00~7:00 サービスメンテナンスのお知らせ</a>
+          </li>
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -shop">SHOP</span>
+            <time class="c-information_news_item_time" datetime="2018-12-12">2018.12.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">〇〇〇〇〇〇店がオープンしました。</a>
+          </li>
+          <li class="c-information_news_item">
+            <span class="c-information_news_item_tag -event">EVENT</span>
+            <time class="c-information_news_item_time" datetime="2018-12-12">2018.12.12</time>
+            <a href="/information/details" class="c-information_news_item_txt">オンラインストアで冬のセールを開催中！</a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="c-information_btn"><a class="m-btn m-btnEffect" href="/information">インフォメーション一覧</a></div>
+
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+    <div class="g-diagnosis_trigger js-diagnosisModalTrigger"><a>あなたに適切な売り方はこちら<i></i></a></div>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- 条件検索 modal -->
+  <%- include(relativePath + '_partials/_filterSearch')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

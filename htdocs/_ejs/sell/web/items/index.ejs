@@ -1,0 +1,472 @@
+<%_  var pageID = 'sellwebItems'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellWeb">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-01">
+        <h2 class="m-heading_title">Web買取の取扱商品</h2>
+        <p class="m-heading_subtitle RalewayExtraBold">DEALING ITEMS</p>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-web', {page: pageID})%>
+
+      <section class="c-products">
+        <h3 class="m-title">Web買取で売れる商品</h3>
+        <section class="c-products_contents">
+          <h4 class="m-lead">大きさ・重さ</h4>
+          <p class="c-products_desc"><span class="c-products_desc_red"><strong>160サイズ/重さ25kg</strong>以内</span>の<br class="u-hidden-lg u-hidden-md">さまざまな商品を買取しています
+          </p>
+          <div class="c-products_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/products_img_sm.jpg', alt: '画像：高さ＋長さ＋奥行＝160センチ以内'});%>
+          </div>
+          <p class="c-products_desc">箱の高さ・長さ・奥行の３辺の寸法を合算した寸法が<br class="u-hidden-lg u-hidden-md">160センチ以内の商品を買取させていただきます。<br>160センチ(サイズ)を超える商品の買取は<br class="u-hidden-lg u-hidden-md">下記をご利用ください。
+          </p>
+          <div class="c-products_btn c-products_btn-2clm">
+            <a class="m-btn m-btnEffect" href="/sell/store/">店頭買取</a>
+            <a class="m-btn m-btnEffect" href="/sell/visit/">出張買取</a>
+          </div>
+        </section>
+
+        <section class="c-products_contents">
+          <h4 class="m-lead">商品一覧</h4>
+          <section class="c-accordion">
+            <h5 class="c-accordion_title js-bothPcSpAccordionTrigger">衣類・服飾品</h5>
+            <div class="js-bothPcSpAccordionContent">
+              <div class="c-accordion_inner">
+                <div class="c-products_item">
+                  <p class="c-products_item_title">アウター</p>
+                  <ul class="c-products_item_list">
+                    <li>レザーブルゾン</li>
+                    <li>ダウンベスト</li>
+                    <li>キルティングジャケット</li>
+                    <li>フィールドジャケット</li>
+                    <li>Pコート</li>
+                    <li>カバーオール</li>
+                    <li>N-3B</li>
+                    <li>テーラードジャケット など</li>
+                  </ul>
+                </div>
+                <div class="c-products_item">
+                  <p class="c-products_item_title">ワンピース＆チュニック</p>
+                  <ul class="c-products_item_list">
+                    <li>シャツワンピース</li>
+                    <li>ニットワンピース</li>
+                    <li>パーカーワンピース</li>
+                    <li>スウェットワンピース</li>
+                    <li>マキシ丈ワンピース</li>
+                    <li>チェック柄ワンピース</li>
+                    <li>花柄ワンピース など</li>
+                  </ul>
+                </div>
+                <div class="c-products_item">
+                  <p class="c-products_item_title">ボトム</p>
+                  <ul class="c-products_item_list">
+                    <li>デニムパンツ</li>
+                    <li>チノパンツ</li>
+                    <li>カーゴパンツ</li>
+                    <li>クロップドパンツ</li>
+                    <li>サロペット</li>
+                    <li>ミニスカート</li>
+                    <li>マキシスカート など</li>
+                  </ul>
+                </div>
+                <div class="c-products_item">
+                  <p class="c-products_item_title">シャツ＆パーカー</p>
+                  <ul class="c-products_item_list">
+                    <li>ジップパーカー</li>
+                    <li>フーデッドパーカー</li>
+                    <li>オックスフォードシャツ</li>
+                    <li>シャンブレーシャツ</li>
+                    <li>ミリタリーシャツ</li>
+                    <li>ワークシャツ</li>
+                    <li>オンブレシャツ</li>
+                    <li>チェックシャツ など</li>
+                  </ul>
+                </div>
+                <div class="c-products_item">
+                  <p class="c-products_item_title">トップス</p>
+                  <ul class="c-products_item_list">
+                    <li>カーディガン</li>
+                    <li>アンサンブル</li>
+                    <li>ベスト</li>
+                    <li>ジャージ</li>
+                    <li>ポンチョ</li>
+                    <li>カットソー</li>
+                    <li>ロンT</li>
+                    <li>Tシャツ など</li>
+                  </ul>
+                </div>
+                <div class="c-products_item">
+                  <p class="c-products_item_title">服飾品</p>
+                  <ul class="c-products_item_list">
+                    <li>バッグ</li>
+                    <li>財布</li>
+                    <li>靴(スニーカー/サンダル/レザーシューズ/ブーツ)</li>
+                    <li>スカーフ</li>
+                    <li>マフラー</li>
+                    <li>ストール</li>
+                    <li>腕時計</li>
+                    <li>伊達眼鏡</li>
+                    <li>サングラス</li>
+                    <li>リング</li>
+                    <li>ネックレス</li>
+                    <li>ブレスレット</li>
+                    <li>ネクタイ</li>
+                    <li>ウォレットチェーン など</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="c-accordion">
+            <h5 class="c-accordion_title js-bothPcSpAccordionTrigger">家電製品</h5>
+            <div class="js-bothPcSpAccordionContent">
+              <div class="c-accordion_inner">
+                <div class="c-products_item">
+                  <p class="c-products_item_title">ビジュアル家電</p>
+                  <ul class="c-products_item_list">
+                    <li>液晶テレビ（19型以下）</li>
+                    <li>携帯テレビ</li>
+                    <li>Blu-rayレコーダー</li>
+                    <li>Blu-rayプレーヤー</li>
+                    <li>DVDレコーダー</li>
+                    <li>DVDプレーヤー</li>
+                    <li>HDDレコーダー</li>
+                    <li>ビデオデッキ</li>
+                    <li>ポータブルDVDプレーヤー など</li>
+                  </ul>
+                </div>
+                <div class="c-products_item">
+                  <p class="c-products_item_title">オーディオ家電</p>
+                  <ul class="c-products_item_list">
+                    <li>CDラジカセ</li>
+                    <li>CD/MDコンポ</li>
+                    <li>アンプ</li>
+                    <li>スピーカー</li>
+                    <li>ヘッドホン</li>
+                    <li>iPod</li>
+                    <li>MP3プレーヤー各種</li>
+                    <li>ポータブルMDプレーヤー</li>
+                    <li>ポータブルCDプレーヤー など</li>
+                  </ul>
+                </div>
+                <div class="c-products_item">
+                  <p class="c-products_item_title">生活家電・調理家電</p>
+                  <ul class="c-products_item_list">
+                    <li>コーヒーメーカー</li>
+                    <li>IH調理器</li>
+                    <li>炊飯器</li>
+                    <li>トースター</li>
+                    <li>電気ポット</li>
+                    <li>アイロン</li>
+                    <li>ドライヤー</li>
+                    <li>掃除機</li>
+                    <li>空気清浄機</li>
+                    <li>電気ストーブ</li>
+                    <li>電気毛布（未使用品のみ買取可）</li>
+                    <li>照明</li>
+                    <li>電動工具</li>
+                    <li>加湿器</li>
+                    <li>ホットプレート</li>
+                    <li>グリル鍋</li>
+                    <li>たこ焼き器</li>
+                    <li>除湿機 など</li>
+                  </ul>
+                </div>
+                <div class="c-products_item">
+                  <p class="c-products_item_title">デジタル家電</p>
+                  <ul class="c-products_item_list">
+                    <li>携帯電話</li>
+                    <li>タブレット</li>
+                    <li>ノートPC</li>
+                    <li>デスクトップPC</li>
+                    <li>PCディスプレイ</li>
+                    <li>デジタルカメラ</li>
+                    <li>デジタルムービー</li>
+                    <li>ビデオカメラ</li>
+                    <li>FAX</li>
+                    <li>電話機</li>
+                    <li>電子辞書 など</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="c-accordion">
+            <h5 class="c-accordion_title js-bothPcSpAccordionTrigger">生活雑貨</h5>
+            <div class="js-bothPcSpAccordionContent">
+              <div class="c-accordion_inner">
+                <div class="c-products_item -wide">
+                  <ul class="c-products_item_list -wide">
+                    <li>ポット・ケトル</li>
+                    <li>収納ケース</li>
+                    <li>フォトフレーム</li>
+                    <li>掛時計・置時計</li>
+                    <li>各種インテリア雑貨</li>
+                    <li>洋食器(※)</li>
+                    <li>和食器(※)</li>
+                    <li>ガラス食器(※)</li>
+                    <li>漆器(※)</li>
+                    <li>タオルギフト(※)</li>
+                    <li>布団・毛布(※)</li>
+                    <li>鍋・フライパン(※)</li>
+                    <li>キッチン用品(※)</li>
+                    <li>レンジ用品(※)</li>
+                    <li>トイレ用品(※)</li>
+                    <li>洗面用品(※)</li>
+                    <li>バス用品(※)</li>
+                    <li>リビング用品(※)</li>
+                    <li>石鹸(※)</li>
+                    <li>入浴剤(※)</li>
+                    <li>シャンプー(※)</li>
+                    <li>ボディソープ(※)</li>
+                    <li>洗剤（食器・洗濯）(※)</li>
+                    <li>アロマキャンドル・お香(※)</li>
+                    <li>各種文具(※)</li>
+                    <li>花器・花瓶 など(※)</li>
+                  </ul>
+                  <p class="m-note -left">※未使用品のみ買取可</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="c-accordion">
+            <h5 class="c-accordion_title js-bothPcSpAccordionTrigger">スポーツ</h5>
+            <div class="js-bothPcSpAccordionContent">
+              <div class="c-accordion_inner">
+                <div class="c-products_item -wide">
+                  <ul class="c-products_item_list -wide">
+                    <li>野球用品</li>
+                    <li>サッカー用品</li>
+                    <li>フィッシング用品 など</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="c-accordion">
+            <h5 class="c-accordion_title js-bothPcSpAccordionTrigger">楽器・ホビー・ゲーム</h5>
+            <div class="js-bothPcSpAccordionContent">
+              <div class="c-accordion_inner">
+                <div class="c-products_item">
+                  <p class="c-products_item_title">楽器</p>
+                  <ul class="c-products_item_list -column">
+                    <li>アンプ</li>
+                    <li>エフェクター</li>
+                    <li>DJ機器</li>
+                    <li>管楽器 など</li>
+                  </ul>
+                </div>
+                <div class="c-products_item">
+                  <p class="c-products_item_title">ホビー</p>
+                  <ul class="c-products_item_list -column">
+                    <li>超合金</li>
+                    <li>フィギュア</li>
+                    <li>プラモデル（未使用品のみ買取可）</li>
+                    <li>ソフビ</li>
+                    <li>ラジコン</li>
+                    <li>エアガン</li>
+                    <li>ミニカー</li>
+                    <li>模型</li>
+                    <li>ボードゲーム</li>
+                    <li>麻雀牌 など</li>
+                  </ul>
+                </div>
+                <div class="c-products_item">
+                  <p class="c-products_item_title">ゲーム</p>
+                  <ul class="c-products_item_list -column">
+                    <li>PlayStation 4</li>
+                    <li>PlayStation 4 Pro</li>
+                    <li>Newニンテンドー3DS</li>
+                    <li>ニンテンドー2DS</li>
+                    <li>ニンテンドークラシックミニファミリーコンピュータ</li>
+                    <li>ニンテンドークラシックミニスーパーファミコン</li>
+                    <li>Nintendo Switch</li>
+                    <li>Xbox One など</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="c-accordion">
+            <h5 class="c-accordion_title js-bothPcSpAccordionTrigger">キッズ用品</h5>
+            <div class="js-bothPcSpAccordionContent">
+              <div class="c-accordion_inner">
+                <div class="c-products_item -wide">
+                  <ul class="c-products_item_list -wide">
+                    <li>キッズ衣料・服飾品各種</li>
+                    <li>知育玩具各種</li>
+                    <li>のりもの</li>
+                    <li>木のおもちゃ など</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- <section class="c-products_contents">
+          <h4 class="m-lead">買取OK商品例</h4>
+          <p class="c-products_desc">状態や程度によりお買取できない場合もございますが、<br class="u-hidden-lg u-hidden-md">古い商品や使用感がある商品も買取させていただきます。</p>
+          <ul class="c-products_exList">
+            <li class="c-products_exList_item">
+              <div class="c-products_exList_item_img"><img src="/img/sell/web/items/products_ex_img_01.jpg" alt=""></div>
+              <p class="c-products_exList_item_txt">古いデザインでも<br><span class="c-products_exList_item_txt_big c-products_exList_item_txt_red">買取OK</span></p>
+            </li>
+            <li class="c-products_exList_item">
+              <div class="c-products_exList_item_img"><img src="/img/sell/web/items/products_ex_img_02.jpg" alt=""></div>
+              <p class="c-products_exList_item_txt">5年以上前のものでも<br><span class="c-products_exList_item_txt_big c-products_exList_item_txt_red">買取OK</span></p>
+            </li>
+            <li class="c-products_exList_item">
+              <div class="c-products_exList_item_img"><img src="/img/sell/web/items/products_ex_img_03.jpg" alt=""></div>
+              <p class="c-products_exList_item_txt">ほつれや汚れがあっても<br><span class="c-products_exList_item_txt_big c-products_exList_item_txt_red">買取OK</span></p>
+            </li>
+            <li class="c-products_exList_item">
+              <div class="c-products_exList_item_img"><img src="/img/sell/web/items/products_ex_img_04.jpg" alt=""></div>
+              <p class="c-products_exList_item_txt">傷があっても<br><span class="c-products_exList_item_txt_big c-products_exList_item_txt_red">買取OK</span></p>
+            </li>
+          </ul>
+        </section> -->
+      </section>
+
+      <section class="c-products c-products-vw100">
+        <h3 class="m-title">ブランド名入力検索</h3>
+        <div class="brandSearchBox -gray brandSearchBox-webBrands">
+          <p class="brandSearchBox_txt">Web買取の衣類・服飾品には<br class="u-hidden-lg u-hidden-md">取り扱いしていないブランドもございます。<br>対応のブランドはこちらからご確認ください。</p>
+          <form class="brandSearchBox_form" action="#" method="post">
+            <input class="brandSearchBox_sbox" type="search" name="search" placeholder="ブランド名を入力してください">
+            <input class="brandSearchBox_sbtn" type="submit" name="submit" value="Search">
+          </form>
+        </div>
+      </section>
+
+      <a id="notbuybrand"></a>
+      <section class="c-products">
+        <h3 class="m-title">Web買取できないブランド</h3>
+        <p class="m_desc">大切な商品でも、お値段の付かないブランドもございます。<br class="u-hidden-lg u-hidden-md">お送りいただく前にご確認ください。</p>
+        <ul class="m-note">
+          <li>※ノーブランドの商品、および商品にブランドの記載はあっても、<br class="u-hidden-lg u-hidden-md">上記の検索で該当しないブランドも、<br class="u-hidden-lg u-hidden-md">お値段の付かない商品の対象となります。</li>
+        </ul>
+        <ul class="m-blandList">
+          <li class="m-blandList_item">ANAP</li>
+          <li class="m-blandList_item">archives</li>
+          <li class="m-blandList_item">BACK NUMBER</li>
+          <li class="m-blandList_item">BROWNY</li>
+          <li class="m-blandList_item">CINEMA CLUB</li>
+          <li class="m-blandList_item">C・O・L・Z・A</li>
+          <li class="m-blandList_item">COMME CA ISM</li>
+          <li class="m-blandList_item">earth music&amp;ecology</li>
+          <li class="m-blandList_item">E hyphen world gallery</li>
+          <li class="m-blandList_item">EGOIST</li>
+          <li class="m-blandList_item">FOREVER21</li>
+          <li class="m-blandList_item">GAP</li>
+          <li class="m-blandList_item">GLOBAL WORK</li>
+          <li class="m-blandList_item">grove</li>
+          <li class="m-blandList_item">GU</li>
+          <li class="m-blandList_item">GRL</li>
+          <li class="m-blandList_item">Heather</li>
+          <li class="m-blandList_item">Honeys</li>
+          <li class="m-blandList_item">H&amp;M</li>
+          <li class="m-blandList_item">INGNI</li>
+          <li class="m-blandList_item">JEANASIS</li>
+          <li class="m-blandList_item">KUMIKYOKU</li>
+          <li class="m-blandList_item">LIP SERVICE</li>
+          <li class="m-blandList_item">LOWRYS FARM</li>
+          <li class="m-blandList_item">MAJESTIC LEGON</li>
+          <li class="m-blandList_item">MICHEL KLEIN</li>
+          <li class="m-blandList_item">mystic</li>
+          <li class="m-blandList_item">mysty woman</li>
+          <li class="m-blandList_item">NATURAL BEAUTY BASIC</li>
+          <li class="m-blandList_item">OLIVE des OLIVE</li>
+          <li class="m-blandList_item">OZOC</li>
+          <li class="m-blandList_item">PAGEBOY</li>
+          <li class="m-blandList_item">Ray Cassin</li>
+          <li class="m-blandList_item">RETRO GIRL</li>
+          <li class="m-blandList_item">ROPE PICNIC</li>
+          <li class="m-blandList_item">TK MIXPICE</li>
+          <li class="m-blandList_item">UNIQLO</li>
+          <li class="m-blandList_item">w closet</li>
+          <li class="m-blandList_item">しまむら</li>
+          <li class="m-blandList_item">フェリシモ</li>
+          <li class="m-blandList_item">3can4on</li>
+        </ul>
+      </section>
+
+
+      <div class="m-webPurchaseApplicationBtn -marginUp"><a class="m-btn m-btnEffect" href="https://www.2ndstreet.jp/mypage/webbuy">Web買取のお申込み<br class="u-hidden-sm">(ログイン)</a></div>
+      <div class="m-textUnderlineLink"><a href="/sell/web/details/">初めてのお客様へ</a></div>
+      <div class="m-textUnderlineLink"><a href="/sell/web/guideline/">Web買取のサービスガイドライン・利用規約</a></div>
+
+
+      <section class="inquiryAboutWeb -ask">
+        <h3 class="m-title">Web買取に関するお問合せ</h3>
+        <div class="inquiryAboutWeb_btn -ask"><a class="m-btn m-btnEffect" href="/static/index/faq/">Web買取のよくある質問</a></div>
+        <div class="inquiryAboutWeb -form">
+          <div class="inquiryAboutWeb_inner">
+            <address>
+              <p class="inquiryAboutWeb_category">お電話でのお問合せ</p>
+              <p class="inquiryAboutWeb_number"><a href="tel:0587653157">0587-65-3157</a></p>
+              <p class="inquiryAboutWeb_reception">11:00-13:00/14:00-17:00 土日祝日休</p>
+            </address>
+            <address>
+              <p class="inquiryAboutWeb_category">FAXでのお問合せ</p>
+              <p class="inquiryAboutWeb_number">0587-66-0222</p>
+              <p class="inquiryAboutWeb_reception">24時間年中無休</p>
+            </address>
+          </div>
+          <div class="inquiryAboutWeb_btn"><a class="m-btn m-btnEffect" href="https://www.2ndstreet.jp/contact/input">メールフォームからのお問合せ</a></div>
+        </div>
+      </section>
+
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<%_  var pageID = 'sellCategoryAccessary'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/js/vendor/slick/slick.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="storeCategory">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-03">
+        <p class="m-heading_subtitle">取扱商品について</p>
+        <h2 class="m-heading_title">貴金属</h2>
+        <p class="m-heading_desc">金・プラチナ・ダイヤモンド等で作られたアクセサリー類。</p>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-method', {page: pageID})%>
+
+
+      <section class="buildup">
+        <h3 class="m-title">買取ジャンル例</h3>
+        <ul class="buildup_list">
+          <li class="buildup_list_item">
+            <img src="/img/sell/category/accessary/buildup_img_01.jpg" alt="画像：買取ジャンル例01">
+            <p class="buildup_list_item_txt">リング</p>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="c-accordion c-buyingReinforcing">
+        <h3 class="c-accordion_title js-bothPcSpAccordionTrigger">買取についての注意事項</h3>
+        <div class="js-bothPcSpAccordionContent">
+          <ul class="c-cautions_list">
+            <li>・各店舗により取扱商品が異なります。詳しくはお近くの店舗までお問合せください。</li>
+            <li>・状態により、買取金額は異なります。傷の多いものや故障品は買取をお断りする場合がございます。</li>
+            <li>・1品ずつ査定いたしますので、買取にお時間がかかる場合がございます。</li>
+            <li>・在庫状況により買取金額は変動いたします。</li>
+            <li>・コピー商品は取扱できません。</li>
+            <li>・お電話、メールフォームによる買取のお問合せはご遠慮ください。</li>
+            <li>・消耗品等は未使用品に限らせていただきます。</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="purchase">
+        <h3 class="m-title">対象の買取方法</h3>
+        <ul class="c-otherMeans">
+          <li class="c-otherMeans_item c-otherMeans_item-store"><a href="/sell/store/"><div>
+            <p class="c-otherMeans_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_03_sm.png', alt: '画像：店頭買取'});%>
+            </p>
+            <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">STORE</span>店頭買取</p>
+          </div></a></li>
+          <li class="c-otherMeans_item c-otherMeans_item-web"><a href="/sell/web/"><div>
+            <p class="c-otherMeans_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_01_sm.png', alt: '画像：Web買取'});%>
+            </p>
+            <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">WEB</span>Web買取</p>
+          </div></a></li>
+        </ul>
+        <p class="purchase_note">※Web買取につきましては、取扱できないブランド・サイズがございます。<a href="/sell/web/items/#notbuybrand">詳しくはこちら</a>をご確認ください。</p>
+      </section>
+
+
+      <section class="c-QandA">
+        <h3 class="m-title">買取に関するポイント</h3>
+        <p class="c-QandA_desc">貴金属の買取でよくある質問</p>
+        <dl>
+          <dt><p>見積りだけでもしてもらうことはできますか？</p></dt>
+          <dd><p>お見積りのみのご依頼も大歓迎です。詳しくは<a href="/shop">「お近くのセカンドストリート」</a>までご連絡ください。</p></dd>
+          <dt><p>電話で買取価格の案内はしてもらえますか？</p></dt>
+          <dd><p>商品の状態により金額が変わる為、お電話での買取金額のご案内はお断りさせていただいております｡<br>お手数ですが<a href="/shop">店頭までお持ちいただく</a>か、もしくはセカンドストリート<a href="/sell/web/">Web買取サービス</a>へのお申込みをお願いいたします。</p></dd>
+        </dl>
+        <ul>
+          <li>
+            <a href="/sell/tips/">
+              <p>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-qanda/img_01_sm.jpg', alt: '画像：高く売るコツを知る'});%>
+              </p>
+              <div>
+                <div>
+                  <h4>高く売るコツを知る</h4>
+                  <p>査定時のバイヤーが特に確認する<br>ポイントをご紹介します。</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/static/index/faq">
+              <p>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-qanda/img_02_sm.jpg', alt: '画像：よくある質問をもっと見る'});%>
+              </p>
+              <div>
+                <div>
+                  <h4>よくある質問をもっと見る</h4>
+                  <p>お客さまから寄せられたご質問を<br>掲載しております。</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="c-products">
+        <div class="c-products_menu">
+          <h4 class="js-onlySpAccordionTrigger">他の商品の詳細情報はこちら</h4>
+          <div class="js-onlySpAccordionContent">
+            <ul>
+              <li><a href="/sell/category/womens/">
+              <svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg>
+              <p>レディース衣類</p>
+              </a></li>
+              <li><a href="/sell/category/mens/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg>
+                <p>メンズ衣類</p>
+              </a></li>
+              <li><a href="/sell/category/kids-wear/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg>
+                <p>キッズ衣類</p>
+              </a></li>
+              <li><a href="/sell/category/luxuary-brand/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg>
+                <p>ラグジュアリー<br class="u-hidden-md u-hidden-lg">ブランド</p>
+              </a></li>
+              <li><a href="/sell/category/electronics/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg>
+                <p>AV・生活家電</p>
+              </a></li>
+              <li><a href="/sell/category/mobile/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg>
+                <p>携帯電話</p>
+              </a></li>
+              <li><a href="/sell/category/furniture/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg>
+                <p>家具</p>
+              </a></li>
+              <li><a href="/sell/category/goods/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg>
+                <p>生活雑貨</p>
+              </a></li>
+              <li><a href="/sell/category/kids-goods/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg>
+                <p>キッズ用品</p>
+              </a></li>
+              <li><a href="/sell/category/instruments/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg>
+                <p>楽器</p>
+              </a></li>
+              <li><a href="/sell/category/hobby/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg>
+                <p>ホビー</p>
+              </a></li>
+              <li><a href="/sell/category/outdoor/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg>
+                <p>アウトドア用品</p>
+              </a></li>
+              <li><a href="/sell/category/sports/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg>
+                <p>スポーツ用品</p>
+              </a></li>
+              <li><a href="/sell/category/golf/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-golf" /></svg>
+                <p>ゴルフ用品</p>
+              </a></li>
+              <li><a href="/sell/category/bicycle/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg>
+                <p>自転車</p>
+              </a></li>
+              <li><a href="/sell/category/ticket/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg>
+                <p>金券・商品券</p>
+              </a></li>
+              <li><a href="/sell/category/accessary/" class="is-current">
+                <svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg>
+                <p>貴金属</p>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+
+  </div>
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/vendor/slick/slick.min.js"></script>
+  <script src="/js/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/sell.js"></script>
+</body>
+
+</html>

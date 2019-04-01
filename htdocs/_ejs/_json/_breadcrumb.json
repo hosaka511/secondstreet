@@ -1,0 +1,514 @@
+{
+  "top" : {
+    "text": [
+    ],
+    "url": [
+    ]
+  },
+  "about" : {
+    "text": [
+      "TOP",
+      "セカンドストリートとは"
+    ],
+    "url": [
+      "/",
+      ""
+    ]
+  },
+  "sitemap" : {
+    "text": [
+      "TOP",
+      "サイトマップ"
+    ],
+    "url": [
+      "/",
+      ""
+    ]
+  },
+  "sell" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内"
+    ],
+    "url": [
+      "/",
+      ""
+    ]
+  },
+  "sellbusiness" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "法人買取サービスのご案内"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellstore" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "店頭買取"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellvisit" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "出張買取"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellweb" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "Web買取"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellwebVisitor" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "Web買取",
+      "買取方法"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      "/sell/web/",
+      ""
+    ]
+  },
+  "sellwebItems" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "Web買取",
+      "取扱商品"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      "/sell/web/",
+      ""
+    ]
+  },
+  "sellwebBrands" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "Web買取",
+      "取扱ブランドリスト"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      "/sell/web/",
+      ""
+    ]
+  },
+  "sellwebPackingmethod" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "Web買取",
+      "梱包方法"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      "/sell/web/",
+      ""
+    ]
+  },
+  "sellwebGuideline" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "Web買取",
+      "サービスガイドライン"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      "/sell/web/",
+      ""
+    ]
+  },
+  "sellitems" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "取扱商品について"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "selltips" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "高く売るコツ"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryMens" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "メンズ衣類"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryWomans" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "レディース衣類"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryKidswear" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "キッズ衣類"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryKidsgoods" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "キッズ用品"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryElectronics" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "AV・生活家電"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryFurniture" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "家具"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryGoods" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "生活雑貨"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryInstruments" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "楽器"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryHobby" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "ホビー"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategorySports" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "スポーツ用品"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryTicket" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "金券・商品券"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryAccessary" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "貴金属"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryLuxuarybrand" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "ラグジュアリーブランド"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryBicycle" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "自転車"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryMobile" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "携帯電話"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryOutdoor" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "アウトドア用品"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellCategoryGolf" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "ゴルフ用品"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellBrandlistWomens" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "レディース衣類買取強化ブランド一覧"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "sellBrandlistMens" : {
+    "text": [
+      "TOP",
+      "買取サービスのご案内",
+      "メンズ衣類買取強化ブランド一覧"
+    ],
+    "url": [
+      "/",
+      "/sell/",
+      ""
+    ]
+  },
+  "shop" : {
+    "text": [
+      "TOP",
+      "店舗検索"
+    ],
+    "url": [
+      "/",
+      ""
+    ]
+  },
+  "shopSearch" : {
+    "text": [
+      "TOP",
+      "店舗検索",
+      "検索結果"
+    ],
+    "url": [
+      "/",
+      "/shop",
+      ""
+    ]
+  },
+  "shopDetails" : {
+    "text": [
+      "TOP",
+      "店舗検索",
+      "店舗詳細"
+    ],
+    "url": [
+      "/",
+      "/shop",
+      ""
+    ]
+  },
+  "information" : {
+    "text": [
+      "TOP",
+      "インフォメーション"
+    ],
+    "url": [
+      "/",
+      ""
+    ]
+  },
+  "informationDetails" : {
+    "text": [
+      "TOP",
+      "インフォメーション",
+      "インフォメーション詳細インフォメーション詳細インフォメーション詳細インフォメーション詳細インフォメーション詳細インフォメーション詳細"
+    ],
+    "url": [
+      "/",
+      "/information",
+      ""
+    ]
+  },
+  "guide" : {
+    "text": [
+      "TOP",
+      "ご利用ガイド - オンラインストア"
+    ],
+    "url": [
+      "/",
+      ""
+    ]
+  },
+  "guide-members" : {
+    "text": [
+      "TOP",
+      "ご利用ガイド - 会員登録について"
+    ],
+    "url": [
+      "/",
+      ""
+    ]
+  },
+  "guide-order" : {
+    "text": [
+      "TOP",
+      "ご利用ガイド - 店舗"
+    ],
+    "url": [
+      "/",
+      ""
+    ]
+  },
+  "ponta-point" : {
+    "text": [
+      "TOP",
+      "ご利用ガイド - Pontaポイント"
+    ],
+    "url": [
+      "/",
+      ""
+    ]
+  },
+  "faq" : {
+    "text": [
+      "TOP",
+      "ご利用ガイド - よくある質問"
+    ],
+    "url": [
+      "/",
+      ""
+    ]
+  }
+}

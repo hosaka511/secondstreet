@@ -1,0 +1,469 @@
+<%_  var pageID = 'sellwebGuideline'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellWeb">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-01">
+        <h2 class="m-heading_title">Web買取サービスガイドライン<span class="u-hidden-sm">・</span><br class="u-hidden-md u-hidden-lg">利用規約</h2>
+        <p class="m-heading_subtitle RalewayExtraBold">SERVICE GUIDELINE</p>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-web', {page: pageID})%>
+
+      <div class="anchorNav -guideline">
+        <nav>
+          <ul>
+            <li><a href="#service">Web買取<br class="u-hidden-sm">サービスガイドライン</a></li>
+            <li><a href="#terms">Web買取利用規約<br class="u-hidden-sm">(会員規約込)</a></li>
+            <li><a href="#law">特定商取引法及び<br class="u-hidden-sm">古物営業法に基づく表記</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <a id="service"></a>
+      <section class="guideline">
+        <h3 class="m-title">Web買取サービスガイドライン</h3>
+        <section class="guideline_chapter">
+          <h4 class="guideline_chapter_title">第１章 総則</h4>
+          <section class="guideline_section">
+            <h5 class="guideline_section_title">１.Web買取サービスについて</h5>
+            <p class="guideline_section_txt">Web買取サービスとは、2nd STREET(以下「当サイト」といいます）上より、株式会社ゲオ（以下「当社」といいます）の提供する買取申し込み方式により、お客様が品物を当社指定方法で配送し、査定した金額を銀行振込にて受け取るサービス（以下「WEB買取サービス」といいます）を指すものとします。<br>当社は、任意にWEB買取サービスの内容を定め、理由の如何を問わずお客様の承諾なくして、会員サービスの内容の一部または全部の変更、追加及び廃止をすることができるものとします。</p>
+          </section>
+          <section class="guideline_section">
+            <h5 class="guideline_section_title">２.会員について</h5>
+            <p class="guideline_section_txt">本サービスガイドラインにおいて、会員とは、本サービスガイドラインに同意の上、お客様が所定の手続きに従ってＩＤ及びパスワードの登録を申請し、当社が承認のうえ登録した利用者個人をいうものとします。 </p>
+            <p class="guideline_section_txt"><strong>ID及びパスワードの管理</strong></p>
+            <ul class="guideline_section_list">
+              <li>会員は、会員自身で設定したIDとパスワード及びIDとパスワードを記録した通信携帯端末機器(以後「通信携帯端末機器」とします)の管理責任を自身で負うものとします。</li>
+              <li>会員は、IDとパスワード及び通信携帯端末機器について第三者に貸与、譲渡、名義変更、売買、質入等してはならないものとし、パスワードについては、第三者に開示しないものとします。</li>
+              <li>会員は、IDとパスワード及び通信携帯端末機器の管理不十分、使用上の過誤、第三者の使用等による損害について責任を負うものとし、当社は一切責任を負わないものとします。</li>
+              <li>会員は、IDとパスワード及び通信携帯端末機器が盗難等にあった場合、または第三者によって不正に使用されていることが判明した場合には、直ちに当社に連絡するとともに、当社からの指示がある場合にはこれに従うものとします。なお、当社への連絡は会員を免責するものではないものとします。</li>
+              <li>会員は、自己のIDとパスワード及び通信携帯端末機器の失念があった場合は、当社の所定の手続きに従うものとします。</li>
+            </ul>
+          </section>
+          <section class="guideline_section">
+            <h5 class="guideline_section_title">３.サイトの利用、アクセスについて</h5>
+            <p class="guideline_section_txt">お客様は本サービスガイドラインに従って当サイトを利用するものとします。<br>お客様は当サイトを通じてお客様の発信する情報について、全ての責任を負うものとし、当社に何等の迷惑や損害を与えないものとします。<br>当サイトの利用に関連して、お客様が第三者に損害を与えた場合、またはお客様と第三者との間に紛争を生じた場合、当該のお客様は自己の費用と責任でかかる損害を賠償し、またはかかる紛争を解決するものとし、当社に何等の迷惑や損害を与えないものとします。<br>お客様が本サービスガイドラインに違反して当社に損害を与えた場合、お客様は当社の損害を賠償するものとします。<br>お客様は電子商取引においては該当データを暗号化しても完全に秘密性が保持できないこと、及びデータの秘密性が保持できなかった場合でも当社に対する責任追及ができないことにあらかじめご了承いただいた上、当サイトを利用するものとします。<br>お客様は本サービス利用にあたり、自己の費用と責任において必要な通信会社との契約・通信機器・ソフトウェアなどお客様側設備において必要なもの全てを用意するものとします。</p>
+          </section>
+          <section class="guideline_section">
+            <h5 class="guideline_section_title">４.個人情報の取扱い方針（プライバシーポリシー）について</h5>
+            <p class="guideline_section_txt">プライバシーポリシーについては、セカンドストリート Webページ内（<a href="https://www.2ndstreet.jp/static/index/privacy">https://www.2ndstreet.jp/static/index/privacy</a>）に記載し、これに従うものとします。</p>
+          </section>
+          <section class="guideline_section">
+            <h5 class="guideline_section_title">５.サイトの保守</h5>
+            <p class="guideline_section_txt">当社は、当サイトの稼動状態を良好に保つため、次の各号のいずれかに該当する場合、お客様に事前に通知を行うことなく当サイトの提供の全部あるいは一部を中止することができるものとします。</p>
+            <ul class="guideline_section_list">
+              <li>システムの定期保守及び緊急保守の場合</li>
+              <li>火災、停電、第三者による妨害行為等により、システムの運用が困難になった場合</li>
+              <li>その他、止むを得ずシステムの停止が必要と当社が判断した場合</li>
+            </ul>
+          </section>
+          <section class="guideline_section">
+            <h5 class="guideline_section_title">６.禁止事項</h5>
+            <p class="guideline_section_txt">お客様は、当サイト上で以下の行為を行ってはならないものとします。 </p>
+            <ul class="guideline_section_list">
+              <li>IDとパスワード及び通信携帯端末機器を不正の目的に使用する行為</li>
+              <li>当社または第三者に迷惑、不利益もしくは損害を与える行為、またはその恐れのある行為</li>
+              <li>当社または第三者の著作権、財産、プライバシー、その他の権利を侵害する行為、またはその恐れのある行為</li>
+              <li>選挙活動またはこれに類する行為、その他の政治及び宗教に関する行為</li>
+              <li>当サイト及び当社が運営に関わるショップの運営を妨げる行為、またはその恐れのある行為</li>
+              <li>当サイト及び当社が運営に関わるショップの信用を毀損する、またはその恐れのある行為</li>
+              <li>コンピューターウィルス等、有害なプログラムを当サイトを通じて、または当サイトに関連して使用、もしくは提供・配布する行為</li>
+              <li>犯罪行為、公序良俗に反する行為、その他法令に違反する行為</li>
+              <li>その他、当社及び関係会社が不適切と判断する行為</li>
+              <li>当サイトを使用した営業活動、営利を目的とした当サイトの利用及びその準備を目的とした行為</li>
+            </ul>
+          </section>
+          <section class="guideline_section">
+            <h5 class="guideline_section_title">７.免責事項等</h5>
+            <p class="guideline_section_txt">お客様は、当サイトの利用において行う、個人情報のインターネットを介した送信行為等が、情報の漏洩等の危険性を有していることを認識し、自己の責任の下にこれを行うものとし、当社は、当社に故意・重過失がない限りは、一切の責任を負わないものとします。<br>当社は、当サイトの内容及びお客様が当サイトを通じて得る情報等について、法令により免責が認められない場合を除き、その完全性、正確性、確実性、有用性等いかなる保証も行なわないものとします。</p>
+          </section>
+          <section class="guideline_section">
+            <h5 class="guideline_section_title">８.その他</h5>
+            <p class="guideline_section_txt">当社とお客様と当サイトのサービス（個人情報の開示、訂正、追加、削除含む）に関する連絡方法は、電話及びEメールなどの電子的なコミュニケーションツールによるものとします。<br>本サービスガイドラインの効力、履行及び解釈に関しては、日本国内法が適用されるものとします。</p>
+          </section>
+        </section>
+        <section class="guideline_chapter">
+          <h4 class="guideline_chapter_title">第２章 商品情報</h4>
+          <section class="guideline_section">
+            <h5 class="guideline_section_title">１.査定金額表示について</h5>
+            <p class="guideline_section_txt">査定金額の表示は消費税総額表示としています。</p>
+          </section>
+          <section class="guideline_section">
+            <h5 class="guideline_section_title">２.査定金額について</h5>
+            <p class="guideline_section_txt">当サイト上の査定金額と、当社が運営する店頭ショップでの査定金額は異なった金額となる場合があるものとします。<br>当サイト上の査定金額では、同商品であっても買取金額が異なる場合があるものとします。<br>査定金額は、季節環境、相場動向、在庫状況等により、常に変動するものとします。<br>当サイトにて事前に査定金額を提示することがございますが、状態等により査定金額が変動したり、買取できない場合があるものとします。<br>品物が当社に到着しない限り、査定金額を提示することはできないものとします。<br>当サイトの査定金額表示について単品での査定金額が500円以上の物につきましては1品ごとでの査定結果の提示、 500円未満の物につきましては衣料（洋服等）・服飾雑貨（バッグ・靴・アクセサリー等）という表記で纏めて査定結果の提示をさせていただくものとします。<br>纏めて提示した物につきましては個別での返品等は受け付けないものとします。<br>査定結果に基づく当社からの提示金額に対して、会員は、承認もしくはキャンセルの選択権のみ有するものとし、金額の交渉や不服申し立てなどは一切行わないものとします。<br>尚、会員がこれに反して、交渉等を行ったとしても、当社はこれを一切受け付けないものとします。査定金額がつかなかった品物についても同様とします。</p>
+          </section>
+          <section class="guideline_section">
+            <h5 class="guideline_section_title">３.商品情報について</h5>
+            <p class="guideline_section_txt">当社は、当サイト上の商品説明をできる限り正確に表示するよう努めるものとします。<br>商品画像はイメージであり、テキストの商品情報と異なる場合、テキストの商品情報が優先するものとします。<br>商品関連情報の表示は、当社が運営に関わる店頭ショップでの取り扱いを保証するものではないものとします。<br>当社で定める取扱アイテムの基準は、あくまで当社独自の観点によるものとします。<br>これらの基準が定める詳細は、社外秘事項であり、お客様へ情報を開示することはできないものとします。</p>
+          </section>
+        </section>
+        <section class="guideline_chapter">
+          <h4 class="guideline_chapter_title">第３章 広告</h4>
+          <section class="guideline_section">
+            <h5 class="guideline_section_title">１.広告について</h5>
+            <p class="guideline_section_txt">会員は、当社がその個人情報及びその個人の固有の情報（嗜好情報等も含む）を利用して、Ｅメールその他の手段により当社サービスに関する情報の案内などの営業活動を行うこと、並びに当社が適切と判断した第三者の商品・サービス等の広告案内またはアンケートなどの販売促進活動を当社が主体となって行うことにあらかじめ承諾いただいたものとみなします。<br>サービス中に広告（懸賞広告を含む）、宣伝を行っている広告主との取り引き（懸賞等のプロモーションへの参加を含む）は、会員と当該広告主の責任において行っていただくものとします。当社はサービス中に掲載されている広告によって行われる取り引きに起因する損害および広告が掲載されたこと自体に起因する損害については一切責任を負わないものとします。</p>
+          </section>
+        </section>
+        <section class="guideline_chapter">
+          <h4 class="guideline_chapter_title">付則</h4>
+          <div class="guideline_section">
+            <p class="guideline_section_txt">このサービスガイドラインは平成21年12月14日から実施いたします。</p>
+          </div>
+        </section>
+      </section>
+
+      <a id="terms"></a>
+      <section class="guideline">
+        <h3 class="m-title">Web買取利用規約(会員規約込)</h3>
+        <p class="guideline_txt">2nd STREET（以下、「当サイト」といいます）は、株式会社ゲオ（以下、「当社」といいます）が運営・売買するサービスです。本サイト上での買取サービス（以下、「本サービス」といいます）をお申し込みいただく場合は、下記に定める本サービスの利用規約（以下、「本規約」といいます）を予め読んだ上で、これに同意するものとします。</p>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第１条 目的</h5>
+          <p class="guideline_section_txt">お客様は、本規約に従って、本サービスをご利用するものとします。</p>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第２条 買取商品</h5>
+          <ul class="guideline_section_list">
+            <li>Web買取可能な品物は、衣料品・服飾品（バッグ・靴・アクセサリー等）、携帯電話、パソコン、家電、家具、スポーツ用品、楽器、ホビー含む生活雑貨等、当社がWeb買取用に指定している品目とします。</li>
+            <li>上記にかかわらず、模倣品、コピー品、状態が著しく悪いもの、製造から一定年数を経過した電化製品、使用済みのアンダーウェア他衛生商品等の買取できない品物があります。また、Web買取では3辺合計160cm内の箱に収まらないもの及び、1つの梱包で２５キログラムを超過するものは買取できません。</li>
+            <li>携帯電話、パソコン等の記憶領域を持つ情報端末機器に関しましては、お客様の責任によりデータの消去及び初期化、各種パスワード他ロックの解除をしていただく必要があります。また、当社では通信制限のされた赤ロム端末の買取ができない他、割賦販売により購入された商品については、当社で買取後もお客様自身で完済することを保証いただくものとします。詳細については、以下を確認ください。携帯電話他等の通信端末の詳細は以下となります。
+              <ul class="guideline_section_list_nest">
+                <li>未開封品、盗品、改造品、コピー商品、サンプル品、赤ロム品、買取可能商品掲載外の商品などはお売りいただけません。SIMカードやSDカードなどは買取対象外となりますので、必ず抜き取ってください。万が一同梱されていた場合は、当社が責任を持って処分いたします。これら以外にも、当サイトに掲載されていない商品や準備中の商品など、当サイトが買取対象外と判断した商品は買取いたしておりません。</li>
+                <li>未使用品や同一商品を複数台お申し込みの場合、入手経路を確認させていただく場合がありますので、あらかじめご了承ください。</li>
+                <li>お申込み商品内の個人情報や各種データ・アプリに関しては、ご利用者自身で自己責任により、すべて消去してください。万が一消去されていないデータがあり、売却後、第三者の手に渡ったとしても、当社はその責を一切負わないものとします。</li>
+                <li>動作確認を行いますので、必ずバッテリーが充電されている状態にしてください。万が一、充電されていない商品をお送りいただいた場合は、買取不可となります。</li>
+                <li>動作確認を行いますので、暗証番号を次の初期設定番号に変更してください。docomo→0000　au→1234　SoftBank→9999 万が一、変更されていない商品をお送りいただいた場合は、買取不可となります。</li>
+                <li>遠隔ロック（docomo「おまかせロック」　au「安心ロック」　SoftBank「安心遠隔ロック」）を設定している場合は、必ず解除してください。</li>
+                <li>万が一、解除していない商品をお送りいただいた場合は、買取不可となります。</li>
+                <li>かんたんログインなどは、商品自体にログイン情報が登録されている場合がありますので、必ず削除や解除を行ってください。万が一消去されていないログイン情報などがあり、売却後、第三者の手に渡ったとしても、当社はその責を一切負わないものとします。</li>
+                <li>お申込み時に、ご利用者が買取可能商品に含まれると想定された商品であっても、査定の結果、当社基準により買取可能商品の対象外となる場合があります。</li>
+                <li>「割賦販売による未払いの端末代金が残存又は、盗難・紛失保証サービスに加入」などの理由で、ネットワーク利用制限がかかっている端末につきましては、下記の〔ア~エ〕について異議無く同意出来る方のみお申込み可能となります。こちらはdocomo・au・SoftBankを含むすべてのキャリアが対象となります。
+                  <ul class="guideline_section_list_nest_nest">
+                    <li>ア：分割払いが残っている商品を本サービスに申し込み、買取完了後も分割払いが残っている場合、申込者は引き続き売却した商品の分割払いを行い、必ず完済すること。また、その他の理由でネットワーク利用制限がかかっている端末は、買取完了後も常時利用できる状態を維持すること。</li>
+                    <li>イ：万が一、買取完了後に残っていた分割払いが滞る等の理由によって、商品が使用不能となった場合は、当社に買取金額を全額返金すること。</li>
+                    <li>ウ：イに該当した場合、その損害賠償金として買取代金の2倍相当額を当社へ速やかに支払います。</li>
+                    <li>エ：アを遵守し、イ・ウについて、なんら異議申し立てをしないこと。</li>
+                  </ul>
+                </li>
+                <li>買取希望商品のうち、各キャリアのウェブサイト上でネットワーク利用制限が「×」または「-」等と表示され、申込時点で利用不可能になっている端末については、状態にかかわらず（新品同様であっても）買取不可となります。</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第３条 品物の送付方法</h5>
+          <ul class="guideline_section_list">
+            <li>当社へ品物を送付する際の手段として当社が指定する方法は、本人確認を目的として当社が依頼する配送業者が直接荷物を自宅に引き取りに伺う方法であり、それ以外の方法にて送付された場合及び、お客様自身で用意された送り状を使用して送付された場合、当社は受け取りを拒否又は送料着払いにてお客様へ返送するものとします。なお、当社指定の方法により、お客様が当社に対して品物を発送する際の送料は、当社が負担するものとします。</li>
+            <li>お客様は、品物配送中の故障・破損等、事故防止のため、緩衝材（新聞紙等）を入れて厳重に梱包するものとします。配送中の品物破損、紛失等の事故に対し、当社は一切の責任を負わないものとします。また、破れやすい紙袋、ビニール袋による発送はしないものとします。</li>
+            <li>送付された品物のうち、買取対象アイテム及び買取対象ブランド以外の品物が、著しく多い場合には、買取できない品物については送料着払で返送させていただく場合があるものとします。</li>
+            <li>品物の発送に使用したダンボール、ビニール袋、紙袋、緩衝材などの梱包用品は開封時に当社にて処分するものとし、品物を返却する場合も、物品本体およびそれに関係する付属品（カード類、箱等）のみを返送するものとします。</li>
+            <li>第４条第1項に従いキャンセルにより返送された品物が、お客様の都合により受取がなされず弊社へ返戻された場合、再度返送を希望する場合は、再発送に伴う送料はお客様の負担とします。</li>
+            <li>送付された品物が付属品等の欠品により、お送りいただいた品物単体では買取はできない場合でも、お手元の付属品を追加することにより買取が可能になる場合、付属品等の追加送付をお受け致しますが、この場合の追加配送の費用はお客様のご負担とします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第４条 品物の売買契約の成立</h5>
+          <ul class="guideline_section_list">
+            <li>当社は、ご郵送いただいた品物を査定した後、査定金額を提示するものとし、お客様は当該金額に承諾いただける場合は「承諾」、そうでない場合は「キャンセル」の旨を伝えるものとします「承諾」の場合、売買契約が成立し、買取代金をお支払いした時点で、品物の所有権は、お客様から当社に移転するものとし、「キャンセル」の場合は、お申込いただいた住所に当社の送料負担によりご返送するものとします。</li>
+            <li>お客様は買取申込書を、申込書を別途定める書式をプリンターにて出力し、署名/買取申込点数を記入の上、品物と一緒に発送するものとします。プリンターが無い場合は、お持ちの用紙に、買取申込時に表示される買取申込書を確認していただき、買取申込番号/買取申込点数を記入するものとします。品物到着後に必要書類の不足または不備が発生した際、書類を再度お送りいただくものとします。ご連絡の後、返答が３０日を経過してもない場合や、返答後書類が３０日以内に到着しなかった場合、品物をお客様にご返送するものとします。その際の送料はお客様負担となるものとします。連絡が取れなかった場合も同様とします。</li>
+            <li>当社買取基準により買取ができない品物の処理方法については、承認時にお客様が「返却」または「処分」を明示するものとします。 「処分」を選択した場合、お客様が査定結果を承諾し、当社が了承した時点で、品物の所有権はお客様から当社に移転し、直ちに処分するものとします。</li>
+            <li>「Web買取」依頼後、再度の引取に際して不在だった場合、買取申込から14日以上経過した時点で、お申込をキャンセル処理させていただくものとします。</li>
+            <li>日本国内以外からの買取申込みはお断りするものとします。なお、日本国内であっても、第３条に定める配送業者のサービス提供対象地域に該当しない一部離島からのお申込みについても同様とします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第５条 古物営業法に基づく本人確認</h5>
+          <ul class="guideline_section_list">
+            <li>当社は、古物営業法の定め及び警察の指導に基づき、本サービスをご利用になるお客様の氏名・生年月日・現住所を含めた本人確認を行うものとし、当該本人確認に必要な書類は、以下各号に定めるとおりとします。 尚、有効期限の表示があるものについては、発送の時点で有効期限内であるものに限られるものとします。尚、有効期限の表示があるものについては、発送の時点で有効期限内であるものに限られるものとします。
+              <ul class="guideline_section_list_nest">
+                <li>健康保険証のコピー（住所記載が裏面にある場合は裏面もコピー）</li>
+                <li>船員保険証のコピー（同上）</li>
+                <li>国民健康保険証のコピー（同上）</li>
+                <li>後期高齢者医療保険証のコピー（同上）</li>
+                <li>学生証のコピー（学校法人が発行したもので「住所」「生年月日」の記載があるもの）</li>
+                <li>日本国パスポートのコピー</li>
+                <li>運転免許証のコピー（住所変更がある場合は裏面もコピー）</li>
+                <li>外国人登録証のコピー</li>
+                <li>住民基本台帳カードのコピー（本人写真が記載されているもののみ）</li>
+              </ul>
+            </li>
+            <li>第1項各号のご本人確認書類に記載されている住所と申込住所は、一致していなければならないものとし、異なる場合は、公共料金の領収書等で住所確認をするため、本サービス利用申込日の3ヵ月前までに発行された当該領収書のコピーをお送り頂くものとします。尚、第1項①から⑨に該当する書類でも、公的機関等から発行された時点で「氏名」「住所」「生年月日」の記載がない書類（後日、住所を手書きで記入する書類を含む）については利用できないものとします。</li>
+            <li>金融機関の口座名義は、当サービスを利用されるご本人様に限られるものとし、ご本人確認書類の氏名と一致していなければならないものとします。</li>
+            <li>ご本人確認書類としてご利用頂けない書類を同梱、または送付頂きました場合は弊社にて破棄いたします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第６条 古物営業法に基づく本人確認</h5>
+          <ul class="guideline_section_list">
+            <li>Web買取は20歳未満の方はご利用できないものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第７条 お支払い</h5>
+          <ul class="guideline_section_list">
+            <li>当社は、買取依頼をいただいた場合、品物到着後7営業日以内に査定完了とその旨の連絡を行い、後の商談成立後、3営業日以内に買取申込書に記載されたお客様指定の振込口座へ査定金額を振り込むものとします。 尚、当社の定めるWEB買取における営業日とは、土日祝祭日、年末年始、お盆を含まない平日とします。</li>
+            <li>お客様に品物の査定結果をお送りした後、30日以内にご返事を頂けない場合には、品物をお客様にご返送させていただくものとします。その際の送料はお客様が負担するものとします。尚、査定を行った品物の中に当社にてお取扱いできない品物が含まれる場合、品物を返送させていただくものとします。</li>
+            <li>承諾いただけなかった品物の返送料は当社負担とします。ただし、取扱アイテム以外の品物及び取扱ブランド以外の品物の返送は、お客様負担とさせていただき、着払いにて返送する場合があるものとします。</li>
+            <li>査定金額を入金する口座は、ご登録いただいたご本人様名義の口座に限るものとし、ゆうちょ銀行以外で日本国内に本支店のある金融機関の口座に限るものとします。尚、支払方法は当社指定の方法とします。 ご登録いただいた口座に入金がができない状況にあることが判明した場合、当社は速やかにお客様に連絡を行うものとします。尚、「連絡が取れない」等の理由で、14日を経過しても入金が不可能な状況であった場合、再度連絡するものとします。再度の連絡後、14日を経過しても入金が不可能な状況だった場合、品物をお客様にご返送するものとします。その際の送料はお客様負担となるものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第８条 振込手数料</h5>
+          <ul class="guideline_section_list">
+            <li>振込手数料は原則として当社が負担とするものとします。但し、口座情報に不備がある場合等、お客様に責がある場合は、お客様に振込手数料を負担していただく場合があるものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第９条 キャンセル</h5>
+          <ul class="guideline_section_list">
+            <li>お客様が当社の提示した査定金額を、承認された後は、品物の返却、キャンセルは一切お受けしないものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第１０条 品物の取扱い</h5>
+          <ul class="guideline_section_list">
+            <li>品物が未開封の場合でも、動作確認、状態確認のため開封し、その後、品物を返却する場合でも、当社は開封に伴う損害等について、一切責任を負わないものとします。</li>
+            <li>お客様が買取をキャンセルし、品物の返却を申出た場合であっても、買取査定の過程で商品の状態やシステム環境・データ等に変更が生じる場合があり、当社では品物を送付いただく前の状態に復元できないことを予めご了承ください。復元できなかったことによりお客様に損害が発生した場合であっても、当社はその賠償の責を負いません。</li>
+            <li>情報端末機器、または映像・音楽再生機器等の記憶領域や、付属する記録媒体等に保存されたプログラムおよびデータ等が残存していた場合、お客様はこれらに関する権利の一切を放棄したものし、お客様は予め了承するものとします。</li>
+            <li>お預かりした情報端末機器、または映像・音楽再生機器等や、付属する記録媒体等が初期化されていない、または当社で初期化等をして安全に販売ができない場合は、「値段のつかない商品」とし買取不可と査定します。</li>
+            <li>品物を返却する場合も、発送時に使用したダンボール、ビニール袋、紙袋、緩衝材などの梱包用品は返却されない旨、お客様は了承するものとします。</li>
+            <li>お預かりした品物のポケットの中などにお客様の私物（現金、カード類、鍵、ハンカチ等）が残っていた場合は当社で処分し、これらの有無確認の問い合わせ、お預かり、返却等の対応はできず、何ら保証いたしません。必ずお客様自身で予めにポケット等をご確認の上送付ください。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第１１条 所有権の放棄</h5>
+          <ul class="guideline_section_list">
+            <li>当社から品物を返送した際に、お客様のご事情により当社に再返送された際は、その後当社の責に帰すことのできない理由によりお客様と連絡が不通等、真に已むなしと判断した場合は、品物が当社に返送された日から1ヶ月の経過期間をもって、お客様が品物の所有権を放棄したものとみなし、品物の所有権は当社が取得するものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第１２条 責任の範囲</h5>
+          <ul class="guideline_section_list">
+            <li>品物をお預かりした後、買取前又は返却までに、品物の紛失・破損等があった際は、当社が故意または重大な過失がある場合に限り、当社の買取査定基準に従い、当社における販売価格を上限として補償するものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第１３条 個人情報の取扱い</h5>
+          <ul class="guideline_section_list">
+            <li>お客様が個人情報の確認を希望される場合、サイト内マイページより確認を行うことができるものとします。また、お客様の個人情報の変更（住所変更等）、または削除を希望される場合には、マイページから個人情報の変更や削除ができるものとします。（ただし法律に基づく情報の保存に関しては法律に従った期間保存するものとします。） プライバシーポリシーについては、セカンドストリート Webページ内（<a href="https://www.2ndstreet.jp/static/index/privacy">https://www.2ndstreet.jp/static/index/privacy</a>）に記載し、これに従うものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第１４条 個人情報の取扱い</h5>
+          <ul class="guideline_section_list">
+            <li>お客様が当サイトを利用する場合には、会員登録が必要となるものとします。</li>
+            <li>会員とは、本規約、利用するサービスの個別ガイドラインをご承認いただいた上で、2nd STREET Online の利用手続きを申請し、当社がこれを承諾した方を指すものとします。会員は、会員サービスの利用申し込みを行った時点で、本規約、利用するサービスの個別ガイドラインの内容を承諾しているものとします。</li>
+            <li>当社は、会員登録申請を承認できないと判断した場合には、会員登録希望者の申請を承認しない権利を保持するものとします。</li>
+            <li>会員は、当社に届け出ている内容に虚偽がないことを保証するものとします。 虚偽の情報を入力した場合には、会員登録を抹消されても、不服を申し立てないものとします。 会員は、氏名、住所、電話番号、その他当社に届け出ている内容に変更が生じた場合には、速やかに当社が指定する方法にて変更の届け出をするものとします。変更の届け出の怠りにより、会員に不利益が生じることがあっても、当社は一切の責任を負わないものとします。</li>
+            <li>会員は、会員として有する権利を第三者に譲渡、売買、名義変更、質権の設定その他の担保に供する等の行為はできないものとします。当社は、 一人のお客様が二つ以上の会員登録をしても、一つに統合する事はできないものとします。</li>
+            <li>利用規約は随時変更修正する事がありますが、会員は常に最新の利用規約に同意したものとします。 当サイトが会員に対して必要と判断した通知事項は、会員の了解を得ることなく通知するものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第１５条 退会について</h5>
+          <ul class="guideline_section_list">
+            <li>会員の退会はメール等で連絡を頂いた後、当社にて退会手続きを行うことにより完了するものとします。尚、会員の退会は会員の過去の情報を抹消するのではなく、IDパスワードでログインできなくするものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第１６条 禁止事項</h5>
+          <ul class="guideline_section_list">
+            <li>当サイトのご利用に関して、以下の行為を行うことを禁止するものとします。万一、これらに違反した場合、当サービスのご利用停止または強制退会することができるものとします。
+              <ul class="guideline_section_list_nest">
+                <li>ご利用の際に、虚偽の登録内容を申請する行為</li>
+                <li>他人になりすましての会員登録・買取申込み・商品購入等のご利用</li>
+                <li>明らかに当サイトの基準を大きく外れているものの買取お申込み</li>
+                <li>他のお客様、第三者もしくは当社に迷惑、不利益または損害を与える行為、もしくはそれらの恐れがあると認められる行為</li>
+                <li>会員が死亡された場合（会員の地位は相続されない）</li>
+                <li>その他、会員として不適切と当社が判断した場合</li>
+                <li>法令に反する行為</li>
+              </ul>
+            </li>
+            <li>当社が前項の措置をとったことで、当該会員が会員サービスを利用できなくなり、これにより当該会員または第三者に損害が発生したとしても、当社は一切の責任を負わないものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第１７条 サービスの停止</h5>
+          <ul class="guideline_section_list">
+            <li>当社は、以下に定める事由に起因する場合、本サービス等の全部または一部を停止することができるものとします。
+              <ul class="guideline_section_list_nest">
+                <li>定期的または緊急に本サービス等の提供のためのコンピュータシステムの保守・点検を行う場合</li>
+                <li>火災・停電、天災地変等の非常事態により本サービス等の運営が不能となった場合</li>
+                <li>戦争、内乱、暴動、騒擾等により、本サービス等の運営が不能となった場合</li>
+                <li>本サービス等の提供のためのコンピュータシステムの不良及び第三者からの不正アクセス、コンピュータウイルスの感染等により本サービス等を提供できない場合</li>
+                <li>法律等に基づく措置により本サービス等が提供できない場合</li>
+                <li>その他、当社が必要と判断した場合</li>
+              </ul>
+            </li>
+            <li>当社は、本サービス等を停止する場合、当サイト上での告知又は事前に電子メール等によりお客様にその旨を通知するよう努めるものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第１８条 その他</h5>
+          <ul class="guideline_section_list">
+            <li>当社は、本規約について社会情勢の変化等に対応し、当社が相当と認める場合は、いつでもお客様に許可なく本規約を変更改訂できるものといたします。</li>
+            <li>本規約変更改訂は、当サイト上に告知した時点で効力を生ずるものといたします。</li>
+            <li>当社は、提供した各種サービスまたは情報について、その完全性、正確性、適用性、有用性、最新性、確実性、動作性、安全性等に関し、いかなる責任も負わないものとします。 当社は、お客様が当社のサービス用設備（会員データベースサーバーなど）に蓄積した、またはお客様が他者に蓄積することを承認したデータ等の消失、破壊、他者による改竄に関し、いかなる責任も負わないものとします。 当社は、当社に故意または重大な過失があるときを除き、サービスの利用により発生したお客様の損害（他者との間で生じたトラブルに起因する損害を含みます。）、サービスを利用できなかったことにより発生したお客様または他者の損害、本規約・個別ガイドラインの違反により発生したお客様または他者の損害に対し、損害賠償義務その他いかなる責任も一切負わないものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_section">
+          <h5 class="guideline_section_title">第１９条 管轄裁判所</h5>
+          <ul class="guideline_section_list">
+            <li>本規約に関する準拠法は日本法とします。万一、両者間に訴訟が生じたときは、東京簡易裁判所又は東京地方裁判所をもって第一審の専属的合意管轄裁判所とするものとします。</li>
+          </ul>
+        </section>
+        <section class="guideline_chapter">
+          <h4 class="guideline_chapter_title">付則</h4>
+          <div class="guideline_section">
+            <p class="guideline_section_txt">この規約は平成21年12月14日から実施するものとします。</p>
+          </div>
+        </section>
+        <p class="guideline_txt -right">平成30年1月22日改訂</p>
+      </section>
+
+      <a id="law"></a>
+      <section class="guideline">
+        <h3 class="m-title">特定商取引法及び<br class="u-hidden-md u-hidden-lg">古物営業法に基づく表記について</h3>
+        <table class="correspond_table">
+          <tbody class="correspond_table_body correspond_table_body-03">
+            <tr>
+              <th class="gray first">店舗名</th>
+              <td><p class="correspond_table_txt">2nd STREET<br>セカンドストリート</p></td>
+            </tr>
+            <tr>
+              <th class="gray">運営業者</th>
+              <td><p class="correspond_table_txt">株式会社ゲオ (<a href="https://geo-online.co.jp/" target="_blank" rel="noopener noreferrer">https://geo-online.co.jp/</a>)<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></p></td>
+            </tr>
+            <tr>
+              <th class="gray">代表責任者</th>
+              <td><p class="correspond_table_txt">代表取締役社長 吉川 恭史</p></td>
+            </tr>
+            <tr>
+              <th class="gray">本社所在地</th>
+              <td><p class="correspond_table_txt">〒460-0014　愛知県名古屋市中区富士見町8番8号OMCビル<br><a href="tel:0523505700" style="color:#000;">TEL：052-350-5700</a></p></td>
+            </tr>
+            <tr>
+              <th class="gray">店舗所在地</th>
+              <td><p class="correspond_table_txt">〒482-0031　愛知県岩倉市八剱町六反田38番地<br><a href="tel:0587653157" style="color:#000;">TEL：0587-65-3157</a></p></td>
+            </tr>
+            <tr>
+              <th class="gray">事業内容</th>
+              <td><p class="correspond_table_txt">ブランド衣料を中心にバッグ・靴・アクセサリ等の買取・販売</p></td>
+            </tr>
+            <tr>
+              <th class="gray">お問い合わせ</th>
+              <td><p class="correspond_table_txt"><a href="https://www.2ndstreet.jp/contact/input">お問い合わせページ</a>よりお願い致します。</p></td>
+            </tr>
+            <tr>
+              <th class="gray">ご注文方法</th>
+              <td><p class="correspond_table_txt">オンライン</p></td>
+            </tr>
+            <tr>
+              <th class="gray">送料等の付帯費用</th>
+              <td><p class="correspond_table_txt">１箱594円～3,996円 ※地域や箱サイズにより変動<br>・当社指定方法以外の発送に対する品物の返送料金<br>・取扱アイテム及び取扱ブランド以外の品物の返送料金<br>・書類不備により連絡するも、不通となった場合の品物の返送料金<br>・書類不備の連絡後、書類が再度送られてこなかった場合の品物の返送料金<br>・お客様が査定金額承認後、入金ができない状況だった場合の品物の返送料金<br>・査定結果に対する返信がない場合の品物の返送料金</p></td>
+            </tr>
+            <tr>
+              <th class="gray">査定結果のお知らせ</th>
+              <td><p class="correspond_table_txt">お荷物到着後、7営業日以内に査定結果を提示。<br>※混雑時には遅れる場合もございます。</p></td>
+            </tr>
+            <tr>
+              <th class="gray">買取承認の期間</th>
+              <td><p class="correspond_table_txt">メール送信後、30日以内にご返事いただけない場合は、品物をお客様に返送します。<br>その際の送料はお客様負担とします。</p></td>
+            </tr>
+            <tr>
+              <th class="gray">お支払い方法</th>
+              <td><p class="correspond_table_txt">金融機関口座振込<br>※ゆうちょ銀行を除く</p></td>
+            </tr>
+            <tr>
+              <th class="gray">査定金額の<br>お支払期間</th>
+              <td><p class="correspond_table_txt">お客様ご承認後、3営業日以内に金融機関口座振込と致します。<br>※営業日とは土日祝祭日、年末年始、お盆を含まない平日とします。</p></td>
+            </tr>
+            <tr>
+              <th class="gray">商品取引の可能期間</th>
+              <td><p class="correspond_table_txt">最短でご注文より、2日～14日</p></td>
+            </tr>
+            <tr>
+              <th class="gray">買取キャンセル</th>
+              <td><p class="correspond_table_txt">承諾いただけなかった品物の返送は無料です。ただし取扱アイテム及び取扱ブランド以外の品物の返送はお客様負担とさせていただき、着払いにて返送する場合がございます。</p></td>
+            </tr>
+            <tr>
+              <th class="gray">古物商許可番号</th>
+              <td><p class="correspond_table_txt">2nd STREET店舗所在地<br>愛知県公安委員会 | 第542541106300号 | H23.10.24 取得</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+
+      <section class="inquiryAboutWeb -ask">
+        <h3 class="m-title">Web買取に関するお問合せ</h3>
+        <div class="inquiryAboutWeb_btn -ask"><a class="m-btn m-btnEffect" href="/static/index/faq/">Web買取のよくある質問</a></div>
+        <div class="inquiryAboutWeb -form">
+          <div class="inquiryAboutWeb_inner">
+            <address>
+              <p class="inquiryAboutWeb_category">お電話でのお問合せ</p>
+              <p class="inquiryAboutWeb_number"><a href="tel:0587653157">0587-65-3157</a></p>
+              <p class="inquiryAboutWeb_reception">11:00-13:00/14:00-17:00 土日祝日休</p>
+            </address>
+            <address>
+              <p class="inquiryAboutWeb_category">FAXでのお問合せ</p>
+              <p class="inquiryAboutWeb_number">0587-66-0222</p>
+              <p class="inquiryAboutWeb_reception">24時間年中無休</p>
+            </address>
+          </div>
+          <div class="inquiryAboutWeb_btn"><a class="m-btn m-btnEffect" href="https://www.2ndstreet.jp/contact/input">メールフォームからのお問合せ</a></div>
+        </div>
+      </section>
+
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<footer class="g-footer">
+
+  <% if (conf[page].footerbnr === 'included') { %>
+  <div class="g-footer_bnr">
+    <div class="g-footer_bnr_inner">
+      <ul class="g-footer_bnr_list">
+        <li class="g-footer_bnr_list_item">
+          <a href="http://lueca.jp/" target="_blank" rel="noopener noreferrer">
+            <div class="g-footer_bnr_list_item_img">
+              <%- include('../_utilities/_picture', {src: '/img/common/g-footer_bnr_01_sm.jpg', alt: '画像：Lueca（ルエカ）'});%>
+            </div>
+            <p class="g-footer_bnr_list_item_txt">Lueca（ルエカ）とは、ゲオグループでご利用いただけるオリジナルプリペイドカードです。</p>
+          </a>
+        </li>
+        <li class="g-footer_bnr_list_item">
+          <a href="/static/index/ponta-point/">
+            <div class="g-footer_bnr_list_item_img">
+              <%- include('../_utilities/_picture', {src: '/img/common/g-footer_bnr_02_sm.jpg', alt: '画像：Ponta'});%>
+            </div>
+            <p class="g-footer_bnr_list_item_txt">全国のセカンドストリート・ジャンブルストアで、共通ポイント【Ponta】がご利用いただけます。</p>
+          </a>
+        </li>
+        <li class="g-footer_bnr_list_item">
+          <a href="https://geo-recruit.jp/newspage/118/" target="_blank" rel="noopener noreferrer">
+            <div class="g-footer_bnr_list_item_img">
+              <%- include('../_utilities/_picture', {src: '/img/common/g-footer_bnr_03_sm.jpg', alt: '2020年度新卒採用 エントリー受付中'});%>
+            </div>
+            <p class="g-footer_bnr_list_item_txt">セカンドストリートでは、スタッフを募集しています。愛されるお店を一緒に創っていきませんか？</p>
+          </a>
+        </li>
+        <li class="g-footer_bnr_list_item">
+          <a href="https://geo-recruit.jp/newspage/118/" target="_blank" rel="noopener noreferrer">
+            <div class="g-footer_bnr_list_item_img">
+              <%- include('../_utilities/_picture', {src: '/img/common/g-footer_bnr_04_sm.jpg', alt: ''});%>
+            </div>
+            <p class="g-footer_bnr_list_item_txt">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <% } %>
+
+<!--
+  <% if (page === 'shopDetails') { %>
+  <div class="g-footer_bnr g-footer_bnr-shopdetails">
+    <div class="g-footer_bnr_inner">
+      <ul class="g-footer_bnr_list">
+        <li class="g-footer_bnr_list_item">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="g-footer_bnr_list_item_img">
+              <%- include('../_utilities/_picture', {src: '/img/shop/details/banner_img_01_sm.jpg', alt: 'メルマガ'});%>
+            </div>
+            <p class="g-footer_bnr_list_item_txt">店舗のメルマガ配信中！セカンドストリートのことがもっとわかる、今だけの情報満載です。</p>
+          </a>
+        </li>
+        <li class="g-footer_bnr_list_item">
+          <a href="#">
+            <div class="g-footer_bnr_list_item_img">
+              <%- include('../_utilities/_picture', {src: '/img/shop/details/banner_img_02_sm.jpg', alt: 'LINE'});%>
+            </div>
+            <p class="g-footer_bnr_list_item_txt">お得な情報はLINEで配信中。お得な情報はLINEで配信中。お得な情報はLINEで配信中。</p>
+          </a>
+        </li>
+        <li class="g-footer_bnr_list_item">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="g-footer_bnr_list_item_img">
+              <%- include('../_utilities/_picture', {src: '/img/shop/details/banner_img_03_sm.jpg', alt: '求人'});%>
+            </div>
+            <p class="g-footer_bnr_list_item_txt">セカンドストリートでは、スタッフを募集しています。愛されるお店を一緒に創っていきませんか？</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <% } %>
+ -->
+
+  <div class="g-footer_main">
+    <div class="g-footer_main_title">
+      <div class="g-footer_main_title_inner">
+        <div class="g-footer_main_title_logo"><svg class="svgIcon svgIcon-logo" viewBox="0 0 200 200"><use class="mainLogo" xlink:href="/img/common/sprite.svg#logo-01" /><use class="subLogo" xlink:href="/img/common/sprite.svg#logo-02" /></svg></div>
+        <p class="g-footer_main_title_txt">全国６００店舗以上展開中の総合リユースショップです</p>
+
+        <% if (Object.keys(breadcrumb[page].text).length > 0) { %>
+        <ul class="g-breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <% for (var i = 0; i < Object.keys(breadcrumb[page].text).length; i++) { %>
+            <% if (i + 1 === Object.keys(breadcrumb[page].text).length) { -%>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><%- breadcrumb[page].text[i] %></span><meta itemprop="position" content="<%- i + 1 %>" /></li>
+            <% } else { -%>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a href="<%- breadcrumb[page].url[i] %>" itemprop="item" itemtype="http://schema.org/Thing"><span itemprop="name"><%- breadcrumb[page].text[i] %></span></a>
+                <meta itemprop="position" content="<%- i + 1 %>" />
+              </li>
+            <% } -%>
+          <% } %>
+        </ul>
+        <% } %>
+
+      </div>
+    </div>
+    <div class="g-footer_main_inner">
+      <div class="g-footer_main_left">
+        <div class="g-footer_main_group">
+          <ul class="g-footer_main_group_contentList">
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="/">トップ</a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="/static/index/contract">ご利用規約</a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="/sell/">買取サービスのご案内</a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="/static/index/privacy">個人情報保護方針</a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="/static/index/guide-members">ご利用ガイド</a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="/static/index/sitepolicy">サイトポリシー</a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="/static/index/faq">よくある質問</a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="/static/index/sitemap">サイトマップ</a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="/static/index/recruitment">会員募集</a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="/sell/business/">法人買取案内</a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="/static/index/mgzn">メールマガジン登録</a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="https://geo-online.co.jp/store_info/service/tax_free_store.html" target="_blank" rel="noopener noreferrer">Tax-Free Shops<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="https://2ndstreet-recruit.net/jobfind-pc/" target="_blank" rel="noopener noreferrer">アルバイト求人募集<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a></li>
+            <li class="g-footer_main_group_contentList_item"><a class="m-txtEffect" href="/static/index/affiriate">アフィリエイター募集</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="g-footer_main_right">
+        <div class="g-footer_main_group g-footer_main_group-hHarf">
+          <p class="g-footer_main_group_title">公式アカウント</p>
+          <ul class="g-footer_main_group_snsList">
+            <li class="g-footer_main_group_snsList_item">
+              <a href="https://twitter.com/2ndSTREETjp" target="_blank" rel="noopener noreferrer">
+                <img src="/img/common/g-footer_icon_twitter.png" alt="Twitter">
+              </a>
+            </li>
+            <li class="g-footer_main_group_snsList_item">
+              <a href="https://www.facebook.com/2ndSTREETjp" target="_blank" rel="noopener noreferrer">
+                <img src="/img/common/g-footer_icon_facebook.png" alt="Facebook">
+              </a>
+            </li>
+            <li class="g-footer_main_group_snsList_item">
+              <a href="https://www.instagram.com/2ndstreet_official/" target="_blank" rel="noopener noreferrer">
+                <img src="/img/common/g-footer_icon_instagram.png" alt="Instagram">
+              </a>
+            </li>
+            <li class="g-footer_main_group_snsList_item">
+              <a href="https://www.youtube.com/channel/UC0w6CGcehCFnyUe2yVABudA" target="_blank" rel="noopener noreferrer">
+                <img src="/img/common/g-footer_icon_youtube.png" alt="YouTube">
+              </a>
+            </li>
+            <li class="g-footer_main_group_snsList_item">
+              <a href="https://line.me/R/ti/p/%40hyo0054v" target="_blank" rel="noopener noreferrer">
+                <img src="/img/common/g-footer_icon_line.png" alt="LINE">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="g-footer_main_group g-footer_main_group-quarter g-footer_main_group-bnr">
+          <p class="g-footer_main_group_title">GEOグループ</p>
+          <a class="g-footer_main_group_bnr" href="https://geo-online.co.jp/" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <source srcset="/img/common/g-footer_group.jpg" media="(min-width: 768px)">
+              <img src="/img/common/g-footer_group_sp.jpg" alt="GEO ONLINE">
+            </picture>
+          </a>
+        </div>
+        <div class="g-footer_main_group g-footer_main_group-quarter g-footer_main_group-app">
+          <p class="g-footer_main_group_title">APP</p>
+          <div class="g-footer_main_group_clm">
+            <a href="/static/index/recruitment#app_area" class="g-footer_main_group_clm_left">
+              <picture>
+                <source srcset="/img/common/g-footer_app.png" media="(min-width: 768px)">
+                <img src="/img/common/g-footer_app_sp.png" alt="専用アプリ">
+              </picture>
+            </a>
+            <p class="g-footer_main_group_clm_right">全国の店舗からお気に入り商品をお手軽にお買い求め頂けます。</p>
+          </div>
+        </div>
+      </div>
+      <ul class="g-footer_main_linkList">
+        <li class="g-footer_main_linkList_item">
+          <a class="m-txtEffect" href="http://www.geonet.co.jp/company/" target="_blank" rel="noopener noreferrer">会社案内<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>
+        </li>
+        <li class="g-footer_main_linkList_item">
+          <a class="m-txtEffect" href="https://geo-online.co.jp/information/trade.html" target="_blank" rel="noopener noreferrer">特定商取引法及び古物営業法に基づく表記<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>
+        </li>
+        <li class="g-footer_main_linkList_item">
+          <a class="m-txtEffect" href="https://www.geonet.co.jp/company/recruitment/" target="_blank" rel="noopener noreferrer">店舗物件情報募集<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>
+        </li>
+        <li class="g-footer_main_linkList_item">
+          <a class="m-txtEffect" href="https://www.geonet.co.jp/" target="_blank" rel="noopener noreferrer">(株)ゲオホールディングス コーポレートサイト<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="g-footer_main_copyright">Copyright &copy; Geo Corporation. All Rights Reserved.</p>
+</footer>

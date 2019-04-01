@@ -1,0 +1,519 @@
+<%_  var pageID = 'sellitems'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellItems">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-01">
+        <h2 class="m-heading_title">取扱商品について</h2>
+        <p class="m-heading_subtitle RalewayExtraBold">POINT</p>
+        <p class="m-heading_desc">買取方法によっては取扱できない商品もございます。<br class="u-hidden-md u-hidden-lg">下記の一覧表をご確認ください。</p>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-method', {page: pageID})%>
+
+      <section class="correspond">
+        <h3 class="m-title">買取方法ごとの対応商品</h3>
+        <p class="correspond_desc">買取方法ごとに取扱できる商品が異なります。<br>取扱できない商品に関して、<br class="u-hidden-md u-hidden-lg">詳しくはこちらをご確認ください。</p>
+
+        <table class="correspond_table u-hidden-sm">
+          <tbody class="correspond_table_body correspond_table_body-01">
+            <tr>
+              <th class="none"></th>
+              <th>
+                <a href="/sell/category/womens/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg>
+                  <p>レディース衣類</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/mens/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg>
+                  <p>メンズ衣類</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/kids-wear/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg>
+                  <p>キッズ衣類</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/luxuary-brand/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg>
+                  <p>ラグジュアリー<br>ブランド</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/electronics/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg>
+                  <p>AV・生活家電</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/mobile/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg>
+                  <p>携帯電話</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/furniture/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg>
+                  <p>家具</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/goods/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg>
+                  <p>生活雑貨</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/kids-goods/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg>
+                  <p>キッズ用品</p>
+                </a>
+              </th>
+            </tr>
+          </tbody>
+          <tbody class="correspond_table_body correspond_table_body-02">
+            <tr>
+              <th class="gray">店頭買取</th>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+            </tr>
+            <tr>
+              <th class="gray">Web買取</th>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td class="asterisk"><span class="cross"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+            </tr>
+            <tr>
+              <th class="gray">出張買取</th>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="correspond_table u-hidden-sm">
+          <tbody class="correspond_table_body correspond_table_body-01">
+            <tr>
+              <th class="none"></th>
+              <th>
+                <a href="/sell/category/instruments/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg>
+                  <p>楽器</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/hobby/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg>
+                  <p>ホビー</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/outdoor/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg>
+                  <p>アウトドア用品</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/sports/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg>
+                  <p>スポーツ用品</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/golf/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-golf" /></svg>
+                  <p>ゴルフ用品</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/bicycle/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg>
+                  <p>自転車</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/ticket/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg>
+                  <p>金券・商品券</p>
+                </a>
+              </th>
+              <th>
+                <a href="/sell/category/accessary/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg>
+                  <p>貴金属</p>
+                </a>
+              </th>
+            </tr>
+          </tbody>
+          <tbody class="correspond_table_body correspond_table_body-02">
+            <tr>
+              <th class="gray">店頭買取</th>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+            </tr>
+            <tr>
+              <th class="gray">Web買取</th>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="tick"></span></td>
+            </tr>
+            <tr>
+              <th class="gray">出張買取</th>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <table class="correspond_table u-hidden-md u-hidden-lg">
+          <tbody class="correspond_table_body correspond_table_body-01">
+            <tr>
+              <th class="none"></th>
+              <th class="gray">店頭<br>買取</th>
+              <th class="gray">Web<br>買取</th>
+              <th class="gray">出張<br>買取</th>
+            </tr>
+          </tbody>
+          <tbody class="correspond_table_body correspond_table_body-02">
+            <tr>
+              <th>
+                <a href="/sell/category/womens/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg>
+                  <p>レディース衣類</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/mens/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg>
+                  <p>メンズ衣類</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/kids-wear/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg>
+                  <p>キッズ衣類</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/luxuary-brand/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg>
+                  <p>ラグジュアリーブランド</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/electronics/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg>
+                  <p>AV・生活家電</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/mobile/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg>
+                  <p>携帯電話</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td class="asterisk"><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="correspond_table u-hidden-md u-hidden-lg">
+          <tbody class="correspond_table_body correspond_table_body-01">
+            <tr>
+              <th class="none"></th>
+              <th class="gray">店頭<br>買取</th>
+              <th class="gray">Web<br>買取</th>
+              <th class="gray">出張<br>買取</th>
+            </tr>
+          </tbody>
+          <tbody class="correspond_table_body correspond_table_body-02">
+            <tr>
+              <th>
+                <a href="/sell/category/furniture/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg>
+                  <p>家具</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/goods/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg>
+                  <p>生活雑貨</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/kids-goods/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg>
+                  <p>キッズ用品</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td class="asterisk"><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/instruments/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg>
+                  <p>楽器</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/hobby/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg>
+                  <p>ホビー</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/outdoor/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg>
+                  <p>アウトドア用品</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="correspond_table u-hidden-md u-hidden-lg">
+          <tbody class="correspond_table_body correspond_table_body-01">
+            <tr>
+              <th class="none"></th>
+              <th class="gray">店頭<br>買取</th>
+              <th class="gray">Web<br>買取</th>
+              <th class="gray">出張<br>買取</th>
+            </tr>
+          </tbody>
+          <tbody class="correspond_table_body correspond_table_body-02">
+            <tr>
+              <th>
+                <a href="/sell/category/sports/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg>
+                  <p>スポーツ用品</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/golf/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-golf" /></svg>
+                  <p>ゴルフ用品</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/bicycle/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg>
+                  <p>自転車</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/ticket/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg>
+                  <p>金券・商品券</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+            <tr>
+              <th>
+                <a href="/sell/category/accessary/">
+                  <svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg>
+                  <p>貴金属</p>
+                </a>
+              </th>
+              <td><span class="tick"></span></td>
+              <td><span class="tick"></span></td>
+              <td><span class="cross"></span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <ul class="c-products_note">
+          <li>※一部対象外の商品もございます。詳しくは各商品ページよりご確認ください。</li>
+        </ul>
+        <p class="correspond_desc">状態が著しく悪いもの、偽物品、コピー品、<br class="u-hidden-lg u-hidden-md">使用したアンダーウェアは<br class="u-hidden-sm">買取いたしておりません</p>
+        <div class="correspond_btn"><a class="m-btn m-btnEffect" href="/sell/web/items/#notbuybrand">取扱できない商品について</a></div>
+      </section>
+
+
+      <ul class="c-otherMeans">
+        <li class="c-otherMeans_item c-otherMeans_item-store"><a href="/sell/store/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_03_sm.png', alt: '画像：店頭買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">STORE</span>店頭買取</p>
+        </div></a></li>
+        <li class="c-otherMeans_item c-otherMeans_item-01"><a href="/sell/web/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_01_sm.png', alt: '画像：Web買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">WEB</span>Web買取</p>
+        </div></a></li>
+        <li class="c-otherMeans_item c-otherMeans_item-02"><a href="/sell/visit/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_02_sm.png', alt: '画像：出張買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">VISIT</span>出張買取</p>
+        </div></a></li>
+      </ul>
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+    <div class="g-diagnosis_trigger js-diagnosisModalTrigger"><a>あなたに適切な売り方はこちら<i></i></a></div>
+
+  </div>
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- 条件検索 modal -->
+  <%- include(relativePath + '_partials/_filterSearch')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

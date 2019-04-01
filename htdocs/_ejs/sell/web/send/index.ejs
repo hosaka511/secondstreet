@@ -1,0 +1,209 @@
+<%_  var pageID = 'sellwebPackingmethod'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellWeb">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+      <div class="m-heading m-heading-01">
+        <h2 class="m-heading_title">Web買取の衣類・服飾品の<br class="u-hidden-md u-hidden-lg">発送と梱包方法</h2>
+        <p class="m-heading_subtitle RalewayExtraBold">HOW TO SEND</p>
+        <p class="m-heading_desc">ダンボールを自宅までお持ちするかご自身でご用意いただくかを、<br class="u-hidden-md u-hidden-lg">お選びいただけます。</p>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-web', {page: pageID})%>
+
+      <div class="anchorNav">
+        <nav>
+          <ul>
+            <li><a href="#packing-ask">梱包用ダンボールを希望する場合</a></li>
+            <li><a href="#packing-oneself">梱包用ダンボールをご自身でご用意する場合</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <a id="packing-ask"></a>
+      <section class="packing packing-ask">
+        <div class="packing_heading">
+          <h3 class="m-title">梱包用ダンボールを希望する場合</h3>
+          <p class="m_desc">梱包用ダンボールは<strong>100サイズ 120サイズ</strong>の2種類を用意しております。<br>梱包用ダンボールと送り状を集荷ドライバーが<br class="u-hidden-md u-hidden-lg">集荷時にお持ちしますので、その場で梱包していただきます。</p>
+        </div>
+        <div class="packingAsk">
+          <ul class="packingAsk_list">
+            <li class="packingAsk_item">
+              <div class="packingAsk_thumb"><img src="/img/sell/web/send/packing_img_01.jpg" alt=""></div>
+            </li>
+            <li class="packingAsk_item">
+              <div class="packingCase_thumb"><img src="/img/sell/web/send/packing_img_02.jpg" alt=""></div>
+            </li>
+          </ul>
+          <div class="packingAsk_prepa">
+            <h4 class="packingAsk_prepa_title">あらかじめ<br>準備しておくもの</h4>
+            <ul class="packingAsk_prepa_list">
+              <li class="packingAsk_prepa_item">
+                <dl>
+                  <dt>お品物</dt>
+                  <dd>（レジ袋・ショップ袋・ポリ袋などに入れおまとめください）</dd>
+                </dl>
+              </li>
+              <li class="packingAsk_prepa_item">
+                <dl>
+                  <dt>買取申込書</dt>
+                  <dd>（<a href="https://www.2ndstreet.jp/mypage/webbuy">Web買取申込フォーム</a>入力後にダウンロードいただけます）</dd>
+                </dl>
+              </li>
+              <li class="packingAsk_prepa_item">
+                <dl>
+                  <dt>ご本人確認書類</dt>
+                  <dd>（お申込みの際にご本人確認書類の同梱をお選びいただいた場合）</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <a id="packing-oneself"></a>
+      <section class="packing packing-oneself">
+        <h3 class="m-title">梱包用ダンボールをご自身で用意する場合</h3>
+        <p class="m_desc">ご自身で梱包資材をご用意されるお客様には、<br class="u-hidden-md u-hidden-lg"><strong>集荷ドライバーが集荷時に<br class="u-hidden-md u-hidden-lg">「送り状（送料無料）」をお持ちいたします。</strong></p>
+        <div class="c-accordion c-cautions">
+          <h4 class="c-accordion_title js-bothPcSpAccordionTrigger">紙袋での梱包例を見る</h4>
+          <div class="js-bothPcSpAccordionContent">
+            <div class="packingCase">
+              <ol class="packingCase_list">
+                <li class="packingCase_item">
+                  <div class="packingCase_no">1.</div>
+                  <div class="packingCase_thumb"><img src="/img/sell/web/send/packing_img_03.jpg" alt=""></div>
+                  <p class="packingCase_text">紙袋・ビニール袋・お売りいただく商品・買取申込書を準備してください。</p>
+                </li>
+                <li class="packingCase_item">
+                  <div class="packingCase_no">2.</div>
+                  <div class="packingCase_thumb"><img src="/img/sell/web/send/packing_img_04.jpg" alt=""></div>
+                  <p class="packingCase_text">商品をビニール袋に入れ、お売りいただくお品物と買取申込書を、同梱してください。</p>
+                </li>
+                <li class="packingCase_item">
+                  <div class="packingCase_no">3.</div>
+                  <div class="packingCase_thumb"><img src="/img/sell/web/send/packing_img_05.jpg" alt=""></div>
+                  <p class="packingCase_text">すき間ができないようにガムテープなどでしっかり封をしてください。</p>
+                </li>
+              </ol>
+              <p class="packingCaseNotes">※お申込みの際にご本人確認書類の同梱をお選びいただいた場合は、ご本人確認書類を必ず同梱してください。<a href="/sell/web/details#documents">詳細はこちら</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="c-accordion c-cautions">
+          <h4 class="c-accordion_title js-bothPcSpAccordionTrigger">ダンボールでの梱包例を見る</h4>
+          <div class="js-bothPcSpAccordionContent">
+            <div class="packingCase">
+              <ol class="packingCase_list">
+                <li class="packingCase_item">
+                  <div class="packingCase_no">1.</div>
+                  <div class="packingCase_thumb"><img src="/img/sell/web/send/packing_img_06.jpg" alt=""></div>
+                  <p class="packingCase_text">ダンボールにお売りいただく商品を入れ、買取申込書を、同梱してください。</p>
+                </li>
+                <li class="packingCase_item">
+                  <div class="packingCase_no">2.</div>
+                  <div class="packingCase_thumb"><img src="/img/sell/web/send/packing_img_07.jpg" alt=""></div>
+                  <p class="packingCase_text">すき間ができないようにガムテープなどでしっかり封をしてください。</p>
+                </li>
+              </ol>
+              <p class="packingCaseNotes">※お申込みの際にご本人確認書類の同梱をお選びいただいた場合は、ご本人確認書類を必ず同梱してください。<a href="/sell/web/details#documents">詳細はこちら</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="packingCaution">
+          <div class="packingCaution_heading">
+            <h4 class="packingCaution_title">ご注意</h4>
+            <p class="packingCaution_heading_desc">お品物配送中の破損に関しまして、弊社では一切保障いたしません。</p>
+            <p class="packingCaution_heading_notes">※ワレモノや壊れやすい商品はエアーキャップなどで包んでください。</p>
+          </div>
+          <div class="packingCase">
+            <h4 class="packingCase_title">ワレモノや壊れやすい商品の梱包例</h4>
+            <ol class="packingCase_list">
+              <li class="packingCase_item">
+                <div class="packingCase_no">1.</div>
+                <div class="packingCase_thumb"><img src="/img/sell/web/send/packing_img_08.jpg" alt=""></div>
+                <p class="packingCase_text">エアーキャップ等の緩衝材などで厚く包む</p>
+              </li>
+              <li class="packingCase_item">
+                <div class="packingCase_no">2.</div>
+                <div class="packingCase_thumb"><img src="/img/sell/web/send/packing_img_09.jpg" alt=""></div>
+                <p class="packingCase_text">ダンボールに商品を入れる際には、新聞紙などの紙を丸めた物でしっかりとすき間を埋めてください。</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="packing_btn"><a class="m-btn m-btnEffect" href="/sell/web/details?anchor=step">Web買取の手順に戻る</a></div>
+      </section>
+
+
+      <section class="inquiryAboutWeb -ask">
+        <h3 class="m-title">Web買取に関するお問合せ</h3>
+        <div class="inquiryAboutWeb_btn -ask"><a class="m-btn m-btnEffect" href="/static/index/faq/">Web買取のよくある質問</a></div>
+        <div class="inquiryAboutWeb -form">
+          <div class="inquiryAboutWeb_inner">
+            <address>
+              <p class="inquiryAboutWeb_category">お電話でのお問合せ</p>
+              <p class="inquiryAboutWeb_number"><a href="tel:0587653157">0587-65-3157</a></p>
+              <p class="inquiryAboutWeb_reception">11:00-13:00/14:00-17:00 土日祝日休</p>
+            </address>
+            <address>
+              <p class="inquiryAboutWeb_category">FAXでのお問合せ</p>
+              <p class="inquiryAboutWeb_number">0587-66-0222</p>
+              <p class="inquiryAboutWeb_reception">24時間年中無休</p>
+            </address>
+          </div>
+          <div class="inquiryAboutWeb_btn"><a class="m-btn m-btnEffect" href="https://www.2ndstreet.jp/contact/input">メールフォームからのお問合せ</a></div>
+        </div>
+      </section>
+
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

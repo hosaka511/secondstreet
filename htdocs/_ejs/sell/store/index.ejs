@@ -1,0 +1,418 @@
+<%_  var pageID = 'sellstore'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellStore">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-02">
+        <h2 class="m-heading_title">買取サービスのご案内</h2>
+        <p class="m-heading_subtitle RalewayExtraBold">STORE</p>
+        <p class="m-heading_desc">店頭買取とは</p>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-sell', {page: pageID})%>
+
+      <section class="c-step">
+        <h3 class="c-step_title">今すぐ売りたい方におすすめ！</h3>
+        <p class="c-step_desc">売りたい商品を直接、お店の買取受付までお持ちください。<br class="u-hidden-md u-hidden-lg">その場で査定、お支払いいたします。<br>ご予約は不要。1点からでも大歓迎です！<br class="u-hidden-md u-hidden-lg">査定待ち時間も店舗ページにてご確認いただけます。</p>
+        <ul class="c-step_list">
+          <li class="c-step_list_item c-step_list_item-01">
+            <div class="c-step_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/gif/store_01_sm.gif', alt: 'イメージ画像：お近くの店舗へ'});%>
+            </div>
+            <div class="c-step_list_item_body">
+              <h4><span class="RalewayBold">STEP</span>01</h4>
+              <p>お近くの店舗へ</p>
+            </div>
+          </li>
+          <li class="c-step_list_item c-step_list_item-02">
+            <div class="c-step_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/gif/store_02_sm.gif', alt: 'イメージ画像：バイヤーが査定'});%>
+            </div>
+            <div class="c-step_list_item_body">
+              <h4><span class="RalewayBold">STEP</span>02</h4>
+              <p>バイヤーが査定</p>
+            </div>
+          </li>
+          <li class="c-step_list_item c-step_list_item-03">
+            <div class="c-step_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/gif/store_03_sm.gif', alt: 'イメージ画像：その場でお支払い'});%>
+            </div>
+            <div class="c-step_list_item_body">
+              <h4><span class="RalewayBold">STEP</span>03</h4>
+              <p>その場でお支払い</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="c-process">
+        <h3 class="m-title">店頭買取の手順</h3>
+        <ul class="c-process_list">
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div class="c-process_list_item_heading_img">
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/store/process_img_01_sm.png', alt: 'イメージ画像：受付'});%>
+              </div>
+              <h4>受付</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">お近くの店舗に「売りたい商品」とお申込み者ご自身の<a href="#validation">「ご本人確認書類」</a>をお持ちの上、ご来店ください。<br class="u-hidden-sm">受付用紙に必要事項をご記入後、受付番号が呼ばれるまでお待ちください。</p>
+              <p class="c-process_list_item_note">※買取の申込みには、申込み者ご自身の「ご本人確認書類」が必要となります。</p>
+            </div>
+          </li>
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div class="c-process_list_item_heading_img">
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/store/process_img_02_sm.png', alt: 'イメージ画像：査定金額のご案内'});%>
+              </div>
+              <h4>査定金額のご案内</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">お客様がお持ちになられた商品の査定金額をお伝えいたします。<br class="u-hidden-sm">査定内容にご不明な点があれば、お伝えください。金額に満足いただけない場合はキャンセルも可能です。</p>
+            </div>
+          </li>
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div class="c-process_list_item_heading_img">
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/store/process_img_03_sm.png', alt: 'イメージ画像：お支払い'});%>
+              </div>
+              <h4>お支払い</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">査定内容にご納得いただけましたら、お申込み者ご自身の「ご本人確認書類」のご掲示と<br class="u-hidden-sm">タブレットにご記入をお願いいたします。その場で現金をお支払いします。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="c-accordion c-cautions">
+        <h3 class="c-accordion_title js-bothPcSpAccordionTrigger">注意事項</h3>
+        <div class="js-bothPcSpAccordionContent">
+          <ul class="c-cautions_list">
+            <li>・一品ずつ査定いたしますので、お見積りに時間がかかる場合がございます。</li>
+            <li>・商品の状態により金額が変わる為、お電話での買取金額のご案内はお断りさせていただいております。<br>お手数ですが<a href="#">お近くの店頭</a>までお持ちください。</li>
+            <li>・電話またはメールによる買取価格のお問合せはご遠慮ください。</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="c-products">
+        <h3 class="m-title">取扱商品</h3>
+        <p class="c-products_desc">店頭買取で取扱できる商品は以下になります。<br class="u-hidden-md u-hidden-lg">詳しくは詳細をご確認ください。</p>
+        <div class="c-products_menu">
+          <h4 class="js-onlySpAccordionTrigger">商品ごとの詳細情報はこちら</h4>
+          <div class="js-onlySpAccordionContent">
+            <ul>
+              <li><a href="/sell/category/womens/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg>
+                <p>レディース衣類</p>
+              </a></li>
+              <li><a href="/sell/category/mens/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg>
+                <p>メンズ衣類</p>
+              </a></li>
+              <li><a href="/sell/category/kids-wear/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg>
+                <p>キッズ衣類</p>
+              </a></li>
+              <li><a href="/sell/category/luxuary-brand/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg>
+                <p>ラグジュアリー<br class="u-hidden-md u-hidden-lg">ブランド</p>
+              </a></li>
+              <li><a href="/sell/category/electronics/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg>
+                <p>AV・生活家電</p>
+              </a></li>
+              <li><a href="/sell/category/mobile/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg>
+                <p>携帯電話</p>
+              </a></li>
+              <li><a href="/sell/category/furniture/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg>
+                <p>家具</p>
+              </a></li>
+              <li><a href="/sell/category/goods/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg>
+                <p>生活雑貨</p>
+              </a></li>
+              <li><a href="/sell/category/kids-goods/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg>
+                <p>キッズ用品</p>
+              </a></li>
+              <li><a href="/sell/category/instruments/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg>
+                <p>楽器</p>
+              </a></li>
+              <li><a href="/sell/category/hobby/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg>
+                <p>ホビー</p>
+              </a></li>
+              <li><a href="/sell/category/outdoor/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg>
+                <p>アウトドア用品</p>
+              </a></li>
+              <li><a href="/sell/category/sports/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg>
+                <p>スポーツ用品</p>
+              </a></li>
+              <li><a href="/sell/category/golf/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-golf" /></svg>
+                <p>ゴルフ用品</p>
+              </a></li>
+              <li><a href="/sell/category/bicycle/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg>
+                <p>自転車</p>
+              </a></li>
+              <li><a href="/sell/category/ticket/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg>
+                <p>金券・商品券</p>
+              </a></li>
+              <li><a href="/sell/category/accessary/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg>
+                <p>貴金属</p>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="c-products_btn"><a class="m-btn m-btnEffect" href="/sell/items/">詳しく見る</a></div>
+      </section>
+
+
+      <%- include(relativePath + '_partials/_validation', { name: '店頭'})%>
+
+
+      <section class="c-QandA">
+        <h3 class="m-title">買取に関するポイント</h3>
+        <p class="c-QandA_desc">店頭買取でよくある質問</p>
+        <dl>
+          <dt><p>買取できないものを教えてください。</p></dt>
+          <dd><p><a href="/sell/web/items/#notbuybrand">「取扱できない商品」</a>ページに記載してございますので、そちらにてご確認いただけます。</p></dd>
+          <dt><p>電話で買取価格の案内はしてもらえますか？</p></dt>
+          <dd><p>商品の状態により金額が変わる為、お電話での買取金額のご案内はお断りさせていただいております｡<br>お手数ですが<a href="/shop">店頭までお持ちいただく</a>か、もしくはセカンドストリート<a href="/sell/web/">Web買取サービス</a>へのお申込みをお願いいたします。</p></dd>
+        </dl>
+        <ul>
+          <li>
+            <a href="/sell/tips/">
+              <p>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-qanda/img_01_sm.jpg', alt: '画像：高く売るコツを知る'});%>
+              </p>
+              <div>
+                <div>
+                  <h4>高く売るコツを知る</h4>
+                  <p>査定時のバイヤーが特に確認する<br>ポイントをご紹介します。</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/static/index/faq">
+              <p>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-qanda/img_02_sm.jpg', alt: '画像：よくある質問をもっと見る'});%>
+              </p>
+              <div>
+                <div>
+                  <h4>よくある質問をもっと見る</h4>
+                  <p>お客さまから寄せられたご質問を<br>掲載しております。</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="l-section-02 -gray c-strength">
+        <h3 class="m-title">2nd STREET　店頭買取の強み</h3>
+        <ul class="c-strength_list">
+          <li>
+            <a href="#" class="js-modalTrigger" data-modal-id="03">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/common/strength_img_03_sm.jpg', alt: '値段が付かなかった⾐料はECOに活⽤！'});%>
+              <p>値段が付かなかった⾐料はECOに活⽤！<span class="c-strength_list_icon"></span></p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="js-modalTrigger" data-modal-id="04">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/common/strength_img_04_sm.jpg', alt: '市場と全店のデータを駆使して厳正に査定'});%>
+              <p>市場と全店のデータを駆使して厳正に査定<span class="c-strength_list_icon"></span></p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+      <ul class="c-otherMeans">
+        <li class="c-otherMeans_item c-otherMeans_item-01"><a href="/sell/web/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_01_sm.png', alt: '画像：Web買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">WEB</span>Web買取</p>
+        </div></a></li>
+        <li class="c-otherMeans_item c-otherMeans_item-02"><a href="/sell/visit/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_02_sm.png', alt: '画像：出張買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">VISIT</span>出張買取</p>
+        </div></a></li>
+      </ul>
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+    <div class="g-diagnosis_trigger js-diagnosisModalTrigger"><a>あなたに適切な売り方はこちら<i></i></a></div>
+
+  </div>
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- 条件検索 modal -->
+  <%- include(relativePath + '_partials/_filterSearch')%>
+
+  <!-- modal -->
+  <div class="modal_mask"></div>
+  <div class="modal modal_strength">
+    <div class="modal_outer">
+      <div class="modal_closeBtn"><span></span></div>
+      <div class="modal_inner">
+        <article class="modal_content modal_content-03">
+          <section>
+            <div class="modal_bg">
+              <h2 class="modal_title">値段が付かなかった⾐料は<br class="u-hidden-md u-hidden-lg">ECOに活⽤！</h2>
+              <div class="modal_img">
+                <img src="/img/sell/common/modal_img_03_01.jpg" alt="画像：2nd STREET 店頭買取の強み">
+              </div>
+              <p class="modal_desc">セカンドストリートでは、お客さまにお持ち込みいただいた⾐料品のなかで、<br class="u-hidden-sm">店頭に並べることの難しいアイテムを1着1円で買い取る<br class="u-hidden-sm">「ECO（エコ）かいとり」を⾏っております。<br class="u-hidden-sm">これらの⾐料品は、さまざまな形で有効活⽤いたします。</p>
+            </div>
+            <section class="modal_section -cut">
+              <div class="modal_img">
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/common/modal_img_03_02_sm.jpg', alt: '画像：2nd STREET 店頭買取の強み'});%>
+              </div>
+              <div class="modal_img">
+              </div>
+              <p class="modal_section_txt">「ECO かいとり」したアイテムは、当社グループ会社で⼀旦取りまとめた後、専⾨業者へ引渡します。その後、⽤途別に選別作業を⾏い、ほとんどのアイテムを何らかの形でリユース（再利⽤）もしくはリサイクル（再資源化）し、改めて社会に還元します。「ECO かいとり」したアイテムはどのように利⽤されているか、その⼀部をご紹介いたします。</p>
+              <ul class="modal_introduction">
+                <li class="modal_introduction_unit">
+                  <img class="modal_introduction_img" src="/img/sell/common/modal_img_03_03.jpg" alt="">
+                  <div>
+                    <p class="modal_introduction_name">海外向け中古⾐料</p>
+                    <p class="modal_introduction_desc">汚れや破れ、ボタンの⽋損などを確認後、性別や年代の種類ごとに130種品⽬に選別。アジアや中東、アフリカなどの国々に中古⾐料として輸出します。</p>
+                  </div>
+                </li>
+                <li class="modal_introduction_unit">
+                  <img class="modal_introduction_img" src="/img/sell/common/modal_img_03_04.jpg" alt="">
+                  <div>
+                    <p class="modal_introduction_name">⼯業⽤雑⼱（ウエス）</p>
+                    <p class="modal_introduction_desc">中古⾐料にならない綿素材の⾐料は、ボタンやファスナーをはずして⼯業⽤雑⼱に加⼯します。国内の⾃動⾞⼯場や製鉄所、⾦物⼯具商のほか、韓国やマレーシア、シンガポール、タイなどの海外へも輸出します。</p>
+                  </div>
+                </li>
+                <li class="modal_introduction_unit">
+                  <img class="modal_introduction_img" src="/img/sell/common/modal_img_03_05.jpg" alt="">
+                  <div>
+                    <p class="modal_introduction_name">反⽑ワタ</p>
+                    <p class="modal_introduction_desc">⾐料品を、専⽤プラント機で綿状にします。このようにして⽣まれた反⽑ワタは、ぬいぐるみや座布団の中綿に使うほか、固形化繊維を混ぜてフェルトに加⼯した後に、⾃動⾞の断熱材やステレオの吸⾳材として利⽤されます。さらに、⽷に加⼯して軍⼿やツイードの織物に活⽤されることも。</p>
+                  </div>
+                </li>
+                <li class="modal_introduction_unit">
+                  <img class="modal_introduction_img" src="/img/sell/common/modal_img_03_06.jpg" alt="">
+                  <div>
+                    <p class="modal_introduction_name">固形燃料</p>
+                    <p class="modal_introduction_desc">このほかの衣料品は、海外で固形燃料に加工します。</p>
+                  </div>
+                </li>
+              </ul>
+              <p class="modal_section_txt">もしかしたら、みなさんが売った衣料品が、姿を変えて活躍しているかもしれません。</p>
+              <p class="modal_section_note">※当社基準により「ECOかいとり」できないお品物がございます。詳しくはお近くの店舗へご連ください。</p>
+            </section>
+          </section>
+        </article>
+
+        <article class="modal_content modal_content-04">
+          <section>
+            <h2 class="modal_title">市場と全店のデータを駆使して<br class="u-hidden-md u-hidden-lg">厳正に査定</h2>
+            <div class="modal_img">
+              <img src="/img/sell/common/modal_img_04_01.jpg" alt="画像：2nd STREET 店頭買取の強み">
+            </div>
+            <section class="modal_section">
+              <h3 class="modal_section_title"><span>お持ちいただいた商品の販売価格を<br class="u-hidden-md u-hidden-lg">設定し、<br class="u-hidden-sm">それを基準に買取価格を決定。</span></h3>
+              <p class="modal_section_txt">販売価格の設定は、まず⼀般の⼩売店や中古市場で、その商品がいくらで出回っているのか市場価格調査を⾏います。市場になかなか出回っていない商品や価格算出が難しい商品は、600店舗に及ぶ当社の全店舗取引データをもとに販売価格を設定します。買取価格は、販売価格を設定したのち、当社の買取価格表を参考に設定します。以上の流れで買取・販売価格が設定されます。</p>
+              <div class="modal_img">
+                <img src="/img/sell/common/modal_img_04_02.jpg" alt="画像：2nd STREET 店頭買取の強み">
+              </div>
+              <p class="modal_section_note">※商品の状態や、店舗の在庫状況により買取価格は異なる場合がありますのでご了承ください。</p>
+            </section>
+            <section class="modal_section">
+              <h3 class="modal_section_title"><span>真贋における安⼼・安全の追求のために独⾃マニュアルを構築</span></h3>
+              <p class="modal_section_txt">「現在セカンドストリートでは、全国約600弱の店舗でラグジュアリーブランド（当社指定ブランド）の取り扱いを⾏っていますが、その始まりは2006年までさかのぼります。運営⺟体だったゲオアールが、フォー・ユーと合併してリユース事業を展開することになりました。フォー・ユーは以前、⼀時的にブランド品の取り扱いを中⽌していたのですが、この合併を機に再開することに。当初は約40店舗からのスタート。ラグジュアリーブランド品の確かな安全性を保証するためには、店舗だけでなく、本部で⼆次検品を⾏うシステムを構築する必要がありました」こう話すのは、検品検証チーム・チームリーダーの⼭崎。</p>
+              <div class="modal_img">
+                <img src="/img/sell/common/modal_img_04_03.jpg" alt="画像：2nd STREET 店頭買取の強み">
+              </div>
+              <p class="modal_section_txt">「全店でのラグジュアリーブランド取り扱いについて、当社の⽅針として掲げた条件が、並⾏輸⼊品市場での『偽造品』や『不正商品』の流通防⽌と排除を⽬指す⺠間団体『⼀般社団法⼈ ⽇本流通⾃主管理協会（以下 AACD）』への加盟です。そのために、2年以上かけてラグジュアリーブランド買取時に使⽤するマニュアルを整備し、アイテム別買取チェックリストを⽤意しました。さらに、本部選任担当者による⼆次検品もスタートさせ、2008年8⽉に準会員として加盟、翌2009年8⽉に正会員に昇格しております」</p>
+              <p class="modal_section_txt -answer">セカンドストリートでは、111のラグジュアリーブランドに独⾃のマニュアルを⽤意しており、すべてのマニュアルは、本部選任担当者で構成する検品検証チームが情報の集約・蓄積を⼿掛けている。本部選任担当者は計5名。セカンドストリートではこの業務を遂⾏するためには、⾮常に厳しい⾃社試験に合格しなければならない。最初の2〜3カ⽉間は、AACDの協会基準とマニュアルを徹底的に理解するとともに、本部選任担当者から判断ポイントのコーチングを受けながら経験を積む。その後、300点の判定試験を⾏い、「基準外品」を1つでも⾒逃した時点で試験はやり直し。合格するまで何度でも試験を繰り返し、⾒極めるための⼒を磨いている。</p>
+            </section>
+            <section class="modal_section">
+              <h3 class="modal_section_title"><span>ブランド直営店での新作チェックで<br class="u-hidden-md u-hidden-lg">情報収集</span></h3>
+              <p class="modal_section_txt">ラグジュアリーブランドの買取は、2014年にセカンドストリート全店で取り扱いを開始してから、その数量が⾶躍的に増加し続けており、2017年には⽉間3万点を超える⾒込み。現在、⼆次検品チーム強化を進めている。経験を積んだ本部選任担当者ともなれば、品物の質感や臭い、パーツの細部を⼀⽬⾒るだけで、セカンドストリートの基準外品だと判断できることもあるそう。しかし、年々クオリティを⾼めている偽造品・不正商品を間違いなく判別するために、本部選任担当者たちは経験を過信せず、知識と技術のブラッシュアップを怠らない。</p>
+              <div class="modal_img">
+                <img src="/img/sell/common/modal_img_04_04.jpg" alt="画像：2nd STREET 店頭買取の強み">
+              </div>
+              <p class="modal_section_txt">「もちろん経験に対する⼀定の⾃負はあります。しかし、各ラグジュアリーブランドから新作が発表されるたびに、その特徴を⾃分の中でなじませることが必要です。AACDからの情報確認はもちろん、各ブランドの直営店へ⾜を運び、細かなディテールを確認することも⾏っています。⽇々これだけの数量を検品しているので、なかには初めて⽬にする珍しい品物もあります。その際は、当社の基準内品・基準外品にかかわらず、本部選任担当者の間で情報共有して知識を深めています。その上で、同⼀商品で基準外品と判別するケースが頻繁に発⽣しているようであれば、重要度・緊急度が⾼いと判断し、臨時の緊急ミーティングを実施します」と本部選任担当者の鈴⽊は話す。</p>
+              <p class="modal_section_txt -answer">鈴⽊は、2016年にAACDが認定する「協会基準判定⼠」の資格を取得。この資格を得るには、並⾏輸⼊品の基礎知識や関連する法令、カスタマー対応、実技を含む商品の検品⽅法など計5回の研修と試験に合格しなければならない。現状、本部選任担当者のうち3名が、「協会基準判定⼠」を有しており、今後も本部選任担当者の実務を1年以上経験した者は資格取得を計画している。</p>
+            </section>
+            <section class="modal_section">
+              <h3 class="modal_section_title"><span>店舗バイヤーのレベルアップを図り、<br class="u-hidden-md u-hidden-lg">全国で勉強会開催</span></h3>
+              <p class="modal_section_txt">検品の精度を⾼めるための努⼒は、本部選任担当者だけではない。過去には鈴⽊が社内講師として全国すべてのエリアを回り、店舗バイヤーに向けた勉強会を実施。この勉強会では、実際に発⽣した「基準外品」を使⽤して、特に取り扱いの多いラグジュアリーブランドや、判定に細⼼の注意が必要な品物などについて、直接指導を⾏った。「勉強会のきっかけは、店舗バイヤーからの要望です。普段の査定時は、マニュアルでは判断が難しい品物は、私たちがWeb カメラを通じて査定をサポートしています。しかし、⼿触りや特有の臭いについては、画⾯越しに伝えるのが不可能。勉強会では、直接基準外品に触れながら指導することで店舗バイヤーの理解を深めることができ、遠隔でやり取りをしていた店舗バイヤーと顔を合わせて話をすることで、お互いの信頼感がより⼀層増したように思います」</p>
+              <div class="modal_img">
+                <img src="/img/sell/common/modal_img_04_05.jpg" alt="画像：2nd STREET 店頭買取の強み">
+              </div>
+              <p class="modal_section_txt">このように、セカンドストリートでは、AACD の協会基準と独⾃のマニュアルや精鋭チームによる⽬利きなど、お客さまが安⼼して商品を⼿に取っていただける体制を整えている。</p>
+            </section>
+          </section>
+        </article>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/main.js"></script>
+  <script src="/js/sell.js"></script>
+</body>
+
+</html>

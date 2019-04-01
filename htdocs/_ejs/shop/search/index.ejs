@@ -1,0 +1,340 @@
+<%_  var pageID = 'shopSearch'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/shop.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellStore">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper shopsearch" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-06">
+        <h2 class="m-heading_title">【愛知県、ファミリーにおすすめ】<br class="u-hidden-md u-hidden-lg">の検索結果</h2>
+        <p class="m-heading_subtitle">全国600店舗中 <span>41</span>件該当</p>
+        <p class="m-heading_note">(1~12件表示中)</p>
+      </div>
+
+      <ul class="search">
+        <li class="search_item">
+          <p class="serch_item_lead">あなたにおすすめのセカンドストリート </p>
+          <a href="/shop/details/">
+            <div class="search_item_img"><img src="/img/shop/search/_dummy.jpg" alt="セカンドストリート立川店の外観写真"></div>
+            <div class="search_item_flex -left">
+              <p class="search_item_store">
+                <span class="search_item_store_brand">セカンドストリート</span>
+                <span class="search_item_store_name">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</span>
+              </p>
+              <p class="search_item_desc">レディース、メンズ、キッズの商品に力を入れている吉祥寺サンロード店は家族でもお楽しみいただけます。</p>
+              <dl class="search_item_info clearfix">
+                <dt>住所</dt>
+                <dd>〒180-0004 <br class="u-hidden-md u-hidden-lg">東京都武蔵野市吉祥寺本町1丁目12番1号</dd>
+                <dt>TEL</dt>
+                <dd>0422-23-8855</dd>
+                <dt>営業時間</dt>
+                <dd>10:00〜22:00【定休日】年中無休</dd>
+                <dt>駐車場台数</dt>
+                <dd>0台</dd>
+              </dl>
+              <ul class="search_item_features">
+                <li class="is-current">駐車場あり</li>
+                <li>出張買取対応</li>
+                <li>A.Q. 取扱店</li>
+                <li class="is-current">ファミリーおすすめ</li>
+                <li>メンズ商品充実</li>
+                <li>レディース商品充実</li>
+                <li>キャンペーン実施中</li>
+                <li class="is-current">大型店</li>
+              </ul>
+            </div>
+            <div class="search_item_flex -right">
+              <div>
+                <div class="search_item_brand">
+                  <%- include(relativePath + '_utilities/_picture', {src: '/img/shop/search/brand_reuse_all_sm.jpg', alt: '2nd STREET Reuse Shop トータルリユース'});%>
+                </div>
+                <div class="search_item_service -sell">
+                  <p class="search_item_service_title">販売アイテム</p>
+                  <p class="search_item_service_data">全アイテム</p>
+                </div>
+              </div>
+              <div class="search_item_service -buy">
+                <p class="search_item_service_title">買取アイテム</p>
+                <p class="search_item_service_data">全アイテム</p>
+                <div class="search_item_service_wait">
+                  <p class="search_item_service_wait_ttl">店頭買取待ち時間</p>
+                  <p class="search_item_service_wait_time">約<span>000</span>分</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="search_item">
+          <a href="/shop/details/">
+            <div class="search_item_img"><img src="/img/shop/search/_dummy.jpg" alt="セカンドストリート立川店の外観写真"></div>
+            <div class="search_item_flex -left">
+              <p class="search_item_store">
+                <span class="search_item_store_brand">セカンドストリート</span>
+                <span class="search_item_store_name">吉祥寺サンロード店</span>
+              </p>
+              <p class="search_item_desc">レディース、メンズ、キッズの商品に力を入れている吉祥寺サンロード店は家族でもお楽しみいただけます。</p>
+              <dl class="search_item_info clearfix">
+                <dt>住所</dt>
+                <dd>〒180-0004 東京都武蔵野市吉祥寺本町1丁目12番1号</dd>
+                <dt>TEL</dt>
+                <dd>0422-23-8855</dd>
+                <dt>営業時間</dt>
+                <dd>10:00〜22:00【定休日】年中無休</dd>
+                <dt>駐車場台数</dt>
+                <dd>0台</dd>
+              </dl>
+              <ul class="search_item_features">
+                <li class="is-current">駐車場あり</li>
+                <li>出張買取対応</li>
+                <li>A.Q. 取扱店</li>
+                <li class="is-current">ファミリーおすすめ</li>
+                <li>メンズ商品充実</li>
+                <li>レディース商品充実</li>
+                <li>キャンペーン実施中</li>
+                <li class="is-current">大型店</li>
+              </ul>
+            </div>
+            <div class="search_item_flex -right">
+              <div>
+                <div class="search_item_brand">
+                  <%- include(relativePath + '_utilities/_picture', {src: '/img/shop/search/brand_reuse_city_sm.jpg', alt: '2nd STREET Reuse Shop ユーズドセレクト'});%>
+                </div>
+                <div class="search_item_service -sell">
+                  <p class="search_item_service_title">販売アイテム</p>
+                  <p class="search_item_service_data">全アイテム</p>
+                </div>
+              </div>
+              <div class="search_item_service -buy">
+                <p class="search_item_service_title">買取アイテム</p>
+                <p class="search_item_service_data">全アイテム</p>
+                <div class="search_item_service_wait">
+                  <p class="search_item_service_wait_ttl">店頭買取待ち時間</p>
+                  <p class="search_item_service_wait_time">約<span>000</span>分</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="search_item">
+          <a href="/shop/details/">
+            <div class="search_item_img"><img src="/img/shop/search/_dummy.jpg" alt="セカンドストリート立川店の外観写真"></div>
+            <div class="search_item_flex -left">
+              <p class="search_item_store">
+                <span class="search_item_store_brand">セカンドストリート</span>
+                <span class="search_item_store_name">吉祥寺サンロード店</span>
+              </p>
+              <p class="search_item_desc">レディース、メンズ、キッズの商品に力を入れている吉祥寺サンロード店は家族でもお楽しみいただけます。</p>
+              <dl class="search_item_info clearfix">
+                <dt>住所</dt>
+                <dd>〒180-0004 東京都武蔵野市吉祥寺本町1丁目12番1号</dd>
+                <dt>TEL</dt>
+                <dd>0422-23-8855</dd>
+                <dt>営業時間</dt>
+                <dd>10:00〜22:00【定休日】年中無休</dd>
+                <dt>駐車場台数</dt>
+                <dd>0台</dd>
+              </dl>
+              <ul class="search_item_features">
+                <li class="is-current">駐車場あり</li>
+                <li>出張買取対応</li>
+                <li>A.Q. 取扱店</li>
+                <li class="is-current">ファミリーおすすめ</li>
+                <li>メンズ商品充実</li>
+                <li>レディース商品充実</li>
+                <li>キャンペーン実施中</li>
+                <li class="is-current">大型店</li>
+              </ul>
+            </div>
+            <div class="search_item_flex -right">
+              <div>
+                <div class="search_item_brand">
+                  <%- include(relativePath + '_utilities/_picture', {src: '/img/shop/search/brand_reuse_clothing_sm.jpg', alt: '2nd STREET Reuse Shop アパレルリユース'});%>
+                </div>
+                <div class="search_item_service -sell">
+                  <p class="search_item_service_title">販売アイテム</p>
+                  <p class="search_item_service_data">全アイテム</p>
+                </div>
+              </div>
+              <div class="search_item_service -buy">
+                <p class="search_item_service_title">買取アイテム</p>
+                <p class="search_item_service_data">全アイテム</p>
+                <div class="search_item_service_wait">
+                  <p class="search_item_service_wait_ttl">店頭買取待ち時間</p>
+                  <p class="search_item_service_wait_time">約<span>000</span>分</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="search_item">
+          <a href="/shop/details/">
+            <div class="search_item_img"><img src="/img/shop/search/_dummy.jpg" alt="セカンドストリート立川店の外観写真"></div>
+            <div class="search_item_flex -left">
+              <p class="search_item_store">
+                <span class="search_item_store_brand">スーパーセカンドストリート</span>
+                <span class="search_item_store_name">吉祥寺サンロード店</span>
+              </p>
+              <p class="search_item_desc">レディース、メンズ、キッズの商品に力を入れている吉祥寺サンロード店は家族でもお楽しみいただけます。</p>
+              <dl class="search_item_info clearfix">
+                <dt>住所</dt>
+                <dd>〒180-0004 東京都武蔵野市吉祥寺本町1丁目12番1号</dd>
+                <dt>TEL</dt>
+                <dd>0422-23-8855</dd>
+                <dt>営業時間</dt>
+                <dd>10:00〜22:00【定休日】年中無休</dd>
+                <dt>駐車場台数</dt>
+                <dd>0台</dd>
+              </dl>
+              <ul class="search_item_features">
+                <li class="is-current">駐車場あり</li>
+                <li>出張買取対応</li>
+                <li>A.Q. 取扱店</li>
+                <li class="is-current">ファミリーおすすめ</li>
+                <li>メンズ商品充実</li>
+                <li>レディース商品充実</li>
+                <li>キャンペーン実施中</li>
+                <li class="is-current">大型店</li>
+              </ul>
+            </div>
+            <div class="search_item_flex -right">
+              <div>
+                <div class="search_item_brand">
+                  <%- include(relativePath + '_utilities/_picture', {src: '/img/shop/search/brand_super_sm.jpg', alt: 'Super 2nd STREET Reuse Shop'});%>
+                </div>
+                <div class="search_item_service -sell">
+                  <p class="search_item_service_title">販売アイテム</p>
+                  <p class="search_item_service_data">全アイテム</p>
+                </div>
+              </div>
+              <div class="search_item_service -buy">
+                <p class="search_item_service_title">買取アイテム</p>
+                <p class="search_item_service_data">全アイテム</p>
+                <div class="search_item_service_wait">
+                  <p class="search_item_service_wait_ttl">店頭買取待ち時間</p>
+                  <p class="search_item_service_wait_time -inquiry">店頭まで<br>お問い合わせください</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="search_item">
+          <a href="/shop/details/">
+            <div class="search_item_img"><img src="/img/shop/search/_dummy.jpg" alt="セカンドストリート立川店の外観写真"></div>
+            <div class="search_item_flex -left">
+              <p class="search_item_store">
+                <span class="search_item_store_brand">セカンドアウトドア</span>
+                <span class="search_item_store_name">吉祥寺サンロード店</span>
+              </p>
+              <p class="search_item_desc">レディース、メンズ、キッズの商品に力を入れている吉祥寺サンロード店は家族でもお楽しみいただけます。</p>
+              <dl class="search_item_info clearfix">
+                <dt>住所</dt>
+                <dd>〒180-0004 東京都武蔵野市吉祥寺本町1丁目12番1号</dd>
+                <dt>TEL</dt>
+                <dd>0422-23-8855</dd>
+                <dt>営業時間</dt>
+                <dd>10:00〜22:00【定休日】年中無休</dd>
+                <dt>駐車場台数</dt>
+                <dd>0台</dd>
+              </dl>
+              <ul class="search_item_features">
+                <li class="is-current">駐車場あり</li>
+                <li>出張買取対応</li>
+                <li>A.Q. 取扱店</li>
+                <li class="is-current">ファミリーおすすめ</li>
+                <li>メンズ商品充実</li>
+                <li>レディース商品充実</li>
+                <li>キャンペーン実施中</li>
+                <li class="is-current">大型店</li>
+              </ul>
+            </div>
+            <div class="search_item_flex -right">
+              <div>
+                <div class="search_item_brand">
+                  <%- include(relativePath + '_utilities/_picture', {src: '/img/shop/search/brand_outdoor_sm.jpg', alt: '2nd OUTDOOR by 2nd STREET'});%>
+                </div>
+                <div class="search_item_service -sell">
+                  <p class="search_item_service_title">販売アイテム</p>
+                  <p class="search_item_service_data">全アイテム</p>
+                </div>
+              </div>
+              <div class="search_item_service -buy">
+                <p class="search_item_service_title">買取アイテム</p>
+                <p class="search_item_service_data">全アイテム</p>
+                <div class="search_item_service_wait">
+                  <p class="search_item_service_wait_ttl">店頭買取待ち時間</p>
+                  <p class="search_item_service_wait_time -overtime">営業時間外です</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+
+      <ul class="m-pager" id="pager">
+        <li class="m-pager_arrow -prev"><a href="#"></a></li>
+        <li class="is-current"><a class="m-txtEffect" href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li class="ellipsis">...</li>
+        <li><a href="#">13</a></li>
+        <li class="m-pager_arrow -next"><a href="#"></a></li>
+      </ul>
+
+      <div><a class="m-btn m-btnEffect" href="/shop/">店舗検索に戻る</a></div>
+
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- 条件検索 modal -->
+  <%- include(relativePath + '_partials/_filterSearch')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

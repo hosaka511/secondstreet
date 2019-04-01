@@ -1,0 +1,25 @@
+<% var currentClass = 'is-current'; -%>
+<% var beforeClass = 'is-beforecurrent'; -%>
+
+<div class="g-local-navigation g-local-navigation-web">
+  <ul class="g-local-navigation_list">
+    <li class="<%- page === 'guide-members' ? currentClass : '' %> <%- page === 'ponta-point' ? beforeClass : '' %>">
+      <a href="/static/index/guide-members">会員登録について</a>
+    </li>
+    <li class="<%- page === 'ponta-point' ? currentClass : '' %> <%- page === 'guide-order' ? beforeClass : '' %>">
+      <a href="/static/index/ponta-point">Pontaポイント</a>
+    </li>
+    <li class="<%- page === 'guide-order' ? currentClass : '' %> <%- page === 'guide' ? beforeClass : '' %>">
+      <a href="/static/index/guide-order">店舗のご利用</a>
+    </li>
+    <li class="<%- page === 'guide' ? currentClass : '' %> <%- page === '' ? beforeClass : '' %>">
+      <a href="/static/index/guide">オンラインストアのご利用</a>
+    </li>
+    <li class="<%- page === '' ? currentClass : '' %> <%- page === 'faq' ? beforeClass : '' %>">
+      <a href="/static/index/stock">お取り寄せサービス</a>
+    </li>
+    <li class="<%- page === 'faq' ? currentClass : '' %>">
+      <a href="/static/index/faq">よくある質問</a>
+    </li>
+  </ul>
+</div>

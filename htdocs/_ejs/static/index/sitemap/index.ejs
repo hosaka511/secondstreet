@@ -1,0 +1,175 @@
+<%_  var pageID = 'sitemap'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/static-index.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellWeb">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-01">
+        <h2 class="m-heading_title">サイトマップ</h2>
+        <p class="m-heading_subtitle RalewayExtraBold">SITEMAP</p>
+      </div>
+
+
+      <div class="l-section -sitemap">
+        <div class="sitemap">
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/">トップページ</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/about/">セカンドストリートとは</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/sell/">買取サービスのご案内</a></p>
+            <div class="sitemap_list">
+              <p class="sitemap_list_title"><a class="m-txtEffect" href="/sell/store/">店頭買取</a></p>
+              <p class="sitemap_list_title"><a class="m-txtEffect" href="/sell/web/">WEB買取</a></p>
+              <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/web/details/">2nd STREETのWeb買取方法</a></p>
+              <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/web/items/">WEB買取の取扱商品</a></p>
+              <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/web/brands/">取扱いブランドリスト</a></p>
+              <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/web/send/">梱包方法</a></p>
+              <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/web/guideline/">WEB買取サービスガイドライン・利用規約</a></p>
+              <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/web/details#documents">本人様確認書類について</a></p>
+              <p class="sitemap_list_title"><a class="m-txtEffect" href="/webbuy/step1">WEB買取を申し込む</a></p>
+              <p class="sitemap_list_title"><a class="m-txtEffect" href="/sell/visit/">出張買取</a></p>
+              <p class="sitemap_list_title"><a class="m-txtEffect" href="/sell/tips/">高く売るコツ</a></p>
+              <p class="sitemap_list_title"><a class="m-txtEffect" href="/sell/items/">取扱商品について</a></p>
+              <div class="sitemap_list_half">
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/mens/">メンズ</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/womens/">レディース</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/kids-wear/">キッズ</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/electronics/">AV・生活家電</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/furniture/">家具</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/goods/">生活雑貨</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/instruments/">楽器</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/hobby/">ホビー</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/sports/">スポーツ</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/ticket/">金券・商品券</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/accessary/">貴金属</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/luxuary-brand/">ラグジュアリーブランド</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/bicycle/">自転車</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/mobile/">携帯電話</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/outdoor/">アウトドア用品</a></p>
+                <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/category/golf/">ゴルフ用品</a></p>
+              </div>
+              <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/brandlist/womens/">レディース買取強化ブランド</a></p>
+              <p class="sitemap_list_item"><a class="m-txtEffect" href="/sell/brandlist/mens/">メンズ買取強化ブランド</a></p>
+              <p class="sitemap_list_title"><a class="m-txtEffect" href="/sell/web/items/#notbuybrand">取扱いできない品物</a></p>
+              <p class="sitemap_list_title"><a class="m-txtEffect" href="/sell/business/">法人買取サービスのご案内</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="sitemap">
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/shop">店舗検索</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/store">オンラインストア</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="https://www.instagram.com/2ndstreetusa/">2nd street USA</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="https://www.instagram.com/2ndstreet_official/">国内インスタコンテンツ</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/information">インフォメーション</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/exp/kurofine">KUROFINE</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/knowbrand/">knowbrand magazine</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/mypage">マイページ</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/static/index/guide-members">ご利用ガイド</a></p>
+            <div class="sitemap_list">
+              <p class="sitemap_list_title"><a class="m-txtEffect" href="/static/index/guide-members">会員登録について</a></p>
+              <p class="sitemap_list_title"><a class="m-txtEffect" href="/static/index/ponta-point/">Pontaポイントについて</a></p>
+              <p class="sitemap_list_title"><a class="m-txtEffect" href="/static/index/guide-order">店舗</a></p>
+              <p class="sitemap_list_title"><a class="m-txtEffect" href="/static/index/guide">オンラインストア</a></p>
+            </div>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/static/index/faq">よくあるご質問</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/contact/input">お問い合わせフォーム</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/static/index/recruitment">会員募集</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/user/regist">会員登録</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/static/index/mgzn">メールマガジン登録</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/static/index/contract">ご利用規約</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/static/index/privacy">個人情報保護方針</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/static/index/sitepolicy">サイトポリシー</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/static/index/affiriate">アフィリエイター募集</a></p>
+          </div>
+          <div class="sitemap_chapter">
+            <p class="sitemap_chapter_title"><a class="m-txtEffect" href="/static/index/geoid-exp">GEO IDについて</a></p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

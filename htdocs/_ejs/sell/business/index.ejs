@@ -1,0 +1,287 @@
+<%_  var pageID = 'sellbusiness'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+  <link rel="stylesheet" href="/css/static-index.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellVisit">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-05">
+        <p class="m-heading_subtitle">買取サービスのご案内</p>
+        <h2 class="m-heading_title">法人買取サービスのご案内</h2>
+        <p class="m-heading_desc">セカンドストリートでは、百貨店・量販店様や<br class="u-hidden-md u-hidden-lg">ブランド・メーカー様、<br class="u-hidden-sm">代理店様などから<br class="u-hidden-md u-hidden-lg">買取にも対応させていただいております。</p>
+      </div>
+
+      <div class="mv">
+        <div>
+          <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/business/mv_img_sm.jpg', alt: '下記のようなケースで悩んでいませんか？在庫処分、開店・移転、決算前の売上'});%>
+        </div>
+        <p class="mv_title">2nd STREETに<br class="u-hidden-md u-hidden-lg">お気軽にご相談ください！</p>
+        <p class="m-desc -cut">まずは、Webにてお問い合せください。</p>
+        <div><a class="m-btn -cut -wide m-btnEffect" href="#contact">お問合せフォーム</a></div>
+      </div>
+
+      <section class="asset">
+        <h3 class="m-title">2nd STREETの強み</h3>
+        <ul class="aseet_list">
+          <li class="aseet_list_item">
+            <div class="aseet_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/business/asset_img_01_sm.png', alt: 'イメージ画像：全国対応'});%>
+            </div>
+            <div class="aseet_list_item_body">
+              <h4 class="aseet_list_item_body_title">全国対応</h4>
+              <p class="aseet_list_item_body_txt">全国600店舗以上展開、<br>大量の買取にも対応。</p>
+            </div>
+          </li>
+          <li class="aseet_list_item">
+            <div class="aseet_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/business/asset_img_02_sm.png', alt: 'イメージ画像：見積もり無料'});%>
+            </div>
+            <div class="aseet_list_item_body">
+              <h4 class="aseet_list_item_body_title">お見積り無料</h4>
+              <p class="aseet_list_item_body_txt">お見積りは無料。<br>お見積りのみだけでもOK。</p>
+            </div>
+          </li>
+          <li class="aseet_list_item">
+            <div class="aseet_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/business/asset_img_03_sm.png', alt: 'イメージ画像：買取実績'});%>
+            </div>
+            <div class="aseet_list_item_body">
+              <h4 class="aseet_list_item_body_title">買取実績</h4>
+              <p class="aseet_list_item_body_txt">年間買取3,800万件の実績。</p>
+            </div>
+          </li>
+          <li class="aseet_list_item">
+            <div class="aseet_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/business/asset_img_04_sm.png', alt: 'イメージ画像：スピーディー'});%>
+            </div>
+            <div class="aseet_list_item_body">
+              <h4 class="aseet_list_item_body_title">スピーディー</h4>
+              <p class="aseet_list_item_body_txt">査定から入金まで素早く現金化。</p>
+            </div>
+          </li>
+          <li class="aseet_list_item">
+            <div class="aseet_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/business/asset_img_05_sm.png', alt: 'イメージ画像：情報管理'});%>
+            </div>
+            <div class="aseet_list_item_body">
+              <h4 class="aseet_list_item_body_title">情報管理</h4>
+              <p class="aseet_list_item_body_txt">個人情報・企業情報保護方針に<br>基づいて厳重に管理。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="l-section">
+        <h3 class="m-title">買取実績</h3>
+        <ul class="achievement">
+          <li class="achievement_item">
+            <p class="achievement_name">某百貨店取り扱い<br>ブランド様</p>
+            <p class="achievement_txt">メンズアパレルを中心に<span>約3,500点</span>を一括買取</p>
+            <p class="achievement_tag">PICK<br>UP</p>
+          </li>
+          <li class="achievement_item">
+            <p class="achievement_name">某有名アパレル<br>ブランド様</p>
+            <p class="achievement_txt">レディースアパレルを中心に<span>約40,000点</span>を一括買取</p>
+            <p class="achievement_tag">PICK<br>UP</p>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="c-process c-process-web c-process-business">
+        <h3 class="m-title">お取引の流れ</h3>
+        <ul class="c-process_list">
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/business/process_img_01_sm.png', alt: 'イメージ画像：お問合せ'});%>
+              </div>
+              <h4 class="c-process_list_item_title">お問合せ</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">WEBにてお問合せください。</p>
+            </div>
+          </li>
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/business/process_img_02_sm.png', alt: 'イメージ画像：概算お見積り'});%>
+              </div>
+              <h4 class="c-process_list_item_title">概算お見積り</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">概算のお見積り金額をご報告させていただきます。</p>
+            </div>
+          </li>
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/business/process_img_03_sm.png', alt: 'イメージ画像：正式査定'});%>
+              </div>
+              <h4 class="c-process_list_item_title">正式査定</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">お品物着荷後、正式な検品査定を行い、<br class="u-hidden-md u-hidden-lg">改めてお見積り金額をご提示させていただきます。</p>
+            </div>
+          </li>
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/business/process_img_04_sm.png', alt: 'イメージ画像：ご入金'});%>
+              </div>
+              <h4 class="c-process_list_item_title">ご入金</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">法人様の口座に買取代金をご入金させていただきます。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="faq">
+        <h3 class="m-title">店頭買取に関するご質問</h3>
+        <div class="faq_chapter">
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>概算で見積り可能？</p></dt>
+            <dd><div><p>はい、可能です。ご提出頂いたリスト等に基づき仮見積もりさせて頂きます。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>見積りをお願いしたら、買取も頼まないとダメ？</p></dt>
+            <dd><div><p>お見積りのみでのご依頼も喜んで承ります。お気軽にお問合せ下さいませ。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>依頼商材が大量になる場合の運送方法は？</p></dt>
+            <dd><div><p>お取引させていただく商材の規模に合わせてチャーター手配も可能です。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>納品日に入金してもらう事はできる？</p></dt>
+            <dd><div><p>申し訳ございません。数量や状態の検品後改めて査定結果をご提示させて頂きますので、ご入金までは少々お時間頂戴致します。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>必要な書類はある？</p></dt>
+            <dd><div><p>お取引の上で必要な企業様情報等をご準備頂きます。お問合せ頂きましたら詳細をご案内させて頂きます。</p></div></dd>
+          </dl>
+          <dl class="faq_list js-answerTrigger">
+            <dt><p>買取した商品はどうやって販売するの？</p></dt>
+            <dd><div><p>全国の600店舗以上のセカンドストリート実店舗にて販売させて頂きます。</p></div></dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="l-section-02 -gray -contact" id="contact">
+        <h3 class="m-title-02">まずはお気軽にご相談ください！</h3>
+        <form class="contact" action="#" method="post">
+          <table class="correspond_table">
+            <caption class="contact_title">お問合せ<span>下記フォームに必要事項を入力後、<br class="u-hidden-md u-hidden-lg">確認ボタンを押してください。</span></caption>
+            <tbody class="correspond_table_body correspond_table_body-04">
+              <tr>
+                <th class="black first"><label for="companyname">会社名</label></th>
+                <td class="first">
+                  <input type="text" name="companyname" id="companyname" placeholder="会社名を入力してください" required><span>※必須</span>
+                </td>
+              </tr>
+              <tr>
+                <th class="black first"><label for="mail">メールアドレス(半角)</label></th>
+                <td>
+                  <input type="email" name="mail" id="mail" placeholder="メールアドレスを入力してください" required><span>※必須</span>
+                </td>
+              </tr>
+              <tr>
+                <th class="black first"><label for="departmentname">部署名</label></th>
+                <td>
+                  <input type="text" name="departmentname" id="departmentname" placeholder="部署名を入力してください" required><span>※必須</span>
+                </td>
+              </tr>
+              <tr>
+                <th class="black first"><label for="staffname">ご担当者名</label></th>
+                <td>
+                  <input type="text" name="staffname" id="staffname" placeholder="お名前を入力してください" required><span>※必須</span>
+                </td>
+              </tr>
+              <tr>
+                <th class="black first"><label for="address">ご住所</label></th>
+                <td>
+                  <input type="text" name="address" id="address" placeholder="ご住所を入力してください" required><span>※必須</span>
+                </td>
+              </tr>
+              <tr>
+                <th class="black first"><label for="phonenumber">電話番号（半角）</label></th>
+                <td>
+                  <input type="tel" name="phonenumber" id="phonenumber" placeholder="電話番号を入力してください" required><span>※必須</span>
+                </td>
+              </tr>
+              <tr>
+                <th class="black first"><label for="request">ご依頼内容</label></th>
+                <td>
+                  <textarea name="request" id="request" placeholder="商品名（型番）/台数/買取希望時期などを入力してください" required></textarea><span>※必須</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="contact_txt">ご利用のメールソフトによっては、弊社からのメールが確認出来ない場合がございます。メールが確認出来ない場合には下記をお確かめ下さい。</p>
+          <ul class="contact_list">
+            <li>・ＰＣメールが受信可能な設定になっているかご確認下さい。</li>
+            <li>・ドメイン受信設定をご確認下さい。<br>※指定されている場合は【@geonet.co.jp】のドメイン指定を解除してください。</li>
+            <li>・迷惑メール扱いとなり、迷惑メールフォルダに入っている場合がございます。</li>
+            <li>・モバイルメールアドレスをご利用で「@」の直前に「. 」（ドット）が入っているアドレス、もしくは「 … 」などの<br>ドットが連続するメールアドレスの場合は受信することが出来ない場合がございます。</li>
+          </ul>
+          <p class="contact_txt">お問合せより3営業日程度で担当者よりご連絡を差し上げます。 </p>
+          <div class="contact_btn">
+            <input class="m-btn m-btnEffect" type="submit" value="確認">
+            <input class="m-btn -reverse m-btnEffect" type="reset" value="リセット">
+          </div>
+        </form>
+      </section>
+
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/main.js"></script>
+  <script src="/js/sell.js"></script>
+  <script src="/js/static-index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+<%_  var pageID = 'sellvisit'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellVisit">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-02">
+        <h2 class="m-heading_title">買取サービスのご案内</h2>
+        <p class="m-heading_subtitle RalewayExtraBold">VISIT</p>
+        <p class="m-heading_desc">出張買取とは</p>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-sell', {page: pageID})%>
+
+      <section class="c-step">
+        <h3 class="c-step_title">大型の家具、家電などに<br class="u-hidden-md u-hidden-lg">おすすめ！</h3>
+        <p class="c-step_desc">お近くの店舗のスタッフがご自宅にお伺いし、<br class="u-hidden-md u-hidden-lg">お一人では運べない大型の家電・家具を<br class="u-hidden-md u-hidden-lg">1点からでも無料で買取いたします。<br><span>※一部店舗では、実施しておりません。<br class="u-hidden-md u-hidden-lg">実施店舗を各店舗ページからご確認いただけます。</span></p>
+        <ul class="c-step_list">
+          <li class="c-step_list_item c-step_list_item-01">
+            <div class="c-step_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/gif/visit_01_sm.gif', alt: 'イメージ画像：事前に電話でお申込み'});%>
+            </div>
+            <div class="c-step_list_item_body">
+              <h4><span class="RalewayBold">STEP</span>01</h4>
+              <p>事前に<br class="u-hidden-md u-hidden-lg">電話でお申込み</p>
+            </div>
+          </li>
+          <li class="c-step_list_item c-step_list_item-02">
+            <div class="c-step_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/gif/visit_02_sm.gif', alt: 'イメージ画像：予約日時にバイヤーがご自宅で査定'});%>
+            </div>
+            <div class="c-step_list_item_body">
+              <h4><span class="RalewayBold">STEP</span>02</h4>
+              <p>予約日時にバイヤーが<br class="u-hidden-md u-hidden-lg">ご自宅で査定</p>
+            </div>
+          </li>
+          <li class="c-step_list_item c-step_list_item-03">
+            <div class="c-step_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/gif/visit_03_sm.gif', alt: 'イメージ画像：その場でお支払い'});%>
+            </div>
+            <div class="c-step_list_item_body">
+              <h4><span class="RalewayBold">STEP</span>03</h4>
+              <p>その場でお支払い</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="c-process">
+        <h3 class="m-title">出張買取の手順</h3>
+        <ul class="c-process_list">
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div class="c-process_list_item_heading_img">
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/visit/process_img_01_sm.png', alt: 'イメージ画像：ご依頼/お伺い'});%>
+              </div>
+              <h4>ご依頼/お伺い</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">お近くの店舗へお電話ください。ご希望の日時、商品についてお伺いします。<br class="u-hidden-sm">ご予約いただいた日時にスタッフがお伺いいたします。お申込み者ご自身の<a href="#validation">「ご本人確認書類」</a>をご用意ください。</p>
+              <p class="c-process_list_item_note">※即日の査定はいたしかねます。事前にお電話でお申込みをお願いいたします。</p>
+              <p class="c-process_list_item_note">※買取の申込みには、申込み者ご自身の「ご本人確認書類」が必要となります。</p>
+            </div>
+          </li>
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div class="c-process_list_item_heading_img">
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/visit/process_img_02_sm.png', alt: 'イメージ画像：査定金額のご案内'});%>
+              </div>
+              <h4>査定金額のご案内</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">お客様がお持ちになられた商品の査定金額をお伝えいたします。<br class="u-hidden-sm">査定内容にご不明な点があれば、お伝えください。金額にご満足いただけない場合はキャンセルも可能です。</p>
+            </div>
+          </li>
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div class="c-process_list_item_heading_img">
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/visit/process_img_03_sm.png', alt: 'イメージ画像：お支払い/運び出し'});%>
+              </div>
+              <h4>お支払い/運び出し</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">査定内容にご納得いただけましたら、お申込み者ご自身の「ご本人確認書類」のご提示および<br class="u-hidden-sm">指定用紙へのご記入をお願いいたします。その場で現金をお支払いした後、運び出しを行ないます。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="c-accordion c-cautions">
+        <h3 class="c-accordion_title js-bothPcSpAccordionTrigger">注意事項</h3>
+        <div class="js-bothPcSpAccordionContent">
+          <ul class="c-cautions_list">
+            <li>・出張買取は予約制になっております。</li>
+            <li>・予約状況によりご希望の日時にお伺いできない場合がございます。</li>
+            <li>・お引っ越し等、日程が決まっている場合はその旨をお伝えください。</li>
+            <li>・お見積りのみのお申込みもお受けいたします。お申込みの際にお伝えください。</li>
+            <li>・当日、ご都合が悪くなった場合はご予約いただきました店舗までご連絡ください。</li>
+            <li>・天候や交通事情により遅れる場合や、お伺いできない場合、こちらよりお伺いしている連絡先へお電話させていただく場合がございます。</li>
+            <li>・リモコンや取扱説明書など付属品もご準備ください。</li>
+            <li>・電化製品はお客様の電源をお借りし「作動確認」させていただきます。</li>
+            <li>・商品の形状やご予約以外の商品などで、複数回の運び出しの場合や別の日にお運びさせて頂く場合がございます。</li>
+            <li>・電話またはメールによる買取価格のお問合せはご遠慮ください。</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="c-products">
+        <h3 class="m-title">取扱商品</h3>
+        <p class="c-products_desc">出張買取で取扱できる商品は、<strong>お一人では運べない大型の家電・家具で、<br>縦・横幅・奥行きの三辺の合計が<br class="u-hidden-md u-hidden-lg">350cm以内</strong>のものとなります。</p>
+        <div class="c-products_menu">
+          <h4 class="js-onlySpAccordionTrigger">商品ごとの詳細情報はこちら</h4>
+          <div class="js-onlySpAccordionContent">
+            <ul>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg>
+                <p>レディース衣類</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg>
+                <p>メンズ衣類</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg>
+                <p>キッズ衣類</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg>
+                <p>ラグジュアリー<br class="u-hidden-md u-hidden-lg">ブランド</p>
+              </span></li>
+              <li><a href="/sell/category/electronics/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg>
+                <p>AV・生活家電</p>
+              </a></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg>
+                <p>携帯電話</p>
+              </span></li>
+              <li><a href="/sell/category/furniture/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg>
+                <p>家具</p>
+              </a></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg>
+                <p>生活雑貨</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg>
+                <p>キッズ用品</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg>
+                <p>楽器</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg>
+                <p>ホビー</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg>
+                <p>アウトドア用品</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg>
+                <p>スポーツ用品</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-golf" /></svg>
+                <p>ゴルフ用品</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg>
+                <p>自転車</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg>
+                <p>金券・商品券</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg>
+                <p>貴金属</p>
+              </span></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="c-products_note">
+          <li>※特定商取引法の一部改正によりお伺いできる商品は、上記に限らせていただいております。</li>
+          <li>※ご不明な点がございましたらお気軽にお近くの店舗までお問合せください。</li>
+          <li>※搬出ができないものにつきましては買取対象外となります、あらかじめご了承ください。</li>
+        </ul>
+        <div class="c-products_btn"><a class="m-btn m-btnEffect" href="/sell/items/">詳しく見る</a></div>
+      </section>
+
+
+      <%- include(relativePath + '_partials/_validation', { name: '出張'})%>
+
+
+      <section class="c-QandA">
+        <h3 class="m-title">買取に関するポイント</h3>
+        <p class="c-QandA_desc">出張買取でよくある質問</p>
+        <dl>
+          <dt><p>買取できないものを教えてください。</p></dt>
+          <dd><p><a href="/sell/web/items/#notbuybrand">「取扱できない商品」</a>ページに記載してございますので、そちらにてご確認いただけます。</p></dd>
+          <dt><p>見積りだけでもしてもらうことはできますか？</p></dt>
+          <dd><p>お見積りのみのご依頼も大歓迎です。詳しくは<a href="/shop">「お近くのセカンドストリート」</a>までご連絡ください。</p></dd>
+        </dl>
+        <ul>
+          <li>
+            <a href="/sell/tips/">
+              <p>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-qanda/img_01_sm.jpg', alt: '画像：高く売るコツを知る'});%>
+              </p>
+              <div>
+                <div>
+                  <h4>高く売るコツを知る</h4>
+                  <p>査定時のバイヤーが特に確認する<br>ポイントをご紹介します。</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/static/index/faq">
+              <p>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-qanda/img_02_sm.jpg', alt: '画像：よくある質問をもっと見る'});%>
+              </p>
+              <div>
+                <div>
+                  <h4>よくある質問をもっと見る</h4>
+                  <p>お客さまから寄せられたご質問を<br>掲載しております。</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="l-section-02 -gray c-strength">
+        <h3 class="m-title">2nd STREET　出張買取の強み</h3>
+        <ul class="c-strength_list">
+          <li>
+            <a href="#" class="js-modalTrigger" data-modal-id="01">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/common/strength_img_01_sm.jpg', alt: '値段が付かなかった⾐料はECOに活⽤！'});%>
+              <p>バイヤーが解説。<br>大型の家電と家具を売るときのポイント。<span class="c-strength_list_icon"></span></p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="js-modalTrigger" data-modal-id="04">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/common/strength_img_04_sm.jpg', alt: '市場と全店のデータを駆使して厳正に査定'});%>
+              <p>市場と全店のデータを駆使して厳正に査定<span class="c-strength_list_icon"></span></p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+      <ul class="c-otherMeans">
+        <li class="c-otherMeans_item c-otherMeans_item-store"><a href="/sell/store/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_03_sm.png', alt: '画像：店頭買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">STORE</span>店頭買取</p>
+        </div></a></li>
+        <li class="c-otherMeans_item c-otherMeans_item-web"><a href="/sell/web/"><div>
+          <p class="c-otherMeans_item_img">
+            <%- include(relativePath + '_utilities/_picture', {src: '/img/common/c-otherMeans/img_01_sm.png', alt: '画像：Web買取'});%>
+          </p>
+          <p class="c-otherMeans_item_txt"><span class="en RalewayExtraBold">WEB</span>Web買取</p>
+        </div></a></li>
+      </ul>
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+    <div class="g-diagnosis_trigger js-diagnosisModalTrigger"><a>あなたに適切な売り方はこちら<i></i></a></div>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- 条件検索 modal -->
+  <%- include(relativePath + '_partials/_filterSearch')%>
+
+  <!-- modal -->
+  <div class="modal_mask"></div>
+  <div class="modal modal_strength">
+    <div class="modal_outer">
+      <div class="modal_closeBtn"><span></span></div>
+      <div class="modal_inner">
+        <article class="modal_content modal_content-01">
+          <section>
+            <div class="modal_bg">
+              <h2 class="modal_title">バイヤーが解説。<br class="u-hidden-sm">大型の家電と<br class="u-hidden-md u-hidden-lg">家具を売るときのポイント。</h2>
+              <div class="modal_img">
+                <img src="/img/sell/common/modal_img_01_01.jpg" alt="画像：2nd STREET 出張買取の強み">
+              </div>
+              <p class="modal_desc">衣料品やアクセサリー、家電や家具など、幅広い品揃えでお客様のニーズに応えるセカンドストリートでは、<br class="u-hidden-sm">一人では運べない大型の家電や家具の出張買取サービスを行っています。<br class="u-hidden-sm">1点からでも無料で査定しているので、引っ越しで処分したいときなどにはとても便利です。<br class="u-hidden-sm">そこで大型家電や家具を売るときのポイントを出張買取担当のバイヤーに解説してもらいました。</p>
+            </div>
+            <section class="modal_section">
+              <h3 class="modal_section_title"><span>大型家電を売るときのポイント</span></h3>
+              <p class="modal_section_txt">特に電化製品は製造年があたらしく、状態がよいものほど査定金額は高くなりやすいです。当社では製造から11年以上が経過していなければ買取可能ですが、できるだけ新しい製品に越したことはありません。</p>
+              <p class="modal_section_txt -answer">また査定前にはなるべくきれいな状態にしておくことをおすすめします。</p>
+              <p class="modal_section_txt -answer">販売前に店舗でもそうじをしますので、そのときに落ちる汚れであれば買取は問題ありませんが、冷蔵庫であれば、庫内の拭けばとれる汚れなどは、事前にきれいにしておくと査定には有利です。</p>
+              <div class="modal_img">
+                <img src="/img/sell/common/modal_img_01_02.jpg" alt="画像：2nd STREET 出張買取の強み">
+              </div>
+              <p class="modal_section_txt">洗濯機であれば、洗濯槽内の汚れは事前にそうじしておいた方が査定にはプラスとなります。</p>
+              <p class="modal_section_txt -answer">やはりリユースの冷蔵庫、洗濯機などは清潔さが重要です。普段からこまめにそうじをしながら大切に使われたもののほうが、お売りになる際にも査定額は高くなりやすいですね。</p>
+            </section>
+            <section class="modal_section">
+              <h3 class="modal_section_title"><span>大型家具を高く売るときのポイント</span></h3>
+              <p class="modal_section_txt">たとえば洋服を収納する家具であれば、ワードローブよりも収納用の引き出しがたくさんついているハイチェストのほうが店頭での人気は高く、査定額も高くなります。</p>
+              <p class="modal_section_txt -answer">また色も重要です。ベーシックな木目調はもちろん需要はありますが、最近はホワイトで家具を統一するご家庭が増えているようで、ホワイトは特に人気ですね。</p>
+              <div class="modal_img">
+                <img src="/img/sell/common/modal_img_01_03.jpg" alt="画像：2nd STREET 出張買取の強み">
+              </div>
+              <p class="modal_section_txt -answer">やはり店頭でお買い求めになるお客様のニーズが高いものが査定額も高くなります。その点ではメーカー名が書いてあるもののほうがよいですし、人気メーカーのものはさらに査定額が高くなりやすいです。<br>またリユースの家具の場合はリーズナブルに販売するため基本修繕は行いません。扉にすき間やズレがある、はがれやキズがある、引き出しの底板が曲がっているなどマイナス要素がある場合は査定額がかなり低くなったり、買取ができなかったりすることもあるのでご注意ください。</p>
+            </section>
+            <section class="modal_section">
+              <h3 class="modal_section_title"><span>買取できないものもあり</span></h3>
+              <p class="modal_section_txt">当社では和タンスや婚礼家具、勉強机や折り畳み式ではないベッド、縦・横幅・奥行き三辺の合計が350cmを超える大型家具などはお買取りができません。和タンスや婚礼家具は需要が少なく、折り畳み式ではないベッドなどは店舗での設置にかなりの場所を取ってしまうのでお取り扱いしていません。</p>
+              <p class="modal_section_txt -answer">ご不明な点は、お気軽にお問い合わせください。</p>
+            </section>
+          </section>
+        </article>
+
+        <article class="modal_content modal_content-04">
+          <section>
+            <h2 class="modal_title">市場と全店のデータを駆使して<br class="u-hidden-md u-hidden-lg">厳正に査定</h2>
+            <div class="modal_img">
+              <img src="/img/sell/common/modal_img_04_01.jpg" alt="画像：2nd STREET Web買取の強み">
+            </div>
+            <section class="modal_section">
+              <h3 class="modal_section_title"><span>お持ちいただいた商品の販売価格を<br class="u-hidden-md u-hidden-lg">設定し、<br class="u-hidden-sm">それを基準に買取価格を決定。</span></h3>
+              <p class="modal_section_txt">販売価格の設定は、まず⼀般の⼩売店や中古市場で、その商品がいくらで出回っているのか市場価格調査を⾏います。市場になかなか出回っていない商品や価格算出が難しい商品は、600店舗に及ぶ当社の全店舗取引データをもとに販売価格を設定します。買取価格は、販売価格を設定したのち、当社の買取価格表を参考に設定します。以上の流れで買取・販売価格が設定されます。</p>
+              <div class="modal_img">
+                <img src="/img/sell/common/modal_img_04_02.jpg" alt="画像：2nd STREET Web買取の強み">
+              </div>
+              <p class="modal_section_note">※商品の状態や、店舗の在庫状況により買取価格は異なる場合がありますのでご了承ください。</p>
+            </section>
+            <section class="modal_section">
+              <h3 class="modal_section_title"><span>真贋における安⼼・安全の追求のために独⾃マニュアルを構築</span></h3>
+              <p class="modal_section_txt">「現在セカンドストリートでは、全国約600弱の店舗でラグジュアリーブランド（当社指定ブランド）の取り扱いを⾏っていますが、その始まりは2006年までさかのぼります。運営⺟体だったゲオアールが、フォー・ユーと合併してリユース事業を展開することになりました。フォー・ユーは以前、⼀時的にブランド品の取り扱いを中⽌していたのですが、この合併を機に再開することに。当初は約40店舗からのスタート。ラグジュアリーブランド品の確かな安全性を保証するためには、店舗だけでなく、本部で⼆次検品を⾏うシステムを構築する必要がありました」こう話すのは、検品検証チーム・チームリーダーの⼭崎。</p>
+              <div class="modal_img">
+                <img src="/img/sell/common/modal_img_04_03.jpg" alt="画像：2nd STREET Web買取の強み">
+              </div>
+              <p class="modal_section_txt">「全店でのラグジュアリーブランド取り扱いについて、当社の⽅針として掲げた条件が、並⾏輸⼊品市場での『偽造品』や『不正商品』の流通防⽌と排除を⽬指す⺠間団体『⼀般社団法⼈ ⽇本流通⾃主管理協会（以下 AACD）』への加盟です。そのために、2年以上かけてラグジュアリーブランド買取時に使⽤するマニュアルを整備し、アイテム別買取チェックリストを⽤意しました。さらに、本部選任担当者による⼆次検品もスタートさせ、2008年8⽉に準会員として加盟、翌2009年8⽉に正会員に昇格しております」</p>
+              <p class="modal_section_txt -answer">セカンドストリートでは、111のラグジュアリーブランドに独⾃のマニュアルを⽤意しており、すべてのマニュアルは、本部選任担当者で構成する検品検証チームが情報の集約・蓄積を⼿掛けている。本部選任担当者は計5名。セカンドストリートではこの業務を遂⾏するためには、⾮常に厳しい⾃社試験に合格しなければならない。最初の2〜3カ⽉間は、AACDの協会基準とマニュアルを徹底的に理解するとともに、本部選任担当者から判断ポイントのコーチングを受けながら経験を積む。その後、300点の判定試験を⾏い、「基準外品」を1つでも⾒逃した時点で試験はやり直し。合格するまで何度でも試験を繰り返し、⾒極めるための⼒を磨いている。</p>
+            </section>
+            <section class="modal_section">
+              <h3 class="modal_section_title"><span>ブランド直営店での新作チェックで<br class="u-hidden-md u-hidden-lg">情報収集</span></h3>
+              <p class="modal_section_txt">ラグジュアリーブランドの買取は、2014年にセカンドストリート全店で取り扱いを開始してから、その数量が⾶躍的に増加し続けており、2017年には⽉間3 万点を超える⾒込み。現在、⼆次検品チーム強化を進めている。経験を積んだ本部選任担当者ともなれば、品物の質感や臭い、パーツの細部を⼀⽬⾒るだけで、セカンドストリートの基準外品だと判断できることもあるそう。しかし、年々クオリティを⾼めている偽造品・不正商品を間違いなく判別するために、本部選任担当者たちは経験を過信せず、知識と技術のブラッシュアップを怠らない。</p>
+              <div class="modal_img">
+                <img src="/img/sell/common/modal_img_04_04.jpg" alt="画像：2nd STREET Web買取の強み">
+              </div>
+              <p class="modal_section_txt">「もちろん経験に対する⼀定の⾃負はあります。しかし、各ラグジュアリーブランドから新作が発表されるたびに、その特徴を⾃分の中でなじませることが必要です。AACDからの情報確認はもちろん、各ブランドの直営店へ⾜を運び、細かなディテールを確認することも⾏っています。⽇々これだけの数量を検品しているので、なかには初めて⽬にする珍しい品物もあります。その際は、当社の基準内品・基準外品にかかわらず、本部選任担当者の間で情報共有して知識を深めています。その上で、同⼀商品で基準外品と判別するケースが頻繁に発⽣しているようであれば、重要度・緊急度が⾼いと判断し、臨時の緊急ミーティングを実施します」と本部選任担当者の鈴⽊は話す。</p>
+              <p class="modal_section_txt -answer">鈴⽊は、2016年にAACDが認定する「協会基準判定⼠」の資格を取得。この資格を得るには、並⾏輸⼊品の基礎知識や関連する法令、カスタマー対応、実技を含む商品の検品⽅法など計5回の研修と試験に合格しなければならない。現状、本部選任担当者のうち3名が、「協会基準判定⼠」を有しており、今後も本部選任担当者の実務を1年以上経験した者は資格取得を計画している。</p>
+            </section>
+            <section class="modal_section">
+              <h3 class="modal_section_title"><span>店舗バイヤーのレベルアップを図り、<br class="u-hidden-md u-hidden-lg">全国で勉強会開催</span></h3>
+              <p class="modal_section_txt">検品の精度を⾼めるための努⼒は、本部選任担当者だけではない。過去には鈴⽊が社内講師として全国すべてのエリアを回り、店舗バイヤーに向けた勉強会を実施。この勉強会では、実際に発⽣した「基準外品」を使⽤して、特に取り扱いの多いラグジュアリーブランドや、判定に細⼼の注意が必要な品物などについて、直接指導を⾏った。「勉強会のきっかけは、店舗バイヤーからの要望です。普段の査定時は、マニュアルでは判断が難しい品物は、私たちがWeb カメラを通じて査定をサポートしています。しかし、⼿触りや特有の臭いについては、画⾯越しに伝えるのが不可能。勉強会では、直接基準外品に触れながら指導することで店舗バイヤーの理解を深めることができ、遠隔でやり取りをしていた店舗バイヤーと顔を合わせて話をすることで、お互いの信頼感がより⼀層増したように思います」</p>
+              <div class="modal_img">
+                <img src="/img/sell/common/modal_img_04_05.jpg" alt="画像：2nd STREET Web買取の強み">
+              </div>
+              <p class="modal_section_txt">このように、セカンドストリートでは、AACD の協会基準と独⾃のマニュアルや精鋭チームによる⽬利きなど、お客さまが安⼼して商品を⼿に取っていただける体制を整えている。</p>
+            </section>
+          </section>
+        </article>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/main.js"></script>
+  <script src="/js/sell.js"></script>
+</body>
+
+</html>

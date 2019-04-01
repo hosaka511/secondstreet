@@ -1,0 +1,117 @@
+<%_  var pageID = 'ponta-point'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/static-index.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellWeb">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-03">
+        <p class="m-heading_subtitle">ご利用ガイド</p>
+        <h2 class="m-heading_title">Pontaポイント</h2>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-membership', {page: pageID})%>
+
+      <div class="introHeading">
+        <div class="introHeading_logo introHeading_logo-ponta"><img src="/img/static/index/ponta-point/logo_ponta.png" alt="Ponta"></div>
+        <p class="introHeading_text">全国のセカンドストリート・ジャンブルストアで、<br class="u-hidden-md u-hidden-lg">共通ポイント【Ponta】がご利用いただけます。</p>
+      </div>
+
+      <section class="section section-staticIndexDefault">
+        <h3 class="m-title">ご利用について</h3>
+        <table class="guideDefaultTable guideDefaultTable-titleSizeM">
+          <tbody class="guideDefaultTable_body">
+            <tr>
+              <th>ポイントを貯める</th>
+              <td>店舗でのお買い上げ/お買取の際、オンラインストアのお買い上げの際に（※1）<br><strong>100円（税抜）ごとに1ポイント</strong>貯めることができます。</td>
+            </tr>
+            <tr>
+              <th>ポイントのご利用</th>
+              <td>1ポイント＝1円相当として、店舗・オンラインストアにてご利用いただけます。（※2）</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="guideDefaultTableNote">
+          <li>※1 店舗でご利用の場合は、提携外クレジットカードでのお支払い時はポイント付与の対象外です。また、オンラインショップでクレジットカード支払の場合はポイント付与対象外となります。ポイント付与には一部対象外の商品がございます。（金券・貴金属・DVD・CD・ゲームなど）商品1点ごとにポイントを計算させていただいており、合計ポイントの小数点以下を切り捨てたポイントを加算しております。そのため税抜価格の合計と加算ポイント数が異なる場合がございます。予めご了承くださいませ。一部、ポイント付与の対象外、ポイント付与率の異なる商品、サービスがございます。</li>
+          <li>※2 iTunesカードはポイントでの支払いがご利用になれません。</li>
+          <li>※カードはご清算前にご提示ください。清算後にポイントをお付けすることはできません。</li>
+        </ul>
+      </section>
+
+      <section class="section section-staticIndexDefault">
+        <h3 class="m-title">ポイント付与タイミングについて</h3>
+        <table class="guideDefaultTable guideDefaultTable-titleSizeM">
+          <tbody class="guideDefaultTable_body">
+            <tr>
+              <th>店舗をご利用の場合</th>
+              <td>商品お買い上げ/お買取の際、即時ポイント付与されます。</td>
+            </tr>
+            <tr>
+              <th>オンラインストアを<br class="u-hidden-sm">ご利用の場合</th>
+              <td>ご注文商品の配送が完了した日から20日後を目処にポイント付与されます。(※1)</td>
+            </tr>
+            <tr>
+              <th>Web買取を<br class="u-hidden-sm">ご利用の場合</th>
+              <td>買取金額の入金が完了した日を目処にポイント付与されます。(※1)</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="guideDefaultTableNote">
+          <li>※1 配送完了・入金完了通知に関しましては、ご登録されているメールアドレスへ配信されます。</li>
+        </ul>
+      </section>
+
+      <section class="section section-staticIndexDefault">
+        <h3 class="m-title">ご登録方法</h3>
+        <p class="m-desc">Ponta IDは Ponta Webよりお申込みいただけます。<br>詳しくは「<a href="http://www.ponta.jp/" target="_blank" rel="noopener noreferrer">Ponta.jp<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>」をご確認ください。</p>
+      </section>
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+    <div class="g-diagnosis_trigger js-diagnosisModalTrigger"><a>あなたに適切な売り方はこちら<i></i></a></div>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

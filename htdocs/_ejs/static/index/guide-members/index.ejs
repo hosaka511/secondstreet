@@ -1,0 +1,139 @@
+<%_  var pageID = 'guide-members'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/static-index.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellWeb">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-03">
+        <p class="m-heading_subtitle">ご利用ガイド</p>
+        <h2 class="m-heading_title">会員登録について</h2>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-membership', {page: pageID})%>
+
+      <div class="introHeading">
+        <p class="introHeading_text">会員登録いただくと、様々なコンテンツがご利用いただけます。</p>
+        <p class="introHeading_notes">※セカンドストリート オンライン（楽天市場店・ヤフオク店）の<br class="u-hidden-md u-hidden-lg">ログインIDはご利用いただけません。</p>
+      </div>
+
+      <section class="section section-staticIndexDefault">
+        <h3 class="m-title">会員登録でご利用いただける機能</h3>
+        <table class="guideDefaultTable guideDefaultTable-titleSizeM">
+          <tbody class="guideDefaultTable_body">
+            <tr>
+              <th>マイページ</th>
+              <td>ご登録情報の変更・確認が行えます。</td>
+            </tr>
+            <tr>
+              <th>商品の購入履歴</th>
+              <td>オンラインショップでご購入の商品の購入履歴をご確認いただけます。</td>
+            </tr>
+            <tr>
+              <th>お気に入り商品登録</th>
+              <td>気になった商品を一時保存し、閲覧が可能です。</td>
+            </tr>
+            <tr>
+              <th>メールマガジン</th>
+              <td>店舗・オンラインショップからのメールマガジンの受信設定が行えます。</td>
+            </tr>
+            <tr>
+              <th>マイショップ登録</th>
+              <td>お気に入りの店舗を保存いただき、マイショップとしてセグメントいただけます。</td>
+            </tr>
+            <tr>
+              <th>こだわり条件</th>
+              <td>お好みに合わせた「こだわり条件」として検索結果を保存できます。</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section section-staticIndexDefault">
+        <h3 class="m-title">会員登録にPonta IDを紐付けて<br class="u-hidden-md u-hidden-lg">ご利用いただける機能</h3>
+        <table class="guideDefaultTable guideDefaultTable-titleSizeM">
+          <tbody class="guideDefaultTable_body">
+            <tr>
+              <th>実店舗を含む<br class="u-hidden-sm">購入履歴の表示</th>
+              <td>実店舗・オンラインショップでご購入の商品の購入履歴をご確認いただけます。</td>
+            </tr>
+            <tr>
+              <th>クーポン</th>
+              <td>オンラインショップ・実店舗でご利用いただける。様々なクーポンがご利用いただけます。<br>【割引クーポン】や【査定より買取金額アップクーポン※1】などをお届けいたします。</td>
+            </tr>
+            <tr>
+              <th>Pontaポイント</th>
+              <td>Pontaポイントをご購入の際にご利用いただけます。また、ご購入時にPontaポイントが金額に合わせ加算されます。※2</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="guideDefaultTableNote">
+          <li>※&ensp;&nbsp;セカンドストリートサービスにPonta 会員IDを紐付けするには本人登録が必要になります。<br>本人登録の方法は「<a href="http://www.ponta.jp/" target="_blank" rel="noopener noreferrer">Ponta Web<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>」をご確認ください。また、Pontaカードは「<a href="http://www.ponta.jp/" target="_blank" rel="noopener noreferrer">Ponta Web<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></a>」よりお申込みいただけます。</li>
+          <li>※1&nbsp;オンラインではご利用いただけません。</li>
+          <li>※2&nbsp;オンラインでのクレジットカード支払の場合はPontaポイント対象外となります。</li>
+        </ul>
+      </section>
+
+      <section class="section section-staticIndexDefault">
+        <h3 class="m-title">ご登録方法</h3>
+        <p class="m-desc"><a href="/tp?id=recruitment&type=1">こちらのページ</a>より会員登録いただけます。</p>
+        <div class="guideMembers_aboutID">
+          <h4 class="guideMembers_aboutID_title">会員登録のID（GEO ID）について</h4>
+          <p class="guideMembers_aboutID_text">
+            セカンドストリートサービスはGEO IDがご利用いただけます。<br class="u-hidden-sm">
+            GEO IDとはゲオグループのネットサービスを共通でご利用頂ける会員IDです。<br>
+            <a href="https://www.2ndstreet.jp/static/index/geoid-exp" class="guideMembers_aboutID_text_link">ゲオグループサービスについて</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+    <div class="g-diagnosis_trigger js-diagnosisModalTrigger"><a>あなたに適切な売り方はこちら<i></i></a></div>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/main.js"></script>
+  <script src="/js/static-index.js"></script>
+</body>
+
+</html>

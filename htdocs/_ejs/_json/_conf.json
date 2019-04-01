@@ -1,0 +1,354 @@
+{
+  "top" : {
+    "title": "セカンドストリート｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "洋服（古着）買取、バッグ買取を中心に、ハイブランド品から家具家電まで幅広く中古品買取と販売を、全国600店舗以上やオンラインストア（ＷＥＢ買取）で行う総合リユースショップです。",
+    "url": "https://www.2ndstreet.jp/",
+    "headersub": "included01",
+    "footerbnr": "included",
+    "sellitems": ""
+  },
+  "about" : {
+    "title": "セカンドストリートとは｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "幅広い取扱のあるセカンドストリートならではの、選ばれる理由や専門業態についてご紹介しています。買取で迷われた際や店舗をお探しの際にぜひご覧ください！",
+    "url": "https://www.2ndstreet.jp/about/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sitemap" : {
+    "title": "サイトマップ｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートサイトのサイトマップです。",
+    "url": "https://www.2ndstreet.jp/static/index/sitemap/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sell" : {
+    "title": "買取サービスのご案内｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートの買取サービスは、店頭買取、Web買取（宅配買取）、出張買取の3つの買取方法があります。ご自身のご希望や商品に合わせてご利用ください。",
+    "url": "https://www.2ndstreet.jp/sell/",
+    "headersub": "included01",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sellbusiness" : {
+    "title": "法人買取｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートの法人様向けの買取方法をご紹介しています。物量の多い買取や在庫処分、開店・移転時でお悩みの方もこちらからご相談ください！",
+    "url": "https://www.2ndstreet.jp/sell/business/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sellstore" : {
+    "title": "店頭買取｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートの店頭買取に関するご紹介。お近くの店舗でその場で査定、お支払いまで完了できます。ご予約は不要。1点からでも大歓迎です！",
+    "url": "https://www.2ndstreet.jp/sell/store/",
+    "headersub": "included01",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sellvisit" : {
+    "title": "出張買取｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートの出張買取に関するご紹介。お近くの店舗のスタッフがご自宅にお伺いし、お一人では運べない大型の家電・家具を1点からでも無料で買取いたします。",
+    "url": "https://www.2ndstreet.jp/sell/visit/",
+    "headersub": "included01",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sellweb" : {
+    "title": "Web買取（宅配買取）｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートのWeb買取（宅配買取）に関するご紹介。お店まで持っていくのは大変という方のために、Web買取フォームより申込みいただき、ご指定の日時に集荷に伺います。一点から気軽に、送料はすべて無料！",
+    "url": "https://www.2ndstreet.jp/sell/web/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sellwebVisitor" : {
+    "title": "Web買取方法｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートのWeb買取における買取方法を詳しくご紹介しています。買取の手順やサイズ、ご準備いただく必要のあるものも記載しておりますので、お送りいただく前にご確認ください。",
+    "url": "https://www.2ndstreet.jp/sell/web/details/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sellwebItems" : {
+    "title": "Web買取取扱商品｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートのWeb買取における取扱商品を一覧表よりご確認いただけます。買取方法によってはお取扱できないブランドもございます。お送りいただく前にご確認ください。",
+    "url": "https://www.2ndstreet.jp/sell/web/items/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sellwebBrands" : {
+    "title": "Web買取梱包と発送方法｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートのWeb買取における取扱ブランドをリストにいたしました。ブランド名の入力や、アルファベット検索からご確認いただけます。",
+    "url": "https://www.2ndstreet.jp/sell/web/brands/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sellwebPackingmethod" : {
+    "title": "Web買取梱包と発送方法｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートのWeb買取における梱包の方法は２種類ございます。お送りいただく前にご参照ください。",
+    "url": "https://www.2ndstreet.jp/sell/web/send/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sellwebGuideline" : {
+    "title": "Web買取サービスガイドライン・利用規約｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートのWeb買取におけるサービスガイドライン、利用規約、特定商取引法及び古物営業法に基づく表記をご紹介しています。",
+    "url": "https://www.2ndstreet.jp/sell/web/guideline/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sellitems" : {
+    "title": "取扱商品について｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートでは、買取方法によっては取扱できない商品もございます。商品カテゴリーごとの買取方法を一覧表よりご確認いただけます。",
+    "url": "https://www.2ndstreet.jp/sell/items/",
+    "headersub": "included01",
+    "footerbnr": "",
+    "sellitems": "sellitems"
+  },
+  "selltips" : {
+    "title": "高く売るコツ｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "ちょっとでも高く売りたい！そんなあなたに、査定時のバイヤーが特に確認するポイントをご紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/tips/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "sellCategoryMens" : {
+    "title": "メンズ衣類｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「メンズ衣類」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "ttps://www.2ndstreet.jp/sell/category/mens/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryWomans" : {
+    "title": "レディース衣類｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「レディース衣類」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/womens/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryKidswear" : {
+    "title": "キッズ衣類｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「キッズ衣類」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/kids-wear/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryKidsgoods" : {
+    "title": "キッズ用品｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「キッズ用品」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/kids-goods/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryElectronics" : {
+    "title": "AV・生活家電｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「AV・生活家電」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/electronics/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryFurniture" : {
+    "title": "家具｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「家具」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/furniture/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryGoods" : {
+    "title": "生活雑貨｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「生活雑貨」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/goods/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryInstruments" : {
+    "title": "楽器｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「楽器」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/instruments/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryHobby" : {
+    "title": "ホビー｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「ホビー」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/hobby/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategorySports" : {
+    "title": "スポーツ用品｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「スポーツ用品」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/sports/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryTicket" : {
+    "title": "金券・商品券｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「金券・商品券」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/ticket/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryAccessary" : {
+    "title": "貴金属｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「貴金属」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/accessary/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryLuxuarybrand" : {
+    "title": "ラグジュアリーブランド｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「ラグジュアリーブランド」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/luxuary-brand/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryBicycle" : {
+    "title": "自転車｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「自転車」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/bicycle/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryMobile" : {
+    "title": "携帯電話｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「携帯電話」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/mobile/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryOutdoor" : {
+    "title": "アウトドア用品｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「アウトドア用品」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/outdoor/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellCategoryGolf" : {
+    "title": "ゴルフ用品｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱している「ゴルフ用品」の買取強化ジャンル、ブランド、買取実績、取扱できない商品などを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/category/golf/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellBrandlistWomens" : {
+    "title": "レディース衣類の買取強化ブランド｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱しているレディース衣類の買取強化ブランドを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/brandlist/womens/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "sellBrandlistMens" : {
+    "title": "メンズ衣類の買取強化ブランド｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートで取扱しているメンズ衣類の買取強化ブランドを紹介します。",
+    "url": "https://www.2ndstreet.jp/sell/brandlist/mens/",
+    "headersub": "",
+    "footerbnr": "included",
+    "sellitems": "sellitems"
+  },
+  "shop" : {
+    "title": "店舗検索｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートの店舗検索ページです。お近くの店舗やフリーワード、条件検索から店舗の検索が可能です。",
+    "url": "https://www.2ndstreet.jp/shop/",
+    "headersub": "included03",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "shopSearch" : {
+    "title": "店舗検索結果｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートの店舗検索ページです。お近くの店舗やフリーワード、条件検索から店舗の検索が可能です。",
+    "url": "https://www.2ndstreet.jp/shop/search/",
+    "headersub": "included02",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "shopDetails" : {
+    "title": "店舗検索結果｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートの店舗検索ページです。お近くの店舗やフリーワード、条件検索から店舗の検索が可能です。",
+    "url": "https://www.2ndstreet.jp/shop/details/",
+    "headersub": "included02",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "information" : {
+    "title": "インフォメーション｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートの店舗、SALE、買取強化、イベント、Webマガジン、などの新着情報を紹介します。",
+    "url": "https://www.2ndstreet.jp/information/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "informationDetails" : {
+    "title": "インフォメーション｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートの店舗、SALE、買取強化、イベント、Webマガジン、などの新着情報を紹介します。",
+    "url": "https://www.2ndstreet.jp/information/details/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "guide" : {
+    "title": "ご利用ガイド-オンラインストア｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートのオンラインストアのご利用についてをご紹介しています。",
+    "url": "https://www.2ndstreet.jp/static/index/guide/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "guide-members" : {
+    "title": "ご利用ガイド-会員登録｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートの会員登録についてをご紹介しています。",
+    "url": "https://www.2ndstreet.jp/static/index/guide-members/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "guide-order" : {
+    "title": "ご利用ガイド-店舗｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートの店舗のご利用についてをご紹介しています。",
+    "url": "https://www.2ndstreet.jp/static/index/guide-order/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "ponta-point" : {
+    "title": "ご利用ガイド-Pontaポイント｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートでのPontaポイントのご利用についてをご紹介しています。",
+    "url": "https://www.2ndstreet.jp/static/index/guide-ponta/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  },
+  "faq" : {
+    "title": "よくあるご質問｜衣類・家具・家電等の買取と販売ならセカンドストリート",
+    "description": "セカンドストリートでの店舗やオンライン、買取に関してのよくある質問をご紹介しています。",
+    "url": "https://www.2ndstreet.jp/static/index/faq/",
+    "headersub": "",
+    "footerbnr": "",
+    "sellitems": ""
+  }
+}

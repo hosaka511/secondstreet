@@ -1,0 +1,135 @@
+<%_  var pageID = 'sellwebBrands'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellWeb">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+      <div class="m-heading m-heading-01">
+        <h2 class="m-heading_title">Web買取取扱いブランドリスト</h2>
+        <p class="m-heading_subtitle RalewayExtraBold">SERVICE BRAND LIST</p>
+        <p class="m-heading_desc">Web買取では下記リストのブランドをお取り扱いしております。</p>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-web', {page: pageID})%>
+
+      <section class="section section-brands">
+        <h3 class="m-title">ブランド名入力検索</h3>
+        <div class="brandSearchBox -gray brandSearchBox-webBrands">
+          <p class="brandSearchBox_txt">Web買取の衣類・服飾品には<br class="u-hidden-md u-hidden-lg">取扱していないブランドもございます。<br>対応のブランドはこちらからご確認ください。</p>
+          <form class="brandSearchBox_form" action="#" method="post">
+            <input class="brandSearchBox_sbox" type="search" name="search" placeholder="ブランド名を入力してください">
+            <input class="brandSearchBox_sbtn" type="submit" name="submit" value="Search">
+          </form>
+        </div>
+      </section>
+
+      <section class="section section-alphabetSearch">
+        <h3 class="m-title">アルファベット検索</h3>
+        <ul class="alphabetList">
+          <li><a href="search.php?key=★a">A</a></li>
+          <li><a href="search.php?key=★b">B</a></li>
+          <li><a href="search.php?key=★c">C</a></li>
+          <li><a href="search.php?key=★d">D</a></li>
+          <li><a href="search.php?key=★e">E</a></li>
+          <li><a href="search.php?key=★f">F</a></li>
+          <li><a href="search.php?key=★g">G</a></li>
+          <li><a href="search.php?key=★h">H</a></li>
+          <li><a href="search.php?key=★i">I</a></li>
+          <li><a href="search.php?key=★j">J</a></li>
+          <li><a href="search.php?key=★k">K</a></li>
+          <li><a href="search.php?key=★l">L</a></li>
+          <li><a href="search.php?key=★m">M</a></li>
+          <li><a href="search.php?key=★n">N</a></li>
+          <li><a href="search.php?key=★o">O</a></li>
+          <li><a href="search.php?key=★p">P</a></li>
+          <li><a href="search.php?key=★q">Q</a></li>
+          <li><a href="search.php?key=★r">R</a></li>
+          <li><a href="search.php?key=★s">S</a></li>
+          <li><a href="search.php?key=★t">T</a></li>
+          <li><a href="search.php?key=★u">U</a></li>
+          <li><a href="search.php?key=★v">V</a></li>
+          <li><a href="search.php?key=★w">W</a></li>
+          <li><a href="search.php?key=★x">X</a></li>
+          <li><a href="search.php?key=★y">Y</a></li>
+          <li><a href="search.php?key=★z">Z</a></li>
+          <li class="otherAlphabet"><a href="search.php?key=★ETC">その他<br class="u-hidden-sm">アルファベット以外</a></li>
+        </ul>
+      </section>
+
+      <div class="loginBtnWrap">
+        <div class="m-webPurchaseApplicationBtn -wide"><a class="m-btn m-btnEffect" href="https://www.2ndstreet.jp/mypage/webbuy">Web買取のお申込み<br class="u-hidden-sm">(ログイン)</a></div>
+        <div class="m-textUnderlineLink"><a href="/sell/web/details/">初めてのお客様へ</a></div>
+        <div class="m-textUnderlineLink"><a href="/sell/web/guideline/">Web買取のサービスガイドライン・利用規約</a></div>
+      </div>
+
+
+      <section class="inquiryAboutWeb -ask">
+        <h3 class="m-title">Web買取に関するお問合せ</h3>
+        <div class="inquiryAboutWeb_btn -ask"><a class="m-btn m-btnEffect" href="/static/index/faq/">Web買取のよくある質問</a></div>
+        <div class="inquiryAboutWeb -form">
+          <div class="inquiryAboutWeb_inner">
+            <address>
+              <p class="inquiryAboutWeb_category">お電話でのお問合せ</p>
+              <p class="inquiryAboutWeb_number"><a href="tel:0587653157">0587-65-3157</a></p>
+              <p class="inquiryAboutWeb_reception">11:00-13:00/14:00-17:00 土日祝日休</p>
+            </address>
+            <address>
+              <p class="inquiryAboutWeb_category">FAXでのお問合せ</p>
+              <p class="inquiryAboutWeb_number">0587-66-0222</p>
+              <p class="inquiryAboutWeb_reception">24時間年中無休</p>
+            </address>
+          </div>
+          <div class="inquiryAboutWeb_btn"><a class="m-btn m-btnEffect" href="https://www.2ndstreet.jp/contact/input">メールフォームからのお問合せ</a></div>
+        </div>
+      </section>
+
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

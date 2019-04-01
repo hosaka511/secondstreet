@@ -1,0 +1,25 @@
+<% var currentClass = 'is-current'; -%>
+<% var beforeClass = 'is-beforecurrent'; -%>
+
+<div class="g-local-navigation g-local-navigation-web">
+  <ul class="g-local-navigation_list">
+    <li class="<%- page === 'sellweb' ? currentClass : '' %> <%- page === 'sellwebVisitor' ? beforeClass : '' %>">
+      <a href="/sell/web/">Web買取とは</a>
+    </li>
+    <li class="<%- page === 'sellwebVisitor' ? currentClass : '' %> <%- page === 'sellwebItems' ? beforeClass : '' %>">
+      <a href="/sell/web/details/">買取方法</a>
+    </li>
+    <li class="<%- page === 'sellwebItems' ? currentClass : '' %> <%- page === 'sellwebBrands' ? beforeClass : '' %>">
+      <a href="/sell/web/items/">取扱商品</a>
+    </li>
+    <li class="<%- page === 'sellwebBrands' ? currentClass : '' %> <%- page === 'sellwebPackingmethod' ? beforeClass : '' %>">
+      <a href="/sell/web/brands/">取扱ブランドリスト</a>
+    </li>
+    <li class="<%- page === 'sellwebPackingmethod' ? currentClass : '' %> <%- page === 'sellwebGuideline' ? beforeClass : '' %>">
+      <a href="/sell/web/send/">梱包方法</a>
+    </li>
+    <li class="<%- page === 'sellwebGuideline' ? currentClass : '' %>">
+      <a href="/sell/web/guideline">サービスガイドライン</a>
+    </li>
+  </ul>
+</div>

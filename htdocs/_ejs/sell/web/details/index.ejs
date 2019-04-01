@@ -1,0 +1,554 @@
+<%_  var pageID = 'sellwebVisitor'; _%>
+<!doctype html>
+<html lang="ja">
+<head>
+  <%- include(relativePath + '_partials/_analytics')%>
+
+  <!-- meta -->
+  <%- include(relativePath + '_partials/_meta', {page: pageID})%>
+
+  <!-- stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/sell.css">
+
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="/js/vendor/picturefill.min.js" async></script>
+
+  <!-- other head items START -->
+  <%- include(relativePath + '_partials/_otherheaditems')%>
+  <!-- other head items END -->
+
+</head>
+<body class="sellWeb">
+  <%- include(relativePath + '_partials/_gtm-body')-%>
+
+  <div class="l-wrapper" id="pagetop">
+
+    <!-- header -->
+    <%- include(relativePath + '_partials/_header', {page: pageID})%>
+
+    <main class="content <% if(conf[pageID].headersub === 'included01'){ %>-subhead01<% } else if (conf[pageID].headersub === 'included02') { %>-subhead02<% } else if (conf[pageID].headersub === 'included03') { %>-subhead03<% } else { %><% } %>">
+
+      <div class="m-heading m-heading-04">
+        <h2 class="m-heading_title"><span class="RalewayExtraBold"><span class="second">2</span>nd STREET</span>の<br class="u-hidden-md u-hidden-lg">Web買取方法</h2>
+        <p class="m-heading_subtitle RalewayExtraBold">SERVICE DETAILS</p>
+      </div>
+
+      <!-- local-navigation -->
+      <%- include(relativePath + '_partials/_local-navigation-web', {page: pageID})%>
+
+      <section class="c-step">
+        <h3 class="c-step_title">たくさんあってもラクラク査定！<br class="u-hidden-md u-hidden-lg">送料無料です。</h3>
+        <p class="c-step_desc">お店まで持っていくのは大変。<br class="u-hidden-md u-hidden-lg">そんな方に、Web買取フォームからお申込みいただき、<br>ご指定の日時に集荷に伺います。<br class="u-hidden-md u-hidden-lg">もちろん、一点からでも大丈夫です。</p>
+        <ul class="c-step_list">
+          <li class="c-step_list_item c-step_list_item-01">
+            <div class="c-step_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/gif/web_01_sm.gif', alt: 'イメージ画像：PC・スマホでお申込み'});%>
+            </div>
+            <div class="c-step_list_item_body">
+              <h4><span class="RalewayBold">STEP</span>01</h4>
+              <p>PC・スマホで<br class="u-hidden-md u-hidden-lg">お申込み</p>
+            </div>
+          </li>
+          <li class="c-step_list_item c-step_list_item-02">
+            <div class="c-step_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/gif/web_02_sm.gif', alt: 'イメージ画像：商品を指定日時に集荷'});%>
+            </div>
+            <div class="c-step_list_item_body">
+              <h4><span class="RalewayBold">STEP</span>02</h4>
+              <p>商品を指定日時に<br class="u-hidden-md u-hidden-lg">集荷</p>
+            </div>
+          </li>
+          <li class="c-step_list_item c-step_list_item-03">
+            <div class="c-step_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/gif/web_03_sm.gif', alt: 'イメージ画像：バイヤーが査定し入金'});%>
+            </div>
+            <div class="c-step_list_item_body">
+              <h4><span class="RalewayBold">STEP</span>03</h4>
+              <p>バイヤーが査定し<br class="u-hidden-md u-hidden-lg">入金</p>
+            </div>
+          </li>
+        </ul>
+        <div class="m-firstApplicationBtn"><a class="m-btn m-btnEffect" href="https://www.2ndstreet.jp/mypage/webbuy">Web買取のお申込み<br class="u-hidden-sm">(ログイン)</a></div>
+        <!-- <div class="m-webPurchaseApplicationBtn -marginUp -wide"><a class="m-btn m-btnEffect" href="https://www.2ndstreet.jp/mypage/webbuy">Web買取のお申込み<br class="u-hidden-sm">(ログイン)</a></div> -->
+        <div class="m-textUnderlineLink"><a href="/sell/business/">法人のお申込みはこちら</a></div>
+      </section>
+
+
+      <section class="c-products">
+        <h3 class="m-title">取扱商品</h3>
+        <p class="c-products_desc">Web買取で取扱できる商品は、<br class="u-hidden-md u-hidden-lg">箱の高さ・長さ・奥行の３辺の寸法を合算した寸法が<br class="u-hidden-md u-hidden-lg">160センチ以内のものを買取させていただきます。</p>
+        <div class="c-products_img">
+          <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/products_img_sm.jpg', alt: '画像：高さ＋長さ＋奥行＝160センチ以内'});%>
+        </div>
+        <div class="m-textUnderlineLink"><a href="/sell/web/send">梱包方法を見る</a></div>
+        <p class="c-products_desc">Web買取で取扱できる商品は以下になります。<br class="u-hidden-md u-hidden-lg">詳しくは詳細をご確認ください。</p>
+        <div class="c-products_menu">
+          <h4 class="js-onlySpAccordionTrigger">商品ごとの詳細情報はこちら</h4>
+          <div class="js-onlySpAccordionContent">
+            <ul>
+              <li><a href="/sell/category/womens/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-lady" /></svg>
+                <p>レディース衣類</p>
+              </a></li>
+              <li><a href="/sell/category/mens/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-man" /></svg>
+                <p>メンズ衣類</p>
+              </a></li>
+              <li><a href="/sell/category/kids-wear/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-kids" /></svg>
+                <p>キッズ衣類</p>
+              </a></li>
+              <li><a href="/sell/category/luxuary-brand/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-luxury" /></svg>
+                <p>ラグジュアリー<br class="u-hidden-md u-hidden-lg">ブランド</p>
+              </a></li>
+              <li><a href="/sell/category/electronics/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-pc" /></svg>
+                <p>AV・生活家電</p>
+              </a></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-phone" /></svg>
+                <p>携帯電話</p>
+              </span></li>
+              <li><a href="/sell/category/furniture/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-sofa" /></svg>
+                <p>家具</p>
+              </a></li>
+              <li><a href="/sell/category/goods/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-cup" /></svg>
+                <p>生活雑貨</p>
+              </a></li>
+              <li><a href="/sell/category/kids-goods/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-baby" /></svg>
+                <p>キッズ用品</p>
+              </a></li>
+              <li><a href="/sell/category/instruments/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-guitar" /></svg>
+                <p>楽器</p>
+              </a></li>
+              <li><a href="/sell/category/hobby/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-hobby" /></svg>
+                <p>ホビー</p>
+              </a></li>
+              <li><a href="/sell/category/outdoor/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-outdoor" /></svg>
+                <p>アウトドア用品</p>
+              </a></li>
+              <li><a href="/sell/category/sports/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-sports" /></svg>
+                <p>スポーツ用品</p>
+              </a></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-golf" /></svg>
+                <p>ゴルフ用品</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-cycle" /></svg>
+                <p>自転車</p>
+              </span></li>
+              <li><span>
+                <svg><use xlink:href="/img/common/sprite.svg#products-gift" /></svg>
+                <p>金券・商品券</p>
+              </span></li>
+              <li><a href="/sell/category/accessary/">
+                <svg><use xlink:href="/img/common/sprite.svg#products-necklace" /></svg>
+                <p>貴金属</p>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="c-products_note">
+          <li>※Web買取につきましては、取扱できないブランド・サイズがございます。詳しくは詳細をご確認ください。</li>
+        </ul>
+        <div class="c-products_btn"><a class="m-btn m-btnEffect" href="/sell/web/items/">Web買取の取扱商品</a></div>
+      </section>
+
+
+      <div class="brandSearchBox -gray">
+        <p class="brandSearchBox_txt">Web買取の衣類・服飾品には<br class="u-hidden-md u-hidden-lg">取扱していないブランドもございます。<br>対応のブランドはこちらからご確認ください。</p>
+        <form class="brandSearchBox_form" action="#" method="post">
+          <input class="brandSearchBox_sbox" type="search" name="search" placeholder="ブランド名を入力してください">
+          <input class="brandSearchBox_sbtn" type="submit" name="submit" value="Search">
+        </form>
+      </div>
+
+
+      <section class="necessarily l-section">
+        <h3 class="m-title">Web買取のご利用に必要な物</h3>
+        <ul class="necessarily_list">
+          <li class="necessarily_list_item">
+            <div class="necessarily_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/necessarily_img_01_sm.png', alt: 'イメージ画像：PC・スマホでお申込み'});%>
+            </div>
+            <h4 class="necessarily_list_item_title">ログインID（GEO ID)</h4>
+            <p class="necessarily_list_item_txt">お取引のご確認・ご連絡に<br class="u-hidden-sm">必要となります。</p>
+            <div class="m-textUnderlineLink"><a href="https://www.2ndstreet.jp/user/regist">新規会員登録はこちら</a></div>
+          </li>
+          <li class="necessarily_list_item">
+            <div class="necessarily_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/necessarily_img_02_sm.png', alt: 'イメージ画像：商品を指定日時に集荷'});%>
+            </div>
+            <h4 class="necessarily_list_item_title">ご本人確認書類<span>(同梱用コピーまたはアップロード)</span></h4>
+            <p class="necessarily_list_item_txt">古物営業法に基づき、ご本人様の<br>お名前/現住所/職業/年齢を確認できる<br>『ご本人確認書類』が必要となります。</p>
+            <div class="m-textUnderlineLink"><a href="#" class="js-modalTrigger" data-modal-id="documents">有効な証明書はこちら</a></div>
+          </li>
+          <li class="necessarily_list_item">
+            <div class="necessarily_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/necessarily_img_03_sm.png', alt: 'イメージ画像：バイヤーが査定し入金'});%>
+            </div>
+            <h4 class="necessarily_list_item_title">買取申込書</h4>
+            <p class="necessarily_list_item_txt">Web買取申込完了時に<br>ダウンロードいただけます。</p>
+            <p class="necessarily_list_item_note">※プリンタをお持ちで無い方は<br>必要事項を別途手書きでご記入ください。</p>
+            <div class="m-textUnderlineLink"><a href="#" class="js-modalTrigger" data-modal-id="offer">買取申込書の手書き記入方法はこちら</a></div>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="l-section-02 -gray">
+        <h3 class="m-title-02">Web買取サービスは20歳以上の方のみの<br>サービスとさせていただいております。</h3>
+        <p class="m-desc">20歳未満の方は是非、お近くのセカンドストリートを<br class="u-hidden-md u-hidden-lg">ご利用ください。<br>18歳未満のお客様は親権者様とご同伴であれば、<br class="u-hidden-md u-hidden-lg">買取サービスのご利用が可能です。</p>
+        <div class="m-textUnderlineLink"><a href="/shop">お近くの店舗を探す</a></div>
+      </section>
+
+
+      <a id="step"></a>
+      <section class="c-process c-process-web">
+        <h3 class="m-title">Web買取の手順</h3>
+        <ul class="c-process_list">
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/process_img_01_sm.png', alt: 'イメージ画像：お申し込み'});%>
+              </div>
+              <h4 class="c-process_list_item_title">お申し込み</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">Web買取フォームよりお申し込みください。初めての方は<a href="https://www.2ndstreet.jp/user/regist">「新規会員登録」</a>が必要となります。</p>
+              <p class="c-process_list_item_txt">お申込みの際は、<a href="#" class="js-modalTrigger" data-modal-id="documents">「ご本人確認書類」</a>が必要となります。同梱またはアップロードをお選びいただけます。</p>
+              <p class="c-process_list_item_txt">お申込み完了後、「買取申込書」をプリントアウトし、商品と同梱してください。</p>
+              <p class="c-process_list_item_note">※プリンタをお持ちで無い方は必要事項を別途手書きでご記入ください。<a href="#" class="js-modalTrigger" data-modal-id="offer">買取申込書の手書き記入方法</a></p>
+            </div>
+          </li>
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/process_img_02_sm.png', alt: 'イメージ画像：商品の梱包'});%>
+              </div>
+              <h4 class="c-process_list_item_title">商品の梱包</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">ダンボール等に梱包し発送の準備をお願いします。同時に必要書類を、いずれかの方法にてお送りください。</p>
+              <p class="c-process_list_item_txt">【1】「買取申込書」と「ご本人確認書類のコピー」を同梱</p>
+              <p class="c-process_list_item_txt">【2】「買取申込書」を同梱、「ご本人確認書類のコピー」をアップロード</p>
+              <p class="c-process_list_item_note">※必要書類が揃っていない場合、査定/お見積りを行えませんのでご注意ください。</p>
+            </div>
+          </li>
+          <li class="c-process_list_item -half">
+            <div class="c-process_list_item_body -border">
+              <h4 class="c-process_list_item_title">ご自身で梱包資材をご用意する場合</h4>
+              <p class="c-process_list_item_txt">梱包資材（ダンボールなど）のサイズは<br>縦＋横＋高さの合計が160cm以内のものをご使用ください。<br>紙袋・ビニール袋等でも代用可能です。<br>破れやすい袋による発送はご遠慮ください。</p>
+            </div>
+            <div class="c-process_list_item_body">
+              <h4 class="c-process_list_item_title">無料ダンボールを希望する場合</h4>
+              <p class="c-process_list_item_txt">Web買取をお申込みの際に必要な集荷ダンボールの数を選択ください。<br>お荷物引取りの際にドライバーがダンボールをお持ちします。<br>その場で梱包する必要があります。あらかじめ、商品を袋などに入れまとめてください。<br>(<a href="/sell/web/send/">発送と梱包について</a>)</p>
+            </div>
+          </li>
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/process_img_03_sm.png', alt: 'イメージ画像：商品の梱包'});%>
+              </div>
+              <h4 class="c-process_list_item_title">集荷</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">ご指定の日時に集荷に伺います。<br>お申込の際に、ご都合のよいお時間をご選択ください。</p>
+            </div>
+          </li>
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/process_img_04_sm.png', alt: 'イメージ画像：査定/お見積もりのご連絡'});%>
+              </div>
+              <h4 class="c-process_list_item_title">査定/お見積もりのご連絡</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt">お客様からお預かりした商品は、Web買取センターに到着後、セキュリティ管理が施された部屋にて管理いたします。</p>
+              <p class="c-process_list_item_txt">専門バイヤーが、状態や相場を加味して、1点ずつ丁寧に査定させていただきます。</p>
+              <p class="c-process_list_item_txt">お見積りが完了次第、査定完了のご連絡を、ご登録のメールアドレスにいたします。</p>
+            </div>
+          </li>
+          <li class="c-process_list_item">
+            <div class="c-process_list_item_heading">
+              <div>
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/process_img_05_sm.png', alt: 'イメージ画像：承認/お振込み'});%>
+              </div>
+              <h4 class="c-process_list_item_title">承認/お振込み</h4>
+            </div>
+            <div class="c-process_list_item_body">
+              <p class="c-process_list_item_txt"><a href="https://www.2ndstreet.jp/mypage">マイページ</a>より、お客様にて査定結果をご確認の上、 「全て承認」「一部承認・一部キャンセル」「全てキャンセル」のいずれかをご選択ください。</p>
+              <p class="c-process_list_item_txt -mat">お客様にご登録いただいた情報を元に、指定口座への入金予約を行います。</p>
+              <p class="c-process_list_item_note">※口座情報が未登録の場合は、口座情報のご登録をお願いいたします。</p>
+              <p class="c-process_list_item_note">※ご承認いただいた翌営業日に、弊社にて入金予約を行います。入金予約を行った翌営業日にお客様の口座に代金がお振込みされます。（営業日は銀行によって異なります）</p>
+              <p class="c-process_list_item_note">※振込手数料は弊社にて負担いたします。</p>
+              <p class="c-process_list_item_txt -mat">お客様の口座に買取金額が振り込まれ、買取成立となります。</p>
+              <p class="c-process_list_item_note">※お買取り成立後の商品返却はいたしかねます。</p>
+              <p class="c-process_list_item_note">※商品発送後最短で5日、平均で10日、最長で17日程度にて入金まで完了いたします。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="c-accordion c-cautions">
+        <h3 class="c-accordion_title js-bothPcSpAccordionTrigger">注意事項</h3>
+        <div class="js-bothPcSpAccordionContent">
+          <ul class="c-cautions_list">
+            <li class="normal">WEB買取サービスは20歳以上の方のみのサービスとさせていただいております。20歳未満の方は是非、お近くのセカンドストリートをご利用ください。<br>18歳未満のお客様は親権者様とご同伴であれば、買取サービスのご利用が可能です。</li>
+            <li class="normal mt">ご承認頂けなかった商品の返送は無料です。</li>
+            <li class="kome">※取扱アイテム以外の品物の返送は、お客様負担とさせて頂く場合がございます。</li>
+            <li class="kome">※査定結果をお知らせした後、30日以内にご返信がない場合は、着払いにて品物全てを返送させて頂きます。</li>
+            <li class="bold">お客様にご登録いただいた情報を元に、指定口座への入金予約を行います。</li>
+            <li class="kome">※口座情報が未登録の場合は、口座情報のご登録をお願い致します。</li>
+            <li class="kome">※ご承認いただいた翌営業日に、弊社にて入金予約を行います。入金予約を行った翌営業日にお客様の口座に代金がお振込みされます。（営業日は銀行によって異なります）</li>
+            <li class="kome">※振込手数料は弊社にて負担いたします。</li>
+            <li class="bold">お客様の口座に買取金額が振り込まれ、買取成立となります。</li>
+            <li class="kome">※お買取り成立後の商品返却は致しかねます。</li>
+            <li class="kome">※お品物発送後最短で5日、平均で10日、最長で17日程度にて入金まで完了いたします。</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <div class="m-webPurchaseApplicationBtn l-section -cut"><a class="m-btn m-btnEffect" href="https://www.2ndstreet.jp/mypage/webbuy">Web買取のお申込み<br class="u-hidden-sm">(ログイン)</a></div>
+      <div class="m-textUnderlineLink"><a href="https://www.2ndstreet.jp/user/regist">新規会員登録はこちら</a></div>
+
+
+      <section class="point l-section">
+        <h3 class="m-title">大切な商品だからこだわる<br>Web買取、安心の査定ポイント</h3>
+        <ul class="point_list">
+          <li class="point_list_item">
+            <div class="point_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/point_img_01_sm.png', alt: 'イメージ画像：査定時に刃物は使用しない'});%>
+            </div>
+            <div class="point_list_item_inner">
+              <p class="point_list_item_lead">査定時に刃物は使用しない</p>
+              <p class="point_list_item_txt">開封時に間違って商品に傷をつけてしまわないよう、刃物は絶対に使用しません。</p>
+            </div>
+          </li>
+          <li class="point_list_item">
+            <div class="point_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/point_img_02_sm.png', alt: 'イメージ画像：一貫性のある査定'});%>
+            </div>
+            <div class="point_list_item_inner">
+              <p class="point_list_item_lead">一貫性のある査定</p>
+              <p class="point_list_item_txt">査定額がバイヤーごとに変動しないよう、買取マニュアルや独自の査定用ソフト、過去の買取履歴、店舗での販売実績データと照らし合わせて査定いたします。</p>
+            </div>
+          </li>
+          <li class="point_list_item">
+            <div class="point_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/point_img_03_sm.png', alt: 'イメージ画像：素手で触れない'});%>
+            </div>
+            <div class="point_list_item_inner">
+              <p class="point_list_item_lead">素手で触れない</p>
+              <p class="point_list_item_txt">お見積もり結果をご承認いただけるまでは、お客様のもの。だから手袋をつけてお取り扱いいたします。</p>
+            </div>
+          </li>
+          <li class="point_list_item">
+            <div class="point_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/point_img_04_sm.png', alt: 'イメージ画像：知識と経験のあるバイヤー'});%>
+            </div>
+            <div class="point_list_item_inner">
+              <p class="point_list_item_lead">知識と経験のあるバイヤー</p>
+              <p class="point_list_item_txt">バイヤーは、トレンドや商品に対する知識があります。さらにベテランのバイヤーが、定期的な査定額チェックを行い、漏れやミスを防ぐようにしております。</p>
+            </div>
+          </li>
+          <li class="point_list_item">
+            <div class="point_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/point_img_05_sm.png', alt: 'イメージ画像：24時間365日の防犯対策'});%>
+            </div>
+            <div class="point_list_item_inner">
+              <p class="point_list_item_lead">24時間365日の防犯対策</p>
+              <p class="point_list_item_txt">防犯カメラによる撮影を館内にて徹底。保管倉庫は、警備会社による24時間365日の監視体制をとっています。</p>
+            </div>
+          </li>
+          <li class="point_list_item">
+            <div class="point_list_item_img">
+              <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/point_img_06_sm.png', alt: 'イメージ画像：スピード感'});%>
+            </div>
+            <div class="point_list_item_inner">
+              <p class="point_list_item_lead">スピード感</p>
+              <p class="point_list_item_txt">最初にご提示した期限内にお答えいたします。また、査定金額の理由をメールに記載し、お客様に納得していただけるような取り組みも行っております。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="inquiryAboutWeb -ask">
+        <h3 class="m-title">Web買取に関するお問合せ</h3>
+        <div class="inquiryAboutWeb_btn -ask"><a class="m-btn m-btnEffect" href="/static/index/faq/">Web買取のよくある質問</a></div>
+        <div class="inquiryAboutWeb -form">
+          <div class="inquiryAboutWeb_inner">
+            <address>
+              <p class="inquiryAboutWeb_category">お電話でのお問合せ</p>
+              <p class="inquiryAboutWeb_number"><a href="tel:0587653157">0587-65-3157</a></p>
+              <p class="inquiryAboutWeb_reception">11:00-13:00/14:00-17:00 土日祝日休</p>
+            </address>
+            <address>
+              <p class="inquiryAboutWeb_category">FAXでのお問合せ</p>
+              <p class="inquiryAboutWeb_number">0587-66-0222</p>
+              <p class="inquiryAboutWeb_reception">24時間年中無休</p>
+            </address>
+          </div>
+          <div class="inquiryAboutWeb_btn"><a class="m-btn m-btnEffect" href="https://www.2ndstreet.jp/contact/input">メールフォームからのお問合せ</a></div>
+        </div>
+      </section>
+
+
+
+
+      <!-- pagetop -->
+      <%- include(relativePath + '_partials/_pagetop')%>
+
+    </main>
+
+    <!-- footer -->
+    <%- include(relativePath + '_partials/_footer', {page: pageID})%>
+
+  </div>
+
+  <!-- diagnosis modal -->
+  <%- include(relativePath + '_partials/_diagnosis')%>
+
+  <!-- modal -->
+  <div class="modal_mask"></div>
+  <div class="modal modal_details">
+    <div class="modal_outer">
+      <div class="modal_closeBtn"><span></span></div>
+      <div class="modal_inner">
+        <article class="modal_content modal_content-documents">
+          <section class="modal_section">
+            <h3 class="modal_title">必要書類について</h3>
+            <p class="modal_txt -center">買取サービスをご利用いただく際は、古物営業法に基づき、以下の書類が必要となります。<br>以下2種類の書類をお品物と一緒に同梱しお送りいただくかアップロード機能をご利用ください。</p>
+          </section>
+          <section class="modal_section">
+            <h3 class="modal_title">ご本人確認書類</h3>
+            <ul class="modal_list">
+              <li>・「運転免許証」「保険証」「パスポート」などご本人確認書類をご用意ください。（詳細は下記）</li>
+              <li>・お荷物に同梱する場合は、ご本人確認書類のコピーをご用意ください。</li>
+              <li>・アップロード機能をご利用する場合は、手順に従い、ご本人確認書類のアップロードを実施してください。<br>なお、お申込の際にご入力いただきました「氏名」と「ご住所」は、｢ご本人確認書類｣に記載されている｢氏名｣｢ご住所｣と一致している必要がございます。</li>
+            </ul>
+            <p class="modal_note">※ご本人確認書類をコピーまたはアップロードする際は、必ず「氏名」「お申込の際にご登録のご住所」が記載されている欄をコピーまたはアップロードしていただきますようお願いいたします。 </p>
+            <p class="modal_note">※マイナンバーカード・住民票につきましてはWeb買取ではご本人確認書類としてご利用いただけません。</p>
+            <p class="modal_note">※有効期限の記載があるご本人確認書類は有効期限が切れている場合、ご本人確認書類としてご利用いただけません。有効期限内のご本人確認書類のコピーまたはアップロードして頂きますようお願いいたします。 </p>
+            <p class="modal_note">※ご本人確認書類としてご利用いただけない書類を同梱、または送付いただきました場合は、弊社にて破棄させていただきます。</p>
+          </section>
+
+          <section class="modal_section">
+            <h3 class="modal_title">ご利用頂ける<br class="u-hidden-md u-hidden-lg">ご本人確認書類</h3>
+            <ul class="modal_identityVerificationDocuments">
+              <li class="modal_identityVerificationDocuments_item">
+                <div class="modal_identityVerificationDocuments_item_img">
+                  <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/modal_img_01_sm.jpg', alt: ''});%>
+                </div>
+                <p class="modal_identityVerificationDocuments_item_txt">健康保険証</p>
+              </li>
+              <li class="modal_identityVerificationDocuments_item">
+                <div class="modal_identityVerificationDocuments_item_img">
+                  <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/modal_img_02_sm.jpg', alt: ''});%>
+                </div>
+                <p class="modal_identityVerificationDocuments_item_txt">国民健康保険証</p>
+              </li>
+              <li class="modal_identityVerificationDocuments_item">
+                <div class="modal_identityVerificationDocuments_item_img">
+                  <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/modal_img_03_sm.jpg', alt: ''});%>
+                </div>
+                <p class="modal_identityVerificationDocuments_item_txt">運転免許証</p>
+              </li>
+              <li class="modal_identityVerificationDocuments_item">
+                <div class="modal_identityVerificationDocuments_item_img">
+                  <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/modal_img_04_sm.jpg', alt: ''});%>
+                </div>
+                <p class="modal_identityVerificationDocuments_item_txt">住民基本台帳</p>
+                <p class="modal_identityVerificationDocuments_item_note">住所表記がある物のみ<br>※顔写真付きに限る</p>
+              </li>
+              <li class="modal_identityVerificationDocuments_item">
+                <div class="modal_identityVerificationDocuments_item_img">
+                  <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/modal_img_05_sm.jpg', alt: ''});%>
+                </div>
+                <p class="modal_identityVerificationDocuments_item_txt">学生証</p>
+                <p class="modal_identityVerificationDocuments_item_note">学校法人発行の物で<br>住所表記のある物</p>
+                <p class="modal_identityVerificationDocuments_item_txt">船員保険証<br>後期高齢者医療保険証</p>
+              </li>
+              <li class="modal_identityVerificationDocuments_item">
+                <div class="modal_identityVerificationDocuments_item_img">
+                  <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/modal_img_06_sm.jpg', alt: ''});%>
+                </div>
+                <p class="modal_identityVerificationDocuments_item_txt">日本国パスポート</p>
+                <p class="modal_identityVerificationDocuments_item_note -kome">※顔写真が確認できるページ、<br>ご住所が確認できるページ<br>両ページが必要となります。</p>
+              </li>
+              <li class="modal_identityVerificationDocuments_item">
+                <div class="modal_identityVerificationDocuments_item_img">
+                  <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/modal_img_07_sm.jpg', alt: ''});%>
+                </div>
+                <p class="modal_identityVerificationDocuments_item_txt">外国人登録証<br>在留カード<br>特別永住者証明書</p>
+              </li>
+            </ul>
+            <div class="modal_caution">
+              <p>必ず<span>表/裏</span>をコピーし、同梱またはアップロードしてください。</p>
+              <p>「お申込みの際にご登録のご住所」「氏名」が記載されていることをご確認下さい。</p>
+              <p>「登録住所が異なる」「住所の表記がない」証明書はご本人確認書類としてご利用いただけません。</p>
+            </div>
+          </section>
+
+          <section class="modal_section">
+            <h3 class="modal_title">現住所が<br class="u-hidden-md u-hidden-lg">ご本人確認書類と<br class="u-hidden-md u-hidden-lg">異なる場合</h3>
+            <p class="modal_txt">ご本人確認書類のご住所がご登録住所と異なる場合は、公共料金の領収書をご利用頂けます。</p>
+            <p class="modal_txt -red">※公共料金の領収書のみではお取引できませんので、必ずご本人確認書類と合わせてご提示ください。</p>
+            <ul class="modal_list">
+              <li>・発行元が「電力会社」「水道局」「ガス会社」のものに限ります。</li>
+              <li>・発行日より「3か月以内」「住所」「ご本人様名義」が確認できるものに限ります。</li>
+              <li>・お申込みの際にご登録頂きました。「ご本人様名義」「登録住所」と一致しているものに限ります。<br><span>（記載住所建物名のみの場合はご利用頂けません。）</span></li>
+            </ul>
+            <p class="modal_note">※なおセカンドストリートWEB買取では、行政からの指導に基づき、お品物や買取金額の大小に関わらず、「ご本人様確認」と買取の「記録・保管」を実施させて頂いております。いずれの書類もお返し・データ削除することができませんのでご了承ください。</p>
+          </section>
+        </article>
+
+        <article class="modal_content modal_content-offer">
+          <h3 class="modal_title">買取申込書</h3>
+          <p class="modal_txt -center">買取申込書はお申込完了画面または下記ページよりご印刷いただけます。<br><a href="https://www.2ndstreet.jp/mypage/webbuy">https://www.2ndstreet.jp/mypage/webbuy</a></p>
+          <p class="modal_txt -margin">ログイン後、｢Web買取のお取引管理｣の項目にて｢申込書をダウンロード｣をクリックしてください。<br>プリントアウトした申込書を商品に同梱してください。</p>
+          <p class="modal_note">※お申込時にアップロード機能を選択した場合でも、「買取申込書」は商品と同梱していただくようお願いいたします。<br>なお、プリンターをお持ちでない場合は、お手持ちの用紙に手書きで下記の項目をご記入ください。</p>
+          <div class="modal_sample">
+            <div class="modal_sample_inner -list">
+              <ul class="modal_list">
+                <li>・買取申込番号</li>
+                <li>・買取申込点数合計</li>
+              </ul>
+            </div>
+            <div class="modal_sample_inner -img">
+              <p class="modal_txt">記入例</p>
+              <div class="modal_sample_img">
+                <%- include(relativePath + '_utilities/_picture', {src: '/img/sell/web/details/modal_img_08_sm.png', alt: '買い取り申込書 買取申込番号：00123 買い取り点数：10点'});%>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- lib -->
+  <%- include(relativePath + '_partials/_lib')%>
+  <script src="/js/vendor/ofi.min.js"></script>
+  <script src="/js/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/sell.js"></script>
+</body>
+
+</html>

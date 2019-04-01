@@ -1,0 +1,201 @@
+<% var currentClass = 'is-current'; -%>
+
+  <header class="g-header">
+    <div class="g-header_inner">
+      <h1 class="g-header_logo"><a href="/"><svg class="svgIcon svgIcon-logo" viewBox="0 0 200 200"><use class="mainLogo" xlink:href="/img/common/sprite.svg#logo-01" /><use class="subLogo" xlink:href="/img/common/sprite.svg#logo-02" /></svg><span class="u-visuallyhidden">2nd Street Reuse Shop</span></a></h1>
+      <div class="g-nav">
+        <ul class="g-nav_list">
+          <li class="g-nav_item js-headermenu js-headermenu-1 <%- page == 'top' ? currentClass : '' %>">
+            <a href="#" class="js-spToggle">売りたい</a>
+            <div class="js-spToggleTarget js-headernav">
+              <ul class="g-nav_subList g-nav_subList-buy g-nav_subList-5">
+                <li class="g-nav_subItem"><a href="#" class="js-diagnosisModalTrigger"><span class="g-nav_subItem_text">売りかたナビ</span></a></li>
+                <li class="g-nav_subItem"><a href="/sell/"><span class="g-nav_subItem_text">買取サービスのご案内</span></a></li>
+                <li class="g-nav_subItem"><a href="/sell/store/"><span class="g-nav_subItem_text">店頭買取</span></a></li>
+                <li class="g-nav_subItem"><a href="/sell/web/"><span class="g-nav_subItem_text">Web買取</span></a></li>
+                <li class="g-nav_subItem"><a href="/sell/visit/"><span class="g-nav_subItem_text">出張買取</span></a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="g-nav_item js-headermenu js-headermenu-2 <%- page == 'top' ? currentClass : '' %>">
+            <a href="#" class="js-spToggle">買いたい</a>
+            <div class="js-spToggleTarget js-headernav">
+              <ul class="g-nav_subList g-nav_subList-buy g-nav_subList-5">
+                <li class="g-nav_subItem"><a href="/shop"><span class="g-nav_subItem_text">店舗検索</span></a></li>
+                <li class="g-nav_subItem"><a href="/store"><span class="g-nav_subItem_text">オンラインストア</span></a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="g-nav_item g-nav_item-icon <%- page == 'top' ? currentClass : '' %>">
+            <a href="/about/"><div class="g-nav_item_icon"><svg class="svgIcon svgIcon-about" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#about" /></svg></div><span class="g-nav_item_text">セカンドストリートとは</span></a>
+          </li>
+
+          <li class="g-nav_item g-nav_item-icon <%- page == 'top' ? currentClass : '' %>">
+            <a href="/store"><div class="g-nav_item_icon"><svg class="svgIcon svgIcon-onlineStore" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#onlineStore" /></svg></div><span class="g-nav_item_text">オンラインストア</span></a>
+          </li>
+
+           <li class="g-nav_item g-nav_item-icon <%- page == 'top' ? currentClass : '' %>"><a href="/shop"><div class="g-nav_item_icon"><svg class="svgIcon" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#search" /></svg></div><span class="g-nav_item_text">店舗検索</span></a></li>
+
+          <li class="g-nav_item g-nav_item-icon js-headermenu js-headermenu-3 <%- page == 'top' ? currentClass : '' %>">
+            <a href="#" class="js-spToggle"><div class="g-nav_item_icon"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#contents" /></svg></div><span class="g-nav_item_text">コンテンツ</span></a>
+            <div class="js-spToggleTarget js-headernav">
+              <ul class="g-nav_subList g-nav_subList-img g-nav_subList-5">
+                <li class="g-nav_subItem"><a href="/knowbrand/"><span class="g-nav_subItem_thumb"><img src="/img/common/subList_products_thumb_01.jpg" width="178" height="107" alt="knowbrand magazine"></span><span class="g-nav_subItem_text">knowbrand magazine</span></a></li>
+
+                <li class="g-nav_subItem"><a href="https://www.instagram.com/2ndstreet_official/" target="_blank" rel="noopener noreferrer"><span class="g-nav_subItem_thumb"><img src="/img/common/subList_products_thumb_02.jpg" width="178" height="107" alt="Official Instagram"></span><span class="g-nav_subItem_text g-nav_subItem_text-instagram">Official Instagram<svg><use xlink:href="/img/common/sprite.svg#instagram" /></svg></span></a></li>
+
+                <li class="g-nav_subItem"><a href="https://www.instagram.com/2ndstreetusa/" target="_blank" rel="noopener noreferrer"><span class="g-nav_subItem_thumb"><img src="/img/common/subList_products_thumb_03.jpg" width="178" height="107" alt="USA Instagram"></span><span class="g-nav_subItem_text g-nav_subItem_text-instagram">USA Instagram<svg><use xlink:href="/img/common/sprite.svg#instagram" /></svg></span></a></li>
+
+                <li class="g-nav_subItem"><a href="http://antiqulothes.com/" target="_blank" rel="noopener noreferrer"><span class="g-nav_subItem_thumb"><img src="/img/common/subList_products_thumb_04.jpg" width="178" height="107" alt="A.Q. ANTIQULOTHES"></span><span class="g-nav_subItem_text">A.Q. ANTIQULOTHES<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></span></a></li>
+
+                <li class="g-nav_subItem"><a href="/exp/kurofine/"><span class="g-nav_subItem_thumb"><img src="/img/common/subList_products_thumb_05.jpg" width="178" height="107" alt="KUROFINE"></span><span class="g-nav_subItem_text">KUROFINE</span></a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="g-nav_item g-nav_item-icon <%- page == 'top' ? currentClass : '' %>">
+            <a href="/user/login"><div class="g-nav_item_icon"><svg class="svgIcon svgIcon-login" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#login" /></svg></div><span class="g-nav_item_text">ログイン</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="g-navSp">
+        <ul class="g-navSp_list">
+          <li class="g-navSp_list_item"><a href="/store"><div class="g-navSp_item_icon"><svg class="svgIcon svgIcon-onlineStore" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#onlineStore" /></svg></div><span class="onlinestore">オンラインストア</span></a></li>
+          <li class="g-navSp_list_item"><a href="/shop"><div class="g-navSp_item_icon"><svg class="svgIcon svgIcon-search" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#search" /></svg></div><span>店舗検索</span></a></li>
+          <li class="g-navSp_list_item"><a href="/user/login"><div class="g-navSp_item_icon"><svg class="svgIcon svgIcon-login" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#login" /></svg></div><span>ログイン</span></a></li>
+        </ul>
+      </div>
+
+      <div class="g-header_toggleDrawer">
+        <button type="button" class="g-header_toggleDrawer_btn" id="js-header_toggleDrawer_btn">
+          <span class="g-header_toggleDrawer_btn_inner">
+            <span class="g-header_toggleDrawer_line">&nbsp;</span>
+            <span class="g-header_toggleDrawer_line">&nbsp;</span>
+            <span class="g-header_toggleDrawer_line">&nbsp;</span>
+            <span class="g-header_toggleDrawer_line">&nbsp;</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="g-DrawerModal_outer"></div>
+    <div class="g-DrawerModal">
+      <div class="g-DrawerModal_inner">
+        <div class="g-DrawerModal_mask"></div>
+        <ul class="g-DrawerModal_list">
+          <li class="g-DrawerModal_list_item g-DrawerModal_list_item-side">
+            <a class="js-toggle js-toggle-side" href="#">売りたい</a>
+            <ul class="g-DrawerModal_subList g-DrawerModal_subList-5">
+              <li class="g-DrawerModal_subList_item"><a href="#" class="js-diagnosisModalTrigger">
+                <span>売りかたナビ</span>
+              </a></li>
+              <li class="g-DrawerModal_subList_item"><a href="/sell/">
+                <span>買取サービスのご案内</span>
+              </a></li>
+              <li class="g-DrawerModal_subList_item"><a href="/sell/store/">
+                <span>店頭買取</span>
+              </a></li>
+              <li class="g-DrawerModal_subList_item"><a href="/sell/web/">
+                <span>Web買取</span>
+              </a></li>
+              <li class="g-DrawerModal_subList_item"><a href="/sell/visit/">
+                <span>出張買取</span>
+              </a></li>
+            </ul>
+          </li>
+          <li class="g-DrawerModal_list_item g-DrawerModal_list_item-side">
+            <a class="js-toggle js-toggle-side js-toggle-noAbsolute" href="#">買いたい</a>
+            <ul class="g-DrawerModal_subList g-DrawerModal_subList-2">
+              <li class="g-DrawerModal_subList_item"><a href="/shop">
+                <span>店舗検索</span>
+              </a></li>
+              <li class="g-DrawerModal_subList_item"><a href="/store">
+                <span>オンラインストア</span>
+              </a></li>
+            </ul>
+          </li>
+          <li class="g-DrawerModal_list_item"><a href="/about/"><i class="g-DrawerModal_icon"><svg class="svgIcon svgIcon-about" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#about" /></svg></i>セカンドストリートとは</a></li>
+          <li class="g-DrawerModal_list_item">
+            <a class="js-toggle" href="#"><i class="g-DrawerModal_icon"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#contents" /></svg></i>コンテンツ</a>
+            <ul class="g-DrawerModal_subList">
+              <li class="g-DrawerModal_subList_item"><a href="/knowbrand/">
+                <div class="g-DrawerModal_subList_item_img"><img src="/img/common/subList_products_thumb_01.jpg" alt="knowbrand magazine"></div>
+                <span>knowbrand magazine</span>
+              </a></li>
+              <li class="g-DrawerModal_subList_item"><a href="https://www.instagram.com/2ndstreet_official/" target="_blank" rel="noopener noreferrer">
+                <div class="g-DrawerModal_subList_item_img"><img src="/img/common/subList_products_thumb_02.jpg" alt="Official Instagram"></div>
+                <span>Official Instagram</span>
+                <svg class="g-DrawerModal_subList_item_instagram"><use xlink:href="/img/common/sprite.svg#instagram" /></svg>
+              </a></li>
+              <li class="g-DrawerModal_subList_item"><a href="https://www.instagram.com/2ndstreetusa/" target="_blank" rel="noopener noreferrer">
+                <div class="g-DrawerModal_subList_item_img"><img src="/img/common/subList_products_thumb_03.jpg" alt="USA Instagram"></div>
+                <span>USA Instagram</span>
+                <svg class="g-DrawerModal_subList_item_instagram"><use xlink:href="/img/common/sprite.svg#instagram" /></svg>
+              </a></li>
+              <li class="g-DrawerModal_subList_item"><a href="http://antiqulothes.com/" target="_blank" rel="noopener noreferrer">
+                <div class="g-DrawerModal_subList_item_img"><img src="/img/common/subList_products_thumb_04.jpg" alt="A.Q. ANTIQULOTHES"></div>
+                <span>A.Q. ANTIQULOTHES<span class="m-newWindow"><svg class="svgIcon svgIcon-contents" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#link" /></svg></span></span>
+              </a></li>
+              <li class="g-DrawerModal_subList_item"><a href="/exp/kurofine/">
+                <div class="g-DrawerModal_subList_item_img"><img src="/img/common/subList_products_thumb_05.jpg" alt="KUROFINE"></div>
+                <span>KUROFINE</span>
+              </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <% if (conf[page].headersub === 'included01') { -%>
+    <div class="g-header_sub g-header_sub-01">
+      <div class="g-header_sub_inner">
+        <p class="g-header_sub_title u-hidden-sm"><svg class="svgIcon svgIcon-search" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#search" /></svg><span>店舗検索</span></p>
+        <div class="header_sub_flex">
+          <ul class="g-header_sub_btnList g-header_sub_btnList-img">
+            <li class="g-header_sub_btnList_item"><a href="#">お近くの店舗</a></li>
+            <li class="g-header_sub_btnList_item u-hidden-sm"><a href="#" class="js-filterSearchModalTrigger">条件検索</a></li>
+          </ul>
+          <div class="g-header_sub_search">
+            <input id="js-changePlaceholder" type="text" placeholder="フリーワード">
+            <input type="submit" value="Search">
+          </div>
+        </div>
+      </div>
+    </div>
+    <% } else if (conf[page].headersub === 'included02') { -%>
+    <div class="g-header_sub g-header_sub-02">
+      <div class="g-header_sub_inner">
+        <p class="g-header_sub_title"><svg class="svgIcon svgIcon-search u-hidden-sm" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#search" /></svg><span>店舗検索</span></p>
+        <ul class="g-header_sub_btnList g-header_sub_btnList-img">
+          <li class="g-header_sub_btnList_item"><a href="#">お近くの店舗</a></li>
+          <li class="g-header_sub_btnList_item"><a href="#" class="js-filterSearchModalTrigger">絞り込み</a></li>
+        </ul>
+        <div class="g-header_sub_search u-hidden-sm">
+          <input type="text" placeholder="フリーワード">
+          <input type="submit" value="Search">
+        </div>
+      </div>
+    </div>
+    <% } else if (conf[page].headersub === 'included03') { -%>
+    <div class="g-header_sub g-header_sub-03">
+      <div class="g-header_sub_inner">
+        <p class="g-header_sub_title u-hidden-sm"><svg class="svgIcon svgIcon-search" viewBox="0 0 200 200"><use xlink:href="/img/common/sprite.svg#search" /></svg><span>店舗検索</span></p>
+        <ul class="g-header_sub_btnList g-header_sub_btnList-img">
+          <li class="g-header_sub_btnList_item"><a href="#">お近くの店舗</a></li>
+          <li class="g-header_sub_btnList_item"><a href="#" class="js-filterSearchModalTrigger">条件検索</a></li>
+        </ul>
+        <div class="g-header_sub_search u-hidden-sm">
+          <input type="text" placeholder="フリーワード">
+          <input type="submit" value="Search">
+        </div>
+      </div>
+    </div>
+    <% } else { -%>
+    <% } -%>
+
+
+  </header>
