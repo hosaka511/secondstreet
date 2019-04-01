@@ -6214,7 +6214,7 @@ g-DrawerModal
 @media screen and (max-width: 768px) {
   .g-breadcrumb {
     margin: 3.2vw 0 0 0;
-    padding: 3.2vw 8vw;
+    padding: 3.2vw 8vw 0;
     border-top: 1px solid #f0f2f5;
     text-align: left;
     font-size: 2.66667vw;
@@ -6386,7 +6386,7 @@ g-DrawerModal
 
 .g-footer_main_title_inner {
   margin: 0 auto;
-  padding: 4.26667vw 0 0;
+  padding: 3.73333vw 0;
   width: 100%;
   max-width: 1000px;
   text-align: center;

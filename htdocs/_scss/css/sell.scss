@@ -66,6 +66,7 @@ $moveLayerColor: #f5f7fa;
       font-feature-settings: "palt";
       transition: background-color .3s $easeOutQuart;
       @include small-screen {
+        display: block;
         font-size: vw(24);
       }
     }

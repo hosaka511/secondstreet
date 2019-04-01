@@ -12,7 +12,7 @@
   @include small-screen {
     border-top: 1px solid #f0f2f5;
     margin: vw(24) 0 0 0;
-    padding: vw(24) vw(60);
+    padding: vw(24) vw(60) 0;
     text-align: left;
     font-size: vw(20);
   }
@@ -142,7 +142,7 @@
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding: vw(32) 0 0;
+  padding: vw(28) 0;
   text-align: center;
   @include large-screen {
     padding: 18px 0 15px;
