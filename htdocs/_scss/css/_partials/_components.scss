@@ -2398,7 +2398,7 @@ body {
   .no-touchevents &:hover  {
     background-color: $red;
     border-color: $red;
-    color: #fff;
+    color: #fff !important;
     svg {
       fill: #fff;
     }
@@ -3253,6 +3253,37 @@ body {
     textarea {
       height: 143px;
     }
+    .checkboxWrap {
+      padding: 10px 15px;
+      width: 560px;
+      background: #fff;
+      > p {
+        margin-top: 0;
+        font-size: 14px;
+        font-feature-settings: "palt";
+        letter-spacing: ls(40);
+        color: #000;
+        @include small-screen {
+          font-size: vw(24);
+        }
+      }
+      > div {
+        display: flex;
+        align-items: center;
+      }
+      .c-filterSearch_feature_txt {
+        margin-left: 0;
+        font-size: 14px;
+      }
+      @include large-screen {
+        label + label {
+          margin-left: 20px;
+        }
+      }
+      .c-filterSearch_feature_input:checked + .c-filterSearch_feature_txt:after {
+        top: 1px;
+      }
+    }
     @include small-screen {
       th,
       td {
@@ -3275,6 +3306,7 @@ body {
           border-top: none;
         }
       }
+      .checkboxWrap,
       textarea,
       input {
         padding: vw(20);
@@ -3283,6 +3315,24 @@ body {
       }
       textarea {
         height: vw(300);
+      }
+      .checkboxWrap {
+        > p {
+          font-size: vw(24);
+        }
+        > div {
+          flex-flow: column;
+          align-items: flex-start;
+        }
+        .c-filterSearch_feature_txt {
+          font-size: vw(24);
+        }
+        .c-filterSearch_feature_input:checked + .c-filterSearch_feature_txt:after {
+          left: vw(4);
+          top: vw(6);
+          width: vw(20);
+          height: vw(20);
+        }
       }
     }
   }

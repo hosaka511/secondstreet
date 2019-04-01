@@ -3741,7 +3741,7 @@ body {
 .no-touchevents .m-btnEffect:hover {
   border-color: #d90000;
   background-color: #d90000;
-  color: #fff;
+  color: #fff !important;
 }
 .is-IE .m-btnEffect:hover svg,
 .no-touchevents .m-btnEffect:hover svg {
@@ -4835,6 +4835,50 @@ body {
   height: 143px;
 }
 
+.correspond_table_body.correspond_table_body-04 .checkboxWrap {
+  padding: 10px 15px;
+  width: 560px;
+  background: #fff;
+}
+.correspond_table_body.correspond_table_body-04 .checkboxWrap > p {
+  margin-top: 0;
+  letter-spacing: 0.04em;
+  color: #000; 
+  font-size: 14px;
+
+  -webkit-font-feature-settings: "palt";
+
+          font-feature-settings: "palt";
+}
+@media screen and (max-width: 768px) {
+  .correspond_table_body.correspond_table_body-04 .checkboxWrap > p {
+    font-size: 3.2vw;
+  }
+}
+.correspond_table_body.correspond_table_body-04 .checkboxWrap > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+
+      -ms-flex-align: center;
+
+          align-items: center;
+}
+.correspond_table_body.correspond_table_body-04 .checkboxWrap .c-filterSearch_feature_txt {
+  margin-left: 0;
+  font-size: 14px;
+}
+@media screen and (min-width: 769px) {
+  .correspond_table_body.correspond_table_body-04 .checkboxWrap label + label {
+    margin-left: 20px;
+  }
+}
+.correspond_table_body.correspond_table_body-04 .checkboxWrap .c-filterSearch_feature_input:checked + .c-filterSearch_feature_txt:after {
+  top: 1px;
+}
+
 @media screen and (max-width: 768px) {
   .correspond_table_body.correspond_table_body-04 th,
   .correspond_table_body.correspond_table_body-04 td {
@@ -4859,6 +4903,7 @@ body {
   .correspond_table_body.correspond_table_body-04 th.first {
     border-top: none;
   }
+  .correspond_table_body.correspond_table_body-04 .checkboxWrap,
   .correspond_table_body.correspond_table_body-04 textarea,
   .correspond_table_body.correspond_table_body-04 input {
     padding: 2.66667vw;
@@ -4867,6 +4912,27 @@ body {
   }
   .correspond_table_body.correspond_table_body-04 textarea {
     height: 40vw;
+  }
+  .correspond_table_body.correspond_table_body-04 .checkboxWrap > p {
+    font-size: 3.2vw;
+  }
+  .correspond_table_body.correspond_table_body-04 .checkboxWrap > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .correspond_table_body.correspond_table_body-04 .checkboxWrap .c-filterSearch_feature_txt {
+    font-size: 3.2vw;
+  }
+  .correspond_table_body.correspond_table_body-04 .checkboxWrap .c-filterSearch_feature_input:checked + .c-filterSearch_feature_txt:after {
+    top: 0.8vw;
+    left: 0.53333vw;
+    width: 2.66667vw;
+    height: 2.66667vw;
   }
 }
 
